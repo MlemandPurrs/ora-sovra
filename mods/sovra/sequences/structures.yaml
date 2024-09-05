@@ -452,6 +452,13 @@ afld:
 		Filename: afldmake.shp
 		Length: *
 		Offset: 0,-4
+	bib:
+		Filename: bib2.tem
+		TilesetFilenames:
+			SNOW: bib2.sno
+			DESERT: bib2.des
+		Length: *
+        ZOffset: -1022
 	icon:
 		Filename: afldicon.shp
 	fake-icon:

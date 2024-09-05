@@ -1495,6 +1495,8 @@ HPAD:
 		ProductionType: Aircraft
 	Power:
 		Amount: -10
+	ProvidesPrerequisite:
+		Prerequisite: airproduction
 	ProvidesPrerequisite@allies:
 		Factions: allies, england, france, germany
 		Prerequisite: aircraft.allies
@@ -1570,12 +1572,14 @@ AFLD:
 		ExitCell: 1,1
 		Facing: 768
 	RallyPoint:
-		ForceSetType: Plane
+		ForceSetType: Helicopter
 	CommandBarBlacklist:
 		DisableStop: false
 	Production:
-		Produces: Aircraft, Plane
+		Produces: Aircraft, Plane, Helicopter
 	Reservable:
+	ProvidesPrerequisite:
+		Prerequisite: airproduction
 	ProvidesPrerequisite@soviet:
 		Factions: soviet, russia, ukraine, belarus
 		Prerequisite: aircraft.soviet
@@ -1722,6 +1726,7 @@ AFLD:
 		ValidPowerStates: Low, Critical
 	ActorPreviewPlaceBuildingPreview:
 		Animated: false
+    WithBuildingBib:
 
 AFLD.Ukraine:
 	Inherits: AFLD
@@ -2314,3 +2319,9 @@ ANYPOWER:
 	Interactable:
 	Tooltip:
 		Name: Any Power Generation
+
+AIRPRODUCTION:
+	AlwaysVisible:
+	Interactable:
+	Tooltip:
+		Name: Helipad or Airfield

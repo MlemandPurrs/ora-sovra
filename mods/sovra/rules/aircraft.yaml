@@ -229,7 +229,7 @@ TRAN:
 		Queue: Aircraft
 		BuildAtProductionType: Helicopter
 		BuildPaletteOrder: 10
-		Prerequisites: hpad, ~techlevel.medium
+		Prerequisites: airproduction, ~techlevel.medium
 		Description: Fast Infantry Transport Helicopter.\n  Unarmed
 	Valued:
 		Cost: 900
@@ -283,7 +283,7 @@ HELI:
 		Queue: Aircraft
 		BuildAtProductionType: Helicopter
 		BuildPaletteOrder: 20
-		Prerequisites: ~hpad, dome, ~techlevel.medium
+		Prerequisites: ~airproduction, dome, ~aircraft.allies, ~techlevel.medium
 		Description: Helicopter gunship armed\nwith multi-purpose missiles.\n  Strong vs Buildings, Vehicles, Aircraft\n  Weak vs Infantry
 	Valued:
 		Cost: 1500
@@ -347,7 +347,7 @@ HELI:
 	Selectable:
 		DecorationBounds: 1536, 1194
 	Rearmable:
-		RearmActors: hpad
+		RearmActors: hpad, afld
 	WithAmmoPipsDecoration:
 		Position: BottomLeft
 		Margin: 4, 3
@@ -365,7 +365,7 @@ HIND:
 		Queue: Aircraft
 		BuildAtProductionType: Helicopter
 		BuildPaletteOrder: 20
-		Prerequisites: ~disabled, ~hpad, ~techlevel.medium
+		Prerequisites: ~airproduction, dome, ~aircraft.soviet, ~techlevel.medium
 		Description: Helicopter gunship armed\nwith dual chainguns.\n  Strong vs Infantry, Light armor\n  Weak vs Tanks, Aircraft
 	Valued:
 		Cost: 1500
@@ -432,7 +432,7 @@ HIND:
 	Selectable:
 		DecorationBounds: 1621, 1365
 	Rearmable:
-		RearmActors: hpad
+		RearmActors: hpad, afld
 	WithAmmoPipsDecoration:
 		Position: BottomLeft
 		Margin: 4, 3
@@ -489,7 +489,7 @@ MH60:
 		Queue: Aircraft
 		BuildAtProductionType: Helicopter
 		BuildPaletteOrder: 40
-		Prerequisites: ~hpad, atek, ~techlevel.high
+		Prerequisites: ~airproduction, atek, ~aircraft.allies, ~techlevel.high
 		Description: Helicopter gunship armed\nwith dual chainguns.\n  Strong vs Infantry, Light armor\n  Weak vs Tanks, Aircraft
 	Valued:
 		Cost: 2000
@@ -555,7 +555,7 @@ MH60:
 	Selectable:
 		DecorationBounds: 1621, 1365
 	Rearmable:
-		RearmActors: hpad
+		RearmActors: hpad, afld
 	WithAmmoPipsDecoration:
 		Position: BottomLeft
 		Margin: 4, 3
