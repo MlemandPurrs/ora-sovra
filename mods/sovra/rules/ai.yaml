@@ -106,7 +106,7 @@ Player:
 					CheckRadius: 10c0
 	HarvesterBotModule:
 		RequiresCondition: enable-rush-ai || enable-normal-ai || enable-turtle-ai || enable-naval-ai
-		HarvesterTypes: harv
+		HarvesterTypes: harv, ahrv
 		RefineryTypes: proc
 	BaseBuilderBotModule@rush:
 		RequiresCondition: enable-rush-ai
@@ -315,10 +315,10 @@ Player:
 		RequiresCondition: enable-rush-ai
 		SquadSize: 20
 		NavalUnitsTypes: seas, ss, msub, dd, ca, lst, pt
-		ExcludeFromSquadsTypes: harv, mcv, dog, badr.bomber, u2
+		ExcludeFromSquadsTypes: harv, ahrv, mcv, dog, badr.bomber, u2
 		ConstructionYardTypes: fact
 		AirUnitsTypes: mig, yak, heli, hind, mh60
-		ProtectionTypes: harv, mcv, mslo, gap, spen, syrd, iron, pdox, tsla, agun, dome, pbox, hbox, gun, ftur, sam, atek, weap, fact, proc, silo, hpad, afld, afld.ukraine, powr, apwr, stek, barr, kenn, tent, fix, fpwr, tenf, syrf, spef, weaf, domf, fixf, fapw, atef, pdof, mslf, facf
+		ProtectionTypes: harv, ahrv, mcv, mslo, gap, spen, syrd, iron, pdox, tsla, agun, dome, pbox, hbox, gun, ftur, sam, atek, weap, fact, proc, silo, hpad, afld, afld.ukraine, powr, apwr, stek, barr, kenn, tent, fix, fpwr, tenf, syrf, spef, weaf, domf, fixf, fapw, atef, pdof, mslf, facf
 		IgnoredEnemyTargetTypes: AirborneActor
 	McvManagerBotModule:
 		RequiresCondition: enable-rush-ai || enable-normal-ai || enable-turtle-ai || enable-naval-ai
@@ -335,6 +335,7 @@ Player:
 			dog: 15
 			shok: 15
 			harv: 10
+            ahrv: 10
 			apc: 30
 			jeep: 20
 			arty: 15
@@ -349,17 +350,18 @@ Player:
 		UnitLimits:
 			dog: 4
 			harv: 8
+            ahrv: 8
 			jeep: 4
 			ftrk: 4
 	SquadManagerBotModule@normal:
 		RequiresCondition: enable-normal-ai
 		SquadSize: 40
 		NavalUnitsTypes: seas, ss, msub, dd, ca, lst, pt
-		ExcludeFromSquadsTypes: harv, mcv, dog, badr.bomber, u2
+		ExcludeFromSquadsTypes: harv, ahrv, mcv, dog, badr.bomber, u2
 		ConstructionYardTypes: fact
 		NavalProductionTypes: spen, syrd
 		AirUnitsTypes: mig, yak, heli, hind, mh60
-		ProtectionTypes: harv, mcv, mslo, gap, spen, syrd, iron, pdox, tsla, agun, dome, pbox, hbox, gun, ftur, sam, atek, weap, fact, proc, silo, hpad, afld, afld.ukraine, powr, apwr, stek, barr, kenn, tent, fix, fpwr, tenf, syrf, spef, weaf, domf, fixf, fapw, atef, pdof, mslf, facf
+		ProtectionTypes: harv, ahrv, mcv, mslo, gap, spen, syrd, iron, pdox, tsla, agun, dome, pbox, hbox, gun, ftur, sam, atek, weap, fact, proc, silo, hpad, afld, afld.ukraine, powr, apwr, stek, barr, kenn, tent, fix, fpwr, tenf, syrf, spef, weaf, domf, fixf, fapw, atef, pdof, mslf, facf
 		IgnoredEnemyTargetTypes: AirborneActor
 	UnitBuilderBotModule@normal:
 		RequiresCondition: enable-normal-ai
@@ -371,6 +373,7 @@ Player:
 			dog: 15
 			shok: 15
 			harv: 15
+			ahrv: 15
 			apc: 30
 			jeep: 20
 			arty: 15
@@ -384,6 +387,7 @@ Player:
 			stnk: 5
 			heli: 30
 			mh60: 30
+            hind: 30
 			mig: 30
 			yak: 30
             seas: 10
@@ -395,17 +399,18 @@ Player:
 		UnitLimits:
 			dog: 4
 			harv: 8
+            ahrv: 8
 			jeep: 4
 			ftrk: 4
 	SquadManagerBotModule@turtle:
 		RequiresCondition: enable-turtle-ai
 		SquadSize: 10
 		NavalUnitsTypes: seas, ss, msub, dd, ca, lst, pt
-		ExcludeFromSquadsTypes: harv, mcv, dog, badr.bomber, u2
+		ExcludeFromSquadsTypes: harv, ahrv, mcv, dog, badr.bomber, u2
 		ConstructionYardTypes: fact
 		NavalProductionTypes: spen, syrd
 		AirUnitsTypes: mig, yak, heli, hind, mh60
-		ProtectionTypes: harv, mcv, mslo, gap, spen, syrd, iron, pdox, tsla, agun, dome, pbox, hbox, gun, ftur, sam, atek, weap, fact, proc, silo, hpad, afld, afld.ukraine, powr, apwr, stek, barr, kenn, tent, fix, fpwr, tenf, syrf, spef, weaf, domf, fixf, fapw, atef, pdof, mslf, facf
+		ProtectionTypes: harv, ahrv, mcv, mslo, gap, spen, syrd, iron, pdox, tsla, agun, dome, pbox, hbox, gun, ftur, sam, atek, weap, fact, proc, silo, hpad, afld, afld.ukraine, powr, apwr, stek, barr, kenn, tent, fix, fpwr, tenf, syrf, spef, weaf, domf, fixf, fapw, atef, pdof, mslf, facf
 		IgnoredEnemyTargetTypes: AirborneActor
 	UnitBuilderBotModule@turtle:
 		RequiresCondition: enable-turtle-ai
@@ -417,6 +422,7 @@ Player:
 			dog: 15
 			shok: 15
 			harv: 15
+            ahrv: 15
 			apc: 30
 			jeep: 20
 			arty: 15
@@ -430,6 +436,7 @@ Player:
 			stnk: 10
 			heli: 30
 			mh60: 30
+            hind: 30
 			mig: 30
 			yak: 30
             seas: 10
@@ -441,24 +448,27 @@ Player:
 		UnitLimits:
 			dog: 4
 			harv: 8
+            ahrv: 8
 			jeep: 4
 			ftrk: 4
 	SquadManagerBotModule@naval:
 		RequiresCondition: enable-naval-ai
 		SquadSize: 1
-		ExcludeFromSquadsTypes: harv, mcv, dog, badr.bomber, u2
+		ExcludeFromSquadsTypes: harv, ahrv, mcv, dog, badr.bomber, u2
 		NavalUnitsTypes: seas, ss, msub, dd, ca, lst, pt
 		ConstructionYardTypes: fact
 		NavalProductionTypes: spen, syrd
 		AirUnitsTypes: mig, yak, heli, hind, mh60
-		ProtectionTypes: harv, mcv, mslo, gap, spen, syrd, iron, pdox, tsla, agun, dome, pbox, hbox, gun, ftur, sam, atek, weap, fact, proc, silo, hpad, afld, afld.ukraine, powr, apwr, stek, barr, kenn, tent, fix, fpwr, tenf, syrf, spef, weaf, domf, fixf, fapw, atef, pdof, mslf, facf
+		ProtectionTypes: harv, ahrv, mcv, mslo, gap, spen, syrd, iron, pdox, tsla, agun, dome, pbox, hbox, gun, ftur, sam, atek, weap, fact, proc, silo, hpad, afld, afld.ukraine, powr, apwr, stek, barr, kenn, tent, fix, fpwr, tenf, syrf, spef, weaf, domf, fixf, fapw, atef, pdof, mslf, facf
 		IgnoredEnemyTargetTypes: AirborneActor
 	UnitBuilderBotModule@naval:
 		RequiresCondition: enable-naval-ai
 		UnitsToBuild:
 			harv: 1
+            ahrv: 1
 			heli: 30
 			mh60: 30
+            hind: 30
 			mig: 30
 			yak: 30
             seas: 10
@@ -469,3 +479,4 @@ Player:
 			pt: 10
 		UnitLimits:
 			harv: 8
+            ahrv: 8
