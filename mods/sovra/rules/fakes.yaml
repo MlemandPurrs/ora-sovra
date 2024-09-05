@@ -515,7 +515,7 @@ PDOF:
 		Queue: Defense
 		Prerequisites: atek, ~structures.france, ~techlevel.unrestricted
 		BuildLimit: 1
-		Description: Looks like a Chronosphere.\nMaximum 1 can be built.
+		Description: Maximum 1 can be built.\n\nLooks like a Chronosphere.
 		Icon: fake-icon
 	Building:
 		Footprint: xx xx
@@ -551,7 +551,7 @@ IROF:
 		Queue: Defense
 		Prerequisites: ~disabled
 		BuildLimit: 1
-		Description: Looks like a Iron Curtain.\nMaximum 1 can be built.
+		Description: Maximum 1 can be built.\n\nLooks like a Iron Curtain.
 		Icon: fake-icon
 	Building:
 		Footprint: xx
@@ -586,7 +586,7 @@ MSLF:
 		Queue: Defense
 		Prerequisites: techcenter, ~structures.france, ~techlevel.unrestricted
 		BuildLimit: 1
-		Description: Looks like a Missile Silo.\nMaximum 1 can be built.
+		Description: Maximum 1 can be built.\n\nLooks like a Missile Silo.
 		Icon: fake-icon
 	Building:
 		Footprint: xx
