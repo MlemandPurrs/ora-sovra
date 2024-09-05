@@ -867,7 +867,7 @@ VOLK:
 		Prerequisites: stek, ~infantry.soviet, ~techlevel.high
 		BuildLimit: 1
 		Queue: Infantry
-		Description: Maximum 1 can be built.\n\nElite cyborg prototype. Armed with\nantimaterial rifle and C4.\n\nStrong vs Infantry, Vehicles, Buildings.\nWeak vs Aircraft.\n\n  Special Ability: Destroy Building with C4
+		Description: Maximum 1 can be built.\n\nElite cyborg prototype. Armed with\nantimaterial rifle and C4.\n\n  Strong vs Infantry, Vehicles, Buildings.\n  Weak vs Aircraft.\n\n  Special Ability: Destroy Building with C4
 	Mobile:
 		Voice: Move
 	Health:

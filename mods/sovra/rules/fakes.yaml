@@ -279,7 +279,7 @@ DOMF:
 	Buildable:
 		BuildPaletteOrder: 940
 		Queue: Defense
-		Prerequisites: proc, weap, ~structures.france, ~techlevel.medium
+		Prerequisites: anypower, proc, ~structures.france, ~techlevel.medium
 		Description: Looks like a Radar Dome.
 		Icon: fake-icon
 	Building:

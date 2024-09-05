@@ -711,7 +711,7 @@ DOME:
 	Buildable:
 		Queue: Building
 		BuildPaletteOrder: 90
-		Prerequisites: proc, weap, ~techlevel.medium
+		Prerequisites: anypower, proc, ~techlevel.medium
 		Description: Provides an overview\nof the battlefield.\nRequires power to operate.
 	Valued:
 		Cost: 1500
@@ -1117,6 +1117,8 @@ WEAP:
 		ExitCell: 1,2
 	Production:
 		Produces: Vehicle
+	ProvidesPrerequisite:
+		Prerequisite: afldorweap
 	ProvidesPrerequisite@allies:
 		Factions: allies, england, france, germany
 		Prerequisite: vehicles.allies
@@ -1580,6 +1582,8 @@ AFLD:
 	Reservable:
 	ProvidesPrerequisite:
 		Prerequisite: airproduction
+	ProvidesPrerequisite@2:
+		Prerequisite: afldorweap
 	ProvidesPrerequisite@soviet:
 		Factions: soviet, russia, ukraine, belarus
 		Prerequisite: aircraft.soviet
@@ -1834,7 +1838,7 @@ STEK:
 	Buildable:
 		Queue: Building
 		BuildPaletteOrder: 150
-		Prerequisites: weap, dome, ~structures.soviet, ~techlevel.high
+		Prerequisites: afldorweap, dome, ~structures.soviet, ~techlevel.high
 		Description: Provides Soviet advanced technologies.
 	Valued:
 		Cost: 1500
@@ -2325,3 +2329,9 @@ AIRPRODUCTION:
 	Interactable:
 	Tooltip:
 		Name: Helipad or Airfield
+
+AFLDORWEAP:
+	AlwaysVisible:
+	Interactable:
+	Tooltip:
+		Name: War Factory or Airfield
