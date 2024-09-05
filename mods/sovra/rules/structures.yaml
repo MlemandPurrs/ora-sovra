@@ -1321,7 +1321,7 @@ PROC:
 		Prerequisites: fact, ~techlevel.infonly
 		Description: Refines Ore and Gems\ninto credits.
 	Valued:
-		Cost: 1400
+		Cost: 1500
 	Tooltip:
 		Name: Ore Refinery
 	Building:
@@ -1348,12 +1348,28 @@ PROC:
 		DockOffset: 1,2
 	StoresResources:
 		Capacity: 2000
+    Sellable:
+        RefundPercent: 100
 	CustomSellValue:
-		Value: 300
-	FreeActor:
+		Value: 500
+	FreeActor@1:
 		Actor: HARV
 		SpawnOffset: 1,2
 		Facing: 256
+        RequiresCondition: !build-incomplete && owner.is.allies
+	FreeActor@2:
+		Actor: AHRV
+		SpawnOffset: 1,2
+		Facing: 256
+        RequiresCondition: !build-incomplete && owner.is.soviet
+	GrantConditionOnFaction@Allies:
+		Condition: owner.is.allies
+		Factions: allies, england, france, germany
+		ResetOnOwnerChange: True
+	GrantConditionOnFaction@Soviet:
+		Condition: owner.is.soviet
+		Factions: soviet, russia, ukraine, belarus
+		ResetOnOwnerChange: True
 	InfiltrateForCash:
 		Percentage: 50
 		PlayerExperience: 5

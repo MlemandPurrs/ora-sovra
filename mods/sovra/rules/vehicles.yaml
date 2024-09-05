@@ -323,14 +323,16 @@ HARV:
 	Inherits@selection: ^SelectableEconomicUnit
 	Buildable:
 		Queue: Vehicle
-		BuildPaletteOrder: 110
-		Prerequisites: proc, ~techlevel.infonly
+		BuildPaletteOrder: 100
+		Prerequisites: proc, ~!vehicles.soviet, ~techlevel.infonly
 		Description: Collects Ore and Gems for processing.\n\n  Unarmed
 	Valued:
-		Cost: 1100
+		Cost: 1000
 	Tooltip:
 		Name: Ore Truck
 		GenericName: Harvester
+        GenericStancePrefix: false
+        GenericVisibility: Ally, Neutral, Enemy
 	Selectable:
 		DecorationBounds: 1792, 1792
 	Harvester:
@@ -378,6 +380,39 @@ HARV:
 		ResourceSequences:
 			Ore: pip-yellow
 			Gems: pip-red
+
+AHRV:
+    Inherits: HARV
+	Inherits@AUTOTARGET: ^AutoTargetGroundAssaultMove
+	Tooltip:
+		Name: Armed Ore Truck
+		GenericName: Armed Harvester
+        GenericStancePrefix: false
+        GenericVisibility: Ally, Neutral, Enemy
+	Buildable:
+		BuildPaletteOrder: 110
+        Prerequisites: proc, ~vehicles.soviet, ~techlevel.infonly
+		Queue: Vehicle
+		Description: Collects Ore and Gems for processing.\n\n  Strong vs Infantry.\n  Weak vs anything else.
+        Icon: alt-icon
+	Turreted@SECONDARY:
+		Turret: secondary
+		Offset: 508,0,128
+		TurnSpeed: 12
+	Armament@SECONDARY:
+		Name: secondary
+		Turret: secondary
+		Weapon: M60mg
+		LocalOffset: 320,0,171
+		MuzzleSequence: muzzle
+	AttackTurreted:
+		Armaments: secondary
+		Turrets: secondary
+	WithSpriteTurret@SECONDARY:
+		Turret: secondary
+	WithMuzzleOverlay:
+    RenderSprites:
+        Image: HARV
 
 MCV:
 	Inherits: ^Vehicle
@@ -482,6 +517,9 @@ APC:
 		Cost: 850
 	Tooltip:
 		Name: Armored Personnel Carrier
+        GenericStancePrefix: false
+        GenericName: APC
+        GenericVisibility: Ally, Neutral, Enemy
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Health:

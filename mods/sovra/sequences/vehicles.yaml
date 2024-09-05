@@ -39,9 +39,19 @@ harv:
 		Filename: harv.shp
 		Start: 104
 		Length: 7
+	turret: 
+        Filename: btr-tur.shp
+        Start: 0
+		Facings: 32
+		UseClassicFacings: True
+	muzzle:
+		Filename: minigun.shp
+		Length: 6
+		Facings: 8
 	icon:
 		Filename: harvicon.shp
-		Start: 0
+	alt-icon:
+		Filename: ahrvicon.shp
 
 harvempty:
 	Inherits: harv
