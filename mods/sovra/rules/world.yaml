@@ -295,7 +295,8 @@ World:
 			1: WarningOneMinuteRemaining
 	ColorPickerManager:
 		PreviewActor: fact.colorpicker
-		PresetColors: 391D1D, 98331F, F57606, F50606, DDB8FF, ACF218, 06F739, F2BC18, 200738, 280DF6, 79F2AA, 34BA93, F861A4, C718F2, 79CEF2, 2F86F2
+		PresetColors: FCFC54, A4A4BC, F40000, 54FC54, D47810, 007070, D0C4AC, A8704C, C4B060, 4494E4, EC0000, 00C400, FC8800, 707070, 44907C, 702C24
+        SimilarityThreshold: 20
 	OrderEffects:
 		TerrainFlashImage: moveflsh
 		TerrainFlashSequence: idle
