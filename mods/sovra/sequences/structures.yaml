@@ -224,10 +224,12 @@ barr:
 	idle:
 		Length: 10
 		Offset: 0,-6
+		Tick: 100
 	damaged-idle:
 		Start: 10
 		Length: 10
 		Offset: 0,-6
+		Tick: 100
 	make:
 		Filename: barrmake.shp
 		Length: *
@@ -251,9 +253,11 @@ tent:
 			DESERT: tent.des
 	idle:
 		Length: 10
+		Tick: 100
 	damaged-idle:
 		Start: 10
 		Length: 10
+		Tick: 100
 	make:
 		Filename: tentmake.tem
 		TilesetFilenames:
