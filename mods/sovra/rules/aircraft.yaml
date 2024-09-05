@@ -252,19 +252,19 @@ TRAN:
 		Speed: 128
 		AltitudeVelocity: 0c58
 	WithIdleOverlay@ROTOR1AIR:
-		Offset: 597,0,213
+		Offset: 617,0,213
 		Sequence: rotor
 		RequiresCondition: airborne
 	WithIdleOverlay@ROTOR1GROUND:
-		Offset: 597,0,213
+		Offset: 617,0,213
 		Sequence: slow-rotor
 		RequiresCondition: !airborne
 	WithIdleOverlay@ROTOR2AIR:
-		Offset: -597,0,341
+		Offset: -617,0,341
 		Sequence: rotor2
 		RequiresCondition: airborne
 	WithIdleOverlay@ROTOR2GROUND:
-		Offset: -597,0,341
+		Offset: -617,0,341
 		Sequence: slow-rotor2
 		RequiresCondition: !airborne
 	Cargo:

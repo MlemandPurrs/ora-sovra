@@ -58,19 +58,19 @@ tran:
 		Facings: 32
 		UseClassicFacings: True
 	rotor:
-		Filename: lrotor.shp
-		Length: 4
+		Filename: lrotorlg3.shp
+		Length: 5
 	rotor2:
-		Filename: rrotor.shp
-		Length: 4
+		Filename: rrotorlg3.shp
+		Length: 5
 	slow-rotor:
-		Filename: lrotor.shp
-		Start: 4
-		Length: 8
+		Filename: lrotorlg3.shp
+        Start: 5
+		Length: 10
 	slow-rotor2:
-		Filename: rrotor.shp
-		Start: 4
-		Length: 8
+		Filename: rrotorlg3.shp
+        Start: 5
+		Length: 10
 	open:
 		Filename: tran2.shp
 		Start: 32
