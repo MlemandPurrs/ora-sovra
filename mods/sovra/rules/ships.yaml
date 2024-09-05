@@ -116,6 +116,7 @@ MSUB:
 		EmptyWeapon: UnitExplodeSubmarine
 	Selectable:
 		DecorationBounds: 1877, 1877
+	RenderRangeCircle:
 
 DD:
 	Inherits: ^Ship
@@ -152,6 +153,8 @@ DD:
 		Weapon: Stinger
 		LocalOffset: 0,-100,0, 0,100,0
 		LocalYaw: 64, -64
+		PauseOnCondition: reload-aa
+        ReloadingCondition: reload-ag
 	Armament@SECONDARY:
 		Weapon: DepthCharge
 		LocalOffset: 0,-100,0, 0,100,0
@@ -160,6 +163,8 @@ DD:
 		Weapon: StingerAA
 		LocalOffset: 0,-100,0, 0,100,0
 		LocalYaw: 64, -64
+		PauseOnCondition: reload-ag
+        ReloadingCondition: reload-aa
 	AttackTurreted:
 	WithSpriteTurret:
 	DetectCloaked:
@@ -231,6 +236,7 @@ CA:
 		Turret: secondary
 	Selectable:
 		DecorationBounds: 1877, 1877
+	RenderRangeCircle:
 
 LST:
 	Inherits: ^Ship

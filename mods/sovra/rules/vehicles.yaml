@@ -50,6 +50,7 @@ V2RL:
 	WithProductionIconOverlay:
 		Types: Veterancy
 		Prerequisites: vehicles.upgraded
+	RenderRangeCircle:
 
 1TNK:
 	Inherits: ^TrackedVehicle
@@ -317,6 +318,7 @@ ARTY:
 	WithProductionIconOverlay:
 		Types: Veterancy
 		Prerequisites: vehicles.upgraded
+	RenderRangeCircle:
 
 HARV:
 	Inherits: ^Vehicle
