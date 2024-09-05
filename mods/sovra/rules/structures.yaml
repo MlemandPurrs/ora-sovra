@@ -120,6 +120,8 @@ GAP:
 		Type: Rectangle
 			TopLeft: -512, -512
 			BottomRight: 512, 512
+	ActorPreviewPlaceBuildingPreview:
+		Animated: false
 
 SPEN:
 	Inherits: ^Building
@@ -1718,6 +1720,8 @@ AFLD:
 	GrantConditionOnPowerState@LOWPOWER:
 		Condition: lowpower
 		ValidPowerStates: Low, Critical
+	ActorPreviewPlaceBuildingPreview:
+		Animated: false
 
 AFLD.Ukraine:
 	Inherits: AFLD
@@ -1946,6 +1950,8 @@ BARR:
 		PlayerExperience: 10
 	Targetable:
 		TargetTypes: GroundActor, C4, DetonateAttack, Structure, SpyInfiltrate
+	ActorPreviewPlaceBuildingPreview:
+		Animated: false
 
 KENN:
 	Inherits: ^Building
@@ -2120,6 +2126,8 @@ TENT:
 		PlayerExperience: 10
 	Targetable:
 		TargetTypes: GroundActor, C4, DetonateAttack, Structure, SpyInfiltrate
+	ActorPreviewPlaceBuildingPreview:
+		Animated: false
 
 FIX:
 	Inherits: ^Building
