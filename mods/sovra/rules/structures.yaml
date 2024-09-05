@@ -1642,7 +1642,7 @@ AFLD:
 		ChargeInterval: 7500
 		Name: Paratroopers
 		Description: A Badger drops a squad of infantry\nat the selected location.
-		DropItems: E1R1,E1R1,E1R1,E3R1,E3R1
+		DropItems: E1R1,E3R1,E1R1,E3R1,E1R1
 		ReinforcementsArrivedSpeechNotification: ReinforcementsArrived
 		SelectTargetSpeechNotification: SelectTarget
 		ReinforcementsArrivedTextNotification: Reinforcements have arrived.
