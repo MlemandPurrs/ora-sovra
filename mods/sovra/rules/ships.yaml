@@ -6,7 +6,7 @@ SS:
 		BuildAtProductionType: Submarine
 		BuildPaletteOrder: 40
 		Prerequisites: ~spen, dome, ~techlevel.medium
-		Description: Submerged anti-ship unit\narmed with torpedoes.\nCan detect other submarines.\n  Strong vs Naval units\n  Weak vs Ground units, Aircraft\n  Special Ability: Submerge
+		Description: Submerged anti-ship unit\narmed with torpedoes.\nCan detect other submarines.\n\n  Strong vs Naval units\n  Weak vs Ground units, Aircraft
 	Valued:
 		Cost: 950
 	Tooltip:
@@ -70,7 +70,7 @@ MSUB:
 		BuildAtProductionType: Submarine
 		BuildPaletteOrder: 60
 		Prerequisites: ~spen, stek, ~techlevel.high
-		Description: Submerged anti-ground siege unit\nwith anti-air capabilities.\nCan detect other submarines.\n  Strong vs Buildings, Ground units, Aircraft\n  Weak vs Naval units\n  Special Ability: Submerge
+		Description: Submerged anti-ground siege unit\nwith anti-air capabilities.\nCan detect other submarines.\n\n  Strong vs Buildings, Ground units, Aircraft\n  Weak vs Naval units
 	Valued:
 		Cost: 2000
 	Tooltip:
@@ -125,7 +125,7 @@ DD:
 		BuildAtProductionType: Boat
 		BuildPaletteOrder: 40
 		Prerequisites: ~syrd, dome, ~techlevel.medium
-		Description: Fast multi-role ship.\nCan detect submarines.\n  Strong vs Naval units, Vehicles, Aircraft\n  Weak vs Infantry
+		Description: Fast multi-role ship.\nCan detect submarines.\n\n  Strong vs Naval units, Vehicles, Aircraft\n  Weak vs Infantry
 	Valued:
 		Cost: 1000
 	Tooltip:
@@ -177,7 +177,7 @@ CA:
 		BuildAtProductionType: Boat
 		BuildPaletteOrder: 50
 		Prerequisites: ~syrd, atek, ~techlevel.high
-		Description: Very slow long-range ship.\n  Strong vs Buildings, Ground units\n  Weak vs Naval units, Aircraft
+		Description: Very slow long-range ship.\n\n  Strong vs Buildings, Ground units\n  Weak vs Naval units, Aircraft
 	Valued:
 		Cost: 2400
 	Tooltip:
@@ -239,7 +239,7 @@ LST:
 		Queue: Ship
 		BuildPaletteOrder: 10
 		Prerequisites: ~techlevel.low
-		Description: General-purpose naval transport.\nCan carry infantry and tanks.\n  Unarmed
+		Description: General-purpose naval transport.\nCan carry infantry and tanks.\n\n  Unarmed
 	Valued:
 		Cost: 700
 	Tooltip:
@@ -279,7 +279,7 @@ PT:
 		BuildAtProductionType: Boat
 		BuildPaletteOrder: 20
 		Prerequisites: ~syrd, ~techlevel.low
-		Description: Light scout & support ship.\nCan detect submarines.\n  Strong vs Naval units\n  Weak vs Ground units, Aircraft
+		Description: Light scout & support ship.\nCan detect submarines.\n\n  Strong vs Naval units\n  Weak vs Ground units, Aircraft
 	Valued:
 		Cost: 500
 	Tooltip:
@@ -328,7 +328,7 @@ SEAS:
 		BuildAtProductionType: Submarine
 		BuildPaletteOrder: 20
 		Prerequisites: ~spen, ~techlevel.low
-		Description: Naval mobile flak unit.\nCan detect Submarines.\n Strong vs Aircraft, Infantry\n Weak vs Ships, Vehicles
+		Description: Naval mobile flak unit.\nCan detect Submarines.\n\n  Strong vs Aircraft, Infantry\n  Weak vs Ships, Vehicles
 	Valued:
 		Cost: 600
 	Tooltip:

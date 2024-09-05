@@ -13,7 +13,7 @@ MSLO:
 		BuildPaletteOrder: 140
 		Prerequisites: techcenter, ~techlevel.unrestricted
 		BuildLimit: 1
-		Description: Maximum 1 can be built.\n\nProvides an atomic bomb.\nRequires power to operate.\n  Special Ability: Atom Bomb
+		Description: Maximum 1 can be built.\n\nProvides an atomic bomb.\nRequires power to operate.\n\n  Special Ability: Atom Bomb
 	Building:
 		Footprint: xx
 		Dimensions: 2,1
@@ -447,7 +447,7 @@ IRON:
 		BuildPaletteOrder: 130
 		Prerequisites: stek, ~structures.soviet, ~techlevel.unrestricted
 		BuildLimit: 1
-		Description: Maximum 1 can be built.\n\nMakes a group of units invulnerable\nfor a short time.\nRequires power to operate.\n  Special Ability: Invulnerability
+		Description: Maximum 1 can be built.\n\nMakes a group of units invulnerable\nfor a short time.\nRequires power to operate.\n\n  Special Ability: Invulnerability
 	Valued:
 		Cost: 1500
 	Tooltip:
@@ -518,7 +518,7 @@ PDOX:
 		BuildPaletteOrder: 120
 		Prerequisites: atek, ~structures.allies, ~techlevel.unrestricted
 		BuildLimit: 1
-		Description: Maximum 1 can be built.\n\nTeleports a group of units across the\nmap for a short time.\nRequires power to operate.\n  Special Ability: Chronoshift
+		Description: Maximum 1 can be built.\n\nTeleports a group of units across the\nmap for a short time.\nRequires power to operate.\n\n  Special Ability: Chronoshift
 	Valued:
 		Cost: 1500
 	Tooltip:
@@ -613,7 +613,7 @@ TSLA:
 		Queue: Defense
 		BuildPaletteOrder: 80
 		Prerequisites: stek, ~structures.soviet, ~techlevel.medium
-		Description: Advanced base defense.\nRequires power to operate.\nCan detect cloaked units.\n  Strong vs Vehicles, Infantry\n  Weak vs Aircraft
+		Description: Advanced base defense.\nRequires power to operate.\nCan detect cloaked units.\n\n  Strong vs Vehicles, Infantry\n  Weak vs Aircraft
 	Valued:
 		Cost: 1200
 	Tooltip:
@@ -657,7 +657,7 @@ AGUN:
 		Queue: Defense
 		BuildPaletteOrder: 90
 		Prerequisites: dome, ~structures.allies, ~techlevel.medium
-		Description: Anti-Air base defense.\nRequires power to operate.\n  Strong vs Aircraft\n  Weak vs Ground units
+		Description: Anti-Air base defense.\nRequires power to operate.\n\n  Strong vs Aircraft\n  Weak vs Ground units
 	Valued:
 		Cost: 800
 	Tooltip:
@@ -761,7 +761,7 @@ PBOX:
 		Queue: Defense
 		BuildPaletteOrder: 40
 		Prerequisites: tent, ~structures.allies, ~techlevel.low
-		Description: Static defense with a fireport for\na garrisoned soldier.\nCan detect cloaked units.\n  Strong vs Infantry, Light armor\n  Weak vs Tanks, Aircraft
+		Description: Static defense with a fireport for\na garrisoned soldier.\nCan detect cloaked units.\n\n  Strong vs Infantry, Light armor\n  Weak vs Tanks, Aircraft
 	Valued:
 		Cost: 600
 	CustomSellValue:
@@ -817,7 +817,7 @@ HBOX:
 		Queue: Defense
 		BuildPaletteOrder: 50
 		Prerequisites: dome, ~structures.allies, ~techlevel.medium
-		Description: Camouflaged static defense with a fireport\nfor a garrisoned soldier.\nCan detect cloaked units.\n  Strong vs Infantry, Light armor\n  Weak vs Tanks, Aircraft
+		Description: Camouflaged static defense with a fireport\nfor a garrisoned soldier.\nCan detect cloaked units.\n\n  Strong vs Infantry, Light armor\n  Weak vs Tanks, Aircraft
 	Valued:
 		Cost: 750
 	CustomSellValue:
@@ -876,7 +876,7 @@ GUN:
 		Queue: Defense
 		BuildPaletteOrder: 70
 		Prerequisites: weap, ~structures.allies, ~techlevel.medium
-		Description: Anti-Armor base defense.\nCan detect cloaked units.\n  Strong vs Vehicles\n  Weak vs Infantry, Aircraft
+		Description: Anti-Armor base defense.\nCan detect cloaked units.\n\n  Strong vs Vehicles\n  Weak vs Infantry, Aircraft
 	Valued:
 		Cost: 800
 	Tooltip:
@@ -925,7 +925,7 @@ FTUR:
 		Queue: Defense
 		BuildPaletteOrder: 60
 		Prerequisites: weap, ~structures.soviet, ~techlevel.medium
-		Description: Anti-Infantry base defense.\nCan detect cloaked units.\n  Strong vs Infantry, Light armor\n  Weak vs Tanks, Aircraft
+		Description: Anti-Infantry base defense.\nCan detect cloaked units.\n\n  Strong vs Infantry, Light armor\n  Weak vs Tanks, Aircraft
 	Valued:
 		Cost: 600
 	Tooltip:
@@ -978,7 +978,7 @@ SAM:
 		Queue: Defense
 		BuildPaletteOrder: 100
 		Prerequisites: dome, ~structures.soviet, ~techlevel.medium
-		Description: Anti-Air base defense.\nRequires power to operate.\n  Strong vs Aircraft\n  Weak vs Ground units
+		Description: Anti-Air base defense.\nRequires power to operate.\n\n  Strong vs Aircraft\n  Weak vs Ground units
 	Valued:
 		Cost: 700
 	Tooltip:
@@ -1030,7 +1030,7 @@ ATEK:
 		Queue: Building
 		BuildPaletteOrder: 140
 		Prerequisites: weap, dome, ~structures.allies, ~techlevel.high
-		Description: Provides Allied advanced technologies.\n  Special Ability: GPS Satellite
+		Description: Provides Allied advanced technologies.\n\n  Special Ability: GPS Satellite
 	Valued:
 		Cost: 1500
 	Tooltip:
@@ -1546,7 +1546,7 @@ AFLD:
 		Queue: Building
 		BuildPaletteOrder: 130
 		Prerequisites: anypower, barracks, ~structures.soviet, ~techlevel.medium, ~!structures.ukraine, ~!structures.belarus
-		Description: Produces and reloads aircraft.\n  Special Ability: Spy Plane\n  Special Ability: Paratroopers
+		Description: Produces and reloads aircraft.\n\n  Special Ability: Spy Plane\n  Special Ability: Paratroopers
 	Valued:
 		Cost: 500
 	Tooltip:
@@ -1732,7 +1732,7 @@ AFLD.Ukraine:
 	Inherits: AFLD
 	Buildable:
 		Prerequisites: anypower, barracks, ~techlevel.medium, ~structures.ukraine
-		Description: Produces and reloads aircraft.\n  Special Ability: Spy Plane\n  Special Ability: Paratroopers\n  Special Ability: Parabombs
+		Description: Produces and reloads aircraft.\n\n  Special Ability: Spy Plane\n  Special Ability: Paratroopers\n  Special Ability: Parabombs
 	RenderSprites:
 		Image: afld
 
@@ -1740,7 +1740,7 @@ AFLD.Belarus:
 	Inherits: AFLD
 	Buildable:
 		Prerequisites: anypower, barracks, ~techlevel.medium, ~structures.belarus
-		Description: Produces and reloads aircraft.\n  Special Ability: Spy Plane\n  Special Ability: Paratroopers\n  Special Ability: Air Drop
+		Description: Produces and reloads aircraft.\n\n  Special Ability: Spy Plane\n  Special Ability: Paratroopers\n  Special Ability: Air Drop
 	RenderSprites:
 		Image: afld
 
