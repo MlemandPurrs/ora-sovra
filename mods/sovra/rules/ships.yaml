@@ -4,8 +4,8 @@ SS:
 	Buildable:
 		Queue: Ship
 		BuildAtProductionType: Submarine
-		BuildPaletteOrder: 30
-		Prerequisites: ~spen, ~techlevel.low
+		BuildPaletteOrder: 40
+		Prerequisites: ~spen, dome, ~techlevel.medium
 		Description: Submerged anti-ship unit\narmed with torpedoes.\nCan detect other submarines.\n  Strong vs Naval units\n  Weak vs Ground units, Aircraft\n  Special Ability: Submerge
 	Valued:
 		Cost: 950
@@ -30,8 +30,23 @@ SS:
 		Weapon: TorpTube
 		LocalOffset: 0,-171,0, 0,171,0
 		FireDelay: 2
+	Armament@SECONDARY:
+		Name: secondary
+		Turret: secondary
+		Weapon: GrenadeLauncher
+		LocalOffset: 132,0,96
+		MuzzleSequence: muzzle
 	AttackFrontal:
-		FacingTolerance: 0
+        Armaments: primary, secondary
+        FacingTolerance: 0
+    WithMuzzleOverlay:
+	Turreted:
+		Turret: secondary
+		TurnSpeed: 8
+		Offset: 648,0,24
+	WithSpriteTurret:
+		Turret: secondary
+		RequiresCondition: !underwater
 	AutoTargetPriority@DEFAULT:
 		ValidTargets: WaterActor, Underwater
 		InvalidTargets: NoAutoTarget, Structure
@@ -304,3 +319,55 @@ PT:
 	RenderDetectionCircle:
 	Selectable:
 		DecorationBounds: 1536, 1536
+
+SEAS:
+	Inherits: ^Ship
+	Inherits@AUTOTARGET: ^AutoTargetAllAssaultMove
+	Buildable:
+		Queue: Ship
+		BuildAtProductionType: Submarine
+		BuildPaletteOrder: 20
+		Prerequisites: ~spen, ~techlevel.low
+		Description: Naval mobile flak unit.\nCan detect Submarines.\n Strong vs Aircraft, Infantry\n Weak vs Ships, Vehicles
+	Valued:
+		Cost: 600
+	Tooltip:
+		Name: Sea Scorpion
+	UpdatesPlayerStatistics:
+		AddToArmyValue: true
+	Health:
+		HP: 18000
+	Armor:
+		Type: Heavy
+	Mobile:
+		TurnSpeed: 28
+		Speed: 142
+	RevealsShroud:
+		MinRange: 6c0
+		Range: 8c0
+		RevealGeneratedShroud: False
+	RevealsShroud@GAPGEN:
+		Range: 6c0
+	Armament@AA:
+		Name: primary
+		Weapon: FLAK-23-AA
+		LocalOffset: 50,0,376
+		MuzzleSequence: muzzle
+		PauseOnCondition: reload-ag
+        ReloadingCondition: reload-aa
+	Armament@AG:
+        Name: secondary
+		Weapon: FLAK-23-AG
+		LocalOffset: 50,0,376
+		MuzzleSequence: muzzle
+		PauseOnCondition: reload-aa
+        ReloadingCondition: reload-ag
+	AttackFrontal:
+		FacingTolerance: 0
+	WithMuzzleOverlay:
+	DetectCloaked:
+		DetectionTypes: Underwater
+		Range: 4c0
+	RenderDetectionCircle:
+	Selectable:
+		DecorationBounds: 1036,1036

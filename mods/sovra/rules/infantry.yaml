@@ -4,7 +4,7 @@ DOG:
 		Queue: Infantry
 		BuildAtProductionType: Dog
 		BuildPaletteOrder: 50
-		Prerequisites: ~kenn, ~techlevel.infonly
+		Prerequisites: ~barr, dome, ~techlevel.medium
 		Description: Anti-infantry unit.\nCan detect spies.\n  Strong vs Infantry\n  Weak vs Vehicles, Aircraft
 	Valued:
 		Cost: 200
@@ -75,7 +75,7 @@ E1:
 		Queue: Infantry
 		BuildAtProductionType: Soldier
 		BuildPaletteOrder: 10
-		Prerequisites: ~barracks, ~techlevel.infonly
+		Prerequisites: barracks, ~techlevel.infonly
 		Description: General-purpose infantry.\n  Strong vs Infantry\n  Weak vs Vehicles, Aircraft
 	Selectable:
 		Class: E1
@@ -128,7 +128,7 @@ E2:
 		Queue: Infantry
 		BuildAtProductionType: Soldier
 		BuildPaletteOrder: 40
-		Prerequisites: ~barr, ~techlevel.infonly
+		Prerequisites: ~barr, fix, ~techlevel.infonly
 		Description: Infantry armed with grenades.\n  Strong vs Buildings, Infantry\n  Weak vs Vehicles, Aircraft
 	Valued:
 		Cost: 160
@@ -175,7 +175,7 @@ E3:
 		Queue: Infantry
 		BuildAtProductionType: Soldier
 		BuildPaletteOrder: 30
-		Prerequisites: ~barracks, ~techlevel.infonly
+		Prerequisites: ~barracks, weap, ~techlevel.infonly
 		Description: Anti-tank/Anti-aircraft infantry.\n  Strong vs Vehicles, Aircraft\n  Weak vs Infantry
 	Selectable:
 		Class: E3
@@ -235,8 +235,8 @@ E4:
 	Buildable:
 		Queue: Infantry
 		BuildAtProductionType: Soldier
-		BuildPaletteOrder: 70
-		Prerequisites: ~barr, ftur, ~techlevel.low
+		BuildPaletteOrder: 110
+		Prerequisites: ~barr, stek, ~techlevel.high
 		Description: Advanced anti-structure unit.\n  Strong vs Infantry, Buildings\n  Weak vs Vehicles, Aircraft
 	Valued:
 		Cost: 300
@@ -280,7 +280,7 @@ E6:
 		Queue: Infantry
 		BuildAtProductionType: Soldier
 		BuildPaletteOrder: 60
-		Prerequisites: ~barracks, ~techlevel.infonly
+		Prerequisites: proc, ~techlevel.infonly
 		Description: Infiltrates and captures\nenemy structures.\n  Unarmed
 	Valued:
 		Cost: 400
@@ -327,7 +327,7 @@ SPY:
 		Queue: Infantry
 		BuildAtProductionType: Soldier
 		BuildPaletteOrder: 90
-		Prerequisites: ~!infantry.england, dome, ~tent, ~techlevel.medium
+		Prerequisites: ~tent, dome, ~techlevel.medium
 		Description: Infiltrates enemy structures for intel or\nsabotage. Exact effect depends on the\nbuilding infiltrated.\nLoses disguise when attacking.\nCan detect spies.\n  Strong vs Infantry\n  Weak vs Vehicles, Aircraft\n  Special Ability: Disguised
 	Valued:
 		Cost: 500
@@ -379,19 +379,15 @@ SPY:
 		Voice: Move
 	Voiced:
 		VoiceSet: SpyVoice
-
-SPY.England:
-	Inherits: SPY
-	Buildable:
-		Prerequisites: ~infantry.england, dome, ~tent, ~techlevel.medium
-	Valued:
-		Cost: 250
-	GivesExperience:
-		Experience: 500
-	DisguiseTooltip:
-		Name: British Spy
-	RenderSprites:
-		Image: spy
+    ProductionCostMultiplier@england:
+        Multiplier: 50
+        Prerequisites: infantry.england
+    GivesExperienceMultiplier@england:
+        Modifier: 150
+        RequiresCondition: owner.england
+    GrantConditionOnPrerequisite@england:
+        Condition: owner.england
+        Prerequisites: infantry.england
 
 E7:
 	Inherits: ^Soldier
@@ -463,7 +459,7 @@ MEDI:
 		Queue: Infantry
 		BuildAtProductionType: Soldier
 		BuildPaletteOrder: 40
-		Prerequisites: ~tent, ~techlevel.infonly
+		Prerequisites: ~tent, dome, ~techlevel.infonly
 		Description: Heals nearby infantry.\n  Unarmed
 	Valued:
 		Cost: 200
@@ -623,8 +619,8 @@ THF:
 	Buildable:
 		Queue: Infantry
 		BuildAtProductionType: Soldier
-		BuildPaletteOrder: 110
-		Prerequisites: ~barr, dome, ~techlevel.medium
+		BuildPaletteOrder: 70
+		Prerequisites: ~barr, fix, ~techlevel.medium
 		Description: Steals enemy credits.\nHijacks enemy vehicles.\n  Unarmed
 	Valued:
 		Cost: 500
@@ -681,7 +677,7 @@ SHOK:
 		Queue: Infantry
 		BuildAtProductionType: Soldier
 		BuildPaletteOrder: 130
-		Prerequisites: ~barr, stek, tsla, ~infantry.russia, ~techlevel.high
+		Prerequisites: ~barr, stek, ~infantry.russia, ~techlevel.high
 		Description: Elite infantry with portable Tesla coils.\n  Strong vs Infantry, Vehicles\n  Weak vs Aircraft
 	Valued:
 		Cost: 350

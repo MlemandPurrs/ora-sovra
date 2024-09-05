@@ -105,7 +105,7 @@
 		Name: England
 		InternalName: england
 		Side: Allies
-		Description: England: Counterintelligence\nSpecial Unit: British Spy\nSpecial Unit: Mobile Gap Generator
+		Description: England: Counterintelligence\nSpecial Ability: Trains Spy at half cost\nSpecial Unit: Mobile Radar Jammer
 	Faction@2:
 		Name: France
 		InternalName: france
