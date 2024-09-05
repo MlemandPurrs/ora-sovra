@@ -132,7 +132,7 @@ SPEN:
 		Name: Sub Pen
 	Buildable:
 		Queue: Building
-		BuildPaletteOrder: 50
+		BuildPaletteOrder: 100
 		Prerequisites: anypower, barracks, ~structures.soviet, ~techlevel.low
 		Description: Produces and repairs\nsubmarines and transports.
 	Targetable:
@@ -267,12 +267,29 @@ SPEN:
 		Type: Rectangle
 			TopLeft: -555, -1110
 			BottomRight: 555, 1110
-	FreeActor@SonarPulse:
-		Actor: powerproxy.sonarpulse
-        RequiresCondition: dome.built
-    GrantConditionOnPrerequisite@SonarPulse:
-        Condition: dome.built
-        Prerequisites: dome
+	SpawnActorPower@SonarPulse:
+		PauseOnCondition: lowpower
+		OrderName: SonarPulse
+		Icon: sonar
+		Name: Sonar Pulse
+		Description: Reveals all submarines in the vicinity for a \nshort time.
+		ChargeInterval: 750
+		EndChargeSpeechNotification: SonarPulseReady
+		SelectTargetSpeechNotification: SelectTarget
+		EndChargeTextNotification: Sonar pulse ready.
+		SelectTargetTextNotification: Select target.
+		Actor: sonar
+		Terrain: Water
+		AllowUnderShroud: false
+		LifeTime: 250
+		DeploySound: sonpulse.aud
+		EffectImage: moveflsh
+		EffectPalette: moveflash
+		SupportPowerPaletteOrder: 80
+		EffectSequence: idle
+	GrantConditionOnPowerState@LOWPOWER:
+		Condition: lowpower
+		ValidPowerStates: Low, Critical
 
 SYRD:
 	Inherits: ^Building
@@ -281,7 +298,7 @@ SYRD:
 		Bounds: 3072, 2048
 	Buildable:
 		Queue: Building
-		BuildPaletteOrder: 100
+		BuildPaletteOrder: 90
 		Prerequisites: anypower, barracks, ~structures.allies, ~techlevel.low
 		Description: Produces and repairs\nships and transports.
 	Valued:
@@ -396,8 +413,29 @@ SYRD:
 		Type: Rectangle
 			TopLeft: -512, 598
 			BottomRight: 512, 1110
-	FreeActor@SonarPulse:
-		Actor: powerproxy.sonarpulse
+	SpawnActorPower@SonarPulse:
+		PauseOnCondition: lowpower
+		OrderName: SonarPulse
+		Icon: sonar
+		Name: Sonar Pulse
+		Description: Reveals all submarines in the vicinity for a \nshort time.
+		ChargeInterval: 750
+		EndChargeSpeechNotification: SonarPulseReady
+		SelectTargetSpeechNotification: SelectTarget
+		EndChargeTextNotification: Sonar pulse ready.
+		SelectTargetTextNotification: Select target.
+		Actor: sonar
+		Terrain: Water
+		AllowUnderShroud: false
+		LifeTime: 250
+		DeploySound: sonpulse.aud
+		EffectImage: moveflsh
+		EffectPalette: moveflash
+		SupportPowerPaletteOrder: 80
+		EffectSequence: idle
+	GrantConditionOnPowerState@LOWPOWER:
+		Condition: lowpower
+		ValidPowerStates: Low, Critical
 
 IRON:
 	Inherits: ^ScienceBuilding
@@ -1567,6 +1605,7 @@ AFLD:
 		RequiresPrerequisites: structures.belarus
 		Prerequisite: aircraft.belarus
 	AirstrikePower@spyplane:
+		PauseOnCondition: lowpower
 		OrderName: SovietSpyPlane
 		Prerequisites: dome, aircraft.soviet
 		Icon: spyplane
@@ -1590,6 +1629,7 @@ AFLD:
 		DirectionArrowAnimation: paradirection
 		SupportPowerPaletteOrder: 60
 	ParatroopersPower@paratroopers:
+		PauseOnCondition: lowpower
 		OrderName: SovietParatroopers
 		Prerequisites: aircraft.soviet
 		Icon: paratroopers
@@ -1613,6 +1653,7 @@ AFLD:
 		DirectionArrowAnimation: paradirection
 		SupportPowerPaletteOrder: 50
 	AirstrikePower@parabombs:
+		PauseOnCondition: lowpower
 		OrderName: UkraineParabombs
 		Prerequisites: stek, aircraft.ukraine
 		Icon: parabombs
@@ -1636,6 +1677,7 @@ AFLD:
 		DirectionArrowAnimation: paradirection
 		SupportPowerPaletteOrder: 40
 	ParatroopersPower@airdrop:
+		PauseOnCondition: lowpower
 		OrderName: BelarusAirdrop
 		Prerequisites: dome, aircraft.belarus
 		Icon: airdrop
@@ -1673,6 +1715,9 @@ AFLD:
 		PlayerExperience: 10
 	WithResupplyAnimation:
 		RequiresCondition: !build-incomplete
+	GrantConditionOnPowerState@LOWPOWER:
+		Condition: lowpower
+		ValidPowerStates: Low, Critical
 
 AFLD.Ukraine:
 	Inherits: AFLD
