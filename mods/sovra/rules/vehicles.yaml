@@ -933,15 +933,15 @@ QTNK:
 STNK:
 	Inherits: ^Vehicle
 	Inherits@GAINSEXPERIENCE: ^GainsExperience
-	Inherits@AUTOTARGET: ^AutoTargetGroundAssaultMove
+	Inherits@AUTOTARGET: ^AutoTargetAllAssaultMove
 	Inherits@CARGOPIPS: ^CargoPips
 	Buildable:
 		Queue: Vehicle
 		BuildPaletteOrder: 330
 		Prerequisites: atek, ~vehicles.france, ~techlevel.high
-		Description: Lightly armored infantry transport which\ncan cloak. Armed with anti-ground missiles.\n\n  Strong vs Light armor\n  Weak vs Infantry, Tanks, Aircraft
+		Description: Lightly armored infantry transport which\ncan cloak. Armed with all-purpose missiles.\n\n  Strong vs Light armor\n  Weak vs Infantry, Tanks, Aircraft
 	Valued:
-		Cost: 1000
+		Cost: 900
 	Tooltip:
 		Name: Phase Transport
 	UpdatesPlayerStatistics:
@@ -963,16 +963,24 @@ STNK:
 	AutoTarget:
 		InitialStance: HoldFire
 		InitialStanceAI: ReturnFire
-	Armament:
-		Weapon: APTusk.stnk
-		LocalOffset: 192,0,176
+	Armament@PRIMARY:
+		Weapon: Stinger
+		LocalOffset: 192,-100,176, 192,100,176
+		PauseOnCondition: reload-aa
+        ReloadingCondition: reload-ag
+	Armament@SECONDARY:
+		Weapon: StingerAA
+		LocalOffset: 192,-100,176, 192,100,176
+		PauseOnCondition: reload-ag
+        ReloadingCondition: reload-aa
 	Turreted:
 		TurnSpeed: 20
 	AttackTurreted:
+        Armaments: primary, secondary
 	WithSpriteTurret:
 	Cargo:
 		Types: Infantry
-		MaxWeight: 5
+		MaxWeight: 3
 		LoadingCondition: notmobile
 	Cloak:
 		InitialDelay: 125
