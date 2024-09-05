@@ -10,7 +10,7 @@ FPWR:
 	Buildable:
 		BuildPaletteOrder: 870
 		Queue: Defense
-		Prerequisites: ~structures.france, ~techlevel.infonly
+		Prerequisites: fact, ~structures.france, ~techlevel.infonly
 		Description: Looks like a Power Plant.
 		Icon: fake-icon
 	Tooltip:
@@ -30,7 +30,7 @@ FPWR:
 	RenderSprites:
 		Image: POWR
 	Valued:
-		Cost: 30
+		Cost: 75
 
 TENF:
 	Inherits: ^FakeBuilding
@@ -41,7 +41,7 @@ TENF:
 	Buildable:
 		BuildPaletteOrder: 880
 		Queue: Defense
-		Prerequisites: ~structures.france, ~techlevel.infonly
+		Prerequisites: tent, ~structures.france, ~techlevel.infonly
 		Description: Looks like an Allied Barracks.
 		Icon: fake-icon
 	Tooltip:
@@ -56,7 +56,7 @@ TENF:
 	RenderSprites:
 		Image: TENT
 	Valued:
-		Cost: 50
+		Cost: 125
 	Health:
 		HP: 60000
 	Armor:
@@ -66,15 +66,83 @@ TENF:
 		UseTargetableCellsOffsets: false
 		TargetableOffsets: 0,0,0, 630,-512,0, 355,512,0, -281,-512,0, -630,512,0
 
+BARF:
+	Inherits: ^FakeBuilding
+	Inherits@infiltrate: ^InfiltratableFake
+	Inherits@shape: ^2x2Shape
+	Selectable:
+		Bounds: 2048, 2048
+	Buildable:
+		BuildPaletteOrder: 1010
+		Queue: Defense
+		Prerequisites: ~disabled
+		Description: Looks like an Soviet Barracks.
+		Icon: fake-icon
+	Tooltip:
+		Name: Fake Soviet Barracks
+		GenericName: Soviet Barracks
+		GenericVisibility: Enemy
+		GenericStancePrefix: False
+	Building:
+		Footprint: xx xx ==
+		Dimensions: 2,3
+		LocalCenterOffset: 0,-512,0
+	RenderSprites:
+		Image: BARR
+	Valued:
+		Cost: 125
+	Health:
+		HP: 60000
+	Armor:
+		Type: Wood
+	WithBuildingBib:
+	HitShape:
+		UseTargetableCellsOffsets: false
+		TargetableOffsets: 0,0,0, 490,-470,0, 355,512,0, -355,-512,0, -630,512,0
+
+PROF:
+	Inherits: ^FakeBuilding
+	Inherits@infiltrate: ^InfiltratableFake
+	Selectable:
+		Bounds: 3072, 2133, 0, 170
+		DecorationBounds: 3072, 2986, 0, -85
+	HitShape:
+		UseTargetableCellsOffsets: false
+		TargetableOffsets: 0,0,0, 640,-384,0, 640,512,0, -710,-512,0, -710,512,0
+	Buildable:
+		BuildPaletteOrder: 890
+		Queue: Defense
+		Prerequisites: proc, ~structures.france, ~techlevel.infonly
+		Description: Looks like a Ore Refinery.
+		Icon: fake-icon
+	Tooltip:
+		Name: Fake Ore Refinery
+		GenericName: Ore Refinery
+		GenericVisibility: Enemy
+		GenericStancePrefix: False
+	Building:
+		Footprint: _X_ xxx X== ===
+		Dimensions: 3,4
+		LocalCenterOffset: 0,-512,0
+	Health:
+		HP: 90000
+	Armor:
+		Type: Wood
+	WithBuildingBib:
+	RenderSprites:
+		Image: PROC
+	Valued:
+		Cost: 350
+
 SYRF:
 	Inherits: ^FakeBuilding
 	Inherits@infiltrate: ^InfiltratableFake
 	Selectable:
 		Bounds: 3072, 2048
 	Buildable:
-		BuildPaletteOrder: 890
+		BuildPaletteOrder: 910
 		Queue: Defense
-		Prerequisites: ~structures.france, ~techlevel.medium
+		Prerequisites: anypower, barracks, ~structures.france, ~techlevel.medium
 		Description: Looks like a Naval Yard.
 		Icon: fake-icon
 	Tooltip:
@@ -93,11 +161,11 @@ SYRF:
 	RenderSprites:
 		Image: SYRD
 	Valued:
-		Cost: 100
+		Cost: 250
 	Health:
 		HP: 100000
 	Armor:
-		Type: Light
+		Type: Wood
 	MapEditorData:
 		ExcludeTilesets: INTERIOR
 	HitShape:
@@ -119,7 +187,7 @@ SPEF:
 	Targetable:
 		TargetTypes: WaterActor, Structure, SpyInfiltrate
 	Buildable:
-		BuildPaletteOrder: 890
+		BuildPaletteOrder: 1020
 		Queue: Defense
 		Prerequisites: ~disabled
 		Description: Looks like a Sub Pen.
@@ -138,11 +206,11 @@ SPEF:
 	RenderSprites:
 		Image: SPEN
 	Valued:
-		Cost: 80
+		Cost: 200
 	Health:
 		HP: 100000
 	Armor:
-		Type: Light
+		Type: Wood
 	MapEditorData:
 		ExcludeTilesets: INTERIOR
 	HitShape:
@@ -162,8 +230,8 @@ WEAF:
 	Selectable:
 		Bounds: 3072, 2048
 	Buildable:
-		BuildPaletteOrder: 920
-		Prerequisites: ~structures.france, ~techlevel.medium
+		BuildPaletteOrder: 900
+		Prerequisites: anypower, barracks, ~structures.france, ~techlevel.medium
 		Queue: Defense
 		Description: Looks like a War Factory.
 		Icon: fake-icon
@@ -183,7 +251,7 @@ WEAF:
 		RequiresCondition: !build-incomplete
 		Sequence: build-top
 	Valued:
-		Cost: 200
+		Cost: 500
 	Health:
 		HP: 150000
 	Armor:
@@ -209,9 +277,9 @@ DOMF:
 		GenericVisibility: Enemy
 		GenericStancePrefix: False
 	Buildable:
-		BuildPaletteOrder: 930
+		BuildPaletteOrder: 940
 		Queue: Defense
-		Prerequisites: ~structures.france, ~techlevel.medium
+		Prerequisites: proc, weap, ~structures.france, ~techlevel.medium
 		Description: Looks like a Radar Dome.
 		Icon: fake-icon
 	Building:
@@ -222,7 +290,7 @@ DOMF:
 	RenderSprites:
 		Image: DOME
 	Valued:
-		Cost: 180
+		Cost: 375
 	Health:
 		HP: 100000
 	Armor:
@@ -234,9 +302,9 @@ FIXF:
 		Bounds: 2901, 1450, 0, 128
 		DecorationBounds: 3072, 2048
 	Buildable:
-		BuildPaletteOrder: 940
+		BuildPaletteOrder: 920
 		Queue: Defense
-		Prerequisites: ~structures.france, ~techlevel.medium
+		Prerequisites: weap, ~structures.france, ~techlevel.medium
 		Description: Looks like a Service Depot.
 		Icon: fake-icon
 	Tooltip:
@@ -256,11 +324,80 @@ FIXF:
 	RenderSprites:
 		Image: FIX
 	Valued:
-		Cost: 120
+		Cost: 300
 	HitShape:
 		TargetableOffsets: 840,0,0, 598,-640,0, 598,640,0, -1060,0,0, -768,-640,0, -768,640,0
 		Type: Polygon
 			Points: -1536,-300, -640,-811, 640,-811, 1536,-300, 1536,555, 640,1110, -640,1110, -1536,555
+
+HPAF:
+	Inherits: ^FakeBuilding
+	Inherits@IDISABLE: ^DisableOnLowPower
+	Inherits@infiltrate: ^InfiltratableFake
+	Inherits@shape: ^2x2Shape
+	Selectable:
+		Bounds: 2048, 2048
+	HitShape:
+		UseTargetableCellsOffsets: false
+		TargetableOffsets: 0,0,0, 768,-512,0, 768,512,0, -281,-512,0, -630,512,0
+	Tooltip:
+		Name: Fake Helipad
+		GenericName: Helipad
+		GenericVisibility: Enemy
+		GenericStancePrefix: False
+	Buildable:
+		BuildPaletteOrder: 930
+		Queue: Defense
+		Prerequisites: weap, ~structures.france, ~techlevel.medium
+		Description: Looks like a Helipad.
+		Icon: fake-icon
+	Building:
+		Footprint: xx xx ==
+		Dimensions: 2,3
+		LocalCenterOffset: 0,-512,0
+	WithBuildingBib:
+	RenderSprites:
+		Image: HPAD
+	Valued:
+		Cost: 125
+	Health:
+		HP: 80000
+	Armor:
+		Type: Wood
+
+AFLF:
+	Inherits: ^FakeBuilding
+	Inherits@IDISABLE: ^DisableOnLowPower
+	Inherits@infiltrate: ^InfiltratableFake
+	Inherits@shape: ^2x2Shape
+	Selectable:
+		Class: afld
+		Bounds: 3072, 2048
+	HitShape:
+		UseTargetableCellsOffsets: false
+		TargetableOffsets: 0,0,0, 420,0,0, 420,-1024,0, 420,1024,0, -777,0,0, -777,-1024,0, -777,1024,0
+	Tooltip:
+		Name: Fake Airfield
+		GenericName: Airfield
+		GenericVisibility: Enemy
+		GenericStancePrefix: False
+	Buildable:
+		BuildPaletteOrder: 1040
+		Queue: Defense
+		Prerequisites: ~disabled
+		Description: Looks like an Airfield.
+		Icon: fake-icon
+	Building:
+		Footprint: xxx xxx
+		Dimensions: 3,2
+	RenderSprites:
+		Image: AFLD
+	Valued:
+		Cost: 125
+	Health:
+		HP: 100000
+	Armor:
+		Type: Wood
 
 FAPW:
 	Inherits: ^FakeBuilding
@@ -271,7 +408,7 @@ FAPW:
 	Buildable:
 		BuildPaletteOrder: 950
 		Queue: Defense
-		Prerequisites: ~structures.france, ~techlevel.medium
+		Prerequisites: dome, ~structures.france, ~techlevel.medium
 		Description: Looks like an Advanced Power Plant.
 		Icon: fake-icon
 	Tooltip:
@@ -294,7 +431,7 @@ FAPW:
 		Bounds: 3072, 2048
 		DecorationBounds: 3072, 2901, 0, -426
 	Valued:
-		Cost: 50
+		Cost: 125
 
 ATEF:
 	Inherits: ^FakeBuilding
@@ -309,9 +446,9 @@ ATEF:
 		GenericVisibility: Enemy
 		GenericStancePrefix: False
 	Buildable:
-		BuildPaletteOrder: 970
+		BuildPaletteOrder: 960
 		Queue: Defense
-		Prerequisites: ~structures.france, ~techlevel.high
+		Prerequisites: weap, dome, ~structures.france, ~techlevel.high
 		Description: Looks like an Allied Tech Center.
 		Icon: fake-icon
 	Building:
@@ -322,11 +459,44 @@ ATEF:
 	RenderSprites:
 		Image: ATEK
 	Valued:
-		Cost: 150
+		Cost: 375
 	Health:
 		HP: 40000
 	Armor:
 		Type: Wood
+
+STEF:
+	Inherits: ^FakeBuilding
+	Inherits@infiltrate: ^InfiltratableFake
+	Inherits@shape: ^3x2Shape
+	HitShape:
+		TargetableOffsets: 420,-768,0, 420,768,0, -770,-768,0, -770,768,0
+	Buildable:
+		BuildPaletteOrder: 1030
+		Queue: Defense
+		Prerequisites: ~disabled
+		Description: Looks like a Soviet Tech Center.
+		Icon: fake-icon
+	Tooltip:
+		Name: Fake Soviet Tech Center
+		GenericName: Soviet Tech Center
+		GenericVisibility: Enemy
+		GenericStancePrefix: False
+	Building:
+		Footprint: XxX XxX ===
+		Dimensions: 3,3
+		LocalCenterOffset: 0,-512,0
+	Health:
+		HP: 80000
+	Armor:
+		Type: Wood
+	WithBuildingBib:
+	RenderSprites:
+		Image: STEK
+	Selectable:
+		Bounds: 3072, 2048
+	Valued:
+		Cost: 375
 
 PDOF:
 	Inherits: ^FakeBuilding
@@ -343,7 +513,7 @@ PDOF:
 	Buildable:
 		BuildPaletteOrder: 980
 		Queue: Defense
-		Prerequisites: ~structures.france, ~techlevel.unrestricted
+		Prerequisites: atek, ~structures.france, ~techlevel.unrestricted
 		BuildLimit: 1
 		Description: Looks like a Chronosphere.\nMaximum 1 can be built.
 		Icon: fake-icon
@@ -355,7 +525,43 @@ PDOF:
 	WithBuildingBib:
 		HasMinibib: true
 	Valued:
-		Cost: 150
+		Cost: 375
+	Health:
+		HP: 100000
+	Armor:
+		Type: Wood
+	Explodes:
+		DamageThreshold: 50
+
+IROF:
+	Inherits: ^FakeBuilding
+	Inherits@infiltrate: ^InfiltratableFake
+	Inherits@IDISABLE: ^DisableOnLowPower
+	Inherits@shape: ^2x2Shape
+	Selectable:
+		Bounds: 2048, 1194, 0, 85
+		DecorationBounds: 2133, 2133, 0, -512
+	Tooltip:
+		Name: Fake Iron Curtain
+		GenericName: Iron Curtain
+		GenericVisibility: Enemy
+		GenericStancePrefix: False
+	Buildable:
+		BuildPaletteOrder: 1060
+		Queue: Defense
+		Prerequisites: ~disabled
+		BuildLimit: 1
+		Description: Looks like a Iron Curtain.\nMaximum 1 can be built.
+		Icon: fake-icon
+	Building:
+		Footprint: xx
+		Dimensions: 2,1
+	RenderSprites:
+		Image: IRON
+	WithBuildingBib:
+		HasMinibib: true
+	Valued:
+		Cost: 375
 	Health:
 		HP: 100000
 	Armor:
@@ -378,7 +584,7 @@ MSLF:
 	Buildable:
 		BuildPaletteOrder: 990
 		Queue: Defense
-		Prerequisites: ~structures.france, ~techlevel.unrestricted
+		Prerequisites: techcenter, ~structures.france, ~techlevel.unrestricted
 		BuildLimit: 1
 		Description: Looks like a Missile Silo.\nMaximum 1 can be built.
 		Icon: fake-icon
@@ -388,7 +594,7 @@ MSLF:
 	RenderSprites:
 		Image: MSLO
 	Valued:
-		Cost: 250
+		Cost: 625
 	Health:
 		HP: 100000
 	Armor:
@@ -403,7 +609,7 @@ FACF:
 	Buildable:
 		BuildPaletteOrder: 1000
 		Queue: Defense
-		Prerequisites: ~structures.france, ~techlevel.medium
+		Prerequisites: fix, ~structures.france, ~techlevel.medium
 		Description: Looks like a Construction Yard.
 		Icon: fake-icon
 	Tooltip:
@@ -419,7 +625,7 @@ FACF:
 	RenderSprites:
 		Image: FACT
 	Valued:
-		Cost: 200
+		Cost: 500
 	Health:
 		HP: 150000
 	Armor:

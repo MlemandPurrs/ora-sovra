@@ -134,6 +134,8 @@ proc:
 		Length: *
 	icon:
 		Filename: procicon.shp
+	fake-icon:
+		Filename: proficon.shp
 
 silo:
 	idle:
@@ -238,6 +240,8 @@ barr:
 		Length: *
 	icon:
 		Filename: barricon.shp
+	fake-icon:
+		Filename: barficon.shp
 
 tent:
 	Defaults:
@@ -352,6 +356,8 @@ stek:
 		Length: *
 	icon:
 		Filename: stekicon.shp
+	fake-icon:
+		Filename: steficon.shp
 
 weap:
 	Defaults:
@@ -412,6 +418,8 @@ hpad:
 		Length: *
 	icon:
 		Filename: hpadicon.shp
+	fake-icon:
+		Filename: hpaficon.shp
 
 afld:
 	Defaults:
@@ -446,6 +454,8 @@ afld:
 		Offset: 0,-4
 	icon:
 		Filename: afldicon.shp
+	fake-icon:
+		Filename: aflficon.shp
 
 spen:
 	Defaults:
@@ -784,6 +794,8 @@ iron:
 		Offset: 0,2
 	icon:
 		Filename: ironicon.shp
+	fake-icon:
+		Filename: iroficon.shp
 
 pdox:
 	Defaults:
