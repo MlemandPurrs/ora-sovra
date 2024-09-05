@@ -480,3 +480,25 @@ MH60.Husk:
 		Type: GroundPosition
 	RenderSprites:
 		Image: MH60
+
+AHRV.FullHusk:
+	Inherits: ^Husk
+	Tooltip:
+		Name: Husk (Armed Ore Truck)
+	TransformOnCapture:
+		IntoActor: ahrv
+	InfiltrateForTransform:
+		IntoActor: ahrv
+	RenderSprites:
+		Image: hhusk
+
+AHRV.EmptyHusk:
+	Inherits: ^Husk
+	Tooltip:
+		Name: Husk (Armed Ore Truck)
+	TransformOnCapture:
+		IntoActor: ahrv
+	InfiltrateForTransform:
+		IntoActor: ahrv
+	RenderSprites:
+		Image: hhusk2

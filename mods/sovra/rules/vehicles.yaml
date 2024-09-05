@@ -413,6 +413,11 @@ AHRV:
 	WithSpriteTurret@SECONDARY:
 		Turret: secondary
 	WithMuzzleOverlay:
+	SpawnActorOnDeath:
+		Actor: AHRV.EmptyHusk
+	HarvesterHuskModifier:
+		FullHuskActor: AHRV.FullHusk
+		FullnessThreshold: 50
     RenderSprites:
         Image: HARV
 
