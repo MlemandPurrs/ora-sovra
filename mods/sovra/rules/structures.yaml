@@ -1922,14 +1922,14 @@ BARR:
 		RequiresCondition: !being-captured
 		SpawnOffset: -170,810,0
 		ExitCell: 1,2
-		ProductionTypes: Soldier, Infantry
+		ProductionTypes: Soldier, Infantry, Dog
 	Exit@2:
 		RequiresCondition: !being-captured
 		SpawnOffset: -725,640,0
 		ExitCell: 0,2
-		ProductionTypes: Soldier, Infantry
+		ProductionTypes: Soldier, Infantry, Dog
 	Production:
-		Produces: Infantry, Soldier
+		Produces: Infantry, Soldier, Dog
 	GrantExternalConditionToProduced:
 		Condition: produced
 	ProductionBar:
