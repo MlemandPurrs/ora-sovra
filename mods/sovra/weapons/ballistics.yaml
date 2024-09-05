@@ -255,3 +255,25 @@ GrenadeLauncher:
 		ImpactSounds: splash9.aud
 		ValidTargets: Water, Underwater
 		InvalidTargets: Bridge
+
+VolkovGun:
+    Inherits: ^Cannon
+	ReloadDelay: 50
+	Range: 5c512
+    Report: 120mmf.aud
+	Projectile: Bullet
+		Image: 120MM
+		Speed: 853
+		Shadow: true
+		Inaccuracy: 256
+        Blockable: true
+	Warhead@1Dam: SpreadDamage
+		Spread: 256
+		Damage: 15000
+		Versus:
+			None: 32
+			Wood: 52
+			Light: 116
+			Heavy: 48
+			Concrete: 32
+		DamageTypes: Prone50Percent, TriggerProne, FireDeath

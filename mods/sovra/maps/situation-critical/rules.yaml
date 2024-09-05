@@ -11,8 +11,6 @@ VOLK:
 	-AutoTarget:
 	-AutoTargetPriority@DEFAULT:
 	-AutoTargetPriority@ATTACKANYTHING:
-	AttackMove:
-		-AssaultMoveCondition:
 	Valued:
 		Cost: 1200
 	Tooltip:
@@ -25,22 +23,12 @@ VOLK:
 		Range: 6c0
 	Demolition:
 	Mobile:
-		Voice: Action
 	AttackFrontal:
-		Voice: Action
 		FacingTolerance: 0
 	AttackMove:
-		Voice: Action
-	Passenger:
-		Voice: Action
-	Guard:
-		Voice: Action
-	Voiced:
-		VoiceSet: GenericVoice
+		-AssaultMoveCondition:
 	Armament:
 		Weapon: VolkovWeapon
-	RenderSprites:
-		Image: GNRL
 
 LST.Reinforcement:
 	Inherits: LST

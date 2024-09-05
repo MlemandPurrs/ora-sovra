@@ -125,36 +125,16 @@ ZKOI:
 		Image: DOG
 
 VOLK:
-	Inherits: GNRL
 	Valued:
 		Cost: 3000
-	Tooltip:
-		Name: Volkov
 	Health:
 		HP: 250000
 	Armor:
 		Type: Heavy
-	-Crushable:
 	RevealsShroud:
 		Range: 10c0
-	Demolition:
-	Mobile:
-		Voice: Action
-	AttackFrontal:
-		Voice: Action
-		FacingTolerance: 0
-	AttackMove:
-		Voice: Action
-	Passenger:
-		Voice: Action
-	Guard:
-		Voice: Action
-	Voiced:
-		VoiceSet: GenericVoice
 	Armament:
 		Weapon: VolkovWeapon
-	RenderSprites:
-		Image: GNRL
 
 powerproxy.pararifles:
 	Inherits: powerproxy.paratroopers
