@@ -21,9 +21,11 @@ BADR:
 	Contrail@1:
 		Offset: -432,560,0
 		StartColorAlpha: 128
+        StartColorUsePlayerColor: false
 	Contrail@2:
 		Offset: -432,-560,0
 		StartColorAlpha: 128
+        StartColorUsePlayerColor: false
 	SpawnActorOnDeath:
 		Actor: BADR.Husk
 	LeavesTrails@0:
@@ -113,9 +115,11 @@ MIG:
 	Contrail@1:
 		Offset: -598,-683,0
 		StartColorAlpha: 128
+        StartColorUsePlayerColor: false
 	Contrail@2:
 		Offset: -598,683,0
 		StartColorAlpha: 128
+        StartColorUsePlayerColor: false
 	SpawnActorOnDeath:
 		Actor: MIG.Husk
 	LeavesTrails:
@@ -196,6 +200,7 @@ YAK:
 	Contrail:
 		Offset: -853,0,0
 		StartColorAlpha: 128
+        StartColorUsePlayerColor: false
 	SpawnActorOnDeath:
 		Actor: YAK.Husk
 	LeavesTrails:
@@ -464,9 +469,11 @@ U2:
 	Contrail@1:
 		Offset: -725,683,0
 		StartColorAlpha: 128
+        StartColorUsePlayerColor: false
 	Contrail@2:
 		Offset: -725,-683,0
 		StartColorAlpha: 128
+        StartColorUsePlayerColor: false
 	SpawnActorOnDeath:
 		Actor: U2.Husk
 	LeavesTrails:
