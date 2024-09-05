@@ -352,9 +352,9 @@ HPAF:
 		Description: Looks like a Helipad.
 		Icon: fake-icon
 	Building:
-		Footprint: xx xx ==
-		Dimensions: 2,3
-		LocalCenterOffset: 0,-512,0
+		Footprint: xx xx
+		Dimensions: 2,2
+		LocalCenterOffset: 0,-256,0
 	WithBuildingBib:
 	RenderSprites:
 		Image: HPAD

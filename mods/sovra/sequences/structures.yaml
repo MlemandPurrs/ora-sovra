@@ -420,6 +420,7 @@ hpad:
 			SNOW: bib3.sno
 			DESERT: bib3.des
 		Length: *
+        ZOffset: -1022
 	icon:
 		Filename: hpadicon.shp
 	fake-icon:
