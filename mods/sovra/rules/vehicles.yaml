@@ -586,6 +586,7 @@ TRUK:
 	RevealsShroud:
 		Range: 4c0
 	DeliversCash:
+        Cursor: sell2
 		Payload: 500
 		PlayerExperience: 5
 	SpawnActorOnDeath:

@@ -728,7 +728,6 @@
 		PlayerExperience: 5
 		RepairingNotification: Repairing
 	InstantlyRepairable:
-	AcceptsDeliveredCash:
 	WithMakeAnimation:
 		Condition: build-incomplete
 	CaptureManager:
@@ -773,7 +772,6 @@
 	MustBeDestroyed:
 		RequiredForShortGame: false
 	-GivesBuildableArea:
-	-AcceptsDeliveredCash:
 	RenderRangeCircle:
 	Explodes:
 		Weapon: SmallBuildingExplode

@@ -108,6 +108,10 @@ TECN:
 		Class: Technician
 	RenderSprites:
 		Image: C1
+	DeliversCash:
+        Cursor: sell2
+		Payload: 10
+        PlayerExperience: 0
 
 TECN2:
 	Inherits@1: ^CivInfantry
@@ -123,6 +127,10 @@ TECN2:
 	WithDeathAnimation:
 		DeathSequencePalette: civilian7
 		DeathPaletteIsPlayerPalette: false
+	DeliversCash:
+        Cursor: sell2
+		Payload: 10
+        PlayerExperience: 0
 
 FCOM:
 	Inherits: ^TechBuilding
