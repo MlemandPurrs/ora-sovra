@@ -131,7 +131,7 @@ E2:
 		Prerequisites: ~barr, fix, ~techlevel.infonly
 		Description: Infantry armed with grenades.\n\n  Strong vs Buildings, Infantry\n  Weak vs Vehicles, Aircraft
 	Valued:
-		Cost: 160
+		Cost: 150
 	Tooltip:
 		Name: Grenadier
 	UpdatesPlayerStatistics:
@@ -286,7 +286,7 @@ E6:
 		Prerequisites: proc, ~techlevel.infonly
 		Description: Infiltrates and captures\nenemy structures.\n\n  Unarmed
 	Valued:
-		Cost: 400
+		Cost: 500
 	Tooltip:
 		Name: Engineer
 	UpdatesPlayerStatistics:
@@ -405,7 +405,7 @@ E7:
 		BuildLimit: 1
 		Description: Maximum 1 can be trained.\n\nElite commando infantry. Armed with\ndual pistols and C4.\n\n  Strong vs Infantry, Buildings\n  Weak vs Vehicles, Aircraft\n\n  Special Ability: Destroy Building with C4
 	Valued:
-		Cost: 1500
+		Cost: 1200
 	Tooltip:
 		Name: Tanya
 	UpdatesPlayerStatistics:
@@ -685,7 +685,7 @@ SHOK:
 		Prerequisites: ~barr, stek, ~infantry.russia, ~techlevel.high
 		Description: Elite infantry with portable Tesla coils.\n\n  Strong vs Infantry, Vehicles\n  Weak vs Aircraft
 	Valued:
-		Cost: 350
+		Cost: 450
 	Tooltip:
 		Name: Shock Trooper
 	UpdatesPlayerStatistics:

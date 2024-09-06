@@ -8,7 +8,7 @@ SS:
 		Prerequisites: ~spen, dome, ~techlevel.medium
 		Description: Submerged anti-ship unit\narmed with torpedoes.\nCan detect other submarines.\n\n  Strong vs Naval units\n  Weak vs Ground units, Aircraft
 	Valued:
-		Cost: 950
+		Cost: 850
 	Tooltip:
 		Name: Submarine
 	UpdatesPlayerStatistics:
@@ -72,7 +72,7 @@ MSUB:
 		Prerequisites: ~spen, stek, ~techlevel.high
 		Description: Submerged anti-ground siege unit\nwith anti-air capabilities.\nCan detect other submarines.\n\n  Strong vs Buildings, Ground units, Aircraft\n  Weak vs Naval units
 	Valued:
-		Cost: 2000
+		Cost: 1650
 	Tooltip:
 		Name: Missile Submarine
 	UpdatesPlayerStatistics:
@@ -184,7 +184,7 @@ CA:
 		Prerequisites: ~syrd, atek, ~techlevel.high
 		Description: Very slow long-range ship.\n\n  Strong vs Buildings, Ground units\n  Weak vs Naval units, Aircraft
 	Valued:
-		Cost: 2400
+		Cost: 2000
 	Tooltip:
 		Name: Cruiser
 	UpdatesPlayerStatistics:

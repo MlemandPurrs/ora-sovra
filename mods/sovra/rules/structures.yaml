@@ -79,7 +79,7 @@ GAP:
 	Inherits: ^ScienceBuilding
 	Inherits@IDISABLE: ^DisableOnLowPowerOrPowerDown
 	Valued:
-		Cost: 800
+		Cost: 1000
 	Tooltip:
 		Name: Gap Generator
 	Buildable:
@@ -714,7 +714,7 @@ DOME:
 		Prerequisites: anypower, proc, ~techlevel.medium
 		Description: Provides an overview\nof the battlefield.\nRequires power to operate.
 	Valued:
-		Cost: 1500
+		Cost: 1200
 	Tooltip:
 		Name: Radar Dome
 	Building:
@@ -2213,7 +2213,7 @@ SBAG:
 		Prerequisites: tent, ~structures.allies, ~techlevel.low
 		Description: Stops infantry and light vehicles.\nCan be crushed by tanks.
 	Valued:
-		Cost: 30
+		Cost: 50
 	CustomSellValue:
 		Value: 0
 	Tooltip:
@@ -2237,7 +2237,7 @@ FENC:
 		Prerequisites: barr, ~structures.soviet, ~techlevel.low
 		Description: Stops infantry and light vehicles.\nCan be crushed by tanks.
 	Valued:
-		Cost: 30
+		Cost: 50
 	CustomSellValue:
 		Value: 0
 	Tooltip:

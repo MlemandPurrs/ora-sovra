@@ -73,7 +73,7 @@ MIG:
 		Prerequisites: ~afld, stek, ~techlevel.high
 		Description: Fast Ground-Attack Plane.\n\n  Strong vs Buildings, Vehicles\n  Weak vs Infantry, Aircraft
 	Valued:
-		Cost: 2000
+		Cost: 1800
 	Tooltip:
 		Name: MiG Attack Plane
 	UpdatesPlayerStatistics:
@@ -153,7 +153,7 @@ YAK:
 		Prerequisites: ~afld, dome, ~techlevel.medium
 		Description: Attack Plane armed with\ndual machine guns.\n\n  Strong vs Infantry, Light armor\n  Weak vs Tanks, Aircraft
 	Valued:
-		Cost: 1350
+		Cost: 1150
 	Tooltip:
 		Name: Yak Attack Plane
 	UpdatesPlayerStatistics:
@@ -291,7 +291,7 @@ HELI:
 		Prerequisites: ~airproduction, dome, ~aircraft.allies, ~techlevel.medium
 		Description: Helicopter gunship armed\nwith multi-purpose missiles.\n\n  Strong vs Buildings, Vehicles, Aircraft\n  Weak vs Infantry
 	Valued:
-		Cost: 1500
+		Cost: 1400
 	Tooltip:
 		Name: Longbow
 	UpdatesPlayerStatistics:
@@ -373,7 +373,7 @@ HIND:
 		Prerequisites: ~airproduction, stek, ~aircraft.soviet, ~techlevel.high
 		Description: Helicopter gunship armed\nwith dual chainguns.\n\n  Strong vs Infantry, Light armor\n  Weak vs Tanks, Aircraft
 	Valued:
-		Cost: 1500
+		Cost: 1400
 	Tooltip:
 		Name: Hind
 	UpdatesPlayerStatistics:
@@ -499,7 +499,7 @@ MH60:
 		Prerequisites: ~airproduction, atek, ~aircraft.allies, ~techlevel.high
 		Description: Helicopter gunship armed\nwith dual chainguns.\n\n  Strong vs Infantry, Light armor\n  Weak vs Tanks, Aircraft
 	Valued:
-		Cost: 2000
+		Cost: 1800
 	Tooltip:
 		Name: Black Hawk
 	UpdatesPlayerStatistics:

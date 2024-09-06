@@ -219,7 +219,7 @@ V2RL:
 		Prerequisites: stek, ~vehicles.soviet, ~techlevel.high
 		Description: Big and slow tank, with anti-air capability.\nCan crush concrete walls.\n\n  Strong vs Vehicles, Infantry, Aircraft\n  Weak vs Nothing
 	Valued:
-		Cost: 2000
+		Cost: 1800
 	Tooltip:
 		Name: Mammoth Tank
 		GenericName: Tank
@@ -521,7 +521,7 @@ APC:
 		Prerequisites: barracks, ~techlevel.low
 		Description: Tough infantry transport.\n\n  Strong vs Infantry, Light armor\n  Weak vs Tanks, Aircraft
 	Valued:
-		Cost: 850
+		Cost: 800
 	Tooltip:
 		Name: Armored Personnel Carrier
         GenericStancePrefix: false
@@ -645,7 +645,7 @@ MGG:
 		Prerequisites: atek, ~vehicles.allies, ~techlevel.high
 		Description: Regenerates the shroud nearby, \nobscuring the area.\n\n  Unarmed
 	Valued:
-		Cost: 1000
+		Cost: 800
 	Tooltip:
 		Name: Mobile Gap Generator
 	UpdatesPlayerStatistics:

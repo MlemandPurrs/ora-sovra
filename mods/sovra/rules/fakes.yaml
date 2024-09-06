@@ -290,7 +290,7 @@ DOMF:
 	RenderSprites:
 		Image: DOME
 	Valued:
-		Cost: 375
+		Cost: 300
 	Health:
 		HP: 100000
 	Armor:
