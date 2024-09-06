@@ -157,8 +157,10 @@ MIG.Husk:
 		Name: MiG Attack Plane
 	Contrail@1:
 		Offset: -598,-683,0
+        StartColorUsePlayerColor: false
 	Contrail@2:
 		Offset: -598,683,0
+        StartColorUsePlayerColor: false
 	Aircraft:
 		TurnSpeed: 20
 		Speed: 186
@@ -185,6 +187,7 @@ YAK.Husk:
 		Name: Yak Attack Plane
 	Contrail:
 		Offset: -853,0,0
+        StartColorUsePlayerColor: false
 	Aircraft:
 		TurnSpeed: 20
 		Speed: 149
@@ -271,8 +274,10 @@ U2.Husk:
 		Speed: 373
 	Contrail@1:
 		Offset: -725,683,0
+        StartColorUsePlayerColor: false
 	Contrail@2:
 		Offset: -725,-683,0
+        StartColorUsePlayerColor: false
 	LeavesTrails:
 		Offsets: -1c43,0,0
 		MovingInterval: 2
