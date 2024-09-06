@@ -392,6 +392,8 @@ SPY:
 E7:
 	Inherits: ^Soldier
 	Inherits@AUTOTARGET: ^AutoTargetGroundAssaultMove
+    -Crushable:
+    -EdibleByLeap:
 	Buildable:
 		Queue: Infantry
 		BuildAtProductionType: Soldier
