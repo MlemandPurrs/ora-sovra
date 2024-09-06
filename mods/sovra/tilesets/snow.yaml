@@ -64,6 +64,10 @@ Terrain:
 		TargetTypes: Water
 		Color: 5C74A4
 		RestrictPlayerColor: true
+	TerrainType@WaterFord:
+		Type: WaterFord
+		TargetTypes: Ground
+		Color: B09C78
 
 Templates:
 	Template@255:
@@ -2814,39 +2818,39 @@ Templates:
 			0: Rough
 			1: Road
 			2: Road
-			3: Beach
-			4: Beach
-			5: Beach
-			6: Beach
-			7: Beach
-			8: Beach
+			3: WaterFord
+			4: WaterFord
+			5: WaterFord
+			6: WaterFord
+			7: WaterFord
+			8: WaterFord
 	Template@248:
 		Id: 248
 		Images: f02.sno
 		Size: 3,3
 		Categories: Bridge
 		Tiles:
-			0: Beach
-			1: Beach
-			2: Beach
-			3: Beach
-			4: Beach
-			5: Beach
-			6: Beach
-			7: Beach
-			8: Beach
+			0: WaterFord
+			1: WaterFord
+			2: WaterFord
+			3: WaterFord
+			4: WaterFord
+			5: WaterFord
+			6: WaterFord
+			7: WaterFord
+			8: WaterFord
 	Template@249:
 		Id: 249
 		Images: f03.sno
 		Size: 3,3
 		Categories: Bridge
 		Tiles:
-			0: Beach
-			1: Beach
-			2: Beach
-			3: Beach
-			4: Beach
-			5: Beach
+			0: WaterFord
+			1: WaterFord
+			2: WaterFord
+			3: WaterFord
+			4: WaterFord
+			5: WaterFord
 			6: Clear
 			7: Road
 			8: Clear
@@ -2857,43 +2861,43 @@ Templates:
 		Categories: Bridge
 		Tiles:
 			0: Clear
-			1: Beach
-			2: Beach
+			1: WaterFord
+			2: WaterFord
 			3: Road
-			4: Beach
-			5: Beach
+			4: WaterFord
+			5: WaterFord
 			6: Clear
-			7: Beach
-			8: Beach
+			7: WaterFord
+			8: WaterFord
 	Template@251:
 		Id: 251
 		Images: f05.sno
 		Size: 3,3
 		Categories: Bridge
 		Tiles:
-			0: Beach
-			1: Beach
-			2: Beach
-			3: Beach
-			4: Beach
-			5: Beach
-			6: Beach
-			7: Beach
-			8: Beach
+			0: WaterFord
+			1: WaterFord
+			2: WaterFord
+			3: WaterFord
+			4: WaterFord
+			5: WaterFord
+			6: WaterFord
+			7: WaterFord
+			8: WaterFord
 	Template@252:
 		Id: 252
 		Images: f06.sno
 		Size: 3,3
 		Categories: Bridge
 		Tiles:
-			0: Beach
-			1: Beach
+			0: WaterFord
+			1: WaterFord
 			2: Clear
-			3: Beach
-			4: Beach
+			3: WaterFord
+			4: WaterFord
 			5: Road
-			6: Beach
-			7: Beach
+			6: WaterFord
+			7: WaterFord
 			8: Clear
 	Template@129:
 		Id: 129

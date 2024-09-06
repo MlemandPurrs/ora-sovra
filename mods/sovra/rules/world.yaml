@@ -22,6 +22,7 @@
 			Ore: 89
 			Gems: 89
 			Beach: 89
+            WaterFord: 89
 	Locomotor@WHEELED:
 		Name: wheeled
 		Crushes: mine, crate
@@ -33,6 +34,7 @@
 			Ore: 88
 			Gems: 88
 			Beach: 50
+            WaterFord: 50
 	Locomotor@HEAVYWHEELED:
 		Name: heavywheeled
 		Crushes: wall, mine, crate, infantry
@@ -44,6 +46,7 @@
 			Ore: 88
 			Gems: 88
 			Beach: 50
+            WaterFord: 50
 	Locomotor@LIGHTTRACKED:
 		Name: lighttracked
 		Crushes: wall, mine, crate
@@ -55,6 +58,7 @@
 			Ore: 88
 			Gems: 88
 			Beach: 88
+            WaterFord: 88
 	Locomotor@TRACKED:
 		Name: tracked
 		Crushes: wall, infantry, mine, crate
@@ -66,6 +70,7 @@
 			Ore: 88
 			Gems: 88
 			Beach: 88
+            WaterFord: 88
 	Locomotor@HEAVYTRACKED:
 		Name: heavytracked
 		Crushes: wall, infantry, mine, crate, heavywall
@@ -77,17 +82,20 @@
 			Ore: 88
 			Gems: 88
 			Beach: 88
+            WaterFord: 88
 	Locomotor@NAVAL:
 		Name: naval
-		Crushes: crate
+		Crushes: mine, crate
 		TerrainSpeeds:
 			Water: 100
+            WaterFord: 70
 	Locomotor@LANDINGCRAFT:
 		Name: lcraft
-		Crushes: crate
+		Crushes: mine, crate
 		TerrainSpeeds:
 			Water: 100
 			Beach: 70
+            WaterFord: 70
 	Locomotor@IMMOBILE:
 		Name: immobile
 		TerrainSpeeds:

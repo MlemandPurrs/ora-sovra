@@ -560,13 +560,16 @@
 		UncloakSound: subshow1.aud
 		CloakedCondition: underwater
 		Palette: submerged
-		PauseOnCondition: cloak-force-disabled
+		PauseOnCondition: cloak-force-disabled || crossing-ford
 	GrantConditionOnDamageState@UNCLOAK:
 		Condition: cloak-force-disabled
 		ValidDamageStates: Critical
 	-MustBeDestroyed:
 	WithDamageOverlay:
 		MinimumDamageState: Critical
+	GrantConditionOnTerrain@CROSSINGFORD:
+		Condition: crossing-ford
+		TerrainTypes: WaterFord
 
 ^NeutralPlane:
 	Inherits@1: ^ExistsInWorld
@@ -660,7 +663,7 @@
 		WaitDistanceFromResupplyBase: 4c0
 		TakeOffOnResupply: true
 		VTOL: true
-		LandableTerrainTypes: Clear, Rough, Road, Ore, Beach, Gems
+		LandableTerrainTypes: Clear, Rough, Road, Ore, Beach, Gems, WaterFord
 		Crushes: crate, mine, infantry
 		CanSlide: True
 	GpsDot:
@@ -1045,7 +1048,7 @@
 	Inherits: ^BasicHusk
 	Inherits@2: ^ClassicFacingSpriteActor
 	Husk:
-		AllowedTerrain: Clear, Rough, Road, Ore, Gems, Beach
+		AllowedTerrain: Clear, Rough, Road, Ore, Gems, Beach, WaterFord
 	WithIdleOverlay@Burns:
 		Image: fire
 		Sequence: 1
@@ -1183,7 +1186,7 @@
 		ShowOwnerRow: false
 	Crate:
 		Duration: 4500
-		TerrainTypes: Clear, Rough, Road, Ore, Beach, Water
+		TerrainTypes: Clear, Rough, Road, Ore, Beach, Water, WaterFord
 	RenderSprites:
 		Palette: effect
 		Image: scrate
