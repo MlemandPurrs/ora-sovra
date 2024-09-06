@@ -961,3 +961,107 @@ ercc:
 		Length: *
 	icon:
 		Filename: procicon.shp
+
+vgat:
+	Defaults:
+		Filename: vgat.shp
+	open:
+		Frames: 6, 5, 4, 3, 2, 1, 0
+		Length: *
+		ZOffset: -1c511
+	damaged-open:
+		Frames: 13, 12, 11, 10, 9, 8, 7
+		Length: *
+		ZOffset: -1c511
+	idle:
+		Frames: 6, 5, 4, 3, 2, 1, 0
+		Length: *
+		ZOffset: -1c511
+	damaged-idle:
+		Frames: 13, 12, 11, 10, 9, 8, 7
+		Length: *
+		ZOffset: -1c511
+	make:
+		Frames: 6, 5, 4, 3, 2, 1, 0
+		Length: *
+		ZOffset: -1c511
+	icon:
+        Filename: vgaticon.shp
+
+hgat:
+	Defaults:
+		Filename: hgat.shp
+	open:
+		Frames: 6, 5, 4, 3, 2, 1, 0
+		Length: *
+		ZOffset: -1c511
+	damaged-open:
+		Frames: 13, 12, 11, 10, 9, 8, 7
+		Length: *
+		ZOffset: -1c511
+	idle:
+		Frames: 6, 5, 4, 3, 2, 1, 0
+		Length: *
+		ZOffset: -1c511
+	damaged-idle:
+		Frames: 13, 12, 11, 10, 9, 8, 7
+		Length: *
+		ZOffset: -1c511
+	make:
+		Frames: 6, 5, 4, 3, 2, 1, 0
+		Length: *
+		ZOffset: -1c511
+	icon:
+        Filename: hgaticon.shp
+
+allhgat:
+	Defaults:
+		Filename: allhgat.shp
+	open:
+		Frames: 6, 5, 4, 3, 2, 1, 0
+		Length: *
+		ZOffset: -1c511
+	damaged-open:
+		Frames: 13, 12, 11, 10, 9, 8, 7
+		Length: *
+		ZOffset: -1c511
+	idle:
+		Frames: 6, 5, 4, 3, 2, 1, 0
+		Length: *
+		ZOffset: -1c511
+	damaged-idle:
+		Frames: 13, 12, 11, 10, 9, 8, 7
+		Length: *
+		ZOffset: -1c511
+	make:
+		Frames: 6, 5, 4, 3, 2, 1, 0
+		Length: *
+		ZOffset: -1c511
+	icon:
+        Filename: hgaticon.shp
+
+sovhgat:
+	Defaults:
+		Filename: sovhgat.shp
+	open:
+		Frames: 6, 5, 4, 3, 2, 1, 0
+		Length: *
+		ZOffset: -1c511
+	damaged-open:
+		Frames: 13, 12, 11, 10, 9, 8, 7
+		Length: *
+		ZOffset: -1c511
+	idle:
+		Frames: 6, 5, 4, 3, 2, 1, 0
+		Length: *
+		ZOffset: -1c511
+	damaged-idle:
+		Frames: 13, 12, 11, 10, 9, 8, 7
+		Length: *
+		ZOffset: -1c511
+	make:
+		Frames: 6, 5, 4, 3, 2, 1, 0
+		Length: *
+		ZOffset: -1c511
+	icon:
+        Filename: hgaticon.shp

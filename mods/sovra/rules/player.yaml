@@ -102,6 +102,7 @@ Player:
 		CannotPlaceNotification: BuildingCannotPlaceAudio
 		NewOptionsTextNotification: New construction options.
 		CannotPlaceTextNotification: Cannot deploy here.
+        ToggleVariantKey: ToggleVariant
 	SupportPowerManager:
 	ScriptTriggers:
 	MissionObjectives:

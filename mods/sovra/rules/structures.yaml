@@ -2355,11 +2355,13 @@ BRIK:
 		CrushClasses: heavywall
 	BlocksProjectiles:
 	LineBuild:
-		NodeTypes: concrete
+		NodeTypes: concrete, gate
 	LineBuildNode:
 		Types: concrete
 	WithWallSpriteBody:
 		Type: concrete
+	Replaceable:
+		Types: Gate
 
 CYCL:
 	Inherits: ^Wall
@@ -2529,3 +2531,103 @@ ERCC:
 		RequiresSelection: true
 		PipCount: 17
 		FullSequence: pip-yellow
+
+HGAT:
+	Inherits: ^Gate
+	HitShape:
+		UseTargetableCellsOffsets: true
+		Type: Rectangle
+            TopLeft: -1536, -512
+            BottomRight: 1536, 512
+	Building:
+		Footprint: xxx
+		Dimensions: 3,1
+	Buildable:
+		BuildDuration: 150
+        BuildDurationModifier: 100
+		BuildPaletteOrder: 200
+		Prerequisites: techcenter, ~techlevel.high
+		Queue: Defense
+		Description: Places a gate that blocks enemy access into your base.\n\nYou can rotate using Rotate Building hotkey (default: V)
+	Valued:
+		Cost: 150
+	Demolishable:
+		Condition: being-demolished
+	Sellable:
+		RequiresCondition: !being-demolished
+	CustomSellValue:
+		Value: 50
+	WithGateSpriteBody:
+        PauseOnCondition: lowpower
+		WallConnections: -1,0, 3,0
+        Type: concrete
+	Gate:
+		PauseOnCondition: lowpower
+	LineBuildNode:
+		Connections: -1,0, 1,0
+	Tooltip:
+		Name: Gate
+	RevealsShroud:
+		Range: 1c0
+	RenderSprites:
+		Image: hgat
+		FactionImages:
+			allies: allhgat
+            england: allhgat
+            france: allhgat
+            germany: allhgat
+            soviet: sovhgat
+            russia: sovhgat
+            ukraine: sovhgat
+            belarus: sovhgat
+	GrantConditionOnPowerState@LOWPOWER:
+		Condition: lowpower
+		ValidPowerStates: Low, Critical
+	PlaceBuildingVariants:
+        Actors: vgat
+        Facings: 128
+	Replacement:
+		ReplaceableTypes: Gate
+
+VGAT:
+	Inherits: ^Gate
+	HitShape:
+		UseTargetableCellsOffsets: true
+		Type: Rectangle
+			TopLeft: -512, -1536
+			BottomRight: 512, 1536
+	Building:
+		Footprint: x x x
+		Dimensions: 1,3
+	Buildable:
+		BuildDuration: 150
+        BuildDurationModifier: 100
+		BuildPaletteOrder: 210
+		Prerequisites: ~disabled
+		Queue: Defense
+		Description: Places a gate that blocks enemy access into your base.
+	Valued:
+		Cost: 150
+	Demolishable:
+		Condition: being-demolished
+	Sellable:
+		RequiresCondition: !being-demolished
+	CustomSellValue:
+		Value: 50
+	Gate:
+		PauseOnCondition: lowpower
+	WithGateSpriteBody:
+        PauseOnCondition: lowpower
+		WallConnections: 0,-1, 0,3
+        Type: concrete
+	LineBuildNode:
+		Connections: 0,-1, 0,1
+	Tooltip:
+		Name: Gate
+	RevealsShroud:
+		Range: 1c0
+	GrantConditionOnPowerState@LOWPOWER:
+		Condition: lowpower
+		ValidPowerStates: Low, Critical
+	Replacement:
+		ReplaceableTypes: Gate

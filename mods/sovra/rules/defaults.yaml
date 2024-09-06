@@ -1410,3 +1410,47 @@
 	GrantConditionOnPrerequisite@Ukraine:
 		Condition: ukraine
 		Prerequisites: player.ukraine
+
+^Gate:
+	Inherits: ^BasicBuilding
+	Inherits@handicaps: ^PlayerHandicaps
+	-WithSpriteBody:
+	Health:
+		HP: 25000
+	Armor:
+		Type: Concrete
+	LineBuildNode:
+		Types: concrete, gate
+	WithGateSpriteBody:
+		PauseOnCondition: lowpower
+        #   OpenSequence: open
+	Tooltip:
+		Name: Gate
+	Building:
+        RequiresBaseProvider: false
+		BuildSounds: place2.aud
+		TerrainTypes: Clear, Road
+	RequiresBuildableArea:
+		AreaTypes: building
+		Adjacent: 4
+	MapEditorData:
+		Categories: Wall
+	Gate:
+		PauseOnCondition: lowpower
+		OpeningSound: hydrod1.aud
+		ClosingSound: hvydoor1.aud
+		#   BlocksProjectilesHeight: 768
+        BlocksProjectilesHeight: 1
+	RepairableBuilding:
+		RepairPercent: 20
+		RepairStep: 400
+		PlayerExperience: 0
+		RepairingNotification: Repairing
+	RenderSprites:
+        PlayerPalette: player
+	WithBuildingRepairDecoration:
+		Image: allyrepair
+		Sequence: repair
+		Position: Center
+		Palette: player
+		IsPlayerPalette: True

@@ -32,3 +32,8 @@ PowerDown: X
 	Description: Power-down mode
 	Types: OrderGenerator
 	Contexts: Player
+
+ToggleVariant: V
+	Description: Rotate Building
+	Types: Production
+	Contexts: Player
