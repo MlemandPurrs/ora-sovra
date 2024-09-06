@@ -1009,9 +1009,11 @@ SNIP:
 		ValidTargets: Infantry
 	Armament@PRIMARY:
 		Weapon: Sniper
+        FireDelay: 2
 	Armament@GARRISONED:
 		Name: garrisoned
 		Weapon: Sniper
+        FireDelay: 2
 		MuzzleSequence: garrison-muzzle
 	WithInfantryBody:
 		DefaultAttackSequence: shoot
