@@ -147,7 +147,7 @@ SPEN:
 		Adjacent: 8
 	-GivesBuildableArea:
 	Health:
-		HP: 100000
+		HP: 80000
 	Armor:
 		Type: Wood
 	RevealsShroud:
