@@ -741,13 +741,21 @@ TTNK:
 		RevealGeneratedShroud: False
 	RevealsShroud@GAPGEN:
 		Range: 6c0
-	Armament:
-		Weapon: TTankZap
-		LocalOffset: 0,0,213
-	AttackTurreted:
-	Turreted:
-	WithIdleOverlay@SPINNER:
-		Sequence: spinner
+    Armament:
+        Weapon: TTankZap
+        LocalOffset: 0,0,213
+    AttackCharges:
+        ChargeLevel: 24
+        ChargeRate: 1
+        DischargeRate: 1
+        FacingTolerance: 512
+		ChargingCondition: charging
+    WithChargeOverlay:
+        Sequence: spinner
+	AmbientSound:
+		RequiresCondition: charging
+		SoundFiles: tslachg2.aud
+		Interval: 24
 	ProducibleWithLevel:
 		Prerequisites: vehicles.upgraded
 	Selectable:
