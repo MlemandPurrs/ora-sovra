@@ -107,7 +107,7 @@ Player:
 	HarvesterBotModule:
 		RequiresCondition: enable-rush-ai || enable-normal-ai || enable-turtle-ai || enable-naval-ai
 		HarvesterTypes: harv, ahrv
-		RefineryTypes: proc
+		RefineryTypes: proc, ercc
 	BaseBuilderBotModule@rush:
 		RequiresCondition: enable-rush-ai
 		MinimumExcessPower: 60
@@ -115,7 +115,7 @@ Player:
 		ExcessPowerIncrement: 40
 		ExcessPowerIncreaseThreshold: 4
 		ConstructionYardTypes: fact
-		RefineryTypes: proc
+		RefineryTypes: proc, ercc
 		PowerTypes: powr,apwr
 		BarracksTypes: barr,tent
 		VehiclesFactoryTypes: weap
@@ -124,6 +124,7 @@ Player:
 		DefenseTypes: hbox,pbox,gun,ftur,tsla,agun,sam
 		BuildingLimits:
 			proc: 4
+            ercc: 4
 			barr: 1
 			tent: 1
 			kenn: 1
@@ -134,6 +135,7 @@ Player:
 			fix: 1
 		BuildingFractions:
 			proc: 30
+            ercc: 30
 			barr: 1
 			kenn: 1
 			tent: 1
@@ -157,7 +159,7 @@ Player:
 		ExcessPowerIncrement: 40
 		ExcessPowerIncreaseThreshold: 4
 		ConstructionYardTypes: fact
-		RefineryTypes: proc
+		RefineryTypes: proc, ercc
 		PowerTypes: powr,apwr
 		BarracksTypes: barr,tent
 		VehiclesFactoryTypes: weap
@@ -167,6 +169,7 @@ Player:
 		DefenseTypes: hbox,pbox,gun,ftur,tsla,agun,sam
 		BuildingLimits:
 			proc: 4
+            ercc: 4
 			barr: 1
 			tent: 1
 			dome: 1
@@ -182,6 +185,7 @@ Player:
 			fix: 1
 		BuildingFractions:
 			proc: 15
+            ercc: 15
 			tent: 1
 			barr: 1
 			kenn: 1
@@ -211,7 +215,7 @@ Player:
 		ExcessPowerIncrement: 50
 		ExcessPowerIncreaseThreshold: 4
 		ConstructionYardTypes: fact
-		RefineryTypes: proc
+		RefineryTypes: proc,ercc
 		PowerTypes: powr,apwr
 		BarracksTypes: barr,tent
 		VehiclesFactoryTypes: weap
@@ -221,6 +225,7 @@ Player:
 		DefenseTypes: hbox,pbox,gun,ftur,tsla,agun,sam
 		BuildingLimits:
 			proc: 4
+            ercc: 4
 			barr: 1
 			tent: 1
 			kenn: 1
@@ -237,6 +242,7 @@ Player:
 			fix: 1
 		BuildingFractions:
 			proc: 30
+            ercc: 30
 			tent: 1
 			barr: 1
 			kenn: 1
@@ -266,7 +272,7 @@ Player:
 		ExcessPowerIncrement: 40
 		ExcessPowerIncreaseThreshold: 4
 		ConstructionYardTypes: fact
-		RefineryTypes: proc
+		RefineryTypes: proc,ercc
 		PowerTypes: powr,apwr
 		BarracksTypes: barr,tent
 		VehiclesFactoryTypes: weap
@@ -276,6 +282,7 @@ Player:
 		DefenseTypes: hbox,pbox,gun,ftur,tsla,agun,sam
 		BuildingLimits:
 			proc: 4
+            ercc: 4
 			dome: 1
 			barr: 1
 			tent: 1
@@ -291,6 +298,7 @@ Player:
 			fix: 1
 		BuildingFractions:
 			proc: 30
+            ercc: 30
 			dome: 1
 			weap: 1
 			hpad: 20
@@ -318,7 +326,7 @@ Player:
 		ExcludeFromSquadsTypes: harv, ahrv, mcv, dog, badr.bomber, u2
 		ConstructionYardTypes: fact
 		AirUnitsTypes: mig, yak, heli, hind, mh60
-		ProtectionTypes: harv, ahrv, mcv, mslo, gap, spen, syrd, iron, pdox, tsla, agun, dome, pbox, hbox, gun, ftur, sam, atek, weap, fact, proc, silo, hpad, afld, afld.ukraine, powr, apwr, stek, barr, kenn, tent, fix, fpwr, tenf, syrf, spef, weaf, domf, fixf, fapw, atef, pdof, mslf, facf
+		ProtectionTypes: harv, ahrv, mcv, mslo, gap, spen, syrd, iron, pdox, tsla, agun, dome, pbox, hbox, gun, ftur, sam, atek, weap, fact, proc, ercc, silo, hpad, afld, afld.ukraine, powr, apwr, stek, barr, kenn, tent, fix, fpwr, tenf, syrf, spef, weaf, domf, fixf, fapw, atef, pdof, mslf, facf
 		IgnoredEnemyTargetTypes: AirborneActor
 	McvManagerBotModule:
 		RequiresCondition: enable-rush-ai || enable-normal-ai || enable-turtle-ai || enable-naval-ai
@@ -362,7 +370,7 @@ Player:
 		ConstructionYardTypes: fact
 		NavalProductionTypes: spen, syrd
 		AirUnitsTypes: mig, yak, heli, hind, mh60
-		ProtectionTypes: harv, ahrv, mcv, mslo, gap, spen, syrd, iron, pdox, tsla, agun, dome, pbox, hbox, gun, ftur, sam, atek, weap, fact, proc, silo, hpad, afld, afld.ukraine, powr, apwr, stek, barr, kenn, tent, fix, fpwr, tenf, syrf, spef, weaf, domf, fixf, fapw, atef, pdof, mslf, facf
+		ProtectionTypes: harv, ahrv, mcv, mslo, gap, spen, syrd, iron, pdox, tsla, agun, dome, pbox, hbox, gun, ftur, sam, atek, weap, fact, proc, ercc, silo, hpad, afld, afld.ukraine, powr, apwr, stek, barr, kenn, tent, fix, fpwr, tenf, syrf, spef, weaf, domf, fixf, fapw, atef, pdof, mslf, facf
 		IgnoredEnemyTargetTypes: AirborneActor
 	UnitBuilderBotModule@normal:
 		RequiresCondition: enable-normal-ai
@@ -412,7 +420,7 @@ Player:
 		ConstructionYardTypes: fact
 		NavalProductionTypes: spen, syrd
 		AirUnitsTypes: mig, yak, heli, hind, mh60
-		ProtectionTypes: harv, ahrv, mcv, mslo, gap, spen, syrd, iron, pdox, tsla, agun, dome, pbox, hbox, gun, ftur, sam, atek, weap, fact, proc, silo, hpad, afld, afld.ukraine, powr, apwr, stek, barr, kenn, tent, fix, fpwr, tenf, syrf, spef, weaf, domf, fixf, fapw, atef, pdof, mslf, facf
+		ProtectionTypes: harv, ahrv, mcv, mslo, gap, spen, syrd, iron, pdox, tsla, agun, dome, pbox, hbox, gun, ftur, sam, atek, weap, fact, proc, ercc, silo, hpad, afld, afld.ukraine, powr, apwr, stek, barr, kenn, tent, fix, fpwr, tenf, syrf, spef, weaf, domf, fixf, fapw, atef, pdof, mslf, facf
 		IgnoredEnemyTargetTypes: AirborneActor
 	UnitBuilderBotModule@turtle:
 		RequiresCondition: enable-turtle-ai
@@ -462,7 +470,7 @@ Player:
 		ConstructionYardTypes: fact
 		NavalProductionTypes: spen, syrd
 		AirUnitsTypes: mig, yak, heli, hind, mh60
-		ProtectionTypes: harv, ahrv, mcv, mslo, gap, spen, syrd, iron, pdox, tsla, agun, dome, pbox, hbox, gun, ftur, sam, atek, weap, fact, proc, silo, hpad, afld, afld.ukraine, powr, apwr, stek, barr, kenn, tent, fix, fpwr, tenf, syrf, spef, weaf, domf, fixf, fapw, atef, pdof, mslf, facf
+		ProtectionTypes: harv, ahrv, mcv, mslo, gap, spen, syrd, iron, pdox, tsla, agun, dome, pbox, hbox, gun, ftur, sam, atek, weap, fact, proc, ercc, silo, hpad, afld, afld.ukraine, powr, apwr, stek, barr, kenn, tent, fix, fpwr, tenf, syrf, spef, weaf, domf, fixf, fapw, atef, pdof, mslf, facf
 		IgnoredEnemyTargetTypes: AirborneActor
 	UnitBuilderBotModule@naval:
 		RequiresCondition: enable-naval-ai

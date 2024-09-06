@@ -1322,7 +1322,7 @@ PROC:
 	Buildable:
 		Queue: Building
 		BuildPaletteOrder: 60
-		Prerequisites: fact, ~techlevel.infonly
+		Prerequisites: fact, ~techlevel.infonly, ~!global-ercc-refinery
 		Description: Refines Ore and Gems\ninto credits.
 	Valued:
 		Cost: 1500
@@ -2355,3 +2355,101 @@ AFLDORWEAP:
 	Interactable:
 	Tooltip:
 		Name: War Factory or Airfield
+
+ERCC:
+	Inherits: ^Building
+	Buildable:
+		Queue: Building
+		BuildPaletteOrder: 60
+		Prerequisites: fact, ~techlevel.infonly, ~global-ercc-refinery
+		Description: Refines Ore and Gems\ninto credits.
+	Valued:
+		Cost: 1500
+	Tooltip:
+		Name: Ore Refinery
+	Building:
+		Footprint: =xx x=+ ===
+		Dimensions: 3,3
+		LocalCenterOffset: 0,-512,0
+	Selectable:
+		Bounds: 3072, 1920, 0, -170
+		DecorationBounds: 3072, 3200, 42, -170
+	Targetable:
+		TargetTypes: GroundActor, Structure, C4, DetonateAttack, ThiefInfiltrate, SpyInfiltrate
+	Health:
+		HP: 90000
+	Armor:
+		Type: Wood
+	RevealsShroud:
+		MinRange: 4c0
+		Range: 5c0
+		RevealGeneratedShroud: False
+	RevealsShroud@GAPGEN:
+		Range: 4c0
+	Refinery:
+		DockAngle: 256
+		DockOffset: 1,1
+	StoresResources:
+		Capacity: 2000
+    Sellable:
+        RefundPercent: 100
+	CustomSellValue:
+		Value: 500
+	FreeActor@1:
+		Actor: HARV
+		SpawnOffset: 1,1
+		Facing: 256
+        RequiresCondition: !build-incomplete && owner.is.allies
+	FreeActor@2:
+		Actor: AHRV
+		SpawnOffset: 1,1
+		Facing: 256
+        RequiresCondition: !build-incomplete && owner.is.soviet
+	GrantConditionOnFaction@Allies:
+		Condition: owner.is.allies
+		Factions: allies, england, france, germany
+		ResetOnOwnerChange: True
+	GrantConditionOnFaction@Soviet:
+		Condition: owner.is.soviet
+		Factions: soviet, russia, ukraine, belarus
+		ResetOnOwnerChange: True
+	InfiltrateForCash:
+		Percentage: 50
+		PlayerExperience: 5
+		PlayerExperiencePercentage: 1
+		Types: SpyInfiltrate, ThiefInfiltrate
+		InfiltratedNotification: CreditsStolen
+		InfiltratedTextNotification: Credits stolen.
+	WithBuildingBib:
+	WithIdleOverlay@TOP:
+		RequiresCondition: !build-incomplete
+		Sequence: idle-top
+	Power:
+		Amount: -30
+	ProvidesPrerequisite@buildingname:
+    ProvidesPrerequisite@refinerycopy:
+        Prerequisite: proc
+	HitShape:
+		Type: Rectangle
+			TopLeft: -1536, -512
+			BottomRight: 1536, 598
+	HitShape@TOP:
+		TargetableOffsets: 1680,0,0
+		Type: Rectangle
+			TopLeft: -512, -1536
+			BottomRight: 512, -512
+	HitShape@BOTTOMLEFT:
+		TargetableOffsets: -1260,-1024,0
+		Type: Rectangle
+			TopLeft: -1536, 598
+			BottomRight: -512, 1280
+	-ActorPreviewPlaceBuildingPreview:
+	SequencePlaceBuildingPreview:
+		Sequence: idle
+		SequenceAlpha: 0.65
+	WithResourceStoragePipsDecoration:
+		Position: BottomLeft
+		Margin: 4, 3
+		RequiresSelection: true
+		PipCount: 17
+		FullSequence: pip-yellow

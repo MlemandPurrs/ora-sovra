@@ -18,6 +18,10 @@ checkbox-reusable-engineers =
     .label = Reusable Engineers
     .description = Engineers remain on the battlefield after capturing a structure
 
+checkbox-ercc-refinery =
+    .label = ERCC Refinery
+    .description = Enables a more open version of Ore Refinery
+
 ## World
 options-starting-units =
     .mcv-only = MCV Only

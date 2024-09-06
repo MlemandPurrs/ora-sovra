@@ -144,6 +144,13 @@ Player:
 		Enabled: False
 		DisplayOrder: 9
 		Prerequisites: global-reusable-engineers
+	LobbyPrerequisiteCheckbox@ERCCREFINERY:
+		ID: ercc-refinery
+		Label: checkbox-ercc-refinery.label
+		Description: checkbox-ercc-refinery.description
+		Enabled: False
+		DisplayOrder: 90
+		Prerequisites: global-ercc-refinery
 	FrozenActorLayer:
 	BaseAttackNotifier:
 		TextNotification: Base under attack.
@@ -181,3 +188,4 @@ Player:
 	PlayerExperience:
 	GameSaveViewportManager:
 	PlayerRadarTerrain:
+
