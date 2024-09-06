@@ -19,15 +19,21 @@ hosp:
 		Filename: hosp.shp
 	idle:
 		Length: 4
+		Tick: 100
+		Offset: 0,-2
 	damaged-idle:
 		Start: 4
 		Length: 4
+		Tick: 100
+		Offset: 0,-2
 	dead:
 		Start: 8
 		Tick: 800
+		Offset: 0,-2
 	make:
 		Filename: hospmake.shp
 		Length: *
+		Offset: 0,-2
 	bib:
 		TilesetFilenames:
 			SNOW: mbHOSP.sno
