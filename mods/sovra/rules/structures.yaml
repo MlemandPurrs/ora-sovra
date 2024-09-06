@@ -761,7 +761,7 @@ PBOX:
 		Queue: Defense
 		BuildPaletteOrder: 40
 		Prerequisites: tent, ~structures.allies, ~techlevel.low
-		Description: Static defense with a fireport for\na garrisoned soldier.\nCan detect cloaked units.\n\n  Strong vs Infantry, Light armor\n  Weak vs Tanks, Aircraft
+		Description: Static defense with a fireport for\na garrisoned soldier.\nCan detect cloaked units when manned.\n\n  Strong vs Infantry, Light armor\n  Weak vs Tanks, Aircraft
 	Valued:
 		Cost: 500
 	CustomSellValue:
@@ -791,6 +791,7 @@ PBOX:
 		Condition: damaged
 		ValidDamageStates: Light, Medium, Heavy, Critical
 	Cargo:
+        LoadedCondition: loaded
 		Types: Infantry
 		MaxWeight: 1
 		InitialUnits: e1
@@ -807,6 +808,7 @@ PBOX:
 		Amount: -20
 	DetectCloaked:
 		Range: 6c0
+        RequiresCondition: loaded
 
 HBOX:
 	Inherits: ^Defense
@@ -819,7 +821,7 @@ HBOX:
 		Queue: Defense
 		BuildPaletteOrder: 50
 		Prerequisites: dome, ~structures.allies, ~techlevel.medium
-		Description: Camouflaged static defense with a fireport\nfor a garrisoned soldier.\nCan detect cloaked units.\n\n  Strong vs Infantry, Light armor\n  Weak vs Tanks, Aircraft
+		Description: Camouflaged static defense with a fireport\nfor a garrisoned soldier.\nCan detect cloaked units when manned.\n\n  Strong vs Infantry, Light armor\n  Weak vs Tanks, Aircraft
 	Valued:
 		Cost: 700
 	CustomSellValue:
@@ -855,12 +857,14 @@ HBOX:
 		Condition: damaged
 		ValidDamageStates: Light, Medium, Heavy, Critical
 	Cargo:
+        LoadedCondition: loaded
 		Types: Infantry
 		MaxWeight: 1
 		InitialUnits: e1
 	-SpawnActorsOnSell:
 	DetectCloaked:
 		Range: 6c0
+        RequiresCondition: loaded
 	RenderRangeCircle:
 		FallbackRange: 6c0
 	AttackGarrisoned:
