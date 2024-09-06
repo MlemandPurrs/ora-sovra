@@ -3,6 +3,8 @@ V2RL:
 	Inherits@GAINSEXPERIENCE: ^GainsExperience
 	Inherits@AUTOTARGET: ^AutoTargetGroundAssaultMove
 	Buildable:
+        BuildDuration: 900
+        BuildDurationModifier: 100
 		Queue: Vehicle
 		BuildPaletteOrder: 230
 		Prerequisites: dome, ~vehicles.soviet, ~techlevel.medium
@@ -57,6 +59,8 @@ V2RL:
 	Inherits@GAINSEXPERIENCE: ^GainsExperience
 	Inherits@AUTOTARGET: ^AutoTargetGroundAssaultMove
 	Buildable:
+        BuildDuration: 700
+        BuildDurationModifier: 100
 		Queue: Vehicle
 		BuildPaletteOrder: 130
 		Prerequisites: weap, ~vehicles.allies, ~techlevel.low
@@ -102,6 +106,8 @@ V2RL:
 	Inherits@GAINSEXPERIENCE: ^GainsExperience
 	Inherits@AUTOTARGET: ^AutoTargetGroundAssaultMove
 	Buildable:
+        BuildDuration: 850
+        BuildDurationModifier: 100
 		Queue: Vehicle
 		BuildPaletteOrder: 220
 		Prerequisites: fix, ~vehicles.allies, ~techlevel.medium
@@ -151,6 +157,8 @@ V2RL:
 	Inherits@GAINSEXPERIENCE: ^GainsExperience
 	Inherits@AUTOTARGET: ^AutoTargetGroundAssaultMove
 	Buildable:
+        BuildDuration: 1150
+        BuildDurationModifier: 100
 		Queue: Vehicle
 		BuildPaletteOrder: 220
 		Prerequisites: fix, ~vehicles.soviet, ~techlevel.medium
@@ -214,6 +222,8 @@ V2RL:
 	Inherits@GAINSEXPERIENCE: ^GainsExperience
 	Inherits@AUTOTARGET: ^AutoTargetAllAssaultMove
 	Buildable:
+        BuildDuration: 1800
+        BuildDurationModifier: 100
 		Queue: Vehicle
 		BuildPaletteOrder: 320
 		Prerequisites: stek, ~vehicles.soviet, ~techlevel.high
@@ -276,6 +286,8 @@ ARTY:
 	Inherits@GAINSEXPERIENCE: ^GainsExperience
 	Inherits@AUTOTARGET: ^AutoTargetGroundAssaultMove
 	Buildable:
+        BuildDuration: 850
+        BuildDurationModifier: 100
 		Queue: Vehicle
 		BuildPaletteOrder: 230
 		Prerequisites: dome, ~vehicles.allies, ~techlevel.medium
@@ -324,6 +336,8 @@ HARV:
 	Inherits: ^Vehicle
 	Inherits@selection: ^SelectableEconomicUnit
 	Buildable:
+        BuildDuration: 1000
+        BuildDurationModifier: 100
 		Queue: Vehicle
 		BuildPaletteOrder: 100
 		Prerequisites: proc, ~!vehicles.soviet, ~techlevel.infonly
@@ -425,10 +439,11 @@ MCV:
 	Inherits: ^Vehicle
 	Inherits@selection: ^SelectableSupportUnit
 	Buildable:
+        BuildDuration: 2500
+        BuildDurationModifier: 80
 		Queue: Vehicle
 		BuildPaletteOrder: 210
 		Prerequisites: fix, ~techlevel.medium
-		BuildDurationModifier: 50
 		Description: Deploys into another Construction Yard.\n\n  Unarmed
 	Valued:
 		Cost: 2500
@@ -466,6 +481,8 @@ JEEP:
 	Inherits@AUTOTARGET: ^AutoTargetGroundAssaultMove
 	Inherits@CARGOPIPS: ^CargoPips
 	Buildable:
+        BuildDuration: 500
+        BuildDurationModifier: 100
 		Queue: Vehicle
 		BuildPaletteOrder: 120
 		Prerequisites: weap, ~vehicles.allies, ~techlevel.low
@@ -516,6 +533,8 @@ APC:
 	Inherits@AUTOTARGET: ^AutoTargetGroundAssaultMove
 	Inherits@CARGOPIPS: ^CargoPips
 	Buildable:
+        BuildDuration: 800
+        BuildDurationModifier: 100
 		Queue: Vehicle
 		BuildPaletteOrder: 130
 		Prerequisites: barracks, ~techlevel.low
@@ -563,6 +582,8 @@ MNLY:
 	Inherits: ^TrackedVehicle
 	Inherits@selection: ^SelectableSupportUnit
 	Buildable:
+        BuildDuration: 800
+        BuildDurationModifier: 100
 		Queue: Vehicle
 		BuildPaletteOrder: 310
 		Prerequisites: fix, ~techlevel.medium
@@ -614,6 +635,8 @@ TRUK:
 	Inherits: ^Vehicle
 	Inherits@selection: ^SelectableSupportUnit
 	Buildable:
+        BuildDuration: 500
+        BuildDurationModifier: 100
 		Queue: Vehicle
 		BuildPaletteOrder: 410
 		Prerequisites: proc, ~techlevel.low
@@ -636,11 +659,14 @@ TRUK:
 		PlayerExperience: 5
 	SpawnActorOnDeath:
 		Actor: moneycrate
+    -ProductionCostMultiplier@Russia:
 
 MGG:
 	Inherits: ^Vehicle
 	Inherits@IDISABLE: ^DisableOnPowerDown
 	Buildable:
+        BuildDuration: 800
+        BuildDurationModifier: 100
 		Queue: Vehicle
 		BuildPaletteOrder: 330
 		Prerequisites: atek, ~vehicles.allies, ~techlevel.high
@@ -685,6 +711,8 @@ MRJ:
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Buildable:
+        BuildDuration: 1000
+        BuildDurationModifier: 100
 		Queue: Vehicle
 		BuildPaletteOrder: 320
 		Prerequisites: dome, ~vehicles.england, ~techlevel.medium
@@ -718,6 +746,8 @@ TTNK:
 	Inherits@GAINSEXPERIENCE: ^GainsExperience
 	Inherits@AUTOTARGET: ^AutoTargetGroundAssaultMove
 	Buildable:
+        BuildDuration: 1350
+        BuildDurationModifier: 100
 		Queue: Vehicle
 		BuildPaletteOrder: 330
 		Prerequisites: stek, ~vehicles.russia, ~techlevel.high
@@ -769,6 +799,8 @@ FTRK:
 	Inherits@GAINSEXPERIENCE: ^GainsExperience
 	Inherits@AUTOTARGET: ^AutoTargetAllAssaultMove
 	Buildable:
+        BuildDuration: 600
+        BuildDurationModifier: 100
 		Queue: Vehicle
 		BuildPaletteOrder: 120
 		Prerequisites: weap, ~vehicles.soviet, ~techlevel.low
@@ -823,6 +855,8 @@ FTRK:
 DTRK:
 	Inherits: ^Vehicle
 	Buildable:
+        BuildDuration: 2500
+        BuildDurationModifier: 100
 		Queue: Vehicle
 		BuildPaletteOrder: 330
 		Prerequisites: stek, ~vehicles.ukraine, ~techlevel.high
@@ -864,6 +898,8 @@ CTNK:
 	Inherits@GAINSEXPERIENCE: ^GainsExperience
 	Inherits@AUTOTARGET: ^AutoTargetGroundAssaultMove
 	Buildable:
+        BuildDuration: 1350
+        BuildDurationModifier: 100
 		Queue: Vehicle
 		BuildPaletteOrder: 330
 		Prerequisites: atek, ~vehicles.germany, ~techlevel.high
@@ -911,6 +947,8 @@ CTNK:
 QTNK:
 	Inherits: ^TrackedVehicle
 	Buildable:
+        BuildDuration: 2000
+        BuildDurationModifier: 100
 		Queue: Vehicle
 		BuildPaletteOrder: 330
 		Prerequisites: stek, ~vehicles.belarus, ~techlevel.high
@@ -954,12 +992,14 @@ STNK:
 	Inherits@AUTOTARGET: ^AutoTargetAllAssaultMove
 	Inherits@CARGOPIPS: ^CargoPips
 	Buildable:
+        BuildDuration: 1000
+        BuildDurationModifier: 100
 		Queue: Vehicle
 		BuildPaletteOrder: 330
 		Prerequisites: atek, ~vehicles.france, ~techlevel.high
 		Description: Lightly armored infantry transport which\ncan cloak. Armed with all-purpose missiles.\n\n  Strong vs Light armor\n  Weak vs Infantry, Tanks, Aircraft
 	Valued:
-		Cost: 900
+		Cost: 1000
 	Tooltip:
 		Name: Phase Transport
 	UpdatesPlayerStatistics:

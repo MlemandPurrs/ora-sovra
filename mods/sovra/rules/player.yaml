@@ -188,4 +188,21 @@ Player:
 	PlayerExperience:
 	GameSaveViewportManager:
 	PlayerRadarTerrain:
-
+	ProvidesPrerequisite@England:
+		Factions: england
+		Prerequisite: player.england
+	ProvidesPrerequisite@France:
+		Factions: france
+		Prerequisite: player.france
+	ProvidesPrerequisite@Germany:
+		Factions: germany
+		Prerequisite: player.germany
+	ProvidesPrerequisite@Russia:
+		Factions: russia
+		Prerequisite: player.russia
+	ProvidesPrerequisite@Ukraine:
+		Factions: ukraine
+		Prerequisite: player.ukraine
+	ProvidesPrerequisite@Belarus:
+		Factions: belarus
+		Prerequisite: player.belarus

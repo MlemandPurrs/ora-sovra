@@ -9,6 +9,8 @@ MSLO:
 	Tooltip:
 		Name: Missile Silo
 	Buildable:
+        BuildDuration: 2500
+        BuildDurationModifier: 100
 		Queue: Defense
 		BuildPaletteOrder: 140
 		Prerequisites: techcenter, ~techlevel.unrestricted
@@ -83,6 +85,8 @@ GAP:
 	Tooltip:
 		Name: Gap Generator
 	Buildable:
+        BuildDuration: 1000
+        BuildDurationModifier: 100
 		Queue: Defense
 		BuildPaletteOrder: 110
 		Prerequisites: atek, ~structures.allies, ~techlevel.high
@@ -132,6 +136,8 @@ SPEN:
 	Tooltip:
 		Name: Sub Pen
 	Buildable:
+        BuildDuration: 800
+        BuildDurationModifier: 100
 		Queue: Building
 		BuildPaletteOrder: 100
 		Prerequisites: anypower, barracks, ~structures.soviet, ~techlevel.low
@@ -298,6 +304,8 @@ SYRD:
 	Selectable:
 		Bounds: 3072, 2048
 	Buildable:
+        BuildDuration: 1000
+        BuildDurationModifier: 100
 		Queue: Building
 		BuildPaletteOrder: 90
 		Prerequisites: anypower, barracks, ~structures.allies, ~techlevel.low
@@ -443,6 +451,8 @@ IRON:
 	Inherits@IDISABLE: ^DisableOnLowPowerOrPowerDown
 	Inherits@shape: ^2x1Shape
 	Buildable:
+        BuildDuration: 1500
+        BuildDurationModifier: 100
 		Queue: Defense
 		BuildPaletteOrder: 130
 		Prerequisites: stek, ~structures.soviet, ~techlevel.unrestricted
@@ -514,6 +524,8 @@ PDOX:
 	Selectable:
 		Bounds: 2048, 2048
 	Buildable:
+        BuildDuration: 1500
+        BuildDurationModifier: 100
 		Queue: Defense
 		BuildPaletteOrder: 120
 		Prerequisites: atek, ~structures.allies, ~techlevel.unrestricted
@@ -610,6 +622,8 @@ TSLA:
 	Inherits@IDISABLE: ^DisableOnLowPowerOrPowerDown
 	Inherits@AUTOTARGET: ^AutoTargetGround
 	Buildable:
+        BuildDuration: 1200
+        BuildDurationModifier: 100
 		Queue: Defense
 		BuildPaletteOrder: 80
 		Prerequisites: stek, ~structures.soviet, ~techlevel.medium
@@ -654,6 +668,8 @@ AGUN:
 	Inherits@IDISABLE: ^DisableOnLowPowerOrPowerDown
 	Inherits@AUTOTARGET: ^AutoTargetAir
 	Buildable:
+        BuildDuration: 800
+        BuildDurationModifier: 100
 		Queue: Defense
 		BuildPaletteOrder: 90
 		Prerequisites: dome, ~structures.allies, ~techlevel.medium
@@ -709,6 +725,8 @@ DOME:
 		UseTargetableCellsOffsets: false
 		TargetableOffsets: 0,0,0, 630,-384,0, 630,384,0, -700,-512,0, -700,512,0
 	Buildable:
+        BuildDuration: 1200
+        BuildDurationModifier: 100
 		Queue: Building
 		BuildPaletteOrder: 90
 		Prerequisites: anypower, proc, ~techlevel.medium
@@ -758,6 +776,8 @@ PBOX:
 		Name: Pillbox
 	Building:
 	Buildable:
+        BuildDuration: 500
+        BuildDurationModifier: 100
 		Queue: Defense
 		BuildPaletteOrder: 40
 		Prerequisites: tent, ~structures.allies, ~techlevel.low
@@ -818,6 +838,8 @@ HBOX:
 		Name: Camo Pillbox
 	Building:
 	Buildable:
+        BuildDuration: 700
+        BuildDurationModifier: 100
 		Queue: Defense
 		BuildPaletteOrder: 50
 		Prerequisites: dome, ~structures.allies, ~techlevel.medium
@@ -881,6 +903,8 @@ GUN:
 	Inherits: ^Defense
 	Inherits@AUTOTARGET: ^AutoTargetGround
 	Buildable:
+        BuildDuration: 800
+        BuildDurationModifier: 100
 		Queue: Defense
 		BuildPaletteOrder: 70
 		Prerequisites: weap, ~structures.allies, ~techlevel.medium
@@ -934,6 +958,8 @@ FTUR:
 	Inherits: ^Defense
 	Inherits@AUTOTARGET: ^AutoTargetGround
 	Buildable:
+        BuildDuration: 600
+        BuildDurationModifier: 100
 		Queue: Defense
 		BuildPaletteOrder: 60
 		Prerequisites: weap, ~structures.soviet, ~techlevel.medium
@@ -991,6 +1017,8 @@ SAM:
 			TopLeft: -768,-512
 			BottomRight: 768,512
 	Buildable:
+        BuildDuration: 700
+        BuildDurationModifier: 100
 		Queue: Defense
 		BuildPaletteOrder: 100
 		Prerequisites: dome, ~structures.soviet, ~techlevel.medium
@@ -1043,6 +1071,8 @@ ATEK:
 	Selectable:
 		Bounds: 2048, 2048
 	Buildable:
+        BuildDuration: 1500
+        BuildDurationModifier: 100
 		Queue: Building
 		BuildPaletteOrder: 140
 		Prerequisites: weap, dome, ~structures.allies, ~techlevel.high
@@ -1097,6 +1127,8 @@ WEAP:
 	Selectable:
 		Bounds: 3072, 2048
 	Buildable:
+        BuildDuration: 2000
+        BuildDurationModifier: 100
 		Queue: Building
 		BuildPaletteOrder: 80
 		Prerequisites: anypower, barracks, ~techlevel.low
@@ -1220,6 +1252,8 @@ FACT:
 		Dimensions: 3,4
 		LocalCenterOffset: 0,-512,0
 	Buildable:
+        BuildDuration: 2500
+        BuildDurationModifier: 80
 		Queue: Building
 		BuildPaletteOrder: 1000
 		Prerequisites: weap, fix, ~techlevel.medium
@@ -1332,6 +1366,8 @@ FACT:
 PROC:
 	Inherits: ^Building
 	Buildable:
+        BuildDuration: 1500
+        BuildDurationModifier: 100
 		Queue: Building
 		BuildPaletteOrder: 60
 		Prerequisites: fact, ~techlevel.infonly, ~!global-ercc-refinery
@@ -1433,6 +1469,8 @@ SILO:
 	Selectable:
 		Bounds: 1024, 1024
 	Buildable:
+        BuildDuration: 150
+        BuildDurationModifier: 100
 		Queue: Defense
 		BuildPaletteOrder: 35
 		Prerequisites: proc, ~techlevel.infonly
@@ -1488,6 +1526,8 @@ HPAD:
 		UseTargetableCellsOffsets: false
 		TargetableOffsets: 0,0,0, 768,-512,0, 768,512,0, -281,-512,0, -630,512,0
 	Buildable:
+        BuildDuration: 500
+        BuildDurationModifier: 100
 		Queue: Building
 		BuildPaletteOrder: 120
 		Prerequisites: weap, ~structures.allies, ~techlevel.medium
@@ -1577,6 +1617,8 @@ AFLD:
 		UseTargetableCellsOffsets: false
 		TargetableOffsets: 0,0,0, 420,0,0, 420,-1024,0, 420,1024,0, -777,0,0, -777,-1024,0, -777,1024,0
 	Buildable:
+        BuildDuration: 600
+        BuildDurationModifier: 100
 		Queue: Building
 		BuildPaletteOrder: 130
 		Prerequisites: anypower, barracks, ~structures.soviet, ~techlevel.medium, ~!structures.ukraine, ~!structures.belarus
@@ -1790,6 +1832,8 @@ POWR:
 		UseTargetableCellsOffsets: false
 		TargetableOffsets: 0,0,0, 640,-384,0, 640,512,0, -710,-512,0, -710,512,0
 	Buildable:
+        BuildDuration: 300
+        BuildDurationModifier: 100
 		Queue: Building
 		BuildPaletteOrder: 10
 		Prerequisites: fact, ~techlevel.infonly
@@ -1827,6 +1871,8 @@ APWR:
 	HitShape:
 		TargetableOffsets: -355,-1024,0
 	Buildable:
+        BuildDuration: 500
+        BuildDurationModifier: 100
 		Queue: Building
 		BuildPaletteOrder: 40
 		Prerequisites: dome, ~techlevel.medium
@@ -1868,6 +1914,8 @@ STEK:
 	HitShape:
 		TargetableOffsets: 420,-768,0, 420,768,0, -770,-768,0, -770,768,0
 	Buildable:
+        BuildDuration: 2000
+        BuildDurationModifier: 100
 		Queue: Building
 		BuildPaletteOrder: 150
 		Prerequisites: afldorweap, dome, ~structures.soviet, ~techlevel.high
@@ -1907,6 +1955,8 @@ BARR:
 		UseTargetableCellsOffsets: false
 		TargetableOffsets: 0,0,0, 490,-470,0, 355,512,0, -355,-512,0, -630,512,0
 	Buildable:
+        BuildDuration: 500
+        BuildDurationModifier: 100
 		Queue: Building
 		BuildPaletteOrder: 30
 		Prerequisites: fact, ~structures.soviet, ~techlevel.infonly
@@ -2000,6 +2050,8 @@ KENN:
 	Selectable:
 		Bounds: 1024, 1024
 	Buildable:
+        BuildDuration: 200
+        BuildDurationModifier: 100
 		Queue: Building
 		BuildPaletteOrder: 175
 		Prerequisites: ~disabled
@@ -2083,6 +2135,8 @@ TENT:
 		UseTargetableCellsOffsets: false
 		TargetableOffsets: 0,0,0, 630,-512,0, 355,512,0, -281,-512,0, -630,512,0
 	Buildable:
+        BuildDuration: 500
+        BuildDurationModifier: 100
 		Queue: Building
 		BuildPaletteOrder: 20
 		Prerequisites: fact, ~structures.allies, ~techlevel.infonly
@@ -2173,6 +2227,8 @@ TENT:
 FIX:
 	Inherits: ^Building
 	Buildable:
+        BuildDuration: 1200
+        BuildDurationModifier: 100
 		Queue: Building
 		BuildPaletteOrder: 110
 		Prerequisites: weap, ~techlevel.medium
@@ -2224,6 +2280,8 @@ FIX:
 SBAG:
 	Inherits: ^Wall
 	Buildable:
+        BuildDuration: 50
+        BuildDurationModifier: 100
 		Queue: Defense
 		BuildPaletteOrder: 10
 		Prerequisites: tent, ~structures.allies, ~techlevel.low
@@ -2248,6 +2306,8 @@ SBAG:
 FENC:
 	Inherits: ^Wall
 	Buildable:
+        BuildDuration: 50
+        BuildDurationModifier: 100
 		Queue: Defense
 		BuildPaletteOrder: 20
 		Prerequisites: barr, ~structures.soviet, ~techlevel.low
@@ -2272,6 +2332,8 @@ FENC:
 BRIK:
 	Inherits: ^Wall
 	Buildable:
+        BuildDuration: 200
+        BuildDurationModifier: 100
 		Queue: Defense
 		BuildPaletteOrder: 30
 		Prerequisites: techcenter, ~techlevel.high
@@ -2371,6 +2433,8 @@ AFLDORWEAP:
 ERCC:
 	Inherits: ^Building
 	Buildable:
+        BuildDuration: 1500
+        BuildDurationModifier: 100
 		Queue: Building
 		BuildPaletteOrder: 60
 		Prerequisites: fact, ~techlevel.infonly, ~global-ercc-refinery

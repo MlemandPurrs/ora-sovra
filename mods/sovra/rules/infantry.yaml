@@ -1,6 +1,8 @@
 DOG:
 	Inherits: ^Soldier
 	Buildable:
+        BuildDuration: 200
+        BuildDurationModifier: 100
 		Queue: Infantry
 		BuildAtProductionType: Dog
 		BuildPaletteOrder: 50
@@ -72,6 +74,8 @@ E1:
 	Inherits: ^Soldier
 	Inherits@AUTOTARGET: ^AutoTargetGroundAssaultMove
 	Buildable:
+        BuildDuration: 100
+        BuildDurationModifier: 100
 		Queue: Infantry
 		BuildAtProductionType: Soldier
 		BuildPaletteOrder: 10
@@ -125,6 +129,8 @@ E2:
 	Inherits: ^Soldier
 	Inherits@AUTOTARGET: ^AutoTargetGroundAssaultMove
 	Buildable:
+        BuildDuration: 150
+        BuildDurationModifier: 100
 		Queue: Infantry
 		BuildAtProductionType: Soldier
 		BuildPaletteOrder: 40
@@ -172,6 +178,8 @@ E3:
 	Inherits: ^Soldier
 	Inherits@AUTOTARGET: ^AutoTargetAllAssaultMove
 	Buildable:
+        BuildDuration: 300
+        BuildDurationModifier: 100
 		Queue: Infantry
 		BuildAtProductionType: Soldier
 		BuildPaletteOrder: 30
@@ -233,6 +241,8 @@ E4:
 	Inherits: ^Soldier
 	Inherits@AUTOTARGET: ^AutoTargetGroundAssaultMove
 	Buildable:
+        BuildDuration: 300
+        BuildDurationModifier: 100
 		Queue: Infantry
 		BuildAtProductionType: Soldier
 		BuildPaletteOrder: 140
@@ -280,6 +290,8 @@ E6:
 	Inherits: ^Soldier
 	Inherits@selection: ^SelectableSupportUnit
 	Buildable:
+        BuildDuration: 500
+        BuildDurationModifier: 100
 		Queue: Infantry
 		BuildAtProductionType: Soldier
 		BuildPaletteOrder: 60
@@ -327,6 +339,8 @@ SPY:
 	Inherits: ^Soldier
 	Inherits@AUTOTARGET: ^AutoTargetGroundAssaultMove
 	Buildable:
+        BuildDuration: 600
+        BuildDurationModifier: 100
 		Queue: Infantry
 		BuildAtProductionType: Soldier
 		BuildPaletteOrder: 90
@@ -385,6 +399,9 @@ SPY:
     ProductionCostMultiplier@england:
         Multiplier: 50
         Prerequisites: infantry.england
+	ProductionTimeMultiplier@england:
+		Multiplier: 50
+		Prerequisites: infantry.england
     GivesExperienceMultiplier@england:
         Modifier: 150
         RequiresCondition: owner.england
@@ -398,6 +415,8 @@ E7:
     -Crushable:
     -EdibleByLeap:
 	Buildable:
+        BuildDuration: 1200
+        BuildDurationModifier: 100
 		Queue: Infantry
 		BuildAtProductionType: Soldier
 		BuildPaletteOrder: 120
@@ -461,6 +480,8 @@ E7:
 MEDI:
 	Inherits: ^Soldier
 	Buildable:
+        BuildDuration: 200
+        BuildDurationModifier: 100
 		Queue: Infantry
 		BuildAtProductionType: Soldier
 		BuildPaletteOrder: 40
@@ -504,6 +525,8 @@ MEDI:
 MECH:
 	Inherits: ^Soldier
 	Buildable:
+        BuildDuration: 500
+        BuildDurationModifier: 100
 		Queue: Infantry
 		BuildAtProductionType: Soldier
 		BuildPaletteOrder: 100
@@ -622,6 +645,8 @@ THF:
 	Inherits: ^Soldier
 	Inherits@selection: ^SelectableSupportUnit
 	Buildable:
+        BuildDuration: 500
+        BuildDurationModifier: 100
 		Queue: Infantry
 		BuildAtProductionType: Soldier
 		BuildPaletteOrder: 70
@@ -679,6 +704,8 @@ SHOK:
 	Inherits: ^Soldier
 	Inherits@AUTOTARGET: ^AutoTargetGroundAssaultMove
 	Buildable:
+        BuildDuration: 450
+        BuildDurationModifier: 100
 		Queue: Infantry
 		BuildAtProductionType: Soldier
 		BuildPaletteOrder: 150
@@ -868,6 +895,8 @@ VOLK:
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Buildable:
+        BuildDuration: 1200
+        BuildDurationModifier: 100
 		BuildPaletteOrder: 130
 		Prerequisites: stek, ~infantry.soviet, ~techlevel.high
 		BuildLimit: 1
@@ -934,6 +963,8 @@ E8:
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Buildable:
+        BuildDuration: 400
+        BuildDurationModifier: 100
 		BuildPaletteOrder: 140
 		Prerequisites: ~barr, stek, ~techlevel.high
 		Queue: Infantry
@@ -993,6 +1024,8 @@ SNIP:
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Buildable:
+        BuildDuration: 950
+        BuildDurationModifier: 100
 		Queue: Infantry
 		BuildAtProductionType: Soldier
 		BuildPaletteOrder: 130

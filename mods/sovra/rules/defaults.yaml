@@ -241,6 +241,7 @@
 	Inherits@bounty: ^GlobalBounty
 	Inherits@selection: ^SelectableCombatUnit
 	Inherits@handicaps: ^PlayerHandicaps
+	Inherits@mpbonus: ^AffectedByCountryBonuses
 	Huntable:
 	OwnerLostAction:
 		Action: Kill
@@ -324,6 +325,7 @@
 	Inherits@bounty: ^GlobalBounty
 	Inherits@selection: ^SelectableCombatUnit
 	Inherits@handicaps: ^PlayerHandicaps
+	Inherits@mpbonus: ^AffectedByCountryBonuses
 	Huntable:
 	OwnerLostAction:
 		Action: Kill
@@ -502,6 +504,7 @@
 	Inherits@bounty: ^GlobalBounty
 	Inherits@selection: ^SelectableCombatUnit
 	Inherits@handicaps: ^PlayerHandicaps
+	Inherits@mpbonus: ^AffectedByCountryBonuses
 	Huntable:
 	OwnerLostAction:
 		Action: Kill
@@ -580,6 +583,7 @@
 	Inherits@bounty: ^GlobalBounty
 	Inherits@selection: ^SelectableCombatUnit
 	Inherits@handicaps: ^PlayerHandicaps
+	Inherits@mpbonus: ^AffectedByCountryBonuses
 	OwnerLostAction:
 		Action: Kill
 	Armor:
@@ -1374,3 +1378,35 @@
 		RequiresSelection: true
 		Image: pips
 		Sequence: tag-primary
+
+^AffectedByCountryBonuses:
+	DamageMultiplier@England:
+		RequiresCondition: england
+		Modifier: 90
+	ReloadDelayMultiplier@France:
+		RequiresCondition: france
+		Modifier: 90
+	FirepowerMultiplier@Germany:
+		RequiresCondition: germany
+		Modifier: 110
+	ProductionCostMultiplier@Russia:
+		Multiplier: 90
+		Prerequisites: player.russia
+	SpeedMultiplier@Ukraine:
+		RequiresCondition: ukraine
+		Modifier: 110
+	ProductionTimeMultiplier@Belarus:
+		Multiplier: 90
+		Prerequisites: player.belarus
+	GrantConditionOnPrerequisite@England:
+		Condition: england
+		Prerequisites: player.england
+	GrantConditionOnPrerequisite@France:
+		Condition: france
+		Prerequisites: player.france
+	GrantConditionOnPrerequisite@Germany:
+		Condition: germany
+		Prerequisites: player.england
+	GrantConditionOnPrerequisite@Ukraine:
+		Condition: ukraine
+		Prerequisites: player.ukraine

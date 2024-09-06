@@ -67,6 +67,8 @@ MIG:
 	Inherits: ^Plane
 	Inherits@AUTOTARGET: ^AutoTargetGroundAssaultMove
 	Buildable:
+        BuildDuration: 1800
+        BuildDurationModifier: 100
 		Queue: Aircraft
 		BuildAtProductionType: Plane
 		BuildPaletteOrder: 50
@@ -147,6 +149,8 @@ YAK:
 	Inherits: ^Plane
 	Inherits@AUTOTARGET: ^AutoTargetGroundAssaultMove
 	Buildable:
+        BuildDuration: 1150
+        BuildDurationModifier: 100
 		Queue: Aircraft
 		BuildAtProductionType: Plane
 		BuildPaletteOrder: 30
@@ -231,6 +235,8 @@ TRAN:
 	Inherits: ^Helicopter
 	Inherits@CARGOPIPS: ^CargoPips
 	Buildable:
+        BuildDuration: 900
+        BuildDurationModifier: 100
 		Queue: Aircraft
 		BuildAtProductionType: Helicopter
 		BuildPaletteOrder: 10
@@ -285,6 +291,8 @@ HELI:
 	Inherits: ^Helicopter
 	Inherits@AUTOTARGET: ^AutoTargetAllAssaultMove
 	Buildable:
+        BuildDuration: 1400
+        BuildDurationModifier: 100
 		Queue: Aircraft
 		BuildAtProductionType: Helicopter
 		BuildPaletteOrder: 20
@@ -367,6 +375,8 @@ HIND:
 	Inherits: ^Helicopter
 	Inherits@AUTOTARGET: ^AutoTargetGroundAssaultMove
 	Buildable:
+        BuildDuration: 1400
+        BuildDurationModifier: 100
 		Queue: Aircraft
 		BuildAtProductionType: Helicopter
 		BuildPaletteOrder: 70
@@ -493,6 +503,8 @@ MH60:
 	Inherits: ^Helicopter
 	Inherits@AUTOTARGET: ^AutoTargetGroundAssaultMove
 	Buildable:
+        BuildDuration: 1800
+        BuildDurationModifier: 100
 		Queue: Aircraft
 		BuildAtProductionType: Helicopter
 		BuildPaletteOrder: 40
