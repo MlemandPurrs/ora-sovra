@@ -105,7 +105,7 @@ GAP:
 	WithBuildingBib:
 		HasMinibib: true
 	CreatesShroud:
-		Range: 6c0
+		Range: 7c0
 		RequiresCondition: !disabled
 	RenderShroudCircle:
 	Power:
