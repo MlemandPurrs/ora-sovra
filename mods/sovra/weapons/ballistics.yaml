@@ -222,7 +222,7 @@ DepthCharge:
 GrenadeLauncher:
     Inherits: ^Artillery
 	ReloadDelay: 60
-    Range: 5c256
+	Range: 5c512
 	ValidTargets: Ground, GroundActor
     InvalidTargets: Water, WaterActor
 	Report: grenade1.aud

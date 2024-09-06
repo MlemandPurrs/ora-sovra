@@ -332,6 +332,7 @@ Player:
 			e2: 15
 			e3: 30
 			e4: 15
+            e8: 15
 			dog: 15
 			shok: 15
 			harv: 10
@@ -370,6 +371,7 @@ Player:
 			e2: 15
 			e3: 30
 			e4: 15
+            e8: 15
 			dog: 15
 			shok: 15
 			harv: 15
@@ -419,6 +421,7 @@ Player:
 			e2: 15
 			e3: 30
 			e4: 15
+            e8: 15
 			dog: 15
 			shok: 15
 			harv: 15

@@ -1,11 +1,13 @@
 ^FireWeapon:
 	ValidTargets: Ground, Water, GroundActor, WaterActor, Trees
+    InvalidTargets: FireImmune
 	ReloadDelay: 70
 	Range: 5c0
 	Warhead@1Dam: SpreadDamage
 		Spread: 213
 		Damage: 15000
 		ValidTargets: GroundActor, WaterActor, Trees
+        InvalidTargets: FireImmune
 		Versus:
 			None: 90
 			Wood: 50
@@ -72,6 +74,22 @@ Napalm:
 		Versus:
 			Wood: 100
 			Concrete: 50
+
+PortaFireball:
+	Inherits: ^FireWeapon
+	ReloadDelay: 50
+	Range: 3c512
+	Report: flamer2.aud
+	Projectile: Bullet
+		Speed: 240
+		TrailImage: fb2
+		Image: FB1
+        Blockable: true
+	Warhead@1Dam: SpreadDamage
+		Spread: 213
+		Damage: 7000
+		Versus:
+			Light: 50
 
 ^TeslaWeapon:
 	ReloadDelay: 3

@@ -236,8 +236,8 @@ E4:
 		Queue: Infantry
 		BuildAtProductionType: Soldier
 		BuildPaletteOrder: 140
-		Prerequisites: ~barr, stek, ~techlevel.high
-		Description: Advanced anti-structure unit.\n\n  Strong vs Infantry, Buildings\n  Weak vs Vehicles, Aircraft
+		Prerequisites: ~disabled
+		Description: Advanced anti-structure unit.\n\n  Strong vs Infantry, Buildings\n  Weak vs Vehicles, Aircraft\n\n  Special ability: Cannot be harmed by Flames.
 	Valued:
 		Cost: 300
 	Tooltip:
@@ -255,6 +255,9 @@ E4:
 		Weapon: Flamer
 	TakeCover:
 		ProneOffset: 160,0,-288
+	Targetable:
+		RequiresCondition: !parachute
+		TargetTypes: GroundActor, Infantry, Disguise, FireImmune
 	Explodes:
 		Weapon: VisualExplode
 		EmptyWeapon: VisualExplode
@@ -920,3 +923,62 @@ VOLK:
 		Prerequisites: barracks.upgraded
     RenderSprites:
         Image: GNRL
+
+E8:
+	Inherits: ^Soldier
+	Inherits@AUTOTARGET: ^AutoTargetGroundAssaultMove
+	Valued:
+		Cost: 400
+	Tooltip:
+		Name: Flame Trooper
+	UpdatesPlayerStatistics:
+		AddToArmyValue: true
+	Buildable:
+		BuildPaletteOrder: 140
+		Prerequisites: ~barr, stek, ~techlevel.high
+		Queue: Infantry
+		BuildAtProductionType: Soldier
+		Description: Infantry with portable fire launcher.\n\n  Strong vs Infantry, Buildings.\n  Weak vs Vehicles, Aircraft.\n\n  Special ability: Cannot be harmed by Flames.
+	Mobile:
+		Speed: 38
+        PauseOnCondition: dont-move
+	Health:
+		HP: 4000
+	AutoTarget:
+		ScanRadius: 6
+	Armament:
+		Weapon: PortaFireball
+		LocalOffset: 256,43,341
+		FireDelay: 5
+	Armament@GARRISONED:
+		Name: garrisoned
+		Weapon: PortaFireball
+	AttackFrontal:
+		FacingTolerance: 0
+	GrantConditionOnAttack:
+		Condition: dont-move
+		RevokeDelay: 16
+		RevokeOnNewTarget: False
+		RevokeAll: True
+	TakeCover:
+		ProneOffset: 180,0,-200
+	WithInfantryBody:
+		DefaultAttackSequence: shoot
+		RequiresCondition: !parachute
+	WithInfantryBody@PARACHUTE:
+		StandSequences: parachute
+		RequiresCondition: parachute
+		Palette: player-noshadow
+		IsPlayerPalette: true
+	Targetable:
+		RequiresCondition: !parachute
+		TargetTypes: GroundActor, Infantry, Disguise, FireImmune
+	ProducibleWithLevel:
+		Prerequisites: barracks.upgraded
+	WithProductionIconOverlay:
+		Types: Veterancy
+		Prerequisites: barracks.upgraded
+	Explodes:
+		Weapon: VisualExplode
+		EmptyWeapon: VisualExplode
+		Chance: 50
