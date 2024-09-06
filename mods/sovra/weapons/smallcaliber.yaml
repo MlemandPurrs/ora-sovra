@@ -327,3 +327,7 @@ Colt45:
 	Warhead@1Dam: SpreadDamage
 		Damage: 5000
 
+Sniper:
+	Inherits: ^SnipeWeapon
+	ReloadDelay: 70
+	Range: 10c0

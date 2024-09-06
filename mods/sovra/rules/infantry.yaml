@@ -626,7 +626,7 @@ THF:
 		BuildAtProductionType: Soldier
 		BuildPaletteOrder: 70
 		Prerequisites: ~barr, fix, ~techlevel.medium
-		Description: Steals enemy credits.\nHijacks enemy vehicles.\n\n  Unarmed
+		Description: Steals enemy credits.\nHijacks enemy vehicles.\n\n  Unarmed\n\n  Special ability: Cloaks when stationary
 	Valued:
 		Cost: 500
 	Tooltip:
@@ -982,3 +982,58 @@ E8:
 		Weapon: VisualExplode
 		EmptyWeapon: VisualExplode
 		Chance: 50
+
+SNIP:
+	Inherits: ^Soldier
+	Inherits@AUTOTARGET: ^AutoTargetGroundAssaultMove
+	Valued:
+		Cost: 950
+	Tooltip:
+		Name: Sniper
+	UpdatesPlayerStatistics:
+		AddToArmyValue: true
+	Buildable:
+		Queue: Infantry
+		BuildAtProductionType: Soldier
+		BuildPaletteOrder: 130
+		Prerequisites: ~tent, atek, ~infantry.england, ~techlevel.high
+		Description: Elite sniper infantry unit.\n\n  Strong vs Infantry\n  Weak vs Vehicles, Aircraft\n\n  Special ability: Cloaks when stationary
+	Health:
+		HP: 5000
+	RevealsShroud:
+		Range: 6c0
+	AutoTarget:
+		InitialStance: HoldFire
+		InitialStanceAI: ReturnFire
+	AutoTargetPriority@DEFAULT:
+		ValidTargets: Infantry
+	Armament@PRIMARY:
+		Weapon: Sniper
+	Armament@GARRISONED:
+		Name: garrisoned
+		Weapon: Sniper
+		MuzzleSequence: garrison-muzzle
+	WithInfantryBody:
+		DefaultAttackSequence: shoot
+		RequiresCondition: !parachute
+	WithInfantryBody@PARACHUTE:
+		RequiresCondition: parachute
+		Palette: player-noshadow
+		IsPlayerPalette: true
+	Cloak:
+		InitialDelay: 250
+		CloakDelay: 120
+		CloakSound:
+		UncloakSound:
+		UncloakOn: Attack, Unload, Infiltrate, Demolish, Move
+		IsPlayerPalette: true
+		PauseOnCondition: cloak-force-disabled
+	GrantConditionOnDamageState@UNCLOAK:
+		Condition: cloak-force-disabled
+		ValidDamageStates: Critical
+	-MustBeDestroyed:
+	ProducibleWithLevel:
+		Prerequisites: barracks.upgraded
+	WithProductionIconOverlay:
+		Types: Veterancy
+		Prerequisites: barracks.upgraded

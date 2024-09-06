@@ -42,3 +42,4 @@ MSUB:
 	-Targetable@UNDERWATER:
 	Targetable:
 		-RequiresCondition:
+    -GrantConditionOnTerrain@CROSSINGFORD:
