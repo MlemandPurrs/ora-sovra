@@ -202,6 +202,14 @@ e3:
 		Start: 192
 		Length: 10
 		Facings: 8
+	liedown:
+		Start: 128
+		Length: 2
+		Facings: 8
+	standup:
+		Start: 176
+		Length: 2
+		Facings: 8
 	icon:
 		Filename: e3icon.shp
 
@@ -275,6 +283,14 @@ e6:
 		Length: 4
 		Facings: 8
 		Tick: 100
+	liedown:
+		Start: 66
+		Length: 2
+		Facings: 8
+	standup:
+		Start: 114
+		Length: 2
+		Facings: 8
 	icon:
 		Filename: e6icon.shp
 
@@ -343,6 +359,10 @@ medi:
 		Length: 4
 		Facings: 8
 		Tick: 100
+	liedown:
+		Start: 114
+		Length: 2
+		Facings: 8
 	icon:
 		Filename: mediicon.shp
 
@@ -411,6 +431,10 @@ mech:
 		Length: 4
 		Facings: 8
 		Tick: 100
+	liedown:
+		Start: 114
+		Length: 2
+		Facings: 8
 	icon:
 		Filename: mechicon.shp
 
@@ -491,6 +515,14 @@ e2:
 	prone-throw:
 		Start: 288
 		Length: 12
+		Facings: 8
+	liedown:
+		Start: 224
+		Length: 2
+		Facings: 8
+	standup:
+		Start: 272
+		Length: 2
 		Facings: 8
 	icon:
 		Filename: e2icon.shp
@@ -637,6 +669,14 @@ spy:
 		Start: 192
 		Length: 8
 		Facings: 8
+	liedown:
+		Start: 128
+		Length: 2
+		Facings: 8
+	standup:
+		Start: 176
+		Length: 2
+		Facings: 8
 	icon:
 		Filename: spyicon.shp
 
@@ -697,6 +737,14 @@ thf:
 		Length: 4
 		Facings: 8
 		Tick: 80
+	liedown:
+		Start: 56
+		Length: 2
+		Facings: 8
+	standup:
+		Start: 104
+		Length: 2
+		Facings: 8
 	icon:
 		Filename: thficon.shp
 
@@ -825,6 +873,14 @@ e7:
 		Frames: 178, 177, 186, 184, 193, 191, 199, 198, 207, 205, 214, 212, 221, 219, 227, 226
 		Length: 2
 		Facings: 8
+	liedown:
+		Start: 112
+		Length: 2
+		Facings: 8
+	standup:
+		Start: 160
+		Length: 2
+		Facings: 8
 	garrison-muzzle:
 		Filename: minigun.shp
 		Length: 3
@@ -910,6 +966,14 @@ e4:
 	prone-shoot:
 		Start: 256
 		Length: 16
+		Facings: 8
+	liedown:
+		Start: 192
+		Length: 2
+		Facings: 8
+	standup:
+		Start: 240
+		Length: 2
 		Facings: 8
 	icon:
 		Filename: e4icon.shp
