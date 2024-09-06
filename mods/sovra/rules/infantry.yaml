@@ -333,7 +333,7 @@ SPY:
 		Prerequisites: ~tent, dome, ~techlevel.medium
 		Description: Infiltrates enemy structures for intel or\nsabotage. Exact effect depends on the\nbuilding infiltrated.\nLoses disguise when attacking.\nCan detect spies.\n\n  Strong vs Infantry\n  Weak vs Vehicles, Aircraft\n  Special Ability: Disguised
 	Valued:
-		Cost: 500
+		Cost: 600
 	-Tooltip:
 	DisguiseTooltip:
 		Name: Spy
