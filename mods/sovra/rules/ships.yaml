@@ -340,7 +340,7 @@ PT:
 		Type: Heavy
 	Mobile:
 		TurnSpeed: 28
-		Speed: 142
+		Speed: 128
 	RevealsShroud:
 		MinRange: 6c0
 		Range: 8c0
@@ -391,7 +391,7 @@ SEAS:
 		Type: Heavy
 	Mobile:
 		TurnSpeed: 28
-		Speed: 142
+		Speed: 128
 	RevealsShroud:
 		MinRange: 6c0
 		Range: 8c0
