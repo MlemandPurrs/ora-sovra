@@ -311,6 +311,12 @@
 	HitShape:
 	MapEditorData:
 		Categories: Vehicle
+	SpeedMultiplier@THUMPSNARE:
+		Modifier: 70
+		RequiresCondition: thumpsnare && !parachute
+	ExternalCondition@THUMPSNARE:
+		Condition: thumpsnare
+        TotalCap: 1
 
 ^TrackedVehicle:
 	Inherits: ^Vehicle

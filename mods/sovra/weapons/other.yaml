@@ -243,16 +243,23 @@ DemoTruckTargeting:
 
 MADTankThump:
 	ValidTargets: GroundActor, WaterActor
-	InvalidTargets: MADTank, Infantry
+	InvalidTargets: MADTank
 	Warhead@1Dam: HealthPercentageDamage
 		Spread: 7c0
 		Damage: 1
+        DamageTypes: Prone50Percent, TriggerProne
 		ValidTargets: GroundActor, WaterActor
-		InvalidTargets: MADTank, Infantry
+		InvalidTargets: MADTank
 	Warhead@Shake: ShakeScreen
 		Duration: 10
 		Intensity: 3
 		Multiplier: 1,0
+	Warhead@3: GrantExternalCondition
+		Range: 7c0
+		Duration: 24
+		Condition: thumpsnare
+		ValidTargets: Vehicle, Ship
+        InvalidTargets: MADTank
 
 MADTankDetonate:
 	ValidTargets: GroundActor, WaterActor

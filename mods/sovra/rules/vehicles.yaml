@@ -956,8 +956,10 @@ QTNK:
 	Valued:
 		Cost: 2000
 	Tooltip:
-		Name: MAD Tank
-		GenericName: Tank
+		Name: Mutually Assured Destruction Tank
+        GenericStancePrefix: false
+		GenericName: M.A.D. Tank
+        GenericVisibility: Ally, Neutral, Enemy
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Health:
@@ -985,6 +987,14 @@ QTNK:
 		TargetTypes: GroundActor, MADTank, Vehicle
 	Selectable:
 		DecorationBounds: 1877, 1621, 0, -170
+	ToggleConditionOnOrder@IRONCURTAIN:
+		Condition: invulnerability
+		OrderName: deploy
+		RequiresCondition: invulnerability && !deployed
+    WithColoredOverlay@IRONCURTAIN:
+        RequiresCondition: invulnerability && !deployed
+	DamageMultiplier@IRONCURTAIN:
+		RequiresCondition: invulnerability && !deployed
 
 STNK:
 	Inherits: ^Vehicle

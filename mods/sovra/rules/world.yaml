@@ -133,7 +133,7 @@
 		Name: Russia
 		InternalName: russia
 		Side: Soviet
-		Description: Russia: Tesla Weapons\nSpecial Bonus: Units more cheaper\nSpecial Unit: Tesla Tank\nSpecial Unit: Shock Trooper
+		Description: Russia: Tesla Weapons\nSpecial Bonus: Units are cheaper\nSpecial Unit: Tesla Tank\nSpecial Unit: Shock Trooper
 	Faction@6:
 		Name: Ukraine
 		InternalName: ukraine
