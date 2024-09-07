@@ -322,6 +322,11 @@
 	Inherits: ^Vehicle
 	Mobile:
 		Locomotor: tracked
+	ExternalCondition@CRUSHSLOW:
+		Condition: crush-slow
+	SpeedMultiplier@CRUSHSLOW:
+		RequiresCondition: crush-slow
+		Modifier: 70
 
 ^Infantry:
 	Inherits@1: ^ExistsInWorld
@@ -448,6 +453,9 @@
 	DetectCloaked:
 		DetectionTypes: Cloak
 		Range: 1c512
+	GrantExternalConditionToCrusher@CRUSHSLOW:
+		OnCrushCondition: crush-slow
+		OnCrushDuration: 50
 
 ^Soldier:
 	Inherits: ^Infantry

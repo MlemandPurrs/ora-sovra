@@ -331,6 +331,8 @@ ARTY:
 		Types: Veterancy
 		Prerequisites: vehicles.upgraded
 	RenderRangeCircle:
+	-ExternalCondition@CRUSHSLOW:
+	-SpeedMultiplier@CRUSHSLOW:
 
 HARV:
 	Inherits: ^Vehicle
@@ -396,6 +398,11 @@ HARV:
 		ResourceSequences:
 			Ore: pip-yellow
 			Gems: pip-red
+	ExternalCondition@CRUSHSLOW:
+		Condition: crush-slow
+	SpeedMultiplier@CRUSHSLOW:
+		RequiresCondition: crush-slow
+		Modifier: 70
 
 AHRV:
     Inherits: HARV
@@ -477,6 +484,11 @@ MCV:
 		Actor: MCV.Husk
 	TransferTimedExternalConditionOnTransform:
 		Condition: invulnerability
+	ExternalCondition@CRUSHSLOW:
+		Condition: crush-slow
+	SpeedMultiplier@CRUSHSLOW:
+		RequiresCondition: crush-slow
+		Modifier: 70
 
 JEEP:
 	Inherits: ^Vehicle
@@ -946,6 +958,11 @@ CTNK:
 	WithProductionIconOverlay:
 		Types: Veterancy
 		Prerequisites: vehicles.upgraded
+	ExternalCondition@CRUSHSLOW:
+		Condition: crush-slow
+	SpeedMultiplier@CRUSHSLOW:
+		RequiresCondition: crush-slow
+		Modifier: 70
 
 QTNK:
 	Inherits: ^TrackedVehicle
@@ -1070,3 +1087,8 @@ STNK:
 	WithProductionIconOverlay:
 		Types: Veterancy
 		Prerequisites: vehicles.upgraded
+	ExternalCondition@CRUSHSLOW:
+		Condition: crush-slow
+	SpeedMultiplier@CRUSHSLOW:
+		RequiresCondition: crush-slow
+		Modifier: 70
