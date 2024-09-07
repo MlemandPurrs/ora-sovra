@@ -1178,6 +1178,11 @@ WEAP:
 		RequiresCondition: !being-captured
 		SpawnOffset: 213,-128,0
 		ExitCell: 1,2
+	Exit@2:
+		RequiresCondition: !being-captured
+		SpawnOffset: 213,-128,0
+		ExitCell: 0,2
+		ExitDelay: 3
 	Production:
 		Produces: Vehicle
 	ProvidesPrerequisite:
