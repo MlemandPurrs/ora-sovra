@@ -847,7 +847,7 @@ ctflag:
 	idle:
 		Filename: ctflag.shp
 		Length: 9
-		Tick: 50
+		Tick: 100
 		Offset: 0,-12
 	bib:
 		TilesetFilenames:
