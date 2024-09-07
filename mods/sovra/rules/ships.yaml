@@ -98,8 +98,8 @@ MSUB:
 	Armor:
 		Type: Light
 	Mobile:
-		TurnSpeed: 12
-		Speed: 44
+		TurnSpeed: 20
+		Speed: 78
 	RevealsShroud:
 		MinRange: 5c0
 		Range: 8c0
