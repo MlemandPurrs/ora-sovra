@@ -32,7 +32,6 @@ dd:
 	turret:
 		Filename: ssam.shp
 		Facings: 32
-        ZOffset: -511
 	icon:
 		Filename: ddicon.shp
 
