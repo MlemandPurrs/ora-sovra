@@ -2561,7 +2561,8 @@ HGAT:
 		BuildDuration: 150
         BuildDurationModifier: 100
 		BuildPaletteOrder: 200
-		Prerequisites: techcenter, ~techlevel.high
+		#   Prerequisites: techcenter, ~techlevel.high
+        Prerequisites: ~disabled
 		Queue: Defense
 		Description: Places a gate that blocks enemy access into your base.\n\nYou can rotate using Rotate Building hotkey (default: V)
 	Valued:
