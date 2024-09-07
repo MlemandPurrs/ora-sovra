@@ -449,6 +449,9 @@ MCV:
 		Cost: 2500
 	Tooltip:
 		Name: Mobile Construction Vehicle
+		GenericName: MCV
+        GenericStancePrefix: false
+        GenericVisibility: Ally, Neutral, Enemy
 	Selectable:
 		DecorationBounds: 1792, 1792
 	Health:

@@ -139,6 +139,7 @@ MIG:
 		Position: BottomLeft
 		Margin: 4, 3
 		RequiresSelection: true
+		PipCount: 4
 	GrantConditionOnDamageState@SmokeTrail:
 		Condition: enable-smoke
 	WithProductionIconOverlay:
@@ -364,6 +365,7 @@ HELI:
 	WithAmmoPipsDecoration:
 		Position: BottomLeft
 		Margin: 4, 3
+		PipCount: 4
 		RequiresSelection: true
 	GrantConditionOnDamageState@SmokeTrail:
 		Condition: enable-smoke

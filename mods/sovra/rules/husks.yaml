@@ -40,7 +40,7 @@
 HARV.FullHusk:
 	Inherits: ^Husk
 	Tooltip:
-		Name: Husk (Ore Truck)
+		Name: Husk (Harvester)
 	TransformOnCapture:
 		IntoActor: harv
 	InfiltrateForTransform:
@@ -51,7 +51,7 @@ HARV.FullHusk:
 HARV.EmptyHusk:
 	Inherits: ^Husk
 	Tooltip:
-		Name: Husk (Ore Truck)
+		Name: Husk (Harvester)
 	TransformOnCapture:
 		IntoActor: harv
 	InfiltrateForTransform:
@@ -62,7 +62,7 @@ HARV.EmptyHusk:
 MCV.Husk:
 	Inherits: ^Husk
 	Tooltip:
-		Name: Husk (Mobile Construction Vehicle)
+		Name: Husk (MCV)
 	TransformOnCapture:
 		IntoActor: mcv
 	InfiltrateForTransform:
@@ -489,7 +489,7 @@ MH60.Husk:
 AHRV.FullHusk:
 	Inherits: ^Husk
 	Tooltip:
-		Name: Husk (Armed Ore Truck)
+		Name: Husk (Armed Harvester)
 	TransformOnCapture:
 		IntoActor: ahrv
 	InfiltrateForTransform:
@@ -500,7 +500,7 @@ AHRV.FullHusk:
 AHRV.EmptyHusk:
 	Inherits: ^Husk
 	Tooltip:
-		Name: Husk (Armed Ore Truck)
+		Name: Husk (Armed Harvester)
 	TransformOnCapture:
 		IntoActor: ahrv
 	InfiltrateForTransform:
