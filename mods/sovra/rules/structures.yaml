@@ -934,13 +934,28 @@ GUN:
 	WithSpriteTurret:
 		RequiresCondition: !build-incomplete
 		Recoils: false
-	WithTurretAttackAnimation:
-		Sequence: recoil
+	WithTurretAttackAnimation@1:
+        Armament: primary
+        Sequence: recoil
+    WithTurretAttackAnimation@2:
+        Armament: secondary
+        Sequence: recoil
 	Armament:
+        Name: primary
 		Weapon: TurretGun
 		LocalOffset: 512,0,112
 		MuzzleSequence: muzzle
+		PauseOnCondition: reload-as
+        ReloadingCondition: reload-ag
+    Armament@SECONDARY:
+        Name: secondary
+        Weapon: TurretDepthCharge
+		LocalOffset: 512,0,112
+		MuzzleSequence: muzzle
+		PauseOnCondition: reload-ag
+        ReloadingCondition: reload-as
 	AttackTurreted:
+        Armaments: primary, secondary
 		PauseOnCondition: build-incomplete
 	WithMuzzleOverlay:
 	Power:

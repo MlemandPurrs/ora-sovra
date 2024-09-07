@@ -221,7 +221,7 @@ DepthCharge:
 
 GrenadeLauncher:
     Inherits: ^Artillery
-	ReloadDelay: 60
+	ReloadDelay: 50
 	Range: 5c512
 	ValidTargets: Ground, GroundActor
     InvalidTargets: Water, WaterActor
@@ -242,7 +242,6 @@ GrenadeLauncher:
 			Light: 25
 			Heavy: 25
 			Concrete: 100
-		DamageTypes: Prone50Percent, TriggerProne, SmallExplosionDeath
 	Warhead@2Smu: LeaveSmudge
 		SmudgeType: Crater
 		ValidTargets: Ground, Infantry
@@ -277,3 +276,12 @@ VolkovGun:
 			Heavy: 48
 			Concrete: 32
 		DamageTypes: Prone50Percent, TriggerProne, FireDeath
+
+TurretDepthCharge:
+	Inherits: DepthCharge
+	Range: 6c512
+	Burst: 1
+	Report: turret1.aud
+	ReloadDelay: 30
+	Projectile: Bullet
+		Speed: 342
