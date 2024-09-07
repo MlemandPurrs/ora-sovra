@@ -1265,6 +1265,7 @@ WEAP:
 
 FACT:
 	Inherits: ^Building
+	Inherits@BOTI: ^BotFallbackInsurance
 	Selectable:
 		Bounds: 3072, 3072
 	Building:
@@ -1382,6 +1383,9 @@ FACT:
 	TransferTimedExternalConditionOnTransform:
 		Condition: invulnerability
 	AcceptsDeliveredCash:
+	GrantConditionOnBotOwner@botinsurance:
+		Condition: bot-insurance-enabler
+		Bots: unplugged
 
 PROC:
 	Inherits: ^Building
