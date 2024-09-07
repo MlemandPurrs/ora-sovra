@@ -601,11 +601,14 @@ Player:
 			e2: 15
 			e3: 30
 			e4: 20
+            e6: 5
             e8: 20
 			dog: 15
             spy: 7
 			shok: 30
             snip: 15
+            medi: 3
+            mech: 3
 			harv: 15
             ahrv: 15
 			apc: 20
@@ -630,10 +633,14 @@ Player:
             ss: 15
             msub: 30
             seas: 10
+            mcv: 1
 		UnitLimits:
+            e6: 1
 			dog: 6
             spy: 1
             snip: 2
+            medi: 2
+            mech: 1
 			harv: 8
             ahrv: 8
 			jeep: 3
@@ -645,3 +652,9 @@ Player:
             ca: 2
             ss: 4
             msub: 2
+            mcv: 1
+    CaptureManagerBotModule@unplugged:
+        CapturingActorTypes: e6
+        CapturableActorTypes: oilb, hosp, bio, miss, fcom, oilb.husk, hosp.husk, bio.husk, miss.husk, fcom.husk
+        MaximumCaptureTargetOptions: 20
+        CheckCaptureTargetsForVisibility: false
