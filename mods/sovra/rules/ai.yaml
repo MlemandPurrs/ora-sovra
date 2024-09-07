@@ -526,6 +526,21 @@ Player:
 		NavalProductionTypes: spen, syrd
 		SiloTypes: silo
 		DefenseTypes: hbox,pbox,gun,ftur,tsla,agun,sam
+        PlaceDefenseTowardsEnemyChance: 65
+		BuildingDelays:
+			proc: 2250
+			ercc: 2250
+			dome: 4500
+			weap: 2250
+			syrd: 6000
+			spen: 6000
+			afld: 6375
+			afld.ukraine: 6375
+			afld.belarus: 6375
+			hpad: 6375
+			atek: 6375
+			stek: 6375
+			mslo: 8000
 		BuildingLimits:
 			proc: 3
             ercc: 3
@@ -587,7 +602,7 @@ Player:
 		AttackScanRadius: 14
 		ProtectionScanRadius: 10
 		NavalUnitsTypes: seas, ss, msub, dd, ca, lst, pt
-		ExcludeFromSquadsTypes: harv, ahrv, mcv, dog, badr.bomber, u2
+		ExcludeFromSquadsTypes: harv, ahrv, mcv, dog, badr.bomber, u2, e6
 		ConstructionYardTypes: fact
 		NavalProductionTypes: spen, syrd
 		AirUnitsTypes: mig, yak, heli, hind, mh60
@@ -596,7 +611,10 @@ Player:
 	UnitBuilderBotModule@unplugged:
 		IdleBaseUnitsMaximum: 16
 		RequiresCondition: enable-unplugged-ai
-		UnitsToBuild:
+		UnitDelays:
+			arty: 4500
+            v2rl: 4500
+        UnitsToBuild:
 			e1: 65
 			e2: 15
 			e3: 30
