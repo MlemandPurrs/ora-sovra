@@ -346,7 +346,6 @@ FIXF:
 
 HPAF:
 	Inherits: ^FakeBuilding
-	Inherits@IDISABLE: ^DisableOnLowPower
 	Inherits@infiltrate: ^InfiltratableFake
 	Inherits@shape: ^2x2Shape
 	Selectable:
@@ -381,9 +380,8 @@ HPAF:
 
 AFLF:
 	Inherits: ^FakeBuilding
-	Inherits@IDISABLE: ^DisableOnLowPower
 	Inherits@infiltrate: ^InfiltratableFake
-	Inherits@shape: ^2x2Shape
+	Inherits@shape: ^3x2Shape
 	Selectable:
 		Class: afld
 		Bounds: 3072, 2048
@@ -551,7 +549,7 @@ IROF:
 	Inherits: ^FakeBuilding
 	Inherits@infiltrate: ^InfiltratableFake
 	Inherits@IDISABLE: ^DisableOnLowPower
-	Inherits@shape: ^2x2Shape
+	Inherits@shape: ^2x1Shape
 	Selectable:
 		Bounds: 2048, 1194, 0, 85
 		DecorationBounds: 2133, 2133, 0, -512
