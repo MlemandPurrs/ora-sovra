@@ -538,6 +538,8 @@ Player:
 			fix: 1
             hpad: 2
             afld: 2
+			afld.ukraine: 2
+            afld.belarus: 2
 		BuildingFractions:
 			proc: 30
             ercc: 30
@@ -559,6 +561,8 @@ Player:
 			dome: 5
             hpad: 4
             afld: 4
+			afld.ukraine: 4
+            afld.belarus: 4
 			mslo: 1
 	McvManagerBotModule@unplugged:
 		RequiresCondition: enable-unplugged-ai
