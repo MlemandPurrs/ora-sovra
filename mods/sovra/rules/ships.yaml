@@ -5,8 +5,8 @@ SS:
 		TargetableOffsets: 448,0,0, -448,0,0
 		Type: Capsule
 			Radius: 256
-			PointA: 0, -448
-			PointB: 0, 448
+			PointA: 0, -576
+			PointB: 0, 576
 	Buildable:
         BuildDuration: 850
         BuildDurationModifier: 100
@@ -76,7 +76,7 @@ MSUB:
 	HitShape:
 		TargetableOffsets: 576,0,0, -576,0,0
 		Type: Capsule
-			Radius: 341
+			Radius: 256
 			PointA: 0, -576
 			PointB: 0, 576
 	Buildable:
