@@ -54,6 +54,7 @@ Maverick:
 	Range: 9c0
 	MinRange: 2c0
 	Report: missile7.aud
+    ValidTargets: Ground, Water, GroundActor, WaterActor, Underwater
 	Burst: 2
 	BurstDelays: 7
 	Projectile: Missile
@@ -69,6 +70,7 @@ Maverick:
 			Light: 90
 			Heavy: 115
 			Concrete: 100
+		ValidTargets: GroundActor, WaterActor, Underwater
 
 Dragon:
 	Inherits: ^AntiGroundMissile
