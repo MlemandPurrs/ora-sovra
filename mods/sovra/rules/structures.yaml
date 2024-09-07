@@ -588,7 +588,7 @@ PDOX:
 		PauseOnCondition: disabled
 		Prerequisites: pdox.germany
 		Icon: chrono
-		ChargeInterval: 3000
+		ChargeInterval: 4500
 		Name: Advanced Chronoshift
 		Description: Teleports a large group of units across\nthe map for 20 seconds.
 		SelectTargetSpeechNotification: SelectTarget
