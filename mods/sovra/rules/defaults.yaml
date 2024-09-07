@@ -1468,3 +1468,37 @@
 		Position: Center
 		Palette: player
 		IsPlayerPalette: True
+
+^TechBuildingHusk:
+	Inherits@1: ^SpriteActor
+	Inherits@shape: ^1x1Shape
+	Interactable:
+	AppearsOnRadar:
+	Health:
+		HP: 20000
+    Armor:
+        Type: Concrete
+    DamageMultiplier@IsInvulnerable:
+        Modifier: 0
+	Building:
+		Dimensions: 1,1
+		Footprint: x
+	WithSpriteBody:
+	Targetable:
+		RequiresForceFire: true
+		TargetTypes: Ground, Husk, NoAutoTarget
+	Tooltip:
+		GenericName: Tech Building (Destroyed)
+		GenericStancePrefix: false
+		ShowOwnerRow: false
+	FrozenUnderFog:
+	ScriptTriggers:
+	MapEditorData:
+		Categories: Husk
+	CaptureManager:
+	Capturable:
+		Types: restore-tech
+		ValidRelationships: Enemy, Neutral, Ally   
+    CapturableProgressBlink:
+	Targetable@AIFixer:
+		TargetTypes: IgnoreThis

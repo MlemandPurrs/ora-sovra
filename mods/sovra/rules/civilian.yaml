@@ -180,6 +180,26 @@ FCOM:
 	AppearsOnMapPreview:
 	GpsDot:
 		String: Forward
+	SpawnActorOnDeath:
+		Actor: FCOM.Husk
+        OwnerType: InternalName
+
+FCOM.Husk:
+	Inherits: ^TechBuildingHusk
+	Interactable:
+		Bounds: 2048, 2048
+	Building:
+		Footprint: xx xx ==
+		Dimensions: 2,3
+		LocalCenterOffset: 0,-512,0
+	Tooltip:
+		Name: Forward Command (Destroyed)
+	WithBuildingBib:
+	TransformOnCapture:
+		ForceHealthPercentage: 35
+		IntoActor: fcom
+	RenderSprites:
+        Image: fcom.destroyed
 
 HOSP:
 	Inherits: ^TechBuilding
@@ -192,6 +212,7 @@ HOSP:
 	Building:
 		Footprint: xx xx
 		Dimensions: 2,2
+        LocalCenterOffset: 0,-128,0
 	Health:
 		HP: 80000
 	CaptureManager:
@@ -212,13 +233,31 @@ HOSP:
 		Range: 4c0
 	WithBuildingBib:
 		HasMinibib: true
-	WithDeathAnimation:
-		DeathSequence: dead
-		UseDeathTypeSuffix: false
 	ProvidesPrerequisite@buildingname:
 	AppearsOnMapPreview:
 	GpsDot:
 		String: Hospital
+	SpawnActorOnDeath:
+		Actor: HOSP.Husk
+        OwnerType: InternalName
+
+HOSP.Husk:
+	Inherits: ^TechBuildingHusk
+	Interactable:
+		Bounds: 2048, 2048
+	Building:
+		Footprint: xx xx
+		Dimensions: 2,2
+        LocalCenterOffset: 0,-128,0
+	Tooltip:
+		Name: Hospital (Destroyed)
+	WithBuildingBib:
+		HasMinibib: true
+	TransformOnCapture:
+		ForceHealthPercentage: 35
+		IntoActor: hosp
+	RenderSprites:
+        Image: hosp.destroyed
 
 V01:
 	Inherits: ^CivBuilding
@@ -488,6 +527,26 @@ MISS:
 	AppearsOnMapPreview:
 	GpsDot:
 		String: Communications
+	SpawnActorOnDeath:
+		Actor: MISS.Husk
+        OwnerType: InternalName
+
+MISS.Husk:
+	Inherits: ^TechBuildingHusk
+	Interactable:
+		Bounds: 3072, 2048
+	Building:
+		Footprint: xxx xxx ===
+		Dimensions: 3,3
+		LocalCenterOffset: 0,-512,0
+	Tooltip:
+		Name: Communications Center (Destroyed)
+	WithBuildingBib:
+	TransformOnCapture:
+		ForceHealthPercentage: 35
+		IntoActor: miss
+	RenderSprites:
+        Image: miss.destroyed
 
 BIO:
 	Inherits: ^TechBuilding
@@ -515,13 +574,28 @@ BIO:
 	TooltipDescription@other:
 		Description: Capture to produce Bio-Lab units.
 		ValidRelationships: Neutral, Enemy
-	WithDeathAnimation:
-		DeathSequence: dead
-		UseDeathTypeSuffix: false
 	ProvidesPrerequisite@buildingname:
 	AppearsOnMapPreview:
 	GpsDot:
 		String: Biohazard
+	SpawnActorOnDeath:
+		Actor: BIO.Husk
+        OwnerType: InternalName
+
+BIO.Husk:
+	Inherits: ^TechBuildingHusk
+	Interactable:
+		Bounds: 2048, 2048
+	Building:
+		Footprint: xx xx
+		Dimensions: 2,2
+	Tooltip:
+		Name: Biological Lab (Destroyed)
+	TransformOnCapture:
+		ForceHealthPercentage: 35
+		IntoActor: bio
+	RenderSprites:
+        Image: bio.destroyed
 
 OILB:
 	Inherits: ^TechBuilding
@@ -569,6 +643,24 @@ OILB:
 	UpdatesDerrickCount:
 	GrantConditionOnCombatantOwner:
 		Condition: enabled
+	SpawnActorOnDeath:
+		Actor: OILB.Husk
+        OwnerType: InternalName
+
+OILB.Husk:
+	Inherits: ^TechBuildingHusk
+	Interactable:
+		Bounds: 2048, 2048
+	Building:
+		Footprint: xx xx
+		Dimensions: 2,2
+	Tooltip:
+		Name: Oil Derrick (Destroyed)
+	TransformOnCapture:
+		ForceHealthPercentage: 35
+		IntoActor: oilb
+	RenderSprites:
+        Image: oilb.destroyed
 
 BR1:
 	Inherits: ^Bridge

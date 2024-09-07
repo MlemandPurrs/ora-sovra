@@ -14,6 +14,21 @@ fcom:
 			DESERT: bib3.des
 		Length: *
 
+fcom.destroyed:
+    Defaults:
+        Filename: fcom.shp
+	idle:
+		Start: 1
+	dead:
+		Start: 1
+		Tick: 800
+	bib:
+		Filename: bib3.tem
+		TilesetFilenames:
+			SNOW: bib3.sno
+			DESERT: bib3.des
+		Length: *
+
 hosp:
 	Defaults:
 		Filename: hosp.shp
@@ -45,18 +60,47 @@ hosp:
 	icon:
 		Filename: hospicon.shp
 
+hosp.destroyed:
+	idle:
+        Filename: hosp.shp
+		Start: 8
+        Length: 1
+		Offset: 0,-2
+	bib:
+		TilesetFilenames:
+			SNOW: mbHOSP.sno
+			INTERIOR: mbHOSP.int
+			TEMPERAT: mbHOSP.tem
+			DESERT: mbHOSP.des
+		Length: *
+		Offset: 0,1
+
 bio:
 	Defaults:
 		Filename: bio.shp
 	idle:
+		Offset: 0,-2
 	damaged-idle:
 		Start: 1
+		Offset: 0,-2
 	dead:
 		Start: 2
 		Tick: 800
+		Offset: 0,-2
 	make:
 		Filename: biomake.shp
 		Length: *
+
+bio.destroyed:
+	Defaults:
+		Filename: bio.shp
+	idle:
+		Start: 2
+		Offset: 0,-2
+	dead:
+		Start: 2
+		Tick: 800
+		Offset: 0,-2
 
 oilb:
 	Defaults:
@@ -74,6 +118,16 @@ oilb:
 			DESERT: bib3.des
 		Length: *
 		Offset: 0,0
+
+oilb.destroyed:
+    Defaults:
+        Filename: oilb.shp
+		Offset: 0,-6
+	idle:
+		Start: 1
+	dead: 
+		Start: 1
+		Tick: 800
 
 fact:
 	Defaults:
@@ -883,6 +937,21 @@ miss:
 	make:
 		Filename: missmake.shp
 		Length: *
+	bib:
+		Filename: bib2.tem
+		TilesetFilenames:
+			SNOW: bib2.sno
+			DESERT: bib2.des
+		Length: *
+
+miss.destroyed:
+    Defaults:
+        Filename: miss.shp
+	idle:
+		Start: 2
+	dead:
+		Start: 2
+		Tick: 800
 	bib:
 		Filename: bib2.tem
 		TilesetFilenames:

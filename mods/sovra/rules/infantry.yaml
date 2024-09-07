@@ -331,6 +331,11 @@ E6:
 		ConsumedByCapture: False
 		EnterCursor: ability
 		EnterBlockedCursor: move-blocked
+	Captures@RESTORETECH:
+		CaptureTypes: restore-tech
+		PlayerExperience: 10
+        EnterCursor: goldwrench
+        EnterBlockedCursor: goldwrench-blocked
 	Voiced:
 		VoiceSet: EngineerVoice
 	-AttackFrontal:
