@@ -541,6 +541,8 @@ Player:
             afld: 2
 			afld.ukraine: 2
             afld.belarus: 2
+            spen: 1
+            syrd: 1
 		BuildingFractions:
 			proc: 30
             ercc: 30
@@ -548,6 +550,8 @@ Player:
 			kenn: 1
 			tent: 20
 			weap: 10
+			syrd: 10
+			spen: 10
 			pbox: 5
             hbox: 5
 			gun: 5
@@ -620,6 +624,12 @@ Player:
             mh60: 25
             yak: 25
             mig: 25
+            pt: 10
+            dd: 30
+            ca: 20
+            ss: 15
+            msub: 30
+            seas: 10
 		UnitLimits:
 			dog: 6
             spy: 1
@@ -629,3 +639,9 @@ Player:
 			jeep: 3
 			ftrk: 4
             apc: 5
+            pt: 4
+            seas: 3
+            dd: 3
+            ca: 2
+            ss: 4
+            msub: 2
