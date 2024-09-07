@@ -523,6 +523,7 @@ Player:
 		BarracksTypes: barr,tent
 		VehiclesFactoryTypes: weap
 		ProductionTypes: barr,tent,weap
+		NavalProductionTypes: spen, syrd
 		SiloTypes: silo
 		DefenseTypes: hbox,pbox,gun,ftur,tsla,agun,sam
 		BuildingLimits:
