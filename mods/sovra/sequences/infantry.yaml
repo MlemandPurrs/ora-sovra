@@ -1823,8 +1823,7 @@ snip:
 		Stride: 6
 		Facings: 8
     parachute:
-        Start: 0
-		Facings: 8
+        Start: 352
 	icon:
 		Filename: snipicon.shp
 		TilesetFilenames:

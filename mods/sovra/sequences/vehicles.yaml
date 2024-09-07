@@ -364,12 +364,12 @@ qtnk:
 		Filename: qtnkicon.shp
 
 stnk:
-	Defaults:
-		Filename: stnk.shp
 	idle:
+		Filename: stnk2.shp
 		Facings: 32
 		UseClassicFacings: True
 	turret:
+		Filename: stnk.shp
 		Start: 38
 		Facings: 32
 		UseClassicFacings: True
