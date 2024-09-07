@@ -575,7 +575,7 @@
 	Cloak:
 		DetectionTypes: Underwater
 		InitialDelay: 0
-		CloakDelay: 50
+		CloakDelay: 51
 		CloakSound: subshow1.aud
 		UncloakSound: subshow1.aud
 		CloakedCondition: underwater
