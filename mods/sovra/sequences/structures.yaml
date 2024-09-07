@@ -1030,6 +1030,8 @@ ercc:
 		Length: *
 	icon:
 		Filename: procicon.shp
+	fake-icon:
+		Filename: proficon.shp
 
 vgat:
 	Defaults:

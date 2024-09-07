@@ -326,7 +326,7 @@ Player:
 		ExcludeFromSquadsTypes: harv, ahrv, mcv, dog, badr.bomber, u2
 		ConstructionYardTypes: fact
 		AirUnitsTypes: mig, yak, heli, hind, mh60
-		ProtectionTypes: harv, ahrv, mcv, mslo, gap, spen, syrd, iron, pdox, tsla, agun, dome, pbox, hbox, gun, ftur, sam, atek, weap, fact, proc, ercc, silo, hpad, afld, afld.ukraine, powr, apwr, stek, barr, kenn, tent, fix, fpwr, tenf, syrf, spef, weaf, domf, fixf, fapw, atef, pdof, mslf, facf
+		ProtectionTypes: harv, ahrv, mcv, mslo, gap, spen, syrd, iron, pdox, tsla, agun, dome, pbox, hbox, gun, ftur, sam, atek, weap, fact, proc, ercc, silo, hpad, afld, afld.ukraine, powr, apwr, stek, barr, kenn, tent, fix, fpwr, tenf, syrf, spef, weaf, domf, fixf, fapw, atef, pdof, mslf, facf, prof, hpaf, aflf, stef, barf, irof, frcc
 		IgnoredEnemyTargetTypes: AirborneActor, IgnoreThis
 	McvManagerBotModule:
 		RequiresCondition: enable-rush-ai || enable-normal-ai || enable-turtle-ai || enable-naval-ai
@@ -370,7 +370,7 @@ Player:
 		ConstructionYardTypes: fact
 		NavalProductionTypes: spen, syrd
 		AirUnitsTypes: mig, yak, heli, hind, mh60
-		ProtectionTypes: harv, ahrv, mcv, mslo, gap, spen, syrd, iron, pdox, tsla, agun, dome, pbox, hbox, gun, ftur, sam, atek, weap, fact, proc, ercc, silo, hpad, afld, afld.ukraine, powr, apwr, stek, barr, kenn, tent, fix, fpwr, tenf, syrf, spef, weaf, domf, fixf, fapw, atef, pdof, mslf, facf
+		ProtectionTypes: harv, ahrv, mcv, mslo, gap, spen, syrd, iron, pdox, tsla, agun, dome, pbox, hbox, gun, ftur, sam, atek, weap, fact, proc, ercc, silo, hpad, afld, afld.ukraine, powr, apwr, stek, barr, kenn, tent, fix, fpwr, tenf, syrf, spef, weaf, domf, fixf, fapw, atef, pdof, mslf, facf, prof, hpaf, aflf, stef, barf, irof, frcc
 		IgnoredEnemyTargetTypes: AirborneActor, IgnoreThis
 	UnitBuilderBotModule@normal:
 		RequiresCondition: enable-normal-ai
@@ -420,7 +420,7 @@ Player:
 		ConstructionYardTypes: fact
 		NavalProductionTypes: spen, syrd
 		AirUnitsTypes: mig, yak, heli, hind, mh60
-		ProtectionTypes: harv, ahrv, mcv, mslo, gap, spen, syrd, iron, pdox, tsla, agun, dome, pbox, hbox, gun, ftur, sam, atek, weap, fact, proc, ercc, silo, hpad, afld, afld.ukraine, powr, apwr, stek, barr, kenn, tent, fix, fpwr, tenf, syrf, spef, weaf, domf, fixf, fapw, atef, pdof, mslf, facf
+		ProtectionTypes: harv, ahrv, mcv, mslo, gap, spen, syrd, iron, pdox, tsla, agun, dome, pbox, hbox, gun, ftur, sam, atek, weap, fact, proc, ercc, silo, hpad, afld, afld.ukraine, powr, apwr, stek, barr, kenn, tent, fix, fpwr, tenf, syrf, spef, weaf, domf, fixf, fapw, atef, pdof, mslf, facf, prof, hpaf, aflf, stef, barf, irof, frcc
 		IgnoredEnemyTargetTypes: AirborneActor, IgnoreThis
 	UnitBuilderBotModule@turtle:
 		RequiresCondition: enable-turtle-ai
@@ -470,7 +470,7 @@ Player:
 		ConstructionYardTypes: fact
 		NavalProductionTypes: spen, syrd
 		AirUnitsTypes: mig, yak, heli, hind, mh60
-		ProtectionTypes: harv, ahrv, mcv, mslo, gap, spen, syrd, iron, pdox, tsla, agun, dome, pbox, hbox, gun, ftur, sam, atek, weap, fact, proc, ercc, silo, hpad, afld, afld.ukraine, powr, apwr, stek, barr, kenn, tent, fix, fpwr, tenf, syrf, spef, weaf, domf, fixf, fapw, atef, pdof, mslf, facf
+		ProtectionTypes: harv, ahrv, mcv, mslo, gap, spen, syrd, iron, pdox, tsla, agun, dome, pbox, hbox, gun, ftur, sam, atek, weap, fact, proc, ercc, silo, hpad, afld, afld.ukraine, powr, apwr, stek, barr, kenn, tent, fix, fpwr, tenf, syrf, spef, weaf, domf, fixf, fapw, atef, pdof, mslf, facf, prof, hpaf, aflf, stef, barf, irof, frcc
 		IgnoredEnemyTargetTypes: AirborneActor, IgnoreThis
 	UnitBuilderBotModule@naval:
 		RequiresCondition: enable-naval-ai

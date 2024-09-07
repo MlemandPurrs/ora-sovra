@@ -107,12 +107,23 @@ PROF:
 		Bounds: 3072, 2133, 0, 170
 		DecorationBounds: 3072, 2986, 0, -85
 	HitShape:
-		UseTargetableCellsOffsets: false
-		TargetableOffsets: 0,0,0, 640,-384,0, 640,512,0, -710,-512,0, -710,512,0
+		Type: Rectangle
+			TopLeft: -1536, -512
+			BottomRight: 1536, 598
+	HitShape@TOP:
+		TargetableOffsets: 1680,0,0
+		Type: Rectangle
+			TopLeft: -512, -1536
+			BottomRight: 512, -512
+	HitShape@BOTTOMLEFT:
+		TargetableOffsets: -1260,-1024,0
+		Type: Rectangle
+			TopLeft: -1536, 598
+			BottomRight: -512, 1280
 	Buildable:
 		BuildPaletteOrder: 890
 		Queue: Defense
-		Prerequisites: proc, ~structures.france, ~techlevel.infonly
+		Prerequisites: proc, ~structures.france, ~techlevel.infonly, ~!global-ercc-refinery
 		Description: Looks like a Ore Refinery.
 		Icon: fake-icon
 	Tooltip:
@@ -129,10 +140,13 @@ PROF:
 	Armor:
 		Type: Wood
 	WithBuildingBib:
+	WithIdleOverlay@TOP:
+		RequiresCondition: !build-incomplete
+		Sequence: idle-top
 	RenderSprites:
 		Image: PROC
 	Valued:
-		Cost: 350
+		Cost: 375
 
 SYRF:
 	Inherits: ^FakeBuilding
@@ -635,3 +649,51 @@ FACF:
 		Type: Rectangle
 			TopLeft: -1536, -1536
 			BottomRight: 1536, 1536
+
+FRCC:
+	Inherits: ^FakeBuilding
+	Inherits@infiltrate: ^InfiltratableFake
+	Selectable:
+		Bounds: 3072, 1920, 0, -170
+		DecorationBounds: 3072, 3200, 42, -170
+	HitShape:
+		Type: Rectangle
+			TopLeft: -1536, -512
+			BottomRight: 1536, 598
+	HitShape@TOP:
+		TargetableOffsets: 1680,0,0
+		Type: Rectangle
+			TopLeft: -512, -1536
+			BottomRight: 512, -512
+	HitShape@BOTTOMLEFT:
+		TargetableOffsets: -1260,-1024,0
+		Type: Rectangle
+			TopLeft: -1536, 598
+			BottomRight: -512, 1280
+	Buildable:
+		BuildPaletteOrder: 895
+		Queue: Defense
+		Prerequisites: proc, ~structures.france, ~techlevel.infonly, ~global-ercc-refinery
+		Description: Looks like a Ore Refinery.
+		Icon: fake-icon
+	Tooltip:
+		Name: Fake Ore Refinery
+		GenericName: Ore Refinery
+		GenericVisibility: Enemy
+		GenericStancePrefix: False
+	Building:
+		Footprint: =xx x=+ ===
+		Dimensions: 3,3
+		LocalCenterOffset: 0,-512,0
+	Health:
+		HP: 90000
+	Armor:
+		Type: Wood
+	WithBuildingBib:
+	RenderSprites:
+		Image: ERCC
+	Valued:
+		Cost: 375
+	WithIdleOverlay@TOP:
+		RequiresCondition: !build-incomplete
+		Sequence: idle-top
