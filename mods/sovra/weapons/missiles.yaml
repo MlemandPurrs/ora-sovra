@@ -222,6 +222,7 @@ APTusk.stnk:
 TorpTube:
 	ReloadDelay: 100
 	Range: 9c0
+    MinRange: 2c0
 	Report: torpedo1.aud
 	ValidTargets: Water, WaterActor, Underwater, Bridge
 	Burst: 2
