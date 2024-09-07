@@ -652,6 +652,7 @@ Player:
             msub: 30
             seas: 10
             mcv: 1
+            mrj: 3
 		UnitLimits:
             e6: 1
 			dog: 6
@@ -671,6 +672,7 @@ Player:
             ss: 4
             msub: 2
             mcv: 1
+            mrj: 1
     CaptureManagerBotModule@unplugged:
         CapturingActorTypes: e6
         CapturableActorTypes: oilb, hosp, bio, miss, fcom, oilb.husk, hosp.husk, bio.husk, miss.husk, fcom.husk
