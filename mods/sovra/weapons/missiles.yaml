@@ -238,6 +238,7 @@ TorpTube:
 		Palette: shadow
 		MaximumLaunchAngle: 0
 		CruiseAltitude: 0
+		Jammable: False
 	Warhead@1Dam: SpreadDamage
 		Spread: 426
 		Damage: 18000
