@@ -24,10 +24,10 @@ heli:
 		Facings: 32
 		UseClassicFacings: True
 	rotor:
-		Filename: lrotor.shp
+		Filename: lbrotor.shp
 		Length: 4
 	slow-rotor:
-		Filename: lrotor.shp
+		Filename: lbrotor.shp
 		Start: 4
 		Length: 8
 	icon:
