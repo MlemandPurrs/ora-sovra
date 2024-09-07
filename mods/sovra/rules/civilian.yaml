@@ -95,6 +95,10 @@ C10:
 	WithDeathAnimation:
 		DeathSequencePalette: civilian10
 		DeathPaletteIsPlayerPalette: false
+	DeliversCash:
+        Cursor: sell2
+		Payload: 10
+        PlayerExperience: 0
 
 C11:
 	Inherits: ^CivInfantry
