@@ -579,7 +579,7 @@ Player:
 	SquadManagerBotModule@unplugged:
 		RequiresCondition: enable-unplugged-ai
 		SquadSize: 15
-        SquadSizeRandomBonus: 40
+        SquadSizeRandomBonus: 30
 		AssignRolesInterval: 10
 		RushAttackScanRadius: 22
         ProtectUnitScanRadius: 22
