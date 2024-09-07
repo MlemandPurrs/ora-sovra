@@ -348,7 +348,7 @@ SEAS:
 		BuildAtProductionType: Submarine
 		BuildPaletteOrder: 20
 		Prerequisites: ~spen, ~techlevel.low
-		Description: Naval mobile flak unit.\nCan detect Submarines.\n\n  Strong vs Aircraft, Infantry\n  Weak vs Ships, Vehicles
+		Description: Naval mobile flak unit.\n\n  Strong vs Aircraft, Infantry\n  Weak vs Ships, Vehicles
 	Valued:
 		Cost: 600
 	Tooltip:
@@ -385,9 +385,5 @@ SEAS:
 	AttackFrontal:
 		FacingTolerance: 0
 	WithMuzzleOverlay:
-	DetectCloaked:
-		DetectionTypes: Underwater
-		Range: 4c0
-	RenderDetectionCircle:
 	Selectable:
 		DecorationBounds: 1036,1036
