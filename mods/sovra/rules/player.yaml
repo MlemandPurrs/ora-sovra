@@ -151,7 +151,7 @@ Player:
 		ID: ercc-refinery
 		Label: checkbox-ercc-refinery.label
 		Description: checkbox-ercc-refinery.description
-		Enabled: False
+		Enabled: True
 		DisplayOrder: 90
 		Prerequisites: global-ercc-refinery
 	FrozenActorLayer:
