@@ -110,6 +110,15 @@ Player:
 					Attractiveness: 1
 					TargetMetric: None
 					CheckRadius: 10c0
+			invulnerability:
+				OrderName: IronCurtain
+				MinimumAttractiveness: 1
+				Consideration@1:
+					Against: Ally
+					Types: Repair
+					Attractiveness: 1
+					TargetMetric: None
+					CheckRadius: 1c0
 	HarvesterBotModule:
 		RequiresCondition: enable-rush-ai || enable-normal-ai || enable-turtle-ai || enable-naval-ai || enable-unplugged-ai
 		HarvesterTypes: harv, ahrv
@@ -541,6 +550,7 @@ Player:
 			atek: 6375
 			stek: 6375
 			mslo: 8000
+            iron: 6500
 		BuildingLimits:
 			proc: 3
             ercc: 3
@@ -558,6 +568,7 @@ Player:
             afld.belarus: 2
             spen: 1
             syrd: 1
+            iron: 1
 		BuildingFractions:
 			proc: 30
             ercc: 30
@@ -584,6 +595,7 @@ Player:
 			afld.ukraine: 4
             afld.belarus: 4
 			mslo: 1
+            iron: 1
 	McvManagerBotModule@unplugged:
 		RequiresCondition: enable-unplugged-ai
 		RestrictMCVDeploymentFallbackToBase: False

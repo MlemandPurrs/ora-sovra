@@ -486,6 +486,7 @@ IRON:
 	WithBuildingBib:
 		HasMinibib: true
 	GrantExternalConditionPower@IRONCURTAIN:
+        OrderName: IronCurtain
 		PauseOnCondition: disabled
 		Icon: invuln
 		ChargeInterval: 3000
