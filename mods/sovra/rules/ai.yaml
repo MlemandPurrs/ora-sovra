@@ -603,7 +603,7 @@ Player:
         MaxBaseRadius: 24
 		ConstructionYardTypes: fact
 		McvFactoryTypes: weap
-        MinimumConstructionYardCount: 2
+        #   MinimumConstructionYardCount: 2
 	SquadManagerBotModule@unplugged:
 		RequiresCondition: enable-unplugged-ai
 		SquadSize: 15
@@ -665,6 +665,7 @@ Player:
             msub: 30
             seas: 10
             mrj: 3
+            mcv: 1
 		UnitLimits:
             e6: 1
 			dog: 6
@@ -684,6 +685,7 @@ Player:
             ss: 4
             msub: 2
             mrj: 1
+            mcv: 1
     CaptureManagerBotModule@unplugged:
         CapturingActorTypes: e6
         CapturableActorTypes: oilb, hosp, bio, miss, fcom, oilb.husk, hosp.husk, bio.husk, miss.husk, fcom.husk
