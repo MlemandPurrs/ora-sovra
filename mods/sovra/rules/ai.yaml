@@ -635,7 +635,6 @@ Player:
 		UnitDelays:
 			arty: 4500
             v2rl: 4500
-            mcv: 9000
         UnitsToBuild:
 			e1: 65
 			e2: 15
@@ -674,7 +673,6 @@ Player:
             msub: 30
             seas: 10
             mrj: 3
-            mcv: 1
 		UnitLimits:
             e6: 1
 			dog: 6
@@ -694,9 +692,8 @@ Player:
             ss: 4
             msub: 2
             mrj: 1
-            mcv: 1
     CaptureManagerBotModule@unplugged:
         CapturingActorTypes: e6
         CapturableActorTypes: oilb, hosp, bio, miss, fcom, oilb.husk, hosp.husk, bio.husk, miss.husk, fcom.husk
-        MaximumCaptureTargetOptions: 20
+        MaximumCaptureTargetOptions: 2
         CheckCaptureTargetsForVisibility: false
