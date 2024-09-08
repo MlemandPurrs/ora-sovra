@@ -234,6 +234,7 @@ SPEN:
 	DetectCloaked:
 		DetectionTypes: Underwater
 		Range: 10c0
+		RequiresCondition: !build-incomplete
 	RenderDetectionCircle:
 	ProvidesPrerequisite@soviet:
 		Factions: soviet, russia, ukraine, belarus
@@ -384,6 +385,7 @@ SYRD:
 	DetectCloaked:
 		DetectionTypes: Underwater
 		Range: 10c0
+		RequiresCondition: !build-incomplete
 	RenderDetectionCircle:
 	ProvidesPrerequisite@allies:
 		Factions: allies, england, france, germany
@@ -672,7 +674,7 @@ TSLA:
 		RequiresCondition: !build-incomplete
 	DetectCloaked:
 		Range: 6c0
-        RequiresCondition: !lowpower && !disabled
+        RequiresCondition: !lowpower && !disabled && !build-incomplete
 	ProvidesPrerequisite@buildingname:
 
 AGUN:
@@ -843,7 +845,7 @@ PBOX:
 		RequiresCondition: !build-incomplete
 	DetectCloaked:
 		Range: 6c0
-        RequiresCondition: loaded
+        RequiresCondition: loaded && !build-incomplete
 
 HBOX:
 	Inherits: ^Defense
@@ -901,7 +903,7 @@ HBOX:
 	-SpawnActorsOnSell:
 	DetectCloaked:
 		Range: 6c0
-        RequiresCondition: loaded
+        RequiresCondition: loaded && !build-incomplete
 	RenderRangeCircle:
 		FallbackRange: 6c0
 	AttackGarrisoned:
@@ -979,7 +981,7 @@ GUN:
 		RequiresCondition: !build-incomplete
 	DetectCloaked:
 		Range: 6c0
-        RequiresCondition: !lowpower
+        RequiresCondition: !lowpower && !build-incomplete
 	GrantConditionOnPowerState@LOWPOWER:
 		Condition: lowpower
 		ValidPowerStates: Low, Critical
@@ -1029,7 +1031,7 @@ FTUR:
 		RequiresCondition: !build-incomplete
 	DetectCloaked:
 		Range: 6c0
-        RequiresCondition: !lowpower
+        RequiresCondition: !lowpower && !build-incomplete
 	GrantConditionOnPowerState@LOWPOWER:
 		Condition: lowpower
 		ValidPowerStates: Low, Critical
