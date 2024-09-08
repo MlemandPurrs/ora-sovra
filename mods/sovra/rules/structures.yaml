@@ -72,6 +72,7 @@ MSLO:
 		TargetTypes: GroundActor, C4, DetonateAttack, Structure, SpyInfiltrate
 	Power:
 		Amount: -150
+		RequiresCondition: !build-incomplete
 	MustBeDestroyed:
 		RequiredForShortGame: false
 	WithSupportPowerActivationAnimation:
@@ -114,6 +115,7 @@ GAP:
 	RenderShroudCircle:
 	Power:
 		Amount: -60
+		RequiresCondition: !build-incomplete
 	MustBeDestroyed:
 		RequiredForShortGame: false
 	Explodes:
@@ -228,6 +230,7 @@ SPEN:
 		ProductionType: Ship
 	Power:
 		Amount: -30
+		RequiresCondition: !build-incomplete
 	DetectCloaked:
 		DetectionTypes: Underwater
 		Range: 10c0
@@ -377,6 +380,7 @@ SYRD:
 		ProductionType: Ship
 	Power:
 		Amount: -30
+		RequiresCondition: !build-incomplete
 	DetectCloaked:
 		DetectionTypes: Underwater
 		Range: 10c0
@@ -519,6 +523,7 @@ IRON:
 		TargetTypes: GroundActor, C4, DetonateAttack, Structure, SpyInfiltrate
 	Power:
 		Amount: -200
+		RequiresCondition: !build-incomplete
 	MustBeDestroyed:
 		RequiredForShortGame: false
 
@@ -618,6 +623,7 @@ PDOX:
 		TargetTypes: GroundActor, C4, DetonateAttack, Structure, SpyInfiltrate
 	Power:
 		Amount: -200
+		RequiresCondition: !build-incomplete
 	MustBeDestroyed:
 		RequiredForShortGame: false
 	ProvidesPrerequisite@buildingname:
@@ -663,6 +669,7 @@ TSLA:
 		ReloadDelay: 120
 	Power:
 		Amount: -100
+		RequiresCondition: !build-incomplete
 	DetectCloaked:
 		Range: 6c0
         RequiresCondition: !lowpower && !disabled
@@ -717,6 +724,7 @@ AGUN:
 		RangeCircleType: aa
 	Power:
 		Amount: -50
+		RequiresCondition: !build-incomplete
 	-BodyOrientation:
 	ClassicFacingBodyOrientation:
 
@@ -769,6 +777,7 @@ DOME:
 		PlayerExperience: 10
 	Power:
 		Amount: -40
+		RequiresCondition: !build-incomplete
 	ProvidesPrerequisite@buildingname:
 	ExternalCondition@JAMMED:
 		Condition: jammed
@@ -831,6 +840,7 @@ PBOX:
 		FallbackRange: 6c0
 	Power:
 		Amount: -20
+		RequiresCondition: !build-incomplete
 	DetectCloaked:
 		Range: 6c0
         RequiresCondition: loaded
@@ -902,6 +912,7 @@ HBOX:
 		PortCones: 88, 88, 88, 88, 88, 88
 	Power:
 		Amount: -20
+		RequiresCondition: !build-incomplete
 	-MustBeDestroyed:
 
 GUN:
@@ -965,6 +976,7 @@ GUN:
 	WithMuzzleOverlay:
 	Power:
 		Amount: -40
+		RequiresCondition: !build-incomplete
 	DetectCloaked:
 		Range: 6c0
         RequiresCondition: !lowpower
@@ -1014,6 +1026,7 @@ FTUR:
 		QuantizedFacings: 8
 	Power:
 		Amount: -20
+		RequiresCondition: !build-incomplete
 	DetectCloaked:
 		Range: 6c0
         RequiresCondition: !lowpower
@@ -1081,6 +1094,7 @@ SAM:
 		RangeCircleType: aa
 	Power:
 		Amount: -40
+		RequiresCondition: !build-incomplete
 	-BodyOrientation:
 	ClassicFacingBodyOrientation:
 
@@ -1138,6 +1152,7 @@ ATEK:
 		TargetTypes: GroundActor, C4, DetonateAttack, Structure, SpyInfiltrate
 	Power:
 		Amount: -200
+		RequiresCondition: !build-incomplete
 	ProvidesPrerequisite@buildingname:
 
 WEAP:
@@ -1256,6 +1271,7 @@ WEAP:
 		ProductionType: Vehicle
 	Power:
 		Amount: -30
+		RequiresCondition: !build-incomplete
 	ProvidesPrerequisite@buildingname:
 	Targetable:
 		TargetTypes: GroundActor, C4, DetonateAttack, Structure, SpyInfiltrate
@@ -1372,6 +1388,7 @@ FACT:
 		RequiresCondition: !build-incomplete && !chrono-vortex
 	Power:
 		Amount: 50
+		RequiresCondition: !build-incomplete
 	WithDeathAnimation:
 		DeathSequence: dead
 		UseDeathTypeSuffix: false
@@ -1464,6 +1481,7 @@ PROC:
 		Sequence: idle-top
 	Power:
 		Amount: -30
+		RequiresCondition: !build-incomplete
 	WithDeathAnimation:
 		DeathSequence: dead
 		UseDeathTypeSuffix: false
@@ -1535,6 +1553,7 @@ SILO:
 	-SpawnActorsOnSell:
 	Power:
 		Amount: -10
+		RequiresCondition: !build-incomplete
 	Explodes:
 		Weapon: SmallBuildingExplode
 		EmptyWeapon: SmallBuildingExplode
@@ -1598,6 +1617,7 @@ HPAD:
 		ProductionType: Aircraft
 	Power:
 		Amount: -10
+		RequiresCondition: !build-incomplete
 	ProvidesPrerequisite:
 		Prerequisite: airproduction
 	ProvidesPrerequisite@allies:
@@ -1818,6 +1838,7 @@ AFLD:
 	SupportPowerChargeBar:
 	Power:
 		Amount: -20
+		RequiresCondition: !build-incomplete
 	ProvidesPrerequisite@buildingname:
 		Prerequisite: afld
 	Targetable:
@@ -1886,6 +1907,7 @@ POWR:
 	WithBuildingBib:
 	Power:
 		Amount: 100
+		RequiresCondition: !disabled && !build-incomplete
 	Targetable:
 		TargetTypes: GroundActor, Structure, C4, DetonateAttack, SpyInfiltrate
 	ScalePowerWithHealth:
@@ -1928,6 +1950,7 @@ APWR:
 	WithBuildingBib:
 	Power:
 		Amount: 200
+		RequiresCondition: !disabled && !build-incomplete
 	Targetable:
 		TargetTypes: GroundActor, Structure, C4, DetonateAttack, SpyInfiltrate
 	ScalePowerWithHealth:
@@ -1972,6 +1995,7 @@ STEK:
 	WithBuildingBib:
 	Power:
 		Amount: -100
+		RequiresCondition: !build-incomplete
 	ProvidesPrerequisite@buildingname:
 
 BARR:
@@ -2063,6 +2087,7 @@ BARR:
 		Prerequisite: infantry.belarus
 	Power:
 		Amount: -20
+		RequiresCondition: !build-incomplete
 	ProvidesPrerequisite@buildingname:
 	InfiltrateForSupportPower:
 		Proxy: barracks.upgraded
@@ -2152,6 +2177,7 @@ KENN:
 	-SpawnActorsOnSell:
 	Power:
 		Amount: -10
+		RequiresCondition: !build-incomplete
 	ProvidesPrerequisite@buildingname:
 
 TENT:
@@ -2243,6 +2269,7 @@ TENT:
 		Prerequisite: infantry.germany
 	Power:
 		Amount: -20
+		RequiresCondition: !build-incomplete
 	ProvidesPrerequisite@buildingname:
 	InfiltrateForSupportPower:
 		Proxy: barracks.upgraded
@@ -2300,6 +2327,7 @@ FIX:
 		RequiresCondition: !build-incomplete
 	Power:
 		Amount: -30
+		RequiresCondition: !build-incomplete
 	ProvidesPrerequisite@buildingname:
 	HitShape:
 		TargetableOffsets: 840,0,0, 598,-640,0, 598,640,0, -1060,0,0, -768,-640,0, -768,640,0
@@ -2533,6 +2561,7 @@ ERCC:
 		Sequence: idle-top
 	Power:
 		Amount: -30
+		RequiresCondition: !build-incomplete
 	ProvidesPrerequisite@buildingname:
     ProvidesPrerequisite@refinerycopy:
         Prerequisite: proc
