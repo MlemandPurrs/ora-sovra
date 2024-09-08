@@ -569,6 +569,10 @@ Player:
             spen: 1
             syrd: 1
             iron: 1
+            fpwr: 2
+            fapw: 1
+            domf: 1
+            atef: 1
 		BuildingFractions:
 			proc: 30
             ercc: 30
@@ -596,6 +600,10 @@ Player:
             afld.belarus: 4
 			mslo: 1
             iron: 1
+            fpwr: 1
+            fapw: 1
+            domf: 1
+            atef: 1
 	McvManagerBotModule@unplugged:
 		RequiresCondition: enable-unplugged-ai
 		RestrictMCVDeploymentFallbackToBase: False
@@ -627,6 +635,7 @@ Player:
 		UnitDelays:
 			arty: 4500
             v2rl: 4500
+            mcv: 9000
         UnitsToBuild:
 			e1: 65
 			e2: 15
