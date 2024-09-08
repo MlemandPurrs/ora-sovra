@@ -557,7 +557,7 @@ spen:
 		Filename: spenmake.shp
 		Length: *
 		Offset: 0,2
-        Tick: 77
+        Tick: 65
 	icon:
 		Filename: spenicon.shp
 	fake-icon:
@@ -1051,7 +1051,7 @@ ercc:
 		Filename: erccmake.shp
 		Offset: 5, -1
 		Length: *
-        Tick: 100
+        Tick: 80
 	bib:
 		Filename: bib2.tem
 		TilesetFilenames:
