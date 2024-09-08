@@ -1011,7 +1011,7 @@ ercc:
 		Offset: 2, 3
 		ZOffset: 0c912
 		Start: 0
-	damaged-top:
+	damaged-idle-top:
 		Filename: ercc-top.shp
 		Offset: 2, 3
 		ZOffset: 0c912
