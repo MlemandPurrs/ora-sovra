@@ -7,6 +7,7 @@ fcom:
 	make:
 		Filename: fcommake.shp
 		Length: *
+        Tick: 105
 	bib:
 		Filename: bib3.tem
 		TilesetFilenames:
@@ -49,6 +50,7 @@ hosp:
 		Filename: hospmake.shp
 		Length: *
 		Offset: 0,-2
+        Tick: 50
 	bib:
 		TilesetFilenames:
 			SNOW: mbHOSP.sno
@@ -90,6 +92,7 @@ bio:
 	make:
 		Filename: biomake.shp
 		Length: *
+        Tick: 65
 
 bio.destroyed:
 	Defaults:
@@ -183,6 +186,7 @@ proc:
 	make:
 		Filename: procmake.shp
 		Length: *
+        Tick: 100
 	dead:
 		Filename: procdead.shp
 		Tick: 800
@@ -218,6 +222,7 @@ silo:
 		Filename: silomake.shp
 		Length: *
 		Offset: 0,-1
+        Tick: 77
 	bib:
 		TilesetFilenames:
 			SNOW: mbSILO.sno
@@ -237,6 +242,7 @@ powr:
 	make:
 		Filename: powrmake.shp
 		Length: *
+        Tick: 77
 	dead:
 		Filename: powrdead.shp
 		Tick: 800
@@ -263,6 +269,7 @@ apwr:
 		Filename: apwrmake.shp
 		Length: *
 		Offset: 0,-10
+        Tick: 77
 	dead:
 		Filename: apwrdead.shp
 		Tick: 800
@@ -294,6 +301,7 @@ barr:
 		Filename: barrmake.shp
 		Length: *
 		Offset: 0,-6
+        Tick: 77
 	bib:
 		Filename: bib3.tem
 		TilesetFilenames:
@@ -324,6 +332,7 @@ tent:
 			SNOW: tentmake.sno
 			DESERT: tentmake.des
 		Length: *
+        Tick: 77
 	bib:
 		Filename: bib3.tem
 		TilesetFilenames:
@@ -346,6 +355,7 @@ kenn:
 	make:
 		Filename: kennmake.shp
 		Length: *
+        Tick: 50
 	bib:
 		TilesetFilenames:
 			SNOW: mbSILO.sno
@@ -368,6 +378,7 @@ dome:
 		Filename: domemake.shp
 		Length: *
 		Offset: 0,-4
+        Tick: 56
 	bib:
 		Filename: bib3.tem
 		TilesetFilenames:
@@ -388,6 +399,7 @@ atek:
 	make:
 		Filename: atekmake.shp
 		Length: *
+        Tick: 56
 	active:
 		Filename: sputdoor.shp
 		Length: *
@@ -412,6 +424,7 @@ stek:
 	make:
 		Filename: stekmake.shp
 		Length: *
+        Tick: 50
 	bib:
 		Filename: bib2.tem
 		TilesetFilenames:
@@ -435,6 +448,7 @@ weap:
 	make:
 		Filename: weapmake.shp
 		Length: *
+        Tick: 65
 	build-top:
 		Filename: weap3.shp
 		Length: 10
@@ -474,6 +488,7 @@ hpad:
 	make:
 		Filename: hpadmake.shp
 		Length: *
+        Tick: 50
 	bib:
 		Filename: bib3.tem
 		TilesetFilenames:
@@ -517,6 +532,7 @@ afld:
 		Filename: afldmake.shp
 		Length: *
 		Offset: 0,-4
+        Tick: 80
 	bib:
 		Filename: bib2.tem
 		TilesetFilenames:
@@ -541,6 +557,7 @@ spen:
 		Filename: spenmake.shp
 		Length: *
 		Offset: 0,2
+        Tick: 77
 	icon:
 		Filename: spenicon.shp
 	fake-icon:
@@ -555,6 +572,7 @@ syrd:
 	make:
 		Filename: syrdmake.shp
 		Length: *
+        Tick: 56
 	icon:
 		Filename: syrdicon.shp
 	fake-icon:
@@ -584,6 +602,7 @@ fix:
 		Filename: fixmake.shp
 		Length: *
 		Offset: 0,1
+        Tick: 77
 	bib:
 		TilesetFilenames:
 			SNOW: mbFIX.sno
@@ -606,6 +625,7 @@ gun:
 	make:
 		Filename: gunmake.shp
 		Length: *
+		Tick: 50
 	turret:
 		Facings: 32
 		UseClassicFacings: True
@@ -644,6 +664,7 @@ agun:
 		Filename: agunmake.shp
 		Length: *
 		Offset: 0,-13
+		Tick: 100
 	turret:
 		Facings: 32
 		UseClassicFacings: True
@@ -695,6 +716,7 @@ sam:
 		Filename: sammake.shp
 		Length: *
 		Offset: -1,-2
+		Tick: 56
 	muzzle:
 		Filename: samfire.shp
 		Length: 18
@@ -723,6 +745,7 @@ ftur:
 		Filename: fturmake.shp
 		Length: *
 		Offset: 0,-2
+		Tick: 35
 	bib:
 		TilesetFilenames:
 			SNOW: mbFTUR.sno
@@ -745,6 +768,7 @@ tsla:
 		Filename: tslamake.shp
 		Length: *
 		Offset: 0,-13
+		Tick: 77
 	active:
 		Start: 1
 		Length: 9
@@ -774,6 +798,7 @@ pbox:
 	make:
 		Filename: pboxmake.shp
 		Length: *
+		Tick: 77
 	muzzle:
 		Filename: minigun.shp
 		Length: 6
@@ -804,6 +829,7 @@ hbox:
 			SNOW: hboxmake.sno
 			DESERT: hboxmake.des
 		Length: *
+		Tick: 77
 	muzzle:
 		Filename: minigun.shp
 		TilesetFilenames:
@@ -827,6 +853,7 @@ gap:
 		Filename: gapmake.shp
 		Length: *
 		Offset: 0,-14
+		Tick: 77
 	bib:
 		TilesetFilenames:
 			SNOW: mbGAP.sno
@@ -856,6 +883,7 @@ iron:
 		Filename: ironmake.shp
 		Length: *
 		Offset: 0,-12
+        Tick: 77
 	bib:
 		TilesetFilenames:
 			SNOW: mbIRON.sno
@@ -883,6 +911,7 @@ pdox:
 	make:
 		Filename: pdoxmake.shp
 		Length: *
+        Tick: 56
 	bib:
 		TilesetFilenames:
 			SNOW: mbPDOX.sno
@@ -911,6 +940,7 @@ mslo:
 			SNOW: mslomake.sno
 			DESERT: mslomake.des
 		Length: *
+        Tick: 65
 	active:
 		Start: 1
 		Length: 7
@@ -937,6 +967,7 @@ miss:
 	make:
 		Filename: missmake.shp
 		Length: *
+        Tick: 42
 	bib:
 		Filename: bib2.tem
 		TilesetFilenames:
@@ -1020,6 +1051,7 @@ ercc:
 		Filename: erccmake.shp
 		Offset: 5, -1
 		Length: *
+        Tick: 100
 	bib:
 		Filename: bib2.tem
 		TilesetFilenames:
