@@ -2267,7 +2267,7 @@ FIX:
 	Tooltip:
 		Name: Service Depot
 	Building:
-		Footprint: _+_ +++ _+_
+		Footprint: =+= +++ =+=
 		Dimensions: 3,3
 	Selectable:
 		Bounds: 2901, 1450, 0, 128
