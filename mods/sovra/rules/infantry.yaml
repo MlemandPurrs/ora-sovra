@@ -246,7 +246,7 @@ E4:
 		Queue: Infantry
 		BuildAtProductionType: Soldier
 		BuildPaletteOrder: 140
-		Prerequisites: ~disabled
+        Prerequisites: ~barr, stek, ~techlevel.high
 		Description: Advanced anti-structure unit.\n\n  Strong vs Infantry, Buildings\n  Weak vs Vehicles, Aircraft\n\n  Special ability: Cannot be harmed by Flames.
 	Valued:
 		Cost: 300
@@ -970,7 +970,8 @@ E8:
         BuildDuration: 400
         BuildDurationModifier: 100
 		BuildPaletteOrder: 140
-		Prerequisites: ~barr, stek, ~techlevel.high
+		#   Prerequisites: ~barr, stek, ~techlevel.high
+        Prerequisites: ~disabled
 		Queue: Infantry
 		BuildAtProductionType: Soldier
 		Description: Infantry with portable fire launcher.\n\n  Strong vs Infantry, Buildings.\n  Weak vs Vehicles, Aircraft.\n\n  Special ability: Cannot be harmed by Flames.
