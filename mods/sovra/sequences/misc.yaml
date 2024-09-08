@@ -614,28 +614,39 @@ gpsdot:
 	Defaults:
 		Filename: gpsdot.shp
 	Infantry:
+        Start: 0
 	Vehicle:
 		Start: 1
-	Ship:
-		Start: 2
-	Helicopter:
+    HeavyVehicle:
+        Start: 2
+	Naval:
 		Start: 3
-	Plane:
-		Start: 4
-	Harvester:
-		Start: 5
-	Structure:
+    Ship:
+        Start: 4
+    Submarine:
+        Start: 5
+	Helicopter:
 		Start: 6
-	Oil:
+	Plane:
 		Start: 7
-	Hospital:
-		Start: 8
-	Biohazard:
+    BigPlane:
+        Start: 8
+	Harvester:
 		Start: 9
-	Communications:
-		Start: 10
-	Forward:
+    GiantAnt:
+        Start: 10
+	Structure:
 		Start: 11
+	Oil:
+		Start: 12
+	Hospital:
+		Start: 13
+	Biohazard:
+		Start: 14
+	Communications:
+		Start: 15
+	Forward:
+		Start: 16
 
 icon:
 	abomb:

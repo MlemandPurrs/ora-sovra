@@ -297,6 +297,8 @@ SPEN:
 	GrantConditionOnPowerState@LOWPOWER:
 		Condition: lowpower
 		ValidPowerStates: Low, Critical
+	GpsDot:
+		String: Naval
 
 SYRD:
 	Inherits: ^Building
@@ -445,6 +447,8 @@ SYRD:
 	GrantConditionOnPowerState@LOWPOWER:
 		Condition: lowpower
 		ValidPowerStates: Low, Critical
+	GpsDot:
+		String: Naval
 
 IRON:
 	Inherits: ^ScienceBuilding

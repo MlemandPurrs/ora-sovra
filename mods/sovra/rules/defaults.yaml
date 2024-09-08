@@ -590,6 +590,8 @@
 	GrantConditionOnTerrain@CROSSINGFORD:
 		Condition: crossing-ford
 		TerrainTypes: WaterFord
+	GpsDot:
+		String: Submarine
 
 ^NeutralPlane:
 	Inherits@1: ^ExistsInWorld
@@ -638,7 +640,7 @@
 		EjectInAir: true
 		AllowUnsuitableCell: true
 		ChuteSound: chute1.aud
-	GpsDot:
+    GpsDot:
 		String: Plane
 	Tooltip:
 		GenericName: Plane

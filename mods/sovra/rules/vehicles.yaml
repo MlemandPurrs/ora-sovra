@@ -280,6 +280,8 @@ V2RL:
 	WithProductionIconOverlay:
 		Types: Veterancy
 		Prerequisites: vehicles.upgraded
+	GpsDot:
+		String: HeavyVehicle
 
 ARTY:
 	Inherits: ^TrackedVehicle
@@ -1015,6 +1017,8 @@ QTNK:
         RequiresCondition: invulnerability && !deployed
 	DamageMultiplier@IRONCURTAIN:
 		RequiresCondition: invulnerability && !deployed
+	GpsDot:
+		String: HeavyVehicle
 
 STNK:
 	Inherits: ^Vehicle

@@ -836,6 +836,8 @@ Ant:
 	HitShape:
 		Type: Circle
 			Radius: 469
+	GpsDot:
+		String: GiantAnt
 
 FireAnt:
 	Inherits: Ant

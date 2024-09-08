@@ -48,6 +48,8 @@ BADR:
 		Experience: 1000
 	GrantConditionOnDamageState@SmokeTrail:
 		Condition: enable-smoke
+	GpsDot:
+		String: BigPlane
 
 BADR.Bomber:
 	Inherits: BADR
