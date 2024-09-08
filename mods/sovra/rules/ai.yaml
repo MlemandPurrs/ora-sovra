@@ -106,7 +106,7 @@ Player:
 					CheckRadius: 5c0
 				Consideration@2:
 					Against: Enemy
-					Types: WaterActor, Structure
+					Types: WaterStructure
 					Attractiveness: 1
 					TargetMetric: None
 					CheckRadius: 10c0

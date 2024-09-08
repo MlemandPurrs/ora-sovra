@@ -145,7 +145,7 @@ SPEN:
 		Prerequisites: anypower, barracks, ~structures.soviet, ~techlevel.low
 		Description: Produces and repairs\nsubmarines and transports.
 	Targetable:
-		TargetTypes: WaterActor, Structure, C4, DetonateAttack
+		TargetTypes: WaterActor, Structure, C4, DetonateAttack, WaterStructure
 	Building:
 		Footprint: XXX xxx XXX
 		Dimensions: 3,3
@@ -322,7 +322,7 @@ SYRD:
 	Tooltip:
 		Name: Naval Yard
 	Targetable:
-		TargetTypes: WaterActor, Structure, C4, DetonateAttack
+		TargetTypes: WaterActor, Structure, C4, DetonateAttack, WaterStructure
 	Building:
 		Footprint: XXX xxx XXX
 		Dimensions: 3,3
