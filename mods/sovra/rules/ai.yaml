@@ -573,6 +573,13 @@ Player:
             fapw: 1
             domf: 1
             atef: 1
+            pbox: 5
+            hbox: 3
+			gun: 5
+            agun: 4
+			tsla: 4
+            ftur: 6
+			sam: 4
 		BuildingFractions:
 			proc: 30
             ercc: 30
@@ -695,5 +702,5 @@ Player:
     CaptureManagerBotModule@unplugged:
         CapturingActorTypes: e6
         CapturableActorTypes: oilb, hosp, bio, miss, fcom, oilb.husk, hosp.husk, bio.husk, miss.husk, fcom.husk
-        MaximumCaptureTargetOptions: 2
+        MaximumCaptureTargetOptions: 20
         CheckCaptureTargetsForVisibility: false
