@@ -216,6 +216,19 @@ V2RL:
 	WithProductionIconOverlay:
 		Types: Veterancy
 		Prerequisites: techlevel.infonly
+    AmmoPool:
+        Armaments:
+        Ammo: 1
+        InitialAmmo: 0
+        AmmoCondition: stahp
+    ChangesHealth:
+        PercentageStep: -50
+        StartIfBelow: 101
+        Delay: 3
+        RequiresCondition: !stahp
+    ReloadAmmoPool:
+        Delay: 3
+        Count: 1
 
 4TNK:
 	Inherits: ^TrackedVehicle
@@ -876,7 +889,7 @@ DTRK:
         BuildDurationModifier: 100
 		Queue: Vehicle
 		BuildPaletteOrder: 330
-		Prerequisites: stek, ~vehicles.ukraine, ~techlevel.high
+		Prerequisites: stek, ~vehicles.ukraine, ~techlevel.unrestricted
 		Description: Truck with actively armed nuclear\nexplosives. Has very weak armor.
 	Valued:
 		Cost: 2500
