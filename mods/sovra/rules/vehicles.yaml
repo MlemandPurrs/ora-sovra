@@ -898,7 +898,7 @@ DTRK:
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Health:
-		HP: 2800
+		HP: 3500
 	Armor:
 		Type: Light
 	Mobile:
