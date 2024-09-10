@@ -1384,23 +1384,23 @@
 
 ^AffectedByCountryBonuses:
 	DamageMultiplier@England:
-		RequiresCondition: england
+		RequiresCondition: england && techcenter
 		Modifier: 90
 	ReloadDelayMultiplier@France:
-		RequiresCondition: france
+		RequiresCondition: france && techcenter
 		Modifier: 90
 	FirepowerMultiplier@Germany:
-		RequiresCondition: germany
+		RequiresCondition: germany && techcenter
 		Modifier: 110
 	ProductionCostMultiplier@Russia:
 		Multiplier: 90
-		Prerequisites: player.russia
+		Prerequisites: player.russia, techcenter
 	SpeedMultiplier@Ukraine:
-		RequiresCondition: ukraine
+		RequiresCondition: ukraine && techcenter
 		Modifier: 110
 	ProductionTimeMultiplier@Belarus:
 		Multiplier: 90
-		Prerequisites: player.belarus
+		Prerequisites: player.belarus, techcenter
 	GrantConditionOnPrerequisite@England:
 		Condition: england
 		Prerequisites: player.england
@@ -1413,6 +1413,9 @@
 	GrantConditionOnPrerequisite@Ukraine:
 		Condition: ukraine
 		Prerequisites: player.ukraine
+    GrantConditionOnPrerequisite@Tech:
+		Condition: techcenter
+		Prerequisites: techcenter
 
 ^Gate:
 	Inherits: ^BasicBuilding

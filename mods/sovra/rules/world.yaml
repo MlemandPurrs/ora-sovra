@@ -113,17 +113,17 @@
 		Name: England
 		InternalName: england
 		Side: Allies
-		Description: England: Counterintelligence\nSpecial Bonus: Units more durable\nSpecial Ability: Trains Spy at half cost\nSpecial Unit: Sniper\nSpecial Unit: Mobile Radar Jammer
+		Description: England: Counterintelligence\nSpecial Tech: Units more durable\nSpecial Ability: Trains Spy at half cost\nSpecial Unit: Sniper\nSpecial Unit: Mobile Radar Jammer
 	Faction@2:
 		Name: France
 		InternalName: france
 		Side: Allies
-		Description: France: Deception\nSpecial Bonus: Units reload faster\nSpecial Ability: Can build fake structures\nSpecial Unit: Phase Transport
+		Description: France: Deception\nSpecial Tech: Units reload faster\nSpecial Ability: Can build fake structures\nSpecial Unit: Phase Transport
 	Faction@3:
 		Name: Germany
 		InternalName: germany
 		Side: Allies
-		Description: Germany: Technology\nSpecial Bonus: Units deal more damage\nSpecial Ability: Advanced Chronoshift\nSpecial Unit: Chrono Tank
+		Description: Germany: Technology\nSpecial Tech: Units deal more damage\nSpecial Ability: Advanced Chronoshift\nSpecial Unit: Chrono Tank
 	Faction@4:
 		Name: Soviet
 		InternalName: soviet
@@ -133,17 +133,17 @@
 		Name: Russia
 		InternalName: russia
 		Side: Soviet
-		Description: Russia: Tesla Weapons\nSpecial Bonus: Units are cheaper\nSpecial Unit: Tesla Tank\nSpecial Unit: Shock Trooper
+		Description: Russia: Tesla Weapons\nSpecial Tech: Units are cheaper\nSpecial Unit: Tesla Tank\nSpecial Unit: Shock Trooper
 	Faction@6:
 		Name: Ukraine
 		InternalName: ukraine
 		Side: Soviet
-		Description: Ukraine: Demolitions\nSpecial Bonus: Units move faster\nSpecial Ability: Parabombs\nSpecial Unit: Demolition Truck
+		Description: Ukraine: Demolitions\nSpecial Tech: Units move faster\nSpecial Ability: Parabombs\nSpecial Unit: Demolition Truck
 	Faction@7:
 		Name: Belarus
 		InternalName: belarus
 		Side: Soviet
-		Description: Belarus: Heavy Armor\nSpecial Bonus: Units trained faster\nSpecial Ability: Air Drop\nSpecial Unit: MAD Tank
+		Description: Belarus: Heavy Armor\nSpecial Tech: Units trained faster\nSpecial Ability: Air Drop\nSpecial Unit: MAD Tank
 	Faction@random:
 		Name: Any
 		InternalName: Random

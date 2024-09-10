@@ -1141,7 +1141,7 @@ ATEK:
 		Queue: Building
 		BuildPaletteOrder: 140
 		Prerequisites: weap, dome, ~structures.allies, ~techlevel.high
-		Description: Provides Allied advanced technologies.\n\n  Special Ability: GPS Satellite
+		Description: Provides Allied advanced technologies.\nEnables your country Special Tech.\n\n  Special Ability: GPS Satellite
 	Valued:
 		Cost: 1500
 	Tooltip:
@@ -1489,8 +1489,13 @@ PROC:
         RefundPercent: 100
 		RequiresCondition: !build-incomplete && !being-captured && !being-demolished && !owner.russia
     Sellable@2:
+        RefundPercent: 100
+		RequiresCondition: !build-incomplete && !being-captured && !being-demolished && owner.russia && !techcenter
+		SellSounds: cashturn.aud
+		Notification: StructureSold
+    Sellable@3:
         RefundPercent: 120
-		RequiresCondition: !build-incomplete && !being-captured && !being-demolished && owner.russia
+		RequiresCondition: !build-incomplete && !being-captured && !being-demolished && owner.russia && techcenter
 		SellSounds: cashturn.aud
 		Notification: StructureSold
     GrantConditionOnPrerequisite@russia:
@@ -2027,7 +2032,7 @@ STEK:
 		Queue: Building
 		BuildPaletteOrder: 150
 		Prerequisites: afldorweap, dome, ~structures.soviet, ~techlevel.high
-		Description: Provides Soviet advanced technologies.
+		Description: Provides Soviet advanced technologies.\nEnables your country Special Tech.
 	Valued:
 		Cost: 2000
 	Tooltip:
@@ -2601,8 +2606,13 @@ ERCC:
         RefundPercent: 100
 		RequiresCondition: !build-incomplete && !being-captured && !being-demolished && !owner.russia
     Sellable@2:
+        RefundPercent: 100
+		RequiresCondition: !build-incomplete && !being-captured && !being-demolished && owner.russia && !techcenter
+		SellSounds: cashturn.aud
+		Notification: StructureSold
+    Sellable@3:
         RefundPercent: 120
-		RequiresCondition: !build-incomplete && !being-captured && !being-demolished && owner.russia
+		RequiresCondition: !build-incomplete && !being-captured && !being-demolished && owner.russia && techcenter
 		SellSounds: cashturn.aud
 		Notification: StructureSold
     GrantConditionOnPrerequisite@russia:
