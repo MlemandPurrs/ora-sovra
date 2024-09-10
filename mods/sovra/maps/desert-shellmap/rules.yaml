@@ -13,7 +13,7 @@ World:
 	-SpawnStartingUnits:
 	-MapStartingLocations:
 	MusicPlaylist:
-		BackgroundMusic: intro
+		BackgroundMusic: hell226m
 		AllowMuteBackgroundMusic: true
 		DisableWorldSounds: true
 	LuaScript:

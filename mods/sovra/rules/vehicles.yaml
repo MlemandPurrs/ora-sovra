@@ -440,7 +440,7 @@ AHRV:
 	Armament@SECONDARY:
 		Name: secondary
 		Turret: secondary
-		Weapon: M60mg
+		Weapon: HarvesterGun
 		LocalOffset: 320,0,171
 		MuzzleSequence: muzzle
 	AttackTurreted:

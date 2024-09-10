@@ -294,6 +294,22 @@ M60mg:
 	Warhead@3EffWater: CreateEffect
 		Inaccuracy: 213
 
+HarvesterGun:
+    Inherits: ^LightMG
+	ReloadDelay: 35
+	Range: 4c0
+    Report:
+	StartBurstReport: mguninf1.aud
+	Burst: 3
+	Warhead@1Dam: SpreadDamage
+        Damage: 1500
+		Versus:
+			Light: 30
+	Warhead@2Eff: CreateEffect
+		Inaccuracy: 213
+	Warhead@3EffWater: CreateEffect
+		Inaccuracy: 213
+
 ^SnipeWeapon:
 	ReloadDelay: 80
 	Range: 2c512

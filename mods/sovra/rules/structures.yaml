@@ -1487,6 +1487,15 @@ PROC:
 		Capacity: 2000
     Sellable:
         RefundPercent: 100
+		RequiresCondition: !build-incomplete && !being-captured && !being-demolished && !owner.russia
+    Sellable@2:
+        RefundPercent: 120
+		RequiresCondition: !build-incomplete && !being-captured && !being-demolished && owner.russia
+		SellSounds: cashturn.aud
+		Notification: StructureSold
+    GrantConditionOnPrerequisite@russia:
+        Condition: owner.russia
+        Prerequisites: structures.russia
 	CustomSellValue:
 		Value: 500
 	FreeActor@1:
@@ -2590,6 +2599,15 @@ ERCC:
 		Capacity: 2000
     Sellable:
         RefundPercent: 100
+		RequiresCondition: !build-incomplete && !being-captured && !being-demolished && !owner.russia
+    Sellable@2:
+        RefundPercent: 120
+		RequiresCondition: !build-incomplete && !being-captured && !being-demolished && owner.russia
+		SellSounds: cashturn.aud
+		Notification: StructureSold
+    GrantConditionOnPrerequisite@russia:
+        Condition: owner.russia
+        Prerequisites: structures.russia
 	CustomSellValue:
 		Value: 500
 	FreeActor@1:
