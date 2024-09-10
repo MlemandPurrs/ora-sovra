@@ -217,6 +217,31 @@ SONAR:
 		DetectionTypes: Underwater
 		Range: 10c0
 
+PROXYSONAR:
+	Inherits: ^SpriteActor
+	RenderSprites:
+		Image: empty
+	Interactable:
+		Bounds: 1024, 1024
+	WithSpriteBody:
+	HiddenUnderFog:
+	Health:
+		HP: 1
+		NotifyAppliedDamage: false
+	Armor:
+		Type: None
+	Tooltip:
+		Name: You should not be seeing this
+	Targetable:
+		TargetTypes: Water
+	HitShape:
+	KillsSelf:
+	Immobile:
+		OccupiesSpace: false
+    Explodes:
+        Weapon: DetectionPing
+        EmptyWeapon: DetectionPing
+
 FLARE:
 	Immobile:
 		OccupiesSpace: false

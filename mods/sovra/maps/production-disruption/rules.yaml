@@ -43,3 +43,4 @@ MSUB:
 	Targetable:
 		-RequiresCondition:
     -GrantConditionOnTerrain@CROSSINGFORD:
+    -ExternalCondition@SONARPING:

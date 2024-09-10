@@ -285,12 +285,12 @@ SPEN:
 		Icon: sonar
 		Name: Sonar Pulse
 		Description: Reveals all submarines in the vicinity for a \nshort time.
-		ChargeInterval: 750
+		ChargeInterval: 1125
 		EndChargeSpeechNotification: SonarPulseReady
 		SelectTargetSpeechNotification: SelectTarget
 		EndChargeTextNotification: Sonar pulse ready.
 		SelectTargetTextNotification: Select target.
-		Actor: sonar
+		Actor: proxysonar
 		Terrain: Water
 		AllowUnderShroud: false
 		LifeTime: 250
@@ -441,12 +441,12 @@ SYRD:
 		Icon: sonar
 		Name: Sonar Pulse
 		Description: Reveals all submarines in the vicinity for a \nshort time.
-		ChargeInterval: 750
+		ChargeInterval: 1125
 		EndChargeSpeechNotification: SonarPulseReady
 		SelectTargetSpeechNotification: SelectTarget
 		EndChargeTextNotification: Sonar pulse ready.
 		SelectTargetTextNotification: Select target.
-		Actor: sonar
+		Actor: proxysonar
 		Terrain: Water
 		AllowUnderShroud: false
 		LifeTime: 250

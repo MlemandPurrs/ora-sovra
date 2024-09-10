@@ -276,3 +276,12 @@ MADTankDetonate:
 		Explosions: med_explosion
 		ImpactSounds: mineblo1.aud
 		ImpactActors: false
+
+DetectionPing:
+	ValidTargets: Water
+    Warhead@ping: GrantExternalCondition
+        Condition: pinged
+        Duration: 250
+        Range: 10c0
+        ValidTargets: WaterActor, Underwater
+        ValidRelationships: Neutral, Enemy

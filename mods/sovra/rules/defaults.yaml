@@ -567,7 +567,7 @@
 		UncloakSound: subshow1.aud
 		CloakedCondition: underwater
 		Palette: submerged
-		PauseOnCondition: cloak-force-disabled || crossing-ford
+		PauseOnCondition: cloak-force-disabled || crossing-ford || pinged
 	GrantConditionOnDamageState@UNCLOAK:
 		Condition: cloak-force-disabled
 		ValidDamageStates: Critical
@@ -579,6 +579,13 @@
 		TerrainTypes: WaterFord
 	GpsDot:
 		String: Submarine
+	ExternalCondition@SONARPING:
+		Condition: pinged
+        SourceCap: 1
+        TotalCap: 1
+    TimedConditionBar@SONARPING:
+        Condition: pinged
+        Color: ADFF2F
 
 ^NeutralPlane:
 	Inherits@1: ^ExistsInWorld

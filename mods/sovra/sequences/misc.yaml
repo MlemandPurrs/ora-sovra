@@ -908,3 +908,7 @@ twinkle:
 		Filename: twinkle2.shp
 	twinkle3:
 		Filename: twinkle3.shp
+
+empty:
+	idle:
+		Filename: empty.shp
