@@ -911,10 +911,12 @@ gap:
 	idle:
 		Length: 32
 		Offset: 0,-14
+        Tick: 45
 	damaged-idle:
 		Start: 32
 		Length: 32
 		Offset: 0,-14
+        Tick: 45
 	make:
 		Filename: gapmake.shp
 		Length: *
