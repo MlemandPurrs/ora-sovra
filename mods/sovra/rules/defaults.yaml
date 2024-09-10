@@ -1081,10 +1081,10 @@
 		Types: husk
 		ValidRelationships: Enemy, Neutral
 	TransformOnCapture:
-		ForceHealthPercentage: 15
+		ForceHealthPercentage: 25
 	InfiltrateForTransform:
 		Types: Husk
-		ForceHealthPercentage: 15
+		ForceHealthPercentage: 25
 	WithColoredOverlay@IDISABLE:
 		Color: 000000B4
 	Targetable:
