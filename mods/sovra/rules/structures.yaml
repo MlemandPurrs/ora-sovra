@@ -532,7 +532,7 @@ IRON:
 	Targetable:
 		TargetTypes: GroundActor, C4, DetonateAttack, Structure, SpyInfiltrate
 	Power:
-		Amount: -200
+		Amount: -150
 		RequiresCondition: !build-incomplete
 	MustBeDestroyed:
 		RequiredForShortGame: false
@@ -632,7 +632,7 @@ PDOX:
 	Targetable:
 		TargetTypes: GroundActor, C4, DetonateAttack, Structure, SpyInfiltrate
 	Power:
-		Amount: -200
+		Amount: -150
 		RequiresCondition: !build-incomplete
 	MustBeDestroyed:
 		RequiredForShortGame: false
