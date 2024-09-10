@@ -121,6 +121,21 @@
 		ValidRelationships: Ally, Enemy, Neutral
 		RequiresCondition: rank-veteran == 3
 
+^GainsExperienceAircraft:
+    Inherits: ^GainsExperience
+    -ReloadDelayMultiplier@RANK-1:
+    -ReloadDelayMultiplier@RANK-2:
+    -ReloadDelayMultiplier@RANK-3:
+    ReloadAmmoDelayMultiplier@RANK-1:
+		RequiresCondition: rank-veteran == 1
+		Modifier: 95
+    ReloadAmmoDelayMultiplier@RANK-2:
+		RequiresCondition: rank-veteran == 2
+		Modifier: 90
+	ReloadAmmoDelayMultiplier@RANK-3:
+		RequiresCondition: rank-veteran == 3
+		Modifier: 85
+
 ^InfantryExperienceHospitalOverrides:
 	WithDecoration@RANK-1:
 		BlinkInterval: 32
@@ -643,7 +658,7 @@
 
 ^Plane:
 	Inherits: ^NeutralPlane
-	Inherits@2: ^GainsExperience
+	Inherits@2: ^GainsExperienceAircraft
 	Huntable:
 	Repairable:
 		RepairActors: fix
