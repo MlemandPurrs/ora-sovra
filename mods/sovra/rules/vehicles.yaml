@@ -847,7 +847,7 @@ FTRK:
 		Type: Light
 	Mobile:
 		TurnSpeed: 40
-		Speed: 113
+		Speed: 128
 	RevealsShroud:
 		MinRange: 4c0
 		Range: 6c0
