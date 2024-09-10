@@ -1805,7 +1805,7 @@ AFLD:
 		Icon: spyplane
 		ChargeInterval: 3750
 		Name: Spy Plane
-		Description: Reveals an area of the map.
+		Description: Reveals an area of the map.\nDetects cloaked units.
 		SelectTargetSpeechNotification: SelectTarget
 		EndChargeSpeechNotification: SpyPlaneReady
 		SelectTargetTextNotification: Select target.
