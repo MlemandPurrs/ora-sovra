@@ -247,7 +247,7 @@ E4:
 		BuildAtProductionType: Soldier
 		BuildPaletteOrder: 140
         Prerequisites: ~barr, stek, ~techlevel.high
-		Description: Advanced anti-structure unit.\n\n  Strong vs Infantry, Buildings\n  Weak vs Vehicles, Aircraft\n\n  Special ability: Cannot be harmed by Flames.
+		Description: Advanced anti-structure unit.\n\n  Strong vs Infantry, Buildings\n  Weak vs Vehicles, Aircraft\n\n  Special ability: Cannot be harmed by Flames
 	Valued:
 		Cost: 300
 	Tooltip:
@@ -350,7 +350,7 @@ SPY:
 		BuildAtProductionType: Soldier
 		BuildPaletteOrder: 90
 		Prerequisites: ~tent, dome, ~techlevel.medium
-		Description: Infiltrates enemy structures for intel or\nsabotage. Exact effect depends on the\nbuilding infiltrated.\nLoses disguise when attacking.\nCan detect spies.\n\n  Strong vs Infantry\n  Weak vs Vehicles, Aircraft\n\n  Special Ability: Disguise
+		Description: Infiltrates enemy structures for intel or\nsabotage. Exact effect depends on the\nbuilding infiltrated.\nLoses disguise when attacking.\nCan detect spies.\n\n  Strong vs Infantry\n  Weak vs Vehicles, Aircraft\n\n  Special Ability: Disguise as any Infantry
 	Valued:
 		Cost: 600
 	-Tooltip:
@@ -488,7 +488,7 @@ MEDI:
 		BuildAtProductionType: Soldier
 		BuildPaletteOrder: 40
 		Prerequisites: ~tent, dome, ~techlevel.medium
-		Description: Heals nearby infantry.\n\n  Unarmed
+		Description: Heals nearby infantry.\n\n  Unarmed\n\n  Special ability: Self-healing
 	Valued:
 		Cost: 200
 	Tooltip:
@@ -523,6 +523,9 @@ MEDI:
 	AutoTarget:
 	AutoTargetPriority@DEFAULT:
 		ValidTargets: Infantry
+	GrantConditionOnPrerequisite@HOSPITAL:
+		Condition: hospital
+        Prerequisites: ~techlevel.infonly
 
 MECH:
 	Inherits: ^Soldier
@@ -974,7 +977,7 @@ E8:
         Prerequisites: ~disabled
 		Queue: Infantry
 		BuildAtProductionType: Soldier
-		Description: Infantry with portable fire launcher.\n\n  Strong vs Infantry, Buildings.\n  Weak vs Vehicles, Aircraft.\n\n  Special ability: Cannot be harmed by Flames.
+		Description: Infantry with portable fire launcher.\n\n  Strong vs Infantry, Buildings.\n  Weak vs Vehicles, Aircraft.\n\n  Special ability: Cannot be harmed by Flames
 	Mobile:
 		Speed: 38
         PauseOnCondition: dont-move
