@@ -650,7 +650,7 @@ THF:
 	Inherits: ^Soldier
 	Inherits@selection: ^SelectableSupportUnit
 	Buildable:
-        BuildDuration: 500
+        BuildDuration: 450
         BuildDurationModifier: 100
 		Queue: Infantry
 		BuildAtProductionType: Soldier
@@ -658,7 +658,7 @@ THF:
 		Prerequisites: ~barr, fix, ~techlevel.medium
 		Description: Steals enemy credits.\nHijacks enemy vehicles.\n\n  Unarmed\n\n  Special ability: Cloaks when stationary
 	Valued:
-		Cost: 500
+		Cost: 450
 	Tooltip:
 		Name: Thief
 	UpdatesPlayerStatistics:
@@ -688,8 +688,12 @@ THF:
 		RequiresCondition: parachute
 		Palette: player-noshadow
 		IsPlayerPalette: true
+	GrantConditionOnMovement@MOVING:
+		ValidMovementTypes: Horizontal, Vertical, Turn
+		Condition: moving
 	Crushable:
 		WarnProbability: 95
+		RequiresCondition: !moving
 	Cloak:
 		InitialDelay: 250
 		CloakDelay: 120
