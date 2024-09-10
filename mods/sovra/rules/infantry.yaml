@@ -350,7 +350,7 @@ SPY:
 		BuildAtProductionType: Soldier
 		BuildPaletteOrder: 90
 		Prerequisites: ~tent, dome, ~techlevel.medium
-		Description: Infiltrates enemy structures for intel or\nsabotage. Exact effect depends on the\nbuilding infiltrated.\nLoses disguise when attacking.\nCan detect spies.\n\n  Strong vs Infantry\n  Weak vs Vehicles, Aircraft\n\n  Special Ability: Disguise as any Infantry
+		Description: Infiltrates enemy structures for intel or\nsabotage. Exact effect depends on the\nbuilding infiltrated.\nLoses disguise when attacking.\nCan detect spies.\n\n  Strong vs Infantry\n  Weak vs Vehicles, Aircraft\n\n  Special Ability: Disguise as Infantry
 	Valued:
 		Cost: 600
 	-Tooltip:
