@@ -1501,6 +1501,9 @@ PROC:
     GrantConditionOnPrerequisite@russia:
         Condition: owner.russia
         Prerequisites: structures.russia
+    GrantConditionOnPrerequisite@techcenter:
+        Condition: techcenter
+        Prerequisites: techcenter
 	CustomSellValue:
 		Value: 500
 	FreeActor@1:
@@ -2618,6 +2621,9 @@ ERCC:
     GrantConditionOnPrerequisite@russia:
         Condition: owner.russia
         Prerequisites: structures.russia
+    GrantConditionOnPrerequisite@techcenter:
+        Condition: techcenter
+        Prerequisites: techcenter
 	CustomSellValue:
 		Value: 500
 	FreeActor@1:
