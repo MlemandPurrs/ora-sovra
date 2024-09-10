@@ -162,7 +162,7 @@ DD:
 	Armor:
 		Type: Heavy
 	Mobile:
-		TurnSpeed: 28
+		TurnSpeed: 24
 		Speed: 92
 	RevealsShroud:
 		MinRange: 4c0
@@ -180,7 +180,7 @@ DD:
 		PauseOnCondition: reload-aa
         ReloadingCondition: reload-ag
 	Armament@SECONDARY:
-		Weapon: DepthCharge
+		Weapon: DepthCharge2
 		LocalOffset: 0,-100,0, 0,100,0
 		LocalYaw: 80, -80
 	Armament@TERTIARY:
@@ -339,7 +339,7 @@ PT:
 	Armor:
 		Type: Heavy
 	Mobile:
-		TurnSpeed: 28
+		TurnSpeed: 24
 		Speed: 128
 	RevealsShroud:
 		MinRange: 6c0
@@ -390,7 +390,7 @@ SEAS:
 	Armor:
 		Type: Heavy
 	Mobile:
-		TurnSpeed: 28
+		TurnSpeed: 24
 		Speed: 128
 	RevealsShroud:
 		MinRange: 6c0

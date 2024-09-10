@@ -219,6 +219,12 @@ DepthCharge:
 		ImpactSounds: h2obomb2.aud
 		ValidTargets: Underwater
 
+DepthCharge2:
+    Inherits: DepthCharge
+    ReloadDelay: 90
+    Burst: 2
+	BurstDelays: 0
+
 GrenadeLauncher:
     Inherits: ^Artillery
 	ReloadDelay: 50
