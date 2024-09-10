@@ -302,6 +302,10 @@ barr:
 		Length: *
 		Offset: 0,-6
         Tick: 77
+	dead:
+		Filename: barrdead.shp
+		Offset: 0,-6
+		Tick: 800
 	bib:
 		Filename: bib3.tem
 		TilesetFilenames:
@@ -333,6 +337,12 @@ tent:
 			DESERT: tentmake.des
 		Length: *
         Tick: 77
+	dead:
+		Filename: tentdead.tem
+		TilesetFilenames:
+			SNOW: tentdead.sno
+			DESERT: tentdead.des
+		Tick: 800
 	bib:
 		Filename: bib3.tem
 		TilesetFilenames:
@@ -379,6 +389,10 @@ dome:
 		Length: *
 		Offset: 0,-4
         Tick: 56
+	dead:
+		Filename: domedead.shp
+		Offset: 0,-4
+		Tick: 800
 	bib:
 		Filename: bib3.tem
 		TilesetFilenames:
@@ -400,6 +414,9 @@ atek:
 		Filename: atekmake.shp
 		Length: *
         Tick: 56
+	dead:
+		Filename: atekdead.shp
+		Tick: 800
 	active:
 		Filename: sputdoor.shp
 		Length: *
@@ -425,6 +442,9 @@ stek:
 		Filename: stekmake.shp
 		Length: *
         Tick: 50
+	dead:
+		Filename: stekdead.shp
+		Tick: 800
 	bib:
 		Filename: bib2.tem
 		TilesetFilenames:
@@ -449,6 +469,9 @@ weap:
 		Filename: weapmake.shp
 		Length: *
         Tick: 65
+	dead:
+		Filename: weapdead.shp
+		Tick: 800
 	build-top:
 		Filename: weap3.shp
 		Length: 10
@@ -489,6 +512,10 @@ hpad:
 		Filename: hpadmake.shp
 		Length: *
         Tick: 50
+	dead:
+		Start: 14
+		ZOffset: -1023
+		Tick: 800
 	bib:
 		Filename: bib3.tem
 		TilesetFilenames:
@@ -533,6 +560,11 @@ afld:
 		Length: *
 		Offset: 0,-4
         Tick: 80
+	dead:
+		Filename: aflddead.shp
+		ZOffset: -1023
+		Offset: 0,-4
+		Tick: 800
 	bib:
 		Filename: bib2.tem
 		TilesetFilenames:
@@ -558,6 +590,10 @@ spen:
 		Length: *
 		Offset: 0,2
         Tick: 65
+	dead:
+		Filename: spendead.shp
+		Offset: 0,2
+		Tick: 800
 	icon:
 		Filename: spenicon.shp
 	fake-icon:
@@ -573,6 +609,9 @@ syrd:
 		Filename: syrdmake.shp
 		Length: *
         Tick: 56
+	dead:
+		Filename: syrddead.shp
+		Tick: 800
 	icon:
 		Filename: syrdicon.shp
 	fake-icon:
@@ -603,6 +642,10 @@ fix:
 		Length: *
 		Offset: 0,1
         Tick: 77
+	dead:
+		Filename: fixdead.shp
+		Offset: 0,1
+		Tick: 800
 	bib:
 		TilesetFilenames:
 			SNOW: mbFIX.sno
@@ -626,6 +669,9 @@ gun:
 		Filename: gunmake.shp
 		Length: *
 		Tick: 50
+	dead:
+		Filename: gundead.shp
+		Tick: 800
 	turret:
 		Facings: 32
 		UseClassicFacings: True
@@ -717,6 +763,11 @@ sam:
 		Length: *
 		Offset: -1,-2
 		Tick: 56
+	dead:
+		Filename: sam.shp
+        Start: 67
+		Offset: -1,-2
+		Tick: 800
 	muzzle:
 		Filename: samfire.shp
 		Length: 18
@@ -746,6 +797,10 @@ ftur:
 		Length: *
 		Offset: 0,-2
 		Tick: 35
+	dead:
+		Filename: fturdead.shp
+		Offset: 0,-2
+		Tick: 800
 	bib:
 		TilesetFilenames:
 			SNOW: mbFTUR.sno
@@ -769,6 +824,10 @@ tsla:
 		Length: *
 		Offset: 0,-13
 		Tick: 77
+	dead:
+		Filename: tsladead.shp
+		Offset: 0,-13
+		Tick: 800
 	active:
 		Start: 1
 		Length: 9
@@ -799,6 +858,9 @@ pbox:
 		Filename: pboxmake.shp
 		Length: *
 		Tick: 77
+	dead:
+		Filename: pboxdead.shp
+		Tick: 800
 	muzzle:
 		Filename: minigun.shp
 		Length: 6
@@ -830,6 +892,10 @@ hbox:
 			DESERT: hboxmake.des
 		Length: *
 		Tick: 77
+	dead:
+		Filename: hboxdead.shp
+		TilesetFilenames:
+		Tick: 800
 	muzzle:
 		Filename: minigun.shp
 		TilesetFilenames:
@@ -1052,6 +1118,10 @@ ercc:
 		Offset: 5, -1
 		Length: *
         Tick: 80
+	dead:
+		Filename: erccdead.shp
+		Offset: 2, 3
+		Tick: 800
 	bib:
 		Filename: bib2.tem
 		TilesetFilenames:
