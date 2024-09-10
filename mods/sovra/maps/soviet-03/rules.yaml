@@ -45,9 +45,6 @@ DOG:
 	-GainsExperience:
 	ExternalCondition@RANK-VETERAN:
 		Condition: rank-veteran
-	ExternalCondition@RANK-ELITE:
-		Condition: rank-elite
-	-GrantCondition@RANK-ELITE:
 
 SPY:
 	Mobile:

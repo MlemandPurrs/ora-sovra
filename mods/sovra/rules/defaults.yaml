@@ -52,11 +52,7 @@
 			200: rank-veteran
 			400: rank-veteran
 			800: rank-veteran
-			1600: rank-veteran
 		LevelUpImage: crate-effects
-	GrantCondition@RANK-ELITE:
-		RequiresCondition: rank-veteran >= 4
-		Condition: rank-elite
 	DamageMultiplier@RANK-1:
 		RequiresCondition: rank-veteran == 1
 		Modifier: 95
@@ -66,9 +62,6 @@
 	DamageMultiplier@RANK-3:
 		RequiresCondition: rank-veteran == 3
 		Modifier: 85
-	DamageMultiplier@RANK-ELITE:
-		RequiresCondition: rank-elite
-		Modifier: 75
 	FirepowerMultiplier@RANK-1:
 		RequiresCondition: rank-veteran == 1
 		Modifier: 105
@@ -78,9 +71,6 @@
 	FirepowerMultiplier@RANK-3:
 		RequiresCondition: rank-veteran == 3
 		Modifier: 120
-	FirepowerMultiplier@RANK-ELITE:
-		RequiresCondition: rank-elite
-		Modifier: 130
 	SpeedMultiplier@RANK-1:
 		RequiresCondition: rank-veteran == 1
 		Modifier: 105
@@ -90,9 +80,6 @@
 	SpeedMultiplier@RANK-3:
 		RequiresCondition: rank-veteran == 3
 		Modifier: 120
-	SpeedMultiplier@RANK-ELITE:
-		RequiresCondition: rank-elite
-		Modifier: 140
 	ReloadDelayMultiplier@RANK-1:
 		RequiresCondition: rank-veteran == 1
 		Modifier: 95
@@ -102,16 +89,13 @@
 	ReloadDelayMultiplier@RANK-3:
 		RequiresCondition: rank-veteran == 3
 		Modifier: 85
-	ReloadDelayMultiplier@RANK-ELITE:
-		RequiresCondition: rank-elite
-		Modifier: 75
-	ChangesHealth@ELITE:
+	ChangesHealth@RANK-3:
 		Step: 0
 		PercentageStep: 5
 		Delay: 100
 		StartIfBelow: 100
 		DamageCooldown: 125
-		RequiresCondition: rank-elite
+		RequiresCondition: rank-veteran == 3
 	WithDecoration@RANK-1:
 		Image: rank
 		Sequence: rank-veteran-1
@@ -136,14 +120,6 @@
 		Margin: 5, 6
 		ValidRelationships: Ally, Enemy, Neutral
 		RequiresCondition: rank-veteran == 3
-	WithDecoration@RANK-ELITE:
-		Image: rank
-		Sequence: rank-elite
-		Palette: effect
-		Position: BottomRight
-		Margin: 5, 6
-		ValidRelationships: Ally, Enemy, Neutral
-		RequiresCondition: rank-elite
 
 ^InfantryExperienceHospitalOverrides:
 	WithDecoration@RANK-1:
@@ -155,10 +131,6 @@
 		BlinkPatterns:
 			hospitalheal: On, Off
 	WithDecoration@RANK-3:
-		BlinkInterval: 32
-		BlinkPatterns:
-			hospitalheal: On, Off
-	WithDecoration@RANK-ELITE:
 		BlinkInterval: 32
 		BlinkPatterns:
 			hospitalheal: On, Off
