@@ -213,6 +213,8 @@ Vulcan:
 ChainGun:
 	Inherits: ^HeavyMG
 	ReloadDelay: 10
+    Burst: 2
+    BurstDelays: 0
 	Range: 5c0
 	MinRange: 0c768
 	Projectile: InstantHit
@@ -220,6 +222,12 @@ ChainGun:
 	Warhead@1Dam: SpreadDamage
 		Versus:
 			None: 144
+
+ChainGunAA:
+    Inherits: ChainGun
+	ValidTargets: AirborneActor
+	Warhead@1Dam: SpreadDamage
+        ValidTargets: AirborneActor
 
 ChainGun.Yak:
 	Inherits: ^HeavyMG
