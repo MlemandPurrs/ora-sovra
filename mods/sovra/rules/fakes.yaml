@@ -403,7 +403,7 @@ AFLF:
 	RenderSprites:
 		Image: AFLD
 	Valued:
-		Cost: 125
+		Cost: 150
 	Health:
 		HP: 100000
 	Armor:
@@ -505,7 +505,7 @@ STEF:
 	Selectable:
 		Bounds: 3072, 2048
 	Valued:
-		Cost: 375
+		Cost: 500
 
 PDOF:
 	Inherits: ^FakeBuilding
@@ -546,10 +546,9 @@ IROF:
 	Inherits: ^FakeBuilding
 	Inherits@infiltrate: ^InfiltratableFake
 	Inherits@IDISABLE: ^DisableOnLowPower
-	Inherits@shape: ^2x1Shape
+	Inherits@shape: ^2x2Shape
 	Selectable:
-		Bounds: 2048, 1194, 0, 85
-		DecorationBounds: 2133, 2133, 0, -512
+		Bounds: 2048, 2133, 0, -170
 	Tooltip:
 		Name: Fake Iron Curtain
 		GenericName: Iron Curtain
@@ -563,8 +562,8 @@ IROF:
 		Description: Maximum 1 can be built.\n\nLooks like a Iron Curtain.
 		Icon: fake-icon
 	Building:
-		Footprint: xx
-		Dimensions: 2,1
+		Footprint: xx xx
+		Dimensions: 2,2
 	RenderSprites:
 		Image: IRON
 	WithBuildingBib:
