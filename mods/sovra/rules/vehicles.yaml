@@ -186,6 +186,7 @@ V2RL:
 		Range: 4c0
 	Turreted:
 		TurnSpeed: 20
+        Offset: 24,0,0
 	Armament:
 		Weapon: 105mm
 		Recoil: 128
