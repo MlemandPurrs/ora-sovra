@@ -4,6 +4,8 @@
 	Report: aacanon3.aud
 	ValidTargets: AirborneActor
 	Projectile: InstantHit
+		Inaccuracy: 128
+		InaccuracyType: PerCellIncrement
 	Warhead@1Dam: SpreadDamage
 		Spread: 213
 		Damage: 900
