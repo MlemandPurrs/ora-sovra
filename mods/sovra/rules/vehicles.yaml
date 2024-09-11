@@ -57,6 +57,9 @@ V2RL:
 		Types: Veterancy
 		Prerequisites: vehicles.upgraded
 	RenderRangeCircle:
+    ReloadArmamentsBar:
+        Armaments: primary
+		Color: FFFF00
 
 1TNK:
 	Inherits: ^TrackedVehicle
