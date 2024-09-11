@@ -7,6 +7,8 @@
 		Speed: 682
 		Image: 120MM
 		Shadow: True
+		Inaccuracy: 135
+		InaccuracyType: PerCellIncrement
 	Warhead@1Dam: SpreadDamage
 		Spread: 128
 		Damage: 4000
@@ -97,6 +99,7 @@ TurretGun:
 		Blockable: false
 		LaunchAngle: 62
 		Inaccuracy: 1c938
+        InaccuracyType: Maximum
 	Warhead@1Dam: SpreadDamage
 		Spread: 426
 		Damage: 23000
@@ -271,6 +274,7 @@ VolkovGun:
 		Speed: 853
 		Shadow: true
 		Inaccuracy: 256
+        InaccuracyType: Maximum
         Blockable: true
 	Warhead@1Dam: SpreadDamage
 		Spread: 256
