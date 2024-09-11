@@ -223,9 +223,13 @@ ChainGun:
 
 ChainGun.Yak:
 	Inherits: ^HeavyMG
-	ReloadDelay: 3
+	ReloadDelay: 30
+	Burst: 4
+	BurstDelays: 3
 	Range: 5c0
 	MinRange: 3c0
+	FirstBurstTargetOffset: -768,0,0
+	FollowingBurstTargetOffset: 512,0,0
 	Projectile: InstantHit
 		Blockable: false
 	Warhead@1Dam: SpreadDamage

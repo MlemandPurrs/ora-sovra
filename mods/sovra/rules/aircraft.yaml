@@ -203,7 +203,7 @@ YAK:
 		InitialStance: HoldFire
 		InitialStanceAI: HoldFire
 	AmmoPool:
-		Ammo: 18
+		Ammo: 16
 		ReloadDelay: 11
 		AmmoCondition: ammo
 	WithMuzzleOverlay:
@@ -230,7 +230,7 @@ YAK:
 		Position: BottomLeft
 		Margin: 4, 3
 		RequiresSelection: true
-		PipCount: 6
+		PipCount: 4
 	GrantConditionOnDamageState@SmokeTrail:
 		Condition: enable-smoke
 	WithProductionIconOverlay:
