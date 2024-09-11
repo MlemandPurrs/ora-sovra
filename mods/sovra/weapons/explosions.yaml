@@ -350,9 +350,13 @@ MiniNuke:
 		FlashType: Nuke
 
 VisualExplodeHusk:
-	Inherits: ^Explosion
-	-Warhead@1Dam:
+	ValidTargets: Ground, Water, Air, GroundActor, WaterActor, AirborneActor
 	Warhead@2Eff: CreateEffect
 		Explosions: small_explosion
 		ImpactSounds: firebl3.aud
-    -Warhead@Smu: LeaveSmudge
+		ValidTargets: Ground, Air, GroundActor, AirborneActor, WaterActor, Trees
+	Warhead@3EffWater: CreateEffect
+		Explosions: large_splash
+		ImpactSounds: splash9.aud
+		ValidTargets: Water, Underwater
+		InvalidTargets: Bridge
