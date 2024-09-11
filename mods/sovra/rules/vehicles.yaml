@@ -231,6 +231,10 @@ V2RL:
     ReloadAmmoPool:
         Delay: 3
         Count: 1
+	Turreted:
+        RequiresCondition: !parachute
+	AttackTurreted:
+        PauseOnCondition: parachute
 
 4TNK:
 	Inherits: ^TrackedVehicle
