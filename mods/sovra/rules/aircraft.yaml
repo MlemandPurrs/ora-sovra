@@ -523,7 +523,7 @@ MH60:
 		BuildAtProductionType: Helicopter
 		BuildPaletteOrder: 40
 		Prerequisites: ~airproduction, atek, ~aircraft.allies, ~techlevel.high
-		Description: Helicopter gunship armed\nwith dual chainguns.\n\n  Strong vs Infantry, Light armor\n  Weak vs Tanks, Aircraft
+		Description: Helicopter gunship armed\nwith dual chainguns.\n\n  Strong vs Infantry, Light armor\n  Weak vs Tanks, Aircraft\n\nSpecial ability: Invisible on Radar
 	Valued:
 		Cost: 1800
 	Tooltip:
@@ -599,3 +599,5 @@ MH60:
 	WithProductionIconOverlay:
 		Types: Veterancy
 		Prerequisites: aircraft.upgraded
+    AppearsOnRadar:
+        ValidRelationships: Ally
