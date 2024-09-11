@@ -852,6 +852,7 @@ TTNK:
 	WithProductionIconOverlay:
 		Types: Veterancy
 		Prerequisites: vehicles.upgraded
+	RenderRangeCircle:
 
 FTRK:
 	Inherits: ^Vehicle
