@@ -475,7 +475,7 @@ IRON:
 		BuildPaletteOrder: 130
 		Prerequisites: stek, ~structures.soviet, ~techlevel.unrestricted
 		BuildLimit: 1
-		Description: Maximum 1 can be built.\n\nMakes a group of units invulnerable\nfor a short time.\nRequires power to operate.\n\n  Special Ability: Invulnerability
+		Description: Maximum 1 can be built.\n\nMakes a group of units or structures\ninvulnerable for a short time.\nRequires power to operate.\n\n  Special Ability: Invulnerability
 	Valued:
 		Cost: 1500
 	Tooltip:
@@ -678,7 +678,7 @@ TSLA:
 		MaxCharges: 3
 		ReloadDelay: 120
 	Power:
-		Amount: -100
+		Amount: -80
 		RequiresCondition: !build-incomplete
 	DetectCloaked:
 		Range: 6c0
@@ -2058,7 +2058,7 @@ STEK:
 		Range: 4c0
 	WithBuildingBib:
 	Power:
-		Amount: -100
+		Amount: -120
 		RequiresCondition: !build-incomplete
 	ProvidesPrerequisite@buildingname:
 	WithDeathAnimation:
