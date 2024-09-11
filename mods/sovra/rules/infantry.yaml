@@ -688,12 +688,8 @@ THF:
 		RequiresCondition: parachute
 		Palette: player-noshadow
 		IsPlayerPalette: true
-	GrantConditionOnMovement@MOVING:
-		ValidMovementTypes: Horizontal, Vertical, Turn
-		Condition: moving
 	Crushable:
 		WarnProbability: 95
-		RequiresCondition: !moving
 	Cloak:
 		InitialDelay: 250
 		CloakDelay: 120

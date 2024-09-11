@@ -41,6 +41,7 @@ FireballLauncher:
 Flamer:
 	Inherits: ^FireWeapon
 	ReloadDelay: 50
+	Range: 4c0
 	Burst: 15
 	BurstDelays: 1
 	Projectile: Bullet
