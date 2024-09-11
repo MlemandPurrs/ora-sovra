@@ -50,6 +50,9 @@ BADR:
 		Condition: enable-smoke
 	GpsDot:
 		String: BigPlane
+	HitShape:
+		Type: Circle
+			Radius: 736
 
 BADR.Bomber:
 	Inherits: BADR
@@ -289,6 +292,9 @@ TRAN:
 		Actor: TRAN.Husk
 	Selectable:
 		DecorationBounds: 1706, 1536
+	HitShape:
+		Type: Circle
+			Radius: 512
 
 HELI:
 	Inherits: ^Helicopter

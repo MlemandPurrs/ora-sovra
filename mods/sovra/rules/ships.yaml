@@ -310,6 +310,9 @@ LST:
 	-Chronoshiftable:
 	Selectable:
 		DecorationBounds: 1536, 1536
+	HitShape:
+		Type: Circle
+			Radius: 576
 
 PT:
 	Inherits: ^Ship

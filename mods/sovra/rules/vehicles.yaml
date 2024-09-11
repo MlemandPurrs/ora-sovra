@@ -297,6 +297,9 @@ V2RL:
 		Prerequisites: vehicles.upgraded
 	GpsDot:
 		String: HeavyVehicle
+	HitShape:
+		Type: Circle
+			Radius: 512
 
 ARTY:
 	Inherits: ^TrackedVehicle
@@ -420,6 +423,9 @@ HARV:
 	SpeedMultiplier@CRUSHSLOW:
 		RequiresCondition: crush-slow
 		Modifier: 70
+	HitShape:
+		Type: Circle
+			Radius: 512
 
 AHRV:
     Inherits: HARV
@@ -506,6 +512,9 @@ MCV:
 	SpeedMultiplier@CRUSHSLOW:
 		RequiresCondition: crush-slow
 		Modifier: 70
+	HitShape:
+		Type: Circle
+			Radius: 608
 
 JEEP:
 	Inherits: ^Vehicle
@@ -1034,6 +1043,9 @@ QTNK:
 		RequiresCondition: invulnerability && !deployed
 	GpsDot:
 		String: HeavyVehicle
+	HitShape:
+		Type: Circle
+			Radius: 512
 
 STNK:
 	Inherits: ^Vehicle
