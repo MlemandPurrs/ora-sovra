@@ -30,6 +30,10 @@ V2RL:
 	Armament:
 		Weapon: SCUD
 		ReloadingCondition: reloading
+    Armament@AIHelper:
+        Name: secondary
+        Weapon: TargetingHelperV2RL
+        PauseOnCondition: !reloading
 	AutoTarget:
 		ScanRadius: 10
 	AttackFrontal:
@@ -220,14 +224,14 @@ V2RL:
 		Types: Veterancy
 		Prerequisites: techlevel.infonly
     AmmoPool:
-        Armaments:
+        Armaments: dummy
         Ammo: 1
         InitialAmmo: 0
         AmmoCondition: stahp
     ChangesHealth:
         PercentageStep: -50
         StartIfBelow: 101
-        Delay: 3
+        Delay: 4
         RequiresCondition: !stahp
     ReloadAmmoPool:
         Delay: 3

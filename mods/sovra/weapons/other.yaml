@@ -288,3 +288,21 @@ DetectionPing:
         Range: 10c0
         ValidTargets: WaterActor, Underwater
         ValidRelationships: Neutral, Enemy
+
+TargetingHelper:
+	ReloadDelay: 3
+	Range: 4c0
+	ValidTargets: None
+    Projectile: InstantHit
+	Warhead@1Dam: SpreadDamage
+		Damage: 0
+
+TargetingHelperV2RL:
+	ReloadDelay: 3
+	Range: 10c0
+	MinRange: 4c0
+	ValidTargets: GroundActor, WaterActor, Trees
+	Projectile: InstantHit
+	Warhead@1Dam: SpreadDamage
+		Damage: 0
+		ValidTargets: GroundActor, WaterActor, Trees
