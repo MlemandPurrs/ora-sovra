@@ -507,9 +507,9 @@ IRON:
         OrderName: IronCurtain
 		PauseOnCondition: disabled
 		Icon: invuln
-		ChargeInterval: 3000
+		ChargeInterval: 3750
 		Name: Invulnerability
-		Description: Makes a group of units invulnerable\nfor 20 seconds.
+		Description: Makes a group of units or structures\ninvulnerable for 20 seconds.
 		Duration: 400
 		SelectTargetSpeechNotification: SelectTarget
 		InsufficientPowerSpeechNotification: InsufficientPower
@@ -524,7 +524,7 @@ IRON:
 		OnFireSound: ironcur9.aud
 		SupportPowerPaletteOrder: 10
 		Dimensions: 3, 3
-		Footprint: _x_ xxx _x_
+		Footprint: xxx xxx xxx
 	SupportPowerChargeBar:
 	InfiltrateForSupportPowerReset:
 		Types: SpyInfiltrate
