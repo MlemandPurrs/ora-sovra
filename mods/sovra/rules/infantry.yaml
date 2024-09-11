@@ -404,6 +404,9 @@ SPY:
     ProductionCostMultiplier@england:
         Multiplier: 50
         Prerequisites: infantry.england
+    ProductionTimeMultiplier@england:
+        Multiplier: 50
+        Prerequisites: infantry.england
     GivesExperienceMultiplier@england:
         Modifier: 150
         RequiresCondition: owner.england

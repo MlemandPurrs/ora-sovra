@@ -113,7 +113,7 @@
 		Name: England
 		InternalName: england
 		Side: Allies
-		Description: England: Counterintelligence\nSpecial Tech: Units more durable\nSpecial Ability: Trains Spy at half cost\nSpecial Unit: Sniper\nSpecial Unit: Mobile Radar Jammer
+		Description: England: Counterintelligence\nSpecial Tech: Units more durable\nSpecial Ability: Improved Spy training\nSpecial Unit: Sniper\nSpecial Unit: Mobile Radar Jammer
 	Faction@2:
 		Name: France
 		InternalName: france
