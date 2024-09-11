@@ -198,10 +198,14 @@ E3:
 	Armament@PRIMARY:
 		Weapon: RedEye
 		LocalOffset: 0,0,555
+		PauseOnCondition: reload-ag
+        ReloadingCondition: reload-aa
 	Armament@SECONDARY:
 		Name: secondary
 		Weapon: Dragon
 		LocalOffset: 0,0,555
+		PauseOnCondition: reload-aa
+        ReloadingCondition: reload-ag
 	Armament@GARRISONED:
 		Name: garrisoned
 		Weapon: Dragon
