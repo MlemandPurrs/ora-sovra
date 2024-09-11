@@ -1,5 +1,5 @@
 1TNK.Husk:
-	Inherits: ^Husk
+	Inherits: ^LightHusk
 	Tooltip:
 		Name: Husk (Light Tank)
 	ThrowsParticle@turret:
@@ -84,7 +84,7 @@ MCV.Husk:
 		Image: mcvhusk
 
 MGG.Husk:
-	Inherits: ^Husk
+	Inherits: ^LightHusk
 	Tooltip:
 		Name: Husk (Mobile Gap Generator)
 	ThrowsParticle@spinner:

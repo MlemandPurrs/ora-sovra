@@ -1095,6 +1095,11 @@
 	Tooltip:
 		GenericName: Destroyed Vehicle
 
+^LightHusk:
+    Inherits: ^Husk
+	Health:
+		HP: 16000
+
 ^PlaneHusk:
 	Inherits: ^BasicHusk
 	Inherits@2: ^SpriteActor

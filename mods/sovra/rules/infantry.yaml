@@ -373,7 +373,6 @@ SPY:
 		Types: SpyInfiltrate
 		Notification: BuildingInfiltrated
 		TextNotification: Building infiltrated.
-        EnterCursor: enter-blue
 	AutoTarget:
 		InitialStance: HoldFire
 		InitialStanceAI: HoldFire
@@ -678,7 +677,6 @@ THF:
 		Types: ThiefInfiltrate
 		Notification: BuildingInfiltrated
 		TextNotification: Building infiltrated.
-        EnterCursor: enter-blue
 	Voiced:
 		VoiceSet: ThiefVoice
 	-TakeCover:
