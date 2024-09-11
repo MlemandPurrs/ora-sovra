@@ -38,7 +38,7 @@ MSLO:
 		PauseOnCondition: disabled
 		Cursor: nuke
 		Icon: abomb
-		ChargeInterval: 13500
+		ChargeInterval: 11250
 		Name: Atom Bomb
 		Description: Launches a devastating atomic bomb\nat a target location.
 		BeginChargeSpeechNotification: AbombPrepping
