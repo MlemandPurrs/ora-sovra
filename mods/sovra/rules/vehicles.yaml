@@ -242,7 +242,7 @@ V2RL:
 		Queue: Vehicle
 		BuildPaletteOrder: 320
 		Prerequisites: stek, ~vehicles.soviet, ~techlevel.high
-		Description: Big and slow tank, with anti-air capability.\nCan crush concrete walls.\n\n  Strong vs Vehicles, Infantry, Aircraft\n  Weak vs Nothing
+		Description: Big and slow tank, with anti-air capability.\nCan crush concrete walls.\n\n  Strong vs Vehicles, Infantry, Aircraft\n  Weak vs Nothing\n\n  Special ability: Self-Repair on heavy damage
 	Valued:
 		Cost: 1800
 	Tooltip:
@@ -363,7 +363,7 @@ HARV:
 		Queue: Vehicle
 		BuildPaletteOrder: 100
 		Prerequisites: proc, ~!vehicles.soviet, ~techlevel.infonly
-		Description: Collects Ore and Gems for processing.\n\n  Unarmed
+		Description: Collects Ore and Gems for processing.\n\n  Unarmed\n\n  Special ability: Self-Repair on heavy damage
 	Valued:
 		Cost: 1000
 	Tooltip:
