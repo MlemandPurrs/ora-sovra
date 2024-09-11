@@ -296,6 +296,7 @@ TargetingHelper:
     Projectile: InstantHit
 	Warhead@1Dam: SpreadDamage
 		Damage: 0
+        ValidTargets: None
 
 TargetingHelperV2RL:
 	ReloadDelay: 3

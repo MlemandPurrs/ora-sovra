@@ -348,3 +348,11 @@ MiniNuke:
 	Warhead@14FlashEffect: FlashPaletteEffect
 		Duration: 20
 		FlashType: Nuke
+
+VisualExplodeHusk:
+	Inherits: ^Explosion
+	-Warhead@1Dam:
+	Warhead@2Eff: CreateEffect
+		Explosions: small_explosion
+		ImpactSounds: firebl3.aud
+    -Warhead@Smu: LeaveSmudge
