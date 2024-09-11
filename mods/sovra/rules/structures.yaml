@@ -1049,7 +1049,7 @@ FTUR:
 	BodyOrientation:
 		QuantizedFacings: 8
 	Power:
-		Amount: -20
+		Amount: -30
 		RequiresCondition: !build-incomplete
 	DetectCloaked:
 		Range: 6c0
