@@ -300,6 +300,9 @@ V2RL:
 	HitShape:
 		Type: Circle
 			Radius: 512
+	Passenger:
+		CargoType: Vehicle
+        Weight: 4
 
 ARTY:
 	Inherits: ^TrackedVehicle
@@ -515,6 +518,9 @@ MCV:
 	HitShape:
 		Type: Circle
 			Radius: 608
+	Passenger:
+		CargoType: Vehicle
+        Weight: 4
 
 JEEP:
 	Inherits: ^Vehicle
@@ -618,6 +624,9 @@ APC:
 	WithProductionIconOverlay:
 		Types: Veterancy
 		Prerequisites: vehicles.upgraded
+	Passenger:
+		CargoType: Vehicle
+        Weight: 4
 
 MNLY:
 	Inherits: ^TrackedVehicle
@@ -1046,6 +1055,9 @@ QTNK:
 	HitShape:
 		Type: Circle
 			Radius: 512
+	Passenger:
+		CargoType: Vehicle
+        Weight: 4
 
 STNK:
 	Inherits: ^Vehicle
@@ -1123,3 +1135,6 @@ STNK:
 	SpeedMultiplier@CRUSHSLOW:
 		RequiresCondition: crush-slow
 		Modifier: 70
+	Passenger:
+		CargoType: Vehicle
+        Weight: 4
