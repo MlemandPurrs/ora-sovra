@@ -482,7 +482,7 @@ E7:
 MEDI:
 	Inherits: ^Soldier
 	Buildable:
-        BuildDuration: 200
+        BuildDuration: 300
         BuildDurationModifier: 100
 		Queue: Infantry
 		BuildAtProductionType: Soldier
@@ -490,7 +490,7 @@ MEDI:
 		Prerequisites: ~tent, dome, ~techlevel.medium
 		Description: Heals nearby infantry.\n\n  Unarmed\n\n  Special ability: Self-healing
 	Valued:
-		Cost: 200
+		Cost: 300
 	Tooltip:
 		Name: Medic
 	UpdatesPlayerStatistics:
