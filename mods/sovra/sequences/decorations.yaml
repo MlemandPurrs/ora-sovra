@@ -600,6 +600,7 @@ v19:
 		Length: 14
 		Tick: 120
 	damaged-idle:
+		Filename: v19.shp
 		Start: 14
 		Length: 14
 		Tick: 120
