@@ -598,6 +598,11 @@ v19:
 	idle:
 		Filename: v19.shp
 		Length: 14
+		Tick: 120
+	damaged-idle:
+		Start: 14
+		Length: 14
+		Tick: 120
 
 v19.husk:
 	idle:
