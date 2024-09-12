@@ -289,15 +289,6 @@ DetectionPing:
         ValidTargets: WaterActor, Underwater
         ValidRelationships: Neutral, Enemy
 
-TargetingHelper:
-	ReloadDelay: 3
-	Range: 4c0
-	ValidTargets: None
-    Projectile: InstantHit
-	Warhead@1Dam: SpreadDamage
-		Damage: 0
-        ValidTargets: None
-
 TargetingHelperV2RL:
 	ReloadDelay: 3
 	Range: 10c0

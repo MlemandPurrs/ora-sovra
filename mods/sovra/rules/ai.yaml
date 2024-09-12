@@ -551,6 +551,8 @@ Player:
 			stek: 6375
 			mslo: 8000
             iron: 6500
+            sam: 5625
+            agun: 5625
 		BuildingLimits:
 			proc: 3
             ercc: 3
