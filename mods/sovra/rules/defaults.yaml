@@ -850,6 +850,9 @@
 		Terrain: Wall
 	MapEditorData:
 		Categories: Wall
+	GrantExternalConditionToCrusher@CRUSHSLOW:
+		OnCrushCondition: crush-slow
+		OnCrushDuration: 50
 
 ^TechBuilding:
 	Inherits: ^BasicBuilding
