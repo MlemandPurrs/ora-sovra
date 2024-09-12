@@ -340,6 +340,7 @@ E6:
 		PlayerExperience: 10
         EnterCursor: goldwrench
         EnterBlockedCursor: goldwrench-blocked
+		CaptureDelay: 200
 	Voiced:
 		VoiceSet: EngineerVoice
 	-AttackFrontal:
