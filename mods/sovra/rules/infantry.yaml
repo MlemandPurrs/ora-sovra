@@ -566,13 +566,6 @@ MECH:
 		OutsideRangeCursor: repair
 		TargetRelationships: Ally
 		ForceTargetRelationships: None
-	Armament@AI:
-		Weapon: TargetingHelper
-		LocalOffset: 0,0,0
-		RequiresCondition: enable-helper
-	GrantConditionOnBotOwner@aiplayer:
-		Condition: enable-helper
-		Bots: unplugged
 	AttackFrontal:
 		Voice: Action
 		FacingTolerance: 0
