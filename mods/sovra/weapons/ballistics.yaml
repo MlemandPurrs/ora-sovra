@@ -72,6 +72,7 @@
 	Inherits: ^Cannon
 	ReloadDelay: 90
 	Burst: 2
+	Range: 5c512
 	InvalidTargets: Air, Infantry
 	Warhead@1Dam: SpreadDamage
 		Damage: 6000
