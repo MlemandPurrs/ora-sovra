@@ -623,8 +623,8 @@ Player:
         #   MinimumConstructionYardCount: 2
 	SquadManagerBotModule@unplugged:
 		RequiresCondition: enable-unplugged-ai
-		SquadSize: 15
-        SquadSizeRandomBonus: 30
+		SquadSize: 16
+        SquadSizeRandomBonus: 32
 		AssignRolesInterval: 10
 		RushAttackScanRadius: 22
         ProtectUnitScanRadius: 22
@@ -704,5 +704,5 @@ Player:
     CaptureManagerBotModule@unplugged:
         CapturingActorTypes: e6
         CapturableActorTypes: oilb, hosp, bio, miss, fcom, oilb.husk, hosp.husk, bio.husk, miss.husk, fcom.husk
-        MaximumCaptureTargetOptions: 20
+        MaximumCaptureTargetOptions: 16
         CheckCaptureTargetsForVisibility: false
