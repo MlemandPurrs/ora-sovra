@@ -86,7 +86,7 @@ MSUB:
 		BuildAtProductionType: Submarine
 		BuildPaletteOrder: 60
 		Prerequisites: ~spen, stek, ~techlevel.high
-		Description: Submerged anti-ground siege unit.\nCan detect other submarines.\n\n  Strong vs Buildings, Ground units, Aircraft\n  Weak vs Naval units
+		Description: Submerged anti-ground siege unit.\nCan detect other submarines.\n\n  Strong vs Buildings, Ground units\n  Weak vs Naval units
 	Valued:
 		Cost: 1650
 	Tooltip:
