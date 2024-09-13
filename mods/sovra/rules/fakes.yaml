@@ -65,6 +65,8 @@ TENF:
 	HitShape:
 		UseTargetableCellsOffsets: false
 		TargetableOffsets: 0,0,0, 630,-512,0, 355,512,0, -281,-512,0, -630,512,0
+	ActorPreviewPlaceBuildingPreview:
+		Animated: false
 
 BARF:
 	Inherits: ^FakeBuilding
@@ -99,6 +101,8 @@ BARF:
 	HitShape:
 		UseTargetableCellsOffsets: false
 		TargetableOffsets: 0,0,0, 490,-470,0, 355,512,0, -355,-512,0, -630,512,0
+	ActorPreviewPlaceBuildingPreview:
+		Animated: false
 
 PROF:
 	Inherits: ^FakeBuilding
@@ -325,7 +329,7 @@ FIXF:
 		GenericVisibility: Enemy
 		GenericStancePrefix: False
 	Building:
-		Footprint: _=_ xxx _=_
+		Footprint: =+= +++ =+=
 		Dimensions: 3,3
 	Health:
 		HP: 80000
@@ -408,6 +412,8 @@ AFLF:
 		HP: 100000
 	Armor:
 		Type: Wood
+	ActorPreviewPlaceBuildingPreview:
+		Animated: false
 
 FAPW:
 	Inherits: ^FakeBuilding
