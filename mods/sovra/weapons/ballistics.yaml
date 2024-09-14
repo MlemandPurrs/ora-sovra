@@ -309,4 +309,5 @@ SABOT:
 		Spread: 128
 		Damage: 12000
 		Versus:
+			Wood: 50
 			Heavy: 115

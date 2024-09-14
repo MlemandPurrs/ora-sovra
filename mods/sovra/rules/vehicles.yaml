@@ -1197,7 +1197,7 @@ TNKD:
 		BuildPaletteOrder: 340
 		Prerequisites: techcenter, ~tech.stolen
 		Queue: Vehicle
-		Description: Long ranged anti-armor vehicle.\n\n  Strong vs Tanks, Vehicles\n  Weak vs Infantry, Aircraft
+		Description: Long-range anti-armor vehicle.\n\n  Strong vs Tanks, Vehicles\n  Weak vs Infantry, Aircraft
 	Mobile:
         Locomotor: lighttracked
 		TurnSpeed: 12
