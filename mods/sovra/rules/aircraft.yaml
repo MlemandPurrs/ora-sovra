@@ -193,6 +193,7 @@ YAK:
 		FacingTolerance: 80
 		PersistentTargeting: false
 		OpportunityFire: False
+        ForceFireIgnoresActors: True
 	Aircraft:
 		CruiseAltitude: 2560
 		TurnSpeed: 16
