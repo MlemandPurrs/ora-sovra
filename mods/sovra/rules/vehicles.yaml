@@ -474,7 +474,7 @@ AHRV:
 		BuildPaletteOrder: 110
         Prerequisites: proc, ~vehicles.soviet, ~techlevel.infonly
 		Queue: Vehicle
-		Description: Collects Ore and Gems for processing.\n\n  Strong vs Infantry.\n  Weak vs anything else.
+		Description: Collects Ore and Gems for processing.\n\n  Strong vs Infantry.\n  Weak vs anything else.\n\n  Special ability: Self-Repair on heavy damage
         Icon: alt-icon
 	Turreted@SECONDARY:
 		Turret: secondary

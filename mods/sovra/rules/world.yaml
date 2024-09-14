@@ -143,7 +143,7 @@
 		Name: Belarus
 		InternalName: belarus
 		Side: Soviet
-		Description: Belarus: Heavy Armor\nSpecial Tech: Units trained faster\nSpecial Ability: Air Drop\nSpecial Unit: MAD Tank
+		Description: Belarus: Heavy Armor\nSpecial Tech: Units trained faster\nSpecial Ability: Air Drop\nSpecial Unit: M.A.D. Tank
 	Faction@random:
 		Name: Any
 		InternalName: Random
