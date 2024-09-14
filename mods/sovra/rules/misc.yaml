@@ -719,3 +719,7 @@ aircraft.upgraded2:
 	GrantConditionOnPrerequisite@veterancyactivation3:
 		Prerequisites: aircraft.upgraded
 		Condition: airveterancyactivated
+
+tech.stolen:
+	AlwaysVisible:
+	ProvidesPrerequisite:

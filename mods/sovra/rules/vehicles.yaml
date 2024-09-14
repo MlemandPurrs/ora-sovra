@@ -1180,3 +1180,48 @@ STNK:
 	Passenger:
 		CargoType: Vehicle
         Weight: 4
+
+TNKD:
+	Inherits: ^TrackedVehicle
+	Inherits@GAINSEXPERIENCE: ^GainsExperience
+	Inherits@AUTOTARGET: ^AutoTargetGroundAssaultMove
+	Valued:
+		Cost: 1350
+	Tooltip:
+		Name: Tank Destroyer
+	UpdatesPlayerStatistics:
+		AddToArmyValue: true
+	Buildable:
+        BuildDuration: 1350
+        BuildDurationModifier: 100
+		BuildPaletteOrder: 340
+		Prerequisites: techcenter, ~tech.stolen
+		Queue: Vehicle
+		Description: Long ranged anti-armor vehicle.\n\n  Strong vs Tanks, Vehicles\n  Weak vs Infantry, Aircraft
+	Mobile:
+        Locomotor: lighttracked
+		TurnSpeed: 12
+		Speed: 72
+	Health:
+		HP: 40000
+	Armor:
+		Type: Heavy
+	RevealsShroud:
+		MinRange: 4c0
+		Range: 5c0
+		RevealGeneratedShroud: False
+	RevealsShroud@GAPGEN:
+		Range: 4c0
+	Armament:
+		Weapon: SABOT
+		LocalOffset: 720,0,90
+		MuzzleSequence: muzzle
+	AttackFrontal:
+        FacingTolerance: 0
+	WithMuzzleOverlay:
+	-ExternalCondition@CRUSHSLOW:
+	-SpeedMultiplier@CRUSHSLOW:
+	RenderRangeCircle:
+    ReloadArmamentsBar:
+        Armaments: primary
+		Color: FFFF00

@@ -1178,6 +1178,9 @@ ATEK:
 	InfiltrateForSupportPowerReset:
 		Types: SpyInfiltrate
 		PlayerExperience: 10
+	InfiltrateForSupportPower:
+		Proxy: tech.stolen
+		Types: SpyInfiltrate
 	Targetable:
 		TargetTypes: GroundActor, C4, DetonateAttack, Structure, SpyInfiltrate
 	Power:
@@ -2067,6 +2070,11 @@ STEK:
 	WithDeathAnimation:
 		DeathSequence: dead
 		UseDeathTypeSuffix: false
+	Targetable:
+		TargetTypes: GroundActor, C4, DetonateAttack, Structure, SpyInfiltrate
+	InfiltrateForSupportPower:
+		Proxy: tech.stolen
+		Types: SpyInfiltrate
 
 BARR:
 	Inherits: ^Building

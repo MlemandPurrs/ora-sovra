@@ -296,3 +296,17 @@ TurretDepthCharge:
 	ReloadDelay: 30
 	Projectile: Bullet
 		Speed: 342
+
+SABOT:
+    Inherits: ^Cannon
+	ReloadDelay: 95
+	Range: 7c768
+	Report: tnkdfire.aud
+	Projectile: Bullet
+		Speed: 853
+		Image: 120MM
+	Warhead@1Dam: SpreadDamage
+		Spread: 128
+		Damage: 12000
+		Versus:
+			Heavy: 115

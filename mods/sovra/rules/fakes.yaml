@@ -500,6 +500,7 @@ ATEF:
 
 STEF:
 	Inherits: ^FakeBuilding
+	Inherits@infiltrate: ^InfiltratableFake
 	Inherits@shape: ^3x2Shape
 	HitShape:
 		TargetableOffsets: 420,-768,0, 420,768,0, -770,-768,0, -770,768,0

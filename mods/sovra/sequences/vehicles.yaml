@@ -377,3 +377,14 @@ stnk:
 		UseClassicFacings: True
 	icon:
 		Filename: stnkicon.shp
+
+tnkd:
+	idle:
+        Filename: tnkd.shp
+		Facings: 32
+		UseClassicFacings: True
+	muzzle:
+		Filename: gunfire2.shp
+		Length: 5
+	icon: 
+        Filename: tnkdicon.shp
