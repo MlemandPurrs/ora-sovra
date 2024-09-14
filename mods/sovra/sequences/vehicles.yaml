@@ -267,8 +267,8 @@ mrj:
 		Facings: 32
 		UseClassicFacings: True
 	spinner:
-		Start: 32
-		Length: 32
+		Start: 34
+		Length: 30
         Reverses: true
 	icon:
 		Filename: mrjicon.shp
