@@ -109,6 +109,10 @@ V2RL:
 		Prerequisites: vehicles.upgraded
 	SpawnActorOnDeath:
 		Actor: 1TNK.Husk
+        RequiresCondition: !onref
+	ExternalCondition@NOREFBLOCK:
+		Condition: onref
+        TotalCap: 1
 
 2TNK:
 	Inherits: ^TrackedVehicle
@@ -153,6 +157,10 @@ V2RL:
 	WithSpriteTurret:
 	SpawnActorOnDeath:
 		Actor: 2TNK.Husk
+        RequiresCondition: !onref
+	ExternalCondition@NOREFBLOCK:
+		Condition: onref
+        TotalCap: 1
 	ProducibleWithLevel:
 		Prerequisites: vehicles.upgraded
 	Selectable:
@@ -205,6 +213,10 @@ V2RL:
 	WithSpriteTurret:
 	SpawnActorOnDeath:
 		Actor: 3TNK.Husk
+        RequiresCondition: !onref
+	ExternalCondition@NOREFBLOCK:
+		Condition: onref
+        TotalCap: 1
 	ProducibleWithLevel:
 		Prerequisites: vehicles.upgraded
 	Selectable:
@@ -295,6 +307,10 @@ V2RL:
 	WithSpriteTurret:
 	SpawnActorOnDeath:
 		Actor: 4TNK.Husk
+        RequiresCondition: !onref
+	ExternalCondition@NOREFBLOCK:
+		Condition: onref
+        TotalCap: 1
 	ChangesHealth:
 		Step: 100
 		Delay: 3
@@ -411,9 +427,13 @@ HARV:
 		String: Harvester
 	SpawnActorOnDeath:
 		Actor: HARV.EmptyHusk
+        RequiresCondition: !onref
 	HarvesterHuskModifier:
 		FullHuskActor: HARV.FullHusk
 		FullnessThreshold: 50
+	ExternalCondition@NOREFBLOCK:
+		Condition: onref
+        TotalCap: 1
 	ChangesHealth:
 		Step: 100
 		Delay: 25
@@ -474,6 +494,7 @@ AHRV:
 	WithMuzzleOverlay:
 	SpawnActorOnDeath:
 		Actor: AHRV.EmptyHusk
+        RequiresCondition: !onref
 	HarvesterHuskModifier:
 		FullHuskActor: AHRV.FullHusk
 		FullnessThreshold: 50
@@ -520,6 +541,10 @@ MCV:
 	BaseBuilding:
 	SpawnActorOnDeath:
 		Actor: MCV.Husk
+        RequiresCondition: !onref
+	ExternalCondition@NOREFBLOCK:
+		Condition: onref
+        TotalCap: 1
 	TransferTimedExternalConditionOnTransform:
 		Condition: invulnerability
 	ExternalCondition@CRUSHSLOW:
@@ -763,6 +788,10 @@ MGG:
 		Amount: -10
 	SpawnActorOnDeath:
 		Actor: MGG.Husk
+        RequiresCondition: !onref
+	ExternalCondition@NOREFBLOCK:
+		Condition: onref
+        TotalCap: 1
 
 MRJ:
 	Inherits: ^Vehicle
@@ -966,7 +995,7 @@ CTNK:
 		Queue: Vehicle
 		BuildPaletteOrder: 330
 		Prerequisites: atek, ~vehicles.germany, ~techlevel.high
-		Description: Armed with anti-ground missiles.\nTeleports to areas within range.\n\n  Strong vs Vehicles, Buildings\n  Weak vs Infantry, Aircraft\n  Special ability: Can teleport
+		Description: Armed with anti-ground missiles.\n\n  Strong vs Vehicles, Buildings\n  Weak vs Infantry, Aircraft\n\n  Special ability: Can teleport
 	Valued:
 		Cost: 1350
 	Tooltip:

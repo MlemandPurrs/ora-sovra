@@ -1565,6 +1565,10 @@ PROC:
 		RequiresSelection: true
 		PipCount: 17
 		FullSequence: pip-yellow
+	ProximityExternalCondition@REFDOCK:
+		Condition: onref
+		Range: 1c512
+		ValidRelationships: Ally, Neutral, Enemy
 
 SILO:
 	Inherits: ^Building
@@ -2411,6 +2415,10 @@ FIX:
 	WithDeathAnimation:
 		DeathSequence: dead
 		UseDeathTypeSuffix: false
+	ProximityExternalCondition@REFDOCK:
+		Condition: onref
+		Range: 1c512
+		ValidRelationships: Ally, Neutral, Enemy
 
 SBAG:
 	Inherits: ^Wall
@@ -2687,6 +2695,10 @@ ERCC:
 		RequiresSelection: true
 		PipCount: 17
 		FullSequence: pip-yellow
+	ProximityExternalCondition@REFDOCK:
+		Condition: onref
+		Range: 1c512
+		ValidRelationships: Ally, Neutral, Enemy
 
 HGAT:
 	Inherits: ^Gate
