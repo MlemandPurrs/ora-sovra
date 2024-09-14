@@ -269,6 +269,7 @@ mrj:
 	spinner:
 		Start: 32
 		Length: 32
+        Reverses: true
 	icon:
 		Filename: mrjicon.shp
 
