@@ -428,7 +428,7 @@ powerproxy.paratroopers:
 		ClockSequence: clock
 		CircleSequence: circles
 
-barracks.upgraded:
+infantry.upgraded:
 	AlwaysVisible:
 	ProvidesPrerequisite:
 
@@ -496,3 +496,226 @@ CTFLAG:
 	MapEditorData:
 		Categories: Decoration
 	Interactable:
+
+#   this is required to prevent stacking duration issues from 
+#   multiple sources of Veterancy infiltrated.
+#   the alternative is to complicate the Spy Infilration code with
+#   one Infiltrates per production structure.
+infveterancyactivator:
+	Interactable:
+	EditorOnlyTooltip:
+		Name: (Timed Infantry Veterancy Activator)
+	AlwaysVisible:
+	Aircraft:
+		Repulsable: False
+	BodyOrientation:
+		QuantizedFacings: 1
+	WithSpriteBody:
+	RenderSpritesEditorOnly:
+		Image: camera
+	MapEditorData:
+		Categories: System
+	Health:
+		HP: 1
+	HitShape:
+	ChangesHealth:
+		Step: -1
+		StartIfBelow: 101
+		Delay: 1
+	SpawnActorOnDeath:
+		Actor: infantry.upgraded2
+		SpawnAfterDefeat: False
+        RequiresCondition: !infveterancyenabled
+	GrantConditionOnPrerequisite@veterancyenabling:
+		Prerequisites: infantry.upgraded
+		Condition: infveterancyenabled
+	KillsSelf:
+	Buildable:
+		Queue: Infantry
+		Prerequisites: ~disabled
+	Tooltip:
+		Name: "Dummy Actor to activate Timed Infantry Veterancy"
+
+infantry.upgraded2:
+	Interactable:
+	EditorOnlyTooltip:
+		Name: (Timed Infantry Veterancy)
+	AlwaysVisible:
+	Aircraft:
+		Repulsable: False
+	BodyOrientation:
+		QuantizedFacings: 1
+	WithSpriteBody:
+	RenderSpritesEditorOnly:
+		Image: camera
+	MapEditorData:
+		Categories: System
+	ProvidesPrerequisite:
+		Prerequisite: infantry.upgraded
+	Health:
+		HP: 4500
+	HitShape:
+	ChangesHealth:
+		Step: -1
+		StartIfBelow: 101
+		Delay: 1
+	ProduceActorPower@veterancyactivesign:
+        OrderName: InfantryVeterancy
+		Name: Infantry Veterancy  
+		Description: Displays the amount of time the\nInfantry Veterancy is still active.
+		Icon: infvet
+		Actors: e1
+		Type: Infantry
+		ChargeInterval: 4501
+		SupportPowerPaletteOrder: 120
+		DisplayTimerRelationships: Ally, Neutral, Enemy
+		RequiresCondition: infveterancyactivated
+	GrantConditionOnPrerequisite@veterancyactivation:
+		Prerequisites: infantry.upgraded
+		Condition: infveterancyactivated
+
+vehveterancyactivator:
+	Interactable:
+	EditorOnlyTooltip:
+		Name: (Timed Vehicle Veterancy Activator)
+	AlwaysVisible:
+	Aircraft:
+		Repulsable: False
+	BodyOrientation:
+		QuantizedFacings: 1
+	WithSpriteBody:
+	RenderSpritesEditorOnly:
+		Image: camera
+	MapEditorData:
+		Categories: System
+	Health:
+		HP: 1
+	HitShape:
+	ChangesHealth:
+		Step: -1
+		StartIfBelow: 101
+		Delay: 1
+	SpawnActorOnDeath:
+		Actor: vehicles.upgraded2
+		SpawnAfterDefeat: False
+        RequiresCondition: !vehveterancyenabled
+	GrantConditionOnPrerequisite@veterancyenabling2:
+		Prerequisites: vehicles.upgraded
+		Condition: vehveterancyenabled
+	KillsSelf:
+	Buildable:
+		Queue: Vehicle
+		Prerequisites: ~disabled
+	Tooltip:
+		Name: "Dummy Actor to activate Timed Vehicle Veterancy"
+
+vehicles.upgraded2:
+	Interactable:
+	EditorOnlyTooltip:
+		Name: (Timed Vehicles Veterancy)
+	AlwaysVisible:
+	Aircraft:
+		Repulsable: False
+	BodyOrientation:
+		QuantizedFacings: 1
+	WithSpriteBody:
+	RenderSpritesEditorOnly:
+		Image: camera
+	MapEditorData:
+		Categories: System
+	ProvidesPrerequisite:
+		Prerequisite: vehicles.upgraded
+	Health:
+		HP: 4500
+	HitShape:
+	ChangesHealth:
+		Step: -1
+		StartIfBelow: 101
+		Delay: 1
+	ProduceActorPower@veterancyactivesign2:
+        OrderName: VehicleVeterancy
+		Name: Vehicle Veterancy  
+		Description: Displays the amount of time the\nVehicle Veterancy is still active.
+		Icon: vehvet
+		Actors: jeep
+		Type: Vehicle
+		ChargeInterval: 4501
+		SupportPowerPaletteOrder: 220
+		DisplayTimerRelationships: Ally, Neutral, Enemy
+		RequiresCondition: vehveterancyactivated
+	GrantConditionOnPrerequisite@veterancyactivation2:
+		Prerequisites: vehicles.upgraded
+		Condition: vehveterancyactivated
+
+airveterancyactivator:
+	Interactable:
+	EditorOnlyTooltip:
+		Name: (Timed Aircraft Veterancy Activator)
+	AlwaysVisible:
+	Aircraft:
+		Repulsable: False
+	BodyOrientation:
+		QuantizedFacings: 1
+	WithSpriteBody:
+	RenderSpritesEditorOnly:
+		Image: camera
+	MapEditorData:
+		Categories: System
+	Health:
+		HP: 1
+	HitShape:
+	ChangesHealth:
+		Step: -1
+		StartIfBelow: 101
+		Delay: 1
+	SpawnActorOnDeath:
+		Actor: aircraft.upgraded2
+		SpawnAfterDefeat: False
+        RequiresCondition: !airveterancyenabled
+	GrantConditionOnPrerequisite@veterancyenabling3:
+		Prerequisites: aircraft.upgraded
+		Condition: airveterancyenabled
+	KillsSelf:
+	Buildable:
+		Queue: Aircraft
+		Prerequisites: ~disabled
+	Tooltip:
+		Name: "Dummy Actor to activate Timed Aircraft Veterancy"
+
+aircraft.upgraded2:
+	Interactable:
+	EditorOnlyTooltip:
+		Name: (Timed Aircraft Veterancy)
+	AlwaysVisible:
+	Aircraft:
+		Repulsable: False
+	BodyOrientation:
+		QuantizedFacings: 1
+	WithSpriteBody:
+	RenderSpritesEditorOnly:
+		Image: camera
+	MapEditorData:
+		Categories: System
+	ProvidesPrerequisite:
+		Prerequisite: aircraft.upgraded
+	Health:
+		HP: 4500
+	HitShape:
+	ChangesHealth:
+		Step: -1
+		StartIfBelow: 101
+		Delay: 1
+	ProduceActorPower@veterancyactivesign3:
+        OrderName: AircraftVeterancy
+		Name: Aircraft Veterancy  
+		Description: Displays the amount of time the\nAircraft Veterancy is still active.
+		Icon: airvet
+		Actors: tran
+		Type: Aircraft
+		ChargeInterval: 4501
+		SupportPowerPaletteOrder: 320
+		DisplayTimerRelationships: Ally, Neutral, Enemy
+		RequiresCondition: airveterancyactivated
+	GrantConditionOnPrerequisite@veterancyactivation3:
+		Prerequisites: aircraft.upgraded
+		Condition: airveterancyactivated

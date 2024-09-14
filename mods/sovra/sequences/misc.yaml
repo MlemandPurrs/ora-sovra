@@ -606,6 +606,8 @@ camera:
 	idle:
 		Filename: camera.shp
 		Length: *
+	icon:
+		Filename: camicon.shp
 
 gpsdot:
 	Defaults:
@@ -664,6 +666,12 @@ icon:
 		Filename: sonricon.shp
     airdrop:
 		Filename: ptnkicon.shp
+    infvet:
+        Filename: tentrankicon.shp
+    vehvet:
+        Filename: weaprankicon.shp
+    airvet:
+        Filename: hpadrankicon.shp
 
 quee:
 	Defaults:

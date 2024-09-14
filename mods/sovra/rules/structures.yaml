@@ -1310,7 +1310,7 @@ WEAP:
 	Targetable:
 		TargetTypes: GroundActor, C4, DetonateAttack, Structure, SpyInfiltrate
 	InfiltrateForSupportPower:
-		Proxy: vehicles.upgraded
+		Proxy: vehveterancyactivator
 		Types: SpyInfiltrate
 		PlayerExperience: 10
 	-ActorPreviewPlaceBuildingPreview:
@@ -1714,7 +1714,7 @@ HPAD:
 	Targetable:
 		TargetTypes: GroundActor, C4, DetonateAttack, Structure, SpyInfiltrate
 	InfiltrateForSupportPower:
-		Proxy: aircraft.upgraded
+		Proxy: airveterancyactivator
 		Types: SpyInfiltrate
 		PlayerExperience: 10
 	WithDeathAnimation:
@@ -1908,7 +1908,7 @@ AFLD:
 	Targetable:
 		TargetTypes: GroundActor, C4, DetonateAttack, Structure, SpyInfiltrate
 	InfiltrateForSupportPower:
-		Proxy: aircraft.upgraded
+		Proxy: airveterancyactivator
 		Types: SpyInfiltrate
 		PlayerExperience: 10
 	WithResupplyAnimation:
@@ -2161,7 +2161,7 @@ BARR:
 		RequiresCondition: !build-incomplete
 	ProvidesPrerequisite@buildingname:
 	InfiltrateForSupportPower:
-		Proxy: barracks.upgraded
+		Proxy: infveterancyactivator
 		Types: SpyInfiltrate
 		PlayerExperience: 10
 	Targetable:
@@ -2348,7 +2348,7 @@ TENT:
 		RequiresCondition: !build-incomplete
 	ProvidesPrerequisite@buildingname:
 	InfiltrateForSupportPower:
-		Proxy: barracks.upgraded
+		Proxy: infveterancyactivator
 		Types: SpyInfiltrate
 		PlayerExperience: 10
 	Targetable:
