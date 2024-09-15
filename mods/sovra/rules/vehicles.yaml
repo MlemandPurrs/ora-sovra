@@ -1161,7 +1161,7 @@ STNK:
 		CloakSound: appear1.aud
 		UncloakSound: appear1.aud
 		IsPlayerPalette: true
-		PauseOnCondition: cloak-force-disabled
+		PauseOnCondition: cloak-force-disabled || invulnerability
 		UncloakOn: Attack, Load, Unload, Heal, Dock
 	GrantConditionOnDamageState@UNCLOAK:
 		Condition: cloak-force-disabled

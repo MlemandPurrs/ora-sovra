@@ -568,7 +568,7 @@
 		UncloakSound: subshow1.aud
 		CloakedCondition: underwater
 		Palette: submerged
-		PauseOnCondition: cloak-force-disabled || crossing-ford || pinged
+		PauseOnCondition: cloak-force-disabled || crossing-ford || pinged || invulnerability
 	GrantConditionOnDamageState@UNCLOAK:
 		Condition: cloak-force-disabled
 		ValidDamageStates: Critical
