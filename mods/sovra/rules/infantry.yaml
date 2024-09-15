@@ -259,7 +259,7 @@ E4:
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Health:
-		HP: 4000
+		HP: 4500
 	Armament@PRIMARY:
 		Weapon: Flamer
 		LocalOffset: 700,0,500
@@ -672,7 +672,7 @@ THF:
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Health:
-		HP: 5000
+		HP: 7500
 	RevealsShroud:
 		Range: 5c0
 	Passenger:
@@ -731,7 +731,7 @@ SHOK:
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Health:
-		HP: 5000
+		HP: 6000
 	Mobile:
 		Voice: Move
 	RevealsShroud:
