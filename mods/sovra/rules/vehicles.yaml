@@ -701,6 +701,7 @@ MNLY:
 	MineImmune:
 	AmmoPool:
 		Ammo: 5
+        ReloadDelay: 38
 		RearmSound: minelay1.aud
 	DetectCloaked:
 		Range: 5c0
