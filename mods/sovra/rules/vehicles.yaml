@@ -686,6 +686,7 @@ MNLY:
 	Armor:
 		Type: Heavy
 	Mobile:
+        Locomotor: amphibiantracked
 		Speed: 113
 	RevealsShroud:
 		MinRange: 4c0
@@ -696,7 +697,7 @@ MNLY:
 	Minelayer:
 		Mine: MINV
 		TileUnknownName: build-valid
-		TerrainTypes: Clear, Road, Beach, Ore, Gems, Rough, Bridge, WaterFord
+		TerrainTypes: Clear, Road, Beach, Ore, Gems, Rough, Bridge, WaterFord, Water
 	MineImmune:
 	AmmoPool:
 		Ammo: 5
@@ -711,8 +712,15 @@ MNLY:
 		Image: MNLY
 	Rearmable:
 		RearmActors: fix
+	GrantConditionOnTerrain@SEA:
+		TerrainTypes: Water
+		Condition: floating
 	Targetable:
 		TargetTypes: GroundActor, Vehicle, Mine
+		RequiresCondition: !floating
+	Targetable@SEA:
+		TargetTypes: GroundActor, WaterActor, Ship, Mine
+		RequiresCondition: floating
 	WithAmmoPipsDecoration:
 		Position: BottomLeft
 		Margin: 4, 3

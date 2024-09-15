@@ -1,12 +1,17 @@
 MINV:
 	Inherits: ^Mine
+    WithSpriteBody:
+        Sequence: idle
+        PauseOnCondition: floating
+    WithSpriteBody@SEA: 
+        Name: body2
+        Sequence: idle2
+        RequiresCondition: floating
+	GrantConditionOnTerrain@SEA:
+		TerrainTypes: Water
+		Condition: floating
 	RenderSprites:
 		Image: minv
-		FactionImages:
-			soviet: minp
-			russia: minp
-			ukraine: minp
-            belarus: minp
 	Explodes:
 		Weapon: ATMine
 

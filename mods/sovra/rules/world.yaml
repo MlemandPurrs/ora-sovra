@@ -96,6 +96,19 @@
 			Water: 100
 			Beach: 70
             WaterFord: 70
+	Locomotor@AMPHIBIANTRACKED:
+		Name: amphibiantracked
+		Crushes: wall, infantry, mine, crate
+		TerrainSpeeds:
+			Clear: 100
+			Rough: 88
+			Road: 125
+			Bridge: 125
+			Ore: 88
+			Gems: 88
+			Beach: 88
+            WaterFord: 88
+            Water: 50
 	Locomotor@IMMOBILE:
 		Name: immobile
 		TerrainSpeeds:

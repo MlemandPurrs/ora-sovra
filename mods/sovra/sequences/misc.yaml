@@ -701,6 +701,16 @@ minv:
 	idle:
 		Filename: minv.shp
 		ZOffset: -512
+    idle2:
+		Filename: mins.shp
+		ZOffset: -512
+	icon:
+		Filename: jmin.shp
+
+mins:
+	idle:
+		Filename: mins.shp
+		ZOffset: -512
 	icon:
 		Filename: jmin.shp
 
