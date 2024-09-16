@@ -95,6 +95,11 @@ CRATE:
 		Units: 3tnk
 		ValidFactions: soviet, russia, ukraine, belarus
 		Prerequisites: techlevel.medium, fix
+	GiveUnitCrateAction@4tnk:
+		SelectionShares: 4
+		Units: 4tnk
+		ValidFactions: soviet, russia, ukraine, belarus
+		Prerequisites: techlevel.high, stek
 	GiveUnitCrateAction@squadlight:
 		SelectionShares: 10
 		Units: e1,e1,e1,e3,e3

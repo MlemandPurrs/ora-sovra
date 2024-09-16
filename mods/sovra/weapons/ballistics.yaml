@@ -235,7 +235,7 @@ GrenadeLauncher:
 	Range: 5c512
 	ValidTargets: Ground, GroundActor
     InvalidTargets: Water, WaterActor
-	Report: grenade1.aud
+	Report: gun20.aud
 	Projectile: Bullet
 		Speed: 136
 		Blockable: false

@@ -40,21 +40,18 @@ SS:
 		FireDelay: 2
 	Armament@SECONDARY:
 		Name: secondary
-		Turret: secondary
+        Turret: secondary
 		Weapon: GrenadeLauncher
-		LocalOffset: 132,0,96
+		LocalOffset: 156,0,24
 		MuzzleSequence: muzzle
 	AttackFrontal:
         Armaments: primary, secondary
         FacingTolerance: 0
-    WithMuzzleOverlay:
 	Turreted:
 		Turret: secondary
-		TurnSpeed: 8
+		TurnSpeed: 20
 		Offset: 648,0,24
-	WithSpriteTurret:
-		Turret: secondary
-		RequiresCondition: !underwater
+    WithMuzzleOverlay:
 	AutoTargetPriority@DEFAULT:
 		ValidTargets: WaterActor, Underwater
 		InvalidTargets: NoAutoTarget, Structure
