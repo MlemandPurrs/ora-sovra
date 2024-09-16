@@ -461,6 +461,9 @@ HARV:
 	HitShape:
 		Type: Circle
 			Radius: 512
+	Passenger:
+		CargoType: Vehicle
+        Weight: 3
 
 AHRV:
     Inherits: HARV
@@ -557,7 +560,7 @@ MCV:
 			Radius: 608
 	Passenger:
 		CargoType: Vehicle
-        Weight: 4
+        Weight: 5
 
 JEEP:
 	Inherits: ^Vehicle
