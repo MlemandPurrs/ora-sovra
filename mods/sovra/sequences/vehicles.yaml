@@ -257,6 +257,10 @@ mnly:
 		Filename: mnly.shp
 		Facings: 32
 		UseClassicFacings: True
+	idle2:
+		Filename: mnly-float.shp
+		Facings: 32
+		UseClassicFacings: True
 	icon:
 		Filename: mnlyicon.shp
 

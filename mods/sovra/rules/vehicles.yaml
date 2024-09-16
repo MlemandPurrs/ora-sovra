@@ -674,7 +674,7 @@ MNLY:
 		Queue: Vehicle
 		BuildPaletteOrder: 310
 		Prerequisites: fix, ~techlevel.medium
-		Description: Lays mines to destroy\nunwary enemy units.\nCan detect mines.\n\n  Unarmed
+		Description: Amphibian utility vehicle.\nLays mines to destroy\nunwary enemy units.\nCan detect mines.\n\n  Unarmed
 	Valued:
 		Cost: 800
 	Tooltip:
@@ -721,6 +721,12 @@ MNLY:
 		RequiresCondition: !floating
 	Targetable@SEA:
 		TargetTypes: GroundActor, WaterActor, Ship, Mine
+		RequiresCondition: floating
+    WithFacingSpriteBody:
+		RequiresCondition: !floating
+	WithFacingSpriteBody@SEA:
+		Name: floating
+		Sequence: idle2
 		RequiresCondition: floating
 	WithAmmoPipsDecoration:
 		Position: BottomLeft
