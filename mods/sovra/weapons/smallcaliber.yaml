@@ -41,6 +41,7 @@ FLAK-23-AG:
 			Heavy: 10
 			Concrete: 20
 			Steel: 10
+            Medium: 35
 	Warhead@2Eff: CreateEffect
 		Explosions: flak_explosion_ground
 		ValidTargets: Ground, GroundActor, Air, AirborneActor, WaterActor, Trees
@@ -67,6 +68,7 @@ FLAK-23-AG:
 			Heavy: 28
 			Concrete: 28
 			Steel: 28
+            Medium: 45
 		DamageTypes: Prone50Percent, TriggerProne, BulletDeath
 	Warhead@2Eff: CreateEffect
 		Explosions: piffs
@@ -87,6 +89,7 @@ FLAK-23-AG:
 			Heavy: 10
 			Concrete: 10
 			Steel: 10
+            Medium: 30
 		DamageTypes: Prone50Percent, TriggerProne, DefaultDeath
 	Warhead@2Eff: CreateEffect
 		Explosions: piff
@@ -106,6 +109,7 @@ Vulcan:
 			Heavy: 20
 			Concrete: 35
 			Steel: 28
+            Medium: 35
 	Warhead@4Dam_2: SpreadDamage
 		Spread: 128
 		Damage: 1000
@@ -118,6 +122,7 @@ Vulcan:
 			Heavy: 20
 			Concrete: 35
 			Steel: 28
+            Medium: 35
 		DamageTypes: Prone50Percent, TriggerProne, BulletDeath
 	Warhead@4Eff_2: CreateEffect
 		Explosions: piffs
@@ -140,6 +145,7 @@ Vulcan:
 			Heavy: 20
 			Concrete: 35
 			Steel: 28
+            Medium: 35
 		DamageTypes: Prone50Percent, TriggerProne, BulletDeath
 	Warhead@6Eff_3: CreateEffect
 		Explosions: piffs
@@ -162,6 +168,7 @@ Vulcan:
 			Heavy: 20
 			Concrete: 35
 			Steel: 28
+            Medium: 35
 		DamageTypes: Prone50Percent, TriggerProne, BulletDeath
 	Warhead@8Eff_4: CreateEffect
 		Explosions: piffs
@@ -184,6 +191,7 @@ Vulcan:
 			Heavy: 20
 			Concrete: 35
 			Steel: 28
+            Medium: 35
 		DamageTypes: Prone50Percent, TriggerProne, BulletDeath
 	Warhead@10Eff_5: CreateEffect
 		Explosions: piffs
@@ -206,6 +214,7 @@ Vulcan:
 			Heavy: 20
 			Concrete: 35
 			Steel: 28
+            Medium: 35
 		DamageTypes: Prone50Percent, TriggerProne, BulletDeath
 	Warhead@12Eff_6: CreateEffect
 		Explosions: piffs
@@ -257,6 +266,7 @@ ChainGun.Yak:
 			Heavy: 25
 			Concrete: 25
 			Steel: 25
+            Medium: 43
 
 Pistol:
 	Inherits: ^LightMG
@@ -313,6 +323,7 @@ M60mg:
 	Warhead@1Dam: SpreadDamage
 		Versus:
 			Light: 30
+            Medium: 20
 	Warhead@2Eff: CreateEffect
 		Inaccuracy: 213
 	Warhead@3EffWater: CreateEffect
@@ -329,6 +340,7 @@ HarvesterGun:
         Damage: 1500
 		Versus:
 			Light: 30
+            Medium: 20
 	Warhead@2Eff: CreateEffect
 		Inaccuracy: 213
 	Warhead@3EffWater: CreateEffect

@@ -25,6 +25,7 @@
 			Heavy: 100
 			Concrete: 75
 			Steel: 90
+            Medium: 68
 		DamageTypes: Prone50Percent, TriggerProne, ExplosionDeath
 	Warhead@2Smu: LeaveSmudge
 		SmudgeType: Crater
@@ -46,6 +47,7 @@
 		ValidTargets: AirborneActor
 		Versus:
 			Light: 100
+            Medium: 100
 	Warhead@3Eff: CreateEffect
 		ImpactActors: false
 
@@ -72,6 +74,7 @@ Maverick:
 			Heavy: 115
 			Concrete: 100
 			Steel: 115
+            Medium: 100
 		ValidTargets: GroundActor, WaterActor, Underwater
 
 Dragon:
@@ -98,6 +101,7 @@ HellfireAG:
 			Light: 90
 			Concrete: 80
 			Steel: 105
+            Medium: 95
 
 HellfireAA:
 	Inherits: ^AntiAirMissile
@@ -137,6 +141,7 @@ MammothTusk:
 			Light: 60
 			Heavy: 24
 			Concrete: 50
+            Medium: 42
 		DamageTypes: Prone50Percent, TriggerProne, SmallExplosionDeath
 	Warhead@3Eff: CreateEffect
 		ImpactSounds: kaboom12.aud
@@ -198,6 +203,7 @@ Stinger:
 			Heavy: 120
 			Concrete: 60
 			Steel: 100
+            Medium: 84
 
 StingerAA:
 	Inherits: Stinger
@@ -211,6 +217,7 @@ StingerAA:
 		Damage: 1650
 		Versus:
 			Light: 100
+            Medium: 110
 	Warhead@3Eff: CreateEffect
 		Explosions: med_explosion_air
 		ImpactSounds: kaboom25.aud
@@ -233,6 +240,7 @@ APTusk:
 			Heavy: 100
 			Concrete: 85
 			Steel: 90
+            Medium: 80
 
 APTusk.stnk:
 	Inherits: APTusk
@@ -268,6 +276,7 @@ TorpTube:
 			Heavy: 100
 			Concrete: 500
 			Steel: 65
+            Medium: 84
 		DamageTypes: Prone50Percent, TriggerProne, ExplosionDeath
 	Warhead@3Eff: CreateEffect
 		Explosions: artillery_explosion
@@ -303,6 +312,7 @@ TorpTube:
 			Heavy: 30
 			Concrete: 100
 			Steel: 48
+            Medium: 40
 		DamageTypes: Prone50Percent, TriggerProne, SmallExplosionDeath
 	Warhead@3Eff: CreateEffect
 		Explosions: artillery_explosion
@@ -334,6 +344,7 @@ SubMissileAA:
 		Damage: 450
 		Versus:
 			Light: 100
+            Medium: 90
 
 SCUD:
 	Inherits: ^AntiGroundMissile
@@ -364,6 +375,7 @@ SCUD:
 			Heavy: 40
 			Concrete: 60
 			Steel: 64
+            Medium: 55
 		DamageTypes: Prone50Percent, TriggerProne, SmallExplosionDeath, Incendiary
 	Warhead@3Eff: CreateEffect
 		Explosions: napalm

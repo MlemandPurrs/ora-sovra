@@ -638,7 +638,7 @@ APC:
 	Health:
 		HP: 35000
 	Armor:
-		Type: Heavy
+		Type: Medium
 	Mobile:
 		Speed: 128
 		PauseOnCondition: notmobile || being-captured
@@ -1152,7 +1152,7 @@ STNK:
 	Health:
 		HP: 35000
 	Armor:
-		Type: Light
+		Type: Medium
 	Mobile:
 		Speed: 128
 		Locomotor: heavywheeled

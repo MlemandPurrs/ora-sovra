@@ -257,6 +257,8 @@ TRAN:
 		AddToArmyValue: true
 	Health:
 		HP: 15000
+	Armor:
+		Type: Medium
 	RevealsShroud:
 		MinRange: 6c0
 		Range: 8c0

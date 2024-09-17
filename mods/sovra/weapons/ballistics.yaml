@@ -18,6 +18,7 @@
 			Wood: 75
 			Light: 75
 			Concrete: 80
+            Medium: 80
 		DamageTypes: Prone50Percent, TriggerProne, ExplosionDeath
 	Warhead@2Smu: LeaveSmudge
 		SmudgeType: Crater
@@ -49,6 +50,7 @@
 			Heavy: 48
 			Concrete: 32
 			Steel: 30
+            Medium: 82
 	-Warhead@2Smu:
 	Warhead@3Eff: CreateEffect
 		-ImpactSounds:
@@ -116,6 +118,7 @@ TurretGun:
 			Heavy: 25
 			Steel: 40
             Concrete: 50
+            Medium: 43
 		DamageTypes: Prone50Percent, TriggerProne, SmallExplosionDeath
 	Warhead@3Eff: CreateEffect
 		Explosions: artillery_explosion
@@ -159,6 +162,7 @@ TurretGun:
 			Heavy: 25
 			Concrete: 50
 			Steel: 40
+            Medium: 43
 	Warhead@4EffWater: CreateEffect
 		Explosions: large_splash
 
@@ -177,6 +181,7 @@ TurretGun:
 			Light: 72
 			Concrete: 80
 			Steel: 105
+            Medium: 84
 
 Grenade:
 	Inherits: ^Artillery
@@ -197,6 +202,7 @@ Grenade:
 			Heavy: 25
 			Concrete: 50
 			Steel: 25
+            Medium: 25
 	Warhead@3Eff: CreateEffect
 		Explosions: med_explosion
 		ImpactSounds: kaboom25.aud
@@ -220,6 +226,7 @@ DepthCharge:
 		Versus:
 			Light: 100
 			Steel: 100
+            Medium: 100
 		DamageTypes: ExplosionDeath
 	Warhead@3Eff: CreateEffect
 		Explosions: med_explosion
@@ -264,6 +271,7 @@ GrenadeLauncher:
 			Heavy: 25
 			Concrete: 50
             Steel: 25
+            Medium: 25
 	Warhead@2Smu: LeaveSmudge
 		SmudgeType: Crater
 		ValidTargets: Ground, Infantry
@@ -298,6 +306,7 @@ VolkovGun:
 			Light: 116
 			Heavy: 48
 			Concrete: 48
+            Medium: 64
 		DamageTypes: Prone50Percent, TriggerProne, FireDeath
 
 TurretDepthCharge:
@@ -325,3 +334,4 @@ SABOT:
 			Heavy: 115
 			Steel: 115
             Concrete: 75
+            Medium: 105

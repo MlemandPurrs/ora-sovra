@@ -20,6 +20,7 @@ ParaBomb:
             Heavy: 100
 			Concrete: 100
 			Steel: 100
+            Medium: 82
 		DamageTypes: Prone50Percent, TriggerProne, ExplosionDeath
 	Warhead@2Smu: LeaveSmudge
 		SmudgeType: Crater

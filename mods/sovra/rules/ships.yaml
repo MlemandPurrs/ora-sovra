@@ -282,7 +282,7 @@ LST:
 	Health:
 		HP: 35000
 	Armor:
-		Type: Steel
+		Type: Medium
 	Mobile:
 		Locomotor: lcraft
 		Speed: 128
