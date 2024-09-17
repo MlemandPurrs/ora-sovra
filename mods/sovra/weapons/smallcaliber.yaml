@@ -40,6 +40,7 @@ FLAK-23-AG:
 			Light: 60
 			Heavy: 10
 			Concrete: 20
+			Steel: 10
 	Warhead@2Eff: CreateEffect
 		Explosions: flak_explosion_ground
 		ValidTargets: Ground, GroundActor, Air, AirborneActor, WaterActor, Trees
@@ -65,6 +66,7 @@ FLAK-23-AG:
 			Light: 72
 			Heavy: 28
 			Concrete: 28
+			Steel: 28
 		DamageTypes: Prone50Percent, TriggerProne, BulletDeath
 	Warhead@2Eff: CreateEffect
 		Explosions: piffs
@@ -84,6 +86,7 @@ FLAK-23-AG:
 			Light: 40
 			Heavy: 10
 			Concrete: 10
+			Steel: 10
 		DamageTypes: Prone50Percent, TriggerProne, DefaultDeath
 	Warhead@2Eff: CreateEffect
 		Explosions: piff
@@ -102,6 +105,7 @@ Vulcan:
 			Light: 50
 			Heavy: 20
 			Concrete: 20
+			Steel: 28
 	Warhead@4Dam_2: SpreadDamage
 		Spread: 128
 		Damage: 1000
@@ -113,6 +117,7 @@ Vulcan:
 			Light: 50
 			Heavy: 20
 			Concrete: 20
+			Steel: 28
 		DamageTypes: Prone50Percent, TriggerProne, BulletDeath
 	Warhead@4Eff_2: CreateEffect
 		Explosions: piffs
@@ -134,6 +139,7 @@ Vulcan:
 			Light: 50
 			Heavy: 20
 			Concrete: 20
+			Steel: 28
 		DamageTypes: Prone50Percent, TriggerProne, BulletDeath
 	Warhead@6Eff_3: CreateEffect
 		Explosions: piffs
@@ -155,6 +161,7 @@ Vulcan:
 			Light: 50
 			Heavy: 20
 			Concrete: 20
+			Steel: 28
 		DamageTypes: Prone50Percent, TriggerProne, BulletDeath
 	Warhead@8Eff_4: CreateEffect
 		Explosions: piffs
@@ -176,6 +183,7 @@ Vulcan:
 			Light: 50
 			Heavy: 20
 			Concrete: 20
+			Steel: 28
 		DamageTypes: Prone50Percent, TriggerProne, BulletDeath
 	Warhead@10Eff_5: CreateEffect
 		Explosions: piffs
@@ -197,6 +205,7 @@ Vulcan:
 			Light: 50
 			Heavy: 20
 			Concrete: 20
+			Steel: 28
 		DamageTypes: Prone50Percent, TriggerProne, BulletDeath
 	Warhead@12Eff_6: CreateEffect
 		Explosions: piffs
@@ -246,6 +255,7 @@ ChainGun.Yak:
 			Light: 60
 			Heavy: 25
 			Concrete: 25
+			Steel: 25
 
 Pistol:
 	Inherits: ^LightMG

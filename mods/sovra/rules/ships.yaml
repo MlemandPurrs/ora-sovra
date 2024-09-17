@@ -24,7 +24,7 @@ SS:
 	Health:
 		HP: 25000
 	Armor:
-		Type: Light
+		Type: Steel
 	Mobile:
 		TurnSpeed: 20
 		Speed: 78
@@ -93,7 +93,7 @@ MSUB:
 	Health:
 		HP: 40000
 	Armor:
-		Type: Light
+		Type: Steel
 	Mobile:
 		TurnSpeed: 20
 		Speed: 78
@@ -153,7 +153,7 @@ DD:
 	Health:
 		HP: 40000
 	Armor:
-		Type: Heavy
+		Type: Steel
 	Mobile:
 		TurnSpeed: 24
 		Speed: 92
@@ -217,7 +217,7 @@ CA:
 	Health:
 		HP: 80000
 	Armor:
-		Type: Heavy
+		Type: Steel
 	Mobile:
 		TurnSpeed: 12
 		Speed: 44
@@ -282,7 +282,7 @@ LST:
 	Health:
 		HP: 35000
 	Armor:
-		Type: Heavy
+		Type: Steel
 	Mobile:
 		Locomotor: lcraft
 		Speed: 128
@@ -333,7 +333,7 @@ PT:
 	Health:
 		HP: 20000
 	Armor:
-		Type: Heavy
+		Type: Steel
 	Mobile:
 		TurnSpeed: 24
 		Speed: 128
@@ -384,7 +384,7 @@ SEAS:
 	Health:
 		HP: 18000
 	Armor:
-		Type: Heavy
+		Type: Steel
 	Mobile:
 		TurnSpeed: 24
 		Speed: 128
@@ -432,7 +432,7 @@ ENGB:
 	Health:
 		HP: 15000
 	Armor:
-		Type: Heavy
+		Type: Steel
 	Mobile:
 		TurnSpeed: 24
 		Speed: 92

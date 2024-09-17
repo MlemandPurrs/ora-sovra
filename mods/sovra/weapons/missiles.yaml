@@ -24,6 +24,7 @@
 			Light: 34
 			Heavy: 100
 			Concrete: 50
+			Steel: 90
 		DamageTypes: Prone50Percent, TriggerProne, ExplosionDeath
 	Warhead@2Smu: LeaveSmudge
 		SmudgeType: Crater
@@ -70,6 +71,7 @@ Maverick:
 			Light: 90
 			Heavy: 115
 			Concrete: 100
+			Steel: 115
 		ValidTargets: GroundActor, WaterActor, Underwater
 
 Dragon:
@@ -95,6 +97,7 @@ HellfireAG:
 			Wood: 90
 			Light: 90
 			Concrete: 100
+			Steel: 105
 
 HellfireAA:
 	Inherits: ^AntiAirMissile
@@ -194,6 +197,7 @@ Stinger:
 			Light: 66
 			Heavy: 120
 			Concrete: 60
+			Steel: 100
 
 StingerAA:
 	Inherits: Stinger
@@ -255,6 +259,7 @@ TorpTube:
 			Light: 75
 			Heavy: 100
 			Concrete: 500
+			Steel: 65
 		DamageTypes: Prone50Percent, TriggerProne, ExplosionDeath
 	Warhead@3Eff: CreateEffect
 		Explosions: artillery_explosion
@@ -289,6 +294,7 @@ TorpTube:
 			Light: 48
 			Heavy: 30
 			Concrete: 100
+			Steel: 48
 		DamageTypes: Prone50Percent, TriggerProne, SmallExplosionDeath
 	Warhead@3Eff: CreateEffect
 		Explosions: artillery_explosion
@@ -349,6 +355,7 @@ SCUD:
 			Light: 70
 			Heavy: 40
 			Concrete: 100
+			Steel: 64
 		DamageTypes: Prone50Percent, TriggerProne, SmallExplosionDeath, Incendiary
 	Warhead@3Eff: CreateEffect
 		Explosions: napalm

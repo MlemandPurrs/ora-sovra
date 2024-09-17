@@ -15,6 +15,7 @@
 			Light: 60
 			Heavy: 25
 			Concrete: 20
+			Steel: 25
 		DamageTypes: Prone50Percent, TriggerProne, FireDeath, Incendiary
 	Warhead@2Smu: LeaveSmudge
 		SmudgeType: Scorch
@@ -60,6 +61,7 @@ Flamer:
 			Light: 40
 			Heavy: 20
 			Concrete: 10
+			Steel: 20
 	Warhead@3Eff: CreateEffect
 		Explosions: small_napalm
 
@@ -123,6 +125,7 @@ PortaTesla:
 		Versus:
 			Wood: 73
 			Heavy: 60
+			Steel: 60
 
 TTankZap:
 	Inherits: ^TeslaWeapon
@@ -189,6 +192,7 @@ Claw:
 			Light: 30
 			Heavy: 10
 			Concrete: 10
+			Steel: 10
 		DamageTypes: Prone50Percent, TriggerProne, DefaultDeath
 
 Mandible:
@@ -216,6 +220,7 @@ MandibleHeavy:
 			Light: 90
 			Heavy: 35
 			Concrete: 20
+			Steel: 35
 		DamageTypes: Prone50Percent, TriggerProne, BulletDeath
 
 AntFireball:
@@ -236,6 +241,7 @@ AntFireball:
 			Light: 45
 			Heavy: 20
 			Concrete: 15
+			Steel: 20
 
 DemoTruckTargeting:
 	ValidTargets: DetonateAttack

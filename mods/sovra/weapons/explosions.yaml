@@ -10,6 +10,7 @@
 			Light: 60
 			Heavy: 25
 			Concrete: 100
+			Steel: 25
 		DamageTypes: Prone50Percent, TriggerProne, ExplosionDeath
 	Warhead@Smu: LeaveSmudge
 		SmudgeType: Crater
