@@ -608,11 +608,16 @@ JEEP:
 		Types: Infantry
 		MaxWeight: 1
 		LoadingCondition: notmobile
+        LoadedCondition: loaded
 	ProducibleWithLevel:
 		Prerequisites: vehicles.upgraded
 	WithProductionIconOverlay:
 		Types: Veterancy
 		Prerequisites: vehicles.upgraded
+	DetectCloaked:
+		DetectionTypes: Cloak
+		Range: 1c512
+        RequiresCondition: loaded
 
 APC:
 	Inherits: ^TrackedVehicle
