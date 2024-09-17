@@ -735,6 +735,9 @@ MNLY:
 		Position: BottomLeft
 		Margin: 4, 3
 		RequiresSelection: true
+	Passenger:
+		CargoType: Vehicle
+        Weight: 3
 
 TRUK:
 	Inherits: ^Vehicle
@@ -765,6 +768,9 @@ TRUK:
 	SpawnActorOnDeath:
 		Actor: moneycrate
     -ProductionCostMultiplier@Russia:
+	Passenger:
+		CargoType: Vehicle
+        Weight: 3
 
 MGG:
 	Inherits: ^Vehicle
@@ -810,6 +816,9 @@ MGG:
 	ExternalCondition@NOREFBLOCK:
 		Condition: onref
         TotalCap: 1
+	Passenger:
+		CargoType: Vehicle
+        Weight: 3
 
 MRJ:
 	Inherits: ^Vehicle
@@ -849,6 +858,9 @@ MRJ:
 		Range: 5c0
 		DeflectionRelationships: Neutral, Enemy
 	RenderJammerCircle:
+	Passenger:
+		CargoType: Vehicle
+        Weight: 3
 
 TTNK:
 	Inherits: ^TrackedVehicle
