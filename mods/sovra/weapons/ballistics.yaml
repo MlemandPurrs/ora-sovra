@@ -174,7 +174,7 @@ TurretGun:
 	InvalidTargets: Underwater
 	Warhead@1Dam: SpreadDamage
 		Spread: 256
-		Damage: 2500
+		Damage: 3200
 		Versus:
 			None: 28
 			Wood: 72
