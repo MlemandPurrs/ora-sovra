@@ -870,7 +870,7 @@ MRJ:
         Weight: 3
 	ProximityExternalCondition@NOMISSILEJAM:
 		Range: 5c0
-		ValidRelationships: Enemy, Neutral, Ally
+		ValidRelationships: Enemy, Neutral
 		Condition: mrj-jammed
 	ExternalCondition@NOMISSILEJAM:
 		Condition: mrj-jammed
