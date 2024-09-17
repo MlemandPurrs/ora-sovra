@@ -17,7 +17,8 @@ ParaBomb:
 			None: 40
 			Wood: 60
 			Light: 75
-			Concrete: 25
+            Heavy: 100
+			Concrete: 100
 			Steel: 100
 		DamageTypes: Prone50Percent, TriggerProne, ExplosionDeath
 	Warhead@2Smu: LeaveSmudge
@@ -41,7 +42,7 @@ Atomic:
 		ValidTargets: GroundActor, WaterActor, Underwater, AirborneActor, Trees
 		Versus:
 			Wood: 25
-			Concrete: 25
+			Concrete: 75
 		DamageTypes: Prone50Percent, TriggerProne, FireDeath, Incendiary
 	Warhead@2Res_impact: DestroyResource
 		Size: 1
@@ -62,7 +63,7 @@ Atomic:
 		ValidTargets: GroundActor, WaterActor, Underwater, AirborneActor, Trees
 		Versus:
 			Wood: 25
-			Concrete: 25
+			Concrete: 75
 		DamageTypes: Prone50Percent, TriggerProne, FireDeath, Incendiary
 	Warhead@6Res_areanuke1: DestroyResource
 		Size: 2
@@ -85,7 +86,7 @@ Atomic:
 		Versus:
 			Wood: 50
 			Tree: 200
-			Concrete: 25
+			Concrete: 75
 		DamageTypes: Prone50Percent, TriggerProne, FireDeath, Incendiary
 	Warhead@11Res_areanuke2: DestroyResource
 		Size: 3
@@ -103,7 +104,7 @@ Atomic:
 		ValidTargets: GroundActor, Trees, WaterActor, Underwater, AirborneActor
 		Versus:
 			Tree: 200
-			Concrete: 25
+			Concrete: 75
 		DamageTypes: Prone50Percent, TriggerProne, FireDeath, Incendiary
 	Warhead@15Res_areanuke3: DestroyResource
 		Size: 4
@@ -121,7 +122,7 @@ Atomic:
 		ValidTargets: GroundActor, Trees, WaterActor, Underwater, AirborneActor
 		Versus:
 			Tree: 200
-			Concrete: 25
+			Concrete: 75
 		DamageTypes: Prone50Percent, TriggerProne, FireDeath, Incendiary
 	Warhead@19Res_areanuke4: DestroyResource
 		Size: 5

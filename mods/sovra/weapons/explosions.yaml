@@ -9,7 +9,7 @@
 			Wood: 75
 			Light: 60
 			Heavy: 25
-			Concrete: 100
+			Concrete: 50
 			Steel: 25
 		DamageTypes: Prone50Percent, TriggerProne, ExplosionDeath
 	Warhead@Smu: LeaveSmudge
@@ -156,7 +156,7 @@ BarrelExplode:
 			None: 120
 			Light: 50
 			Wood: 20
-			Concrete: 10
+			Concrete: 50
 	Warhead@2Eff: CreateEffect
 		Explosions: building
 		ImpactSounds: kaboom25.aud
@@ -175,7 +175,7 @@ BarrelCluster:
 			None: 120
 			Light: 50
 			Wood: 20
-			Concrete: 10
+			Concrete: 50
 		DamageTypes: Prone50Percent, TriggerProne, FireDeath, Incendiary
 	Warhead@2Eff: CreateEffect
 		Explosions: large_napalm
@@ -224,6 +224,7 @@ OreExplosion:
 			Wood: 70
 			Light: 60
 			Heavy: 20
+            Concrete: 10
 		DamageTypes: Prone50Percent, TriggerProne, SmallExplosionDeath
 	Warhead@3Res: CreateResource
 		AddsResourceType: Ore
@@ -257,7 +258,7 @@ CrateNuke:
 		ValidTargets: GroundActor, Trees, WaterActor, AirborneActor
 		Versus:
 			Tree: 200
-			Concrete: 25
+			Concrete: 80
 		AffectsParent: true
 		DamageTypes: Prone50Percent, TriggerProne, FireDeath, Incendiary
 	Warhead@5Res_areanuke1: DestroyResource
@@ -285,7 +286,7 @@ MiniNuke:
 		ValidTargets: GroundActor, Trees, WaterActor, Underwater, AirborneActor
 		Versus:
 			Wood: 25
-			Concrete: 25
+			Concrete: 80
 		AffectsParent: true
 		DamageTypes: Prone50Percent, TriggerProne, FireDeath, Incendiary
 	Warhead@2Res_impact: DestroyResource
@@ -302,7 +303,7 @@ MiniNuke:
 		ValidTargets: GroundActor, Trees, WaterActor, Underwater, AirborneActor
 		Versus:
 			Wood: 50
-			Concrete: 25
+			Concrete: 80
 		AffectsParent: true
 		DamageTypes: Prone50Percent, TriggerProne, FireDeath, Incendiary
 	Warhead@5Res_areanuke1: DestroyResource
@@ -321,7 +322,7 @@ MiniNuke:
 		Versus:
 			Wood: 50
 			Tree: 200
-			Concrete: 25
+			Concrete: 80
 		AffectsParent: true
 		DamageTypes: Prone50Percent, TriggerProne, FireDeath, Incendiary
 	Warhead@9Res_areanuke2: DestroyResource
@@ -335,7 +336,7 @@ MiniNuke:
 		ValidTargets: GroundActor, Trees, WaterActor, Underwater
 		Versus:
 			Tree: 300
-			Concrete: 25
+			Concrete: 80
 		AffectsParent: true
 		DamageTypes: Prone50Percent, TriggerProne, FireDeath, Incendiary
 	Warhead@12Res_areanuke3: DestroyResource

@@ -17,7 +17,7 @@
 			None: 30
 			Wood: 75
 			Light: 75
-			Concrete: 50
+			Concrete: 80
 		DamageTypes: Prone50Percent, TriggerProne, ExplosionDeath
 	Warhead@2Smu: LeaveSmudge
 		SmudgeType: Crater
@@ -82,6 +82,7 @@
 		Versus:
 			Heavy: 115
 			Steel: 77
+            Concrete: 90
 		InvalidTargets: Air
 
 TurretGun:
@@ -114,6 +115,7 @@ TurretGun:
 			Light: 60
 			Heavy: 25
 			Steel: 40
+            Concrete: 50
 		DamageTypes: Prone50Percent, TriggerProne, SmallExplosionDeath
 	Warhead@3Eff: CreateEffect
 		Explosions: artillery_explosion
@@ -155,7 +157,7 @@ TurretGun:
 			Wood: 35
 			Light: 60
 			Heavy: 25
-			Concrete: 100
+			Concrete: 50
 			Steel: 40
 	Warhead@4EffWater: CreateEffect
 		Explosions: large_splash
@@ -173,7 +175,7 @@ TurretGun:
 			None: 28
 			Wood: 72
 			Light: 72
-			Concrete: 48
+			Concrete: 80
 			Steel: 105
 
 Grenade:
@@ -193,7 +195,7 @@ Grenade:
 			Wood: 100
 			Light: 25
 			Heavy: 25
-			Concrete: 100
+			Concrete: 50
 			Steel: 25
 	Warhead@3Eff: CreateEffect
 		Explosions: med_explosion
@@ -260,7 +262,7 @@ GrenadeLauncher:
 			Wood: 100
 			Light: 25
 			Heavy: 25
-			Concrete: 100
+			Concrete: 50
             Steel: 25
 	Warhead@2Smu: LeaveSmudge
 		SmudgeType: Crater
@@ -295,7 +297,7 @@ VolkovGun:
 			Wood: 52
 			Light: 116
 			Heavy: 48
-			Concrete: 32
+			Concrete: 48
 		DamageTypes: Prone50Percent, TriggerProne, FireDeath
 
 TurretDepthCharge:
@@ -322,3 +324,4 @@ SABOT:
 			Wood: 50
 			Heavy: 115
 			Steel: 115
+            Concrete: 75

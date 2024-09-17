@@ -14,7 +14,7 @@
 			Tree: 50
 			Light: 60
 			Heavy: 25
-			Concrete: 20
+			Concrete: 25
 			Steel: 25
 		DamageTypes: Prone50Percent, TriggerProne, FireDeath, Incendiary
 	Warhead@2Smu: LeaveSmudge
@@ -38,6 +38,7 @@ FireballLauncher:
 	Warhead@1Dam: SpreadDamage
 		Versus:
 			Light: 50
+            Concrete: 15
 
 Flamer:
 	Inherits: ^FireWeapon
@@ -60,8 +61,8 @@ Flamer:
 			Tree: 80
 			Light: 40
 			Heavy: 20
-			Concrete: 10
 			Steel: 20
+            Concrete: 20
 	Warhead@3Eff: CreateEffect
 		Explosions: small_napalm
 
@@ -115,6 +116,7 @@ TeslaZap:
 	Warhead@1Dam: SpreadDamage
 		Versus:
 			Wood: 60
+            Concrete: 80
 
 PortaTesla:
 	Inherits: ^TeslaWeapon
@@ -126,11 +128,19 @@ PortaTesla:
 			Wood: 73
 			Heavy: 60
 			Steel: 60
+            Concrete: 50
 
 TTankZap:
 	Inherits: ^TeslaWeapon
 	ReloadDelay: 96
 	Range: 7c0
+	Warhead@1Dam: SpreadDamage
+		Damage: 10000
+		Versus:
+			Wood: 73
+			Heavy: 60
+			Steel: 60
+            Concrete: 50
 
 DogJaw:
 	ValidTargets: Infantry

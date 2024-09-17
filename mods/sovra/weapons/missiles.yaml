@@ -23,7 +23,7 @@
 			Wood: 74
 			Light: 34
 			Heavy: 100
-			Concrete: 50
+			Concrete: 75
 			Steel: 90
 		DamageTypes: Prone50Percent, TriggerProne, ExplosionDeath
 	Warhead@2Smu: LeaveSmudge
@@ -96,7 +96,7 @@ HellfireAG:
 			None: 30
 			Wood: 90
 			Light: 90
-			Concrete: 100
+			Concrete: 80
 			Steel: 105
 
 HellfireAA:
@@ -225,6 +225,14 @@ APTusk:
 		HorizontalRateOfTurn: 40
 		RangeLimit: 7c204
         Blockable: true
+	Warhead@1Dam: SpreadDamage
+		Versus:
+			None: 20
+			Wood: 55
+			Light: 60
+			Heavy: 100
+			Concrete: 85
+			Steel: 90
 
 APTusk.stnk:
 	Inherits: APTusk
@@ -354,7 +362,7 @@ SCUD:
 			Tree: 75
 			Light: 70
 			Heavy: 40
-			Concrete: 100
+			Concrete: 60
 			Steel: 64
 		DamageTypes: Prone50Percent, TriggerProne, SmallExplosionDeath, Incendiary
 	Warhead@3Eff: CreateEffect
