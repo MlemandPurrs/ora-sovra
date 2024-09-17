@@ -300,7 +300,7 @@ E6:
 		BuildAtProductionType: Soldier
 		BuildPaletteOrder: 60
 		Prerequisites: proc, ~techlevel.infonly
-		Description: Captures enemy and tech structures.\nRestores bridges and building husks.\n\n  Unarmed
+		Description: Captures enemy and tech structures.\nRestores bridges and building husks.\n\n  Unarmed\n\n  Special ability: Instant repair structures
 	Valued:
 		Cost: 500
 	Tooltip:
