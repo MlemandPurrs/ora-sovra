@@ -307,6 +307,9 @@ SPEN:
 	WithDeathAnimation:
 		DeathSequence: dead
 		UseDeathTypeSuffix: false
+	Capturable:
+		RequiresCondition: !build-incomplete
+		Types: building, naval-building
 
 SYRD:
 	Inherits: ^Building
@@ -463,6 +466,9 @@ SYRD:
 	WithDeathAnimation:
 		DeathSequence: dead
 		UseDeathTypeSuffix: false
+	Capturable:
+		RequiresCondition: !build-incomplete
+		Types: building, naval-building
 
 IRON:
 	Inherits: ^ScienceBuilding
