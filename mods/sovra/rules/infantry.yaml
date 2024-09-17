@@ -544,7 +544,7 @@ MECH:
 		BuildAtProductionType: Soldier
 		BuildPaletteOrder: 100
 		Prerequisites: ~tent, fix, ~techlevel.medium
-		Description: Repairs nearby vehicles and restores\nhusks to working condition by capturing them.\n\n  Unarmed
+		Description: Repairs nearby vehicles and restores\nhusks to working condition by capturing them.\nRepairs transports from within when\nthe transport is not moving, out of combat.\n\n  Unarmed
 	Valued:
 		Cost: 500
 	Tooltip:

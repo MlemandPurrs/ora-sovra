@@ -609,6 +609,8 @@ JEEP:
 		MaxWeight: 1
 		LoadingCondition: notmobile
         LoadedCondition: loaded
+		PassengerConditions:
+			mech: selfrepair
 	ProducibleWithLevel:
 		Prerequisites: vehicles.upgraded
 	WithProductionIconOverlay:
@@ -618,6 +620,15 @@ JEEP:
 		DetectionTypes: Cloak
 		Range: 1c512
         RequiresCondition: loaded
+	ChangesHealth:
+		RequiresCondition: selfrepair && !ismoving
+		Step: 2000
+		Delay: 80
+		StartIfBelow: 100
+		DamageCooldown: 150
+    GrantConditionOnMovement:
+        Condition: ismoving
+        ValidMovementTypes: Horizontal, Vertical
 
 APC:
 	Inherits: ^TrackedVehicle
@@ -664,6 +675,8 @@ APC:
 		Types: Infantry
 		MaxWeight: 5
 		LoadingCondition: notmobile
+		PassengerConditions:
+			mech: selfrepair
 	ProducibleWithLevel:
 		Prerequisites: vehicles.upgraded
 	WithProductionIconOverlay:
@@ -672,6 +685,15 @@ APC:
 	Passenger:
 		CargoType: Vehicle
         Weight: 4
+	ChangesHealth:
+		RequiresCondition: selfrepair && !ismoving
+		Step: 2000
+		Delay: 80
+		StartIfBelow: 100
+		DamageCooldown: 150
+    GrantConditionOnMovement:
+        Condition: ismoving
+        ValidMovementTypes: Horizontal, Vertical
 
 MNLY:
 	Inherits: ^TrackedVehicle
@@ -1198,6 +1220,8 @@ STNK:
 		Types: Infantry
 		MaxWeight: 3
 		LoadingCondition: notmobile
+		PassengerConditions:
+			mech: selfrepair
 	Cloak:
 		InitialDelay: 125
 		CloakDelay: 175
@@ -1205,7 +1229,7 @@ STNK:
 		UncloakSound: appear1.aud
 		IsPlayerPalette: true
 		PauseOnCondition: cloak-force-disabled || invulnerability
-		UncloakOn: Attack, Load, Unload, Heal, Dock
+		UncloakOn: Attack, Load, Unload, Heal, Dock, SelfHeal
 	GrantConditionOnDamageState@UNCLOAK:
 		Condition: cloak-force-disabled
 		ValidDamageStates: Critical
@@ -1223,6 +1247,15 @@ STNK:
 	Passenger:
 		CargoType: Vehicle
         Weight: 4
+	ChangesHealth:
+		RequiresCondition: selfrepair && !ismoving
+		Step: 2000
+		Delay: 80
+		StartIfBelow: 100
+		DamageCooldown: 150
+    GrantConditionOnMovement:
+        Condition: ismoving
+        ValidMovementTypes: Horizontal, Vertical
 
 TNKD:
 	Inherits: ^TrackedVehicle

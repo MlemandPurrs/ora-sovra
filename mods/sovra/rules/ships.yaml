@@ -300,12 +300,23 @@ LST:
 		MaxWeight: 8
 		PassengerFacing: 0
 		LoadingCondition: notmobile
+		PassengerConditions:
+			mech: selfrepair
 	-Chronoshiftable:
 	Selectable:
 		DecorationBounds: 1536, 1536
 	HitShape:
 		Type: Circle
 			Radius: 576
+	ChangesHealth:
+		RequiresCondition: selfrepair && !ismoving
+		Step: 2000
+		Delay: 80
+		StartIfBelow: 100
+		DamageCooldown: 150
+    GrantConditionOnMovement:
+        Condition: ismoving
+        ValidMovementTypes: Horizontal, Vertical
 
 PT:
 	Inherits: ^Ship

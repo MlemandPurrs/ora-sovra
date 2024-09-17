@@ -291,6 +291,8 @@ TRAN:
 		Types: Infantry
 		MaxWeight: 8
 		AfterUnloadDelay: 40
+		PassengerConditions:
+			mech: selfrepair
 	SpawnActorOnDeath:
 		Actor: TRAN.Husk
 	Selectable:
@@ -298,6 +300,12 @@ TRAN:
 	HitShape:
 		Type: Circle
 			Radius: 512
+	ChangesHealth:
+		RequiresCondition: selfrepair && !airborne
+		Step: 2000
+		Delay: 80
+		StartIfBelow: 100
+		DamageCooldown: 150
 
 HELI:
 	Inherits: ^Helicopter
