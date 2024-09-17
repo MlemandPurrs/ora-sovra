@@ -2419,7 +2419,7 @@ FIX:
 	WithResupplyAnimation:
 		RequiresCondition: !build-incomplete
 	Power:
-		Amount: -30
+		Amount: -20
 		RequiresCondition: !build-incomplete
 	ProvidesPrerequisite@buildingname:
 	HitShape:
