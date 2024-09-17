@@ -862,10 +862,18 @@ MRJ:
 	JamsMissiles:
 		Range: 5c0
 		DeflectionRelationships: Neutral, Enemy
+        RequiresCondition: !mrj-jammed
 	RenderJammerCircle:
+        RequiresCondition: !mrj-jammed
 	Passenger:
 		CargoType: Vehicle
         Weight: 3
+	ProximityExternalCondition@NOMISSILEJAM:
+		Range: 5c0
+		ValidRelationships: Enemy, Neutral, Ally
+		Condition: mrj-jammed
+	ExternalCondition@NOMISSILEJAM:
+		Condition: mrj-jammed
 
 TTNK:
 	Inherits: ^TrackedVehicle
