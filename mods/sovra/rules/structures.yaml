@@ -1495,23 +1495,7 @@ PROC:
 		Capacity: 2000
     Sellable:
         RefundPercent: 100
-		RequiresCondition: !build-incomplete && !being-captured && !being-demolished && !owner.russia
-    Sellable@2:
-        RefundPercent: 100
-		RequiresCondition: !build-incomplete && !being-captured && !being-demolished && owner.russia && !techcenter
-		SellSounds: cashturn.aud
-		Notification: StructureSold
-    Sellable@3:
-        RefundPercent: 120
-		RequiresCondition: !build-incomplete && !being-captured && !being-demolished && owner.russia && techcenter
-		SellSounds: cashturn.aud
-		Notification: StructureSold
-    GrantConditionOnPrerequisite@russia:
-        Condition: owner.russia
-        Prerequisites: structures.russia
-    GrantConditionOnPrerequisite@techcenter:
-        Condition: techcenter
-        Prerequisites: techcenter
+		RequiresCondition: !build-incomplete && !being-captured && !being-demolished
 	CustomSellValue:
 		Value: 500
 	FreeActor@1:
@@ -2642,23 +2626,7 @@ ERCC:
 		Capacity: 2000
     Sellable:
         RefundPercent: 100
-		RequiresCondition: !build-incomplete && !being-captured && !being-demolished && !owner.russia
-    Sellable@2:
-        RefundPercent: 100
-		RequiresCondition: !build-incomplete && !being-captured && !being-demolished && owner.russia && !techcenter
-		SellSounds: cashturn.aud
-		Notification: StructureSold
-    Sellable@3:
-        RefundPercent: 120
-		RequiresCondition: !build-incomplete && !being-captured && !being-demolished && owner.russia && techcenter
-		SellSounds: cashturn.aud
-		Notification: StructureSold
-    GrantConditionOnPrerequisite@russia:
-        Condition: owner.russia
-        Prerequisites: structures.russia
-    GrantConditionOnPrerequisite@techcenter:
-        Condition: techcenter
-        Prerequisites: techcenter
+		RequiresCondition: !build-incomplete && !being-captured && !being-demolished
 	CustomSellValue:
 		Value: 500
 	FreeActor@1:
