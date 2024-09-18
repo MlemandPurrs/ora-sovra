@@ -2097,7 +2097,7 @@ BARR:
 		Queue: Building
 		BuildPaletteOrder: 30
 		Prerequisites: fact, ~structures.soviet, ~techlevel.infonly
-		Description: Trains infantry.
+		Description: Trains and heals infantry.
 	Valued:
 		Cost: 500
 	Tooltip:
@@ -2185,6 +2185,13 @@ BARR:
 	WithDeathAnimation:
 		DeathSequence: dead
 		UseDeathTypeSuffix: false
+	ProximityExternalCondition@barracksheal:
+		Condition: barracks
+		ValidRelationships: Ally
+		Range: 2c512
+	WithRangeCircle:
+		Range: 2c512
+        RequiresCondition: !build-incomplete
 
 KENN:
 	Inherits: ^Building
@@ -2284,7 +2291,7 @@ TENT:
 		Queue: Building
 		BuildPaletteOrder: 20
 		Prerequisites: fact, ~structures.allies, ~techlevel.infonly
-		Description: Trains infantry.
+		Description: Trains and heals infantry.
 	Valued:
 		Cost: 500
 	Tooltip:
@@ -2372,6 +2379,13 @@ TENT:
 	WithDeathAnimation:
 		DeathSequence: dead
 		UseDeathTypeSuffix: false
+	ProximityExternalCondition@barracksheal:
+		Condition: barracks
+		ValidRelationships: Ally
+		Range: 2c512
+	WithRangeCircle:
+		Range: 2c512
+        RequiresCondition: !build-incomplete
 
 FIX:
 	Inherits: ^Building

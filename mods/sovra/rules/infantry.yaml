@@ -534,6 +534,8 @@ MEDI:
 	GrantConditionOnPrerequisite@HOSPITAL:
 		Condition: hospital
         Prerequisites: ~techlevel.infonly
+    -ExternalCondition@BARRACKS:
+    -GrantCondition@BARRACKS:
 
 MECH:
 	Inherits: ^Soldier

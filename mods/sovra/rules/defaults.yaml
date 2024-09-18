@@ -141,14 +141,17 @@
 		BlinkInterval: 32
 		BlinkPatterns:
 			hospitalheal: On, Off
+            barracksheal: On, Off
 	WithDecoration@RANK-2:
 		BlinkInterval: 32
 		BlinkPatterns:
 			hospitalheal: On, Off
+            barracksheal: On, Off
 	WithDecoration@RANK-3:
 		BlinkInterval: 32
 		BlinkPatterns:
 			hospitalheal: On, Off
+            barracksheal: On, Off
 
 ^IronCurtainable:
 	WithColoredOverlay@IRONCURTAIN:
@@ -386,7 +389,7 @@
 		Delay: 100
 		StartIfBelow: 100
 		DamageCooldown: 125
-		RequiresCondition: hospitalheal
+		RequiresCondition: ( barracksheal || hospitalheal ) && !( disable-experience || parachute)
 	GrantConditionOnPrerequisite@HOSPITAL:
 		Condition: hospital
 		Prerequisites: hosp
@@ -401,9 +404,14 @@
 		Sequence: medic
 		Position: BottomRight
 		Margin: 17, 4
-		RequiresCondition: hospitalheal
+		RequiresCondition: barracksheal || hospitalheal
 		BlinkInterval: 32
 		BlinkPattern: Off, On
+	ExternalCondition@BARRACKS:
+		Condition: barracks
+	GrantCondition@BARRACKS:
+		RequiresCondition: barracks && damaged
+		Condition: barracksheal
 	DeathSounds@NORMAL:
 		DeathTypes: DefaultDeath, BulletDeath, SmallExplosionDeath, ExplosionDeath
 	DeathSounds@BURNED:
