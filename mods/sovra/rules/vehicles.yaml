@@ -524,7 +524,7 @@ MCV:
 	Selectable:
 		DecorationBounds: 1792, 1792
 	Health:
-		HP: 60000
+		HP: 75000
 	Armor:
 		Type: Light
 	Mobile:
