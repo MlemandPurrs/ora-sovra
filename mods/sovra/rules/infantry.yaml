@@ -765,6 +765,11 @@ SHOK:
 	WithProductionIconOverlay:
 		Types: Veterancy
 		Prerequisites: infantry.upgraded
+	Explodes@ONCRUSH:
+		Weapon: SHOKExplode
+		EmptyWeapon: SHOKExplode
+        Chance: 100
+        DeathTypes: CrushingDeath
 
 Zombie:
 	Inherits: ^Soldier
