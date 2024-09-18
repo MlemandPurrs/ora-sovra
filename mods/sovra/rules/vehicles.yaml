@@ -769,6 +769,13 @@ MNLY:
 TRUK:
 	Inherits: ^Vehicle
 	Inherits@selection: ^SelectableSupportUnit
+    -ProductionCostMultiplier@Russia:
+    -DamageMultiplier@England:
+    -ReloadDelayMultiplier@France:
+    -FirepowerMultiplier@Germany:
+    -ProductionCostMultiplier@Russia:
+    -SpeedMultiplier@Ukraine:
+    -ProductionTimeMultiplier@Belarus:
 	Buildable:
         BuildDuration: 500
         BuildDurationModifier: 100
@@ -794,7 +801,6 @@ TRUK:
 		PlayerExperience: 5
 	SpawnActorOnDeath:
 		Actor: moneycrate
-    -ProductionCostMultiplier@Russia:
 	Passenger:
 		CargoType: Vehicle
         Weight: 3
