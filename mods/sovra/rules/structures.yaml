@@ -761,7 +761,7 @@ DOME:
 		Queue: Building
 		BuildPaletteOrder: 90
 		Prerequisites: anypower, proc, ~techlevel.medium
-		Description: Provides an overview\nof the battlefield.\nRequires power to operate.
+		Description: Provides an overview\nof the battlefield.\nCan detect mines.\nRequires power to operate.
 	Valued:
 		Cost: 1200
 	Tooltip:
@@ -802,6 +802,11 @@ DOME:
 	WithDeathAnimation:
 		DeathSequence: dead
 		UseDeathTypeSuffix: false
+	DetectCloaked:
+		Range: 10c0
+		DetectionTypes: Mine
+        RequiresCondition: !lowpower && !disabled && !build-incomplete
+	RenderDetectionCircle:
 
 PBOX:
 	Inherits: ^Defense
