@@ -273,7 +273,7 @@ E4:
 		RequiresCondition: !parachute
 		TargetTypes: GroundActor, Infantry, Disguise, FireImmune
 	Explodes:
-		Weapon: VisualExplode
+		Weapon: Napalm
 		EmptyWeapon: VisualExplode
 		Chance: 50
 	WithInfantryBody:
