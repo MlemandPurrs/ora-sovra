@@ -107,7 +107,7 @@ Vulcan:
 			Wood: 50
 			Light: 50
 			Heavy: 20
-			Concrete: 35
+			Concrete: 20
 			Steel: 28
             Medium: 35
 	Warhead@4Dam_2: SpreadDamage
@@ -120,7 +120,7 @@ Vulcan:
 			Wood: 50
 			Light: 50
 			Heavy: 20
-			Concrete: 35
+			Concrete: 20
 			Steel: 28
             Medium: 35
 		DamageTypes: Prone50Percent, TriggerProne, BulletDeath
@@ -143,7 +143,7 @@ Vulcan:
 			Wood: 50
 			Light: 50
 			Heavy: 20
-			Concrete: 35
+			Concrete: 20
 			Steel: 28
             Medium: 35
 		DamageTypes: Prone50Percent, TriggerProne, BulletDeath
@@ -166,7 +166,7 @@ Vulcan:
 			Wood: 50
 			Light: 50
 			Heavy: 20
-			Concrete: 35
+			Concrete: 20
 			Steel: 28
             Medium: 35
 		DamageTypes: Prone50Percent, TriggerProne, BulletDeath
@@ -189,7 +189,7 @@ Vulcan:
 			Wood: 50
 			Light: 50
 			Heavy: 20
-			Concrete: 35
+			Concrete: 20
 			Steel: 28
             Medium: 35
 		DamageTypes: Prone50Percent, TriggerProne, BulletDeath
@@ -212,7 +212,7 @@ Vulcan:
 			Wood: 50
 			Light: 50
 			Heavy: 20
-			Concrete: 35
+			Concrete: 20
 			Steel: 28
             Medium: 35
 		DamageTypes: Prone50Percent, TriggerProne, BulletDeath
@@ -290,7 +290,6 @@ M1Carbine:
 	Warhead@1Dam: SpreadDamage
 		Versus:
 			Wood: 30
-			Concrete: 18
 	Warhead@2Eff2: CreateEffect
 		Delay: 2
 		Explosions: piff

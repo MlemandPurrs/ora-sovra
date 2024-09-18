@@ -17,7 +17,7 @@
 			None: 30
 			Wood: 75
 			Light: 75
-			Concrete: 80
+			Concrete: 50
             Medium: 80
 		DamageTypes: Prone50Percent, TriggerProne, ExplosionDeath
 	Warhead@2Smu: LeaveSmudge
@@ -84,7 +84,6 @@
 		Versus:
 			Heavy: 115
 			Steel: 77
-            Concrete: 90
 		InvalidTargets: Air
 
 TurretGun:
@@ -117,7 +116,6 @@ TurretGun:
 			Light: 60
 			Heavy: 25
 			Steel: 40
-            Concrete: 50
             Medium: 43
 		DamageTypes: Prone50Percent, TriggerProne, SmallExplosionDeath
 	Warhead@3Eff: CreateEffect
@@ -160,7 +158,7 @@ TurretGun:
 			Wood: 35
 			Light: 60
 			Heavy: 25
-			Concrete: 50
+			Concrete: 100
 			Steel: 40
             Medium: 43
 	Warhead@4EffWater: CreateEffect
@@ -179,7 +177,7 @@ TurretGun:
 			None: 28
 			Wood: 72
 			Light: 72
-			Concrete: 80
+			Concrete: 48
 			Steel: 105
             Medium: 84
 
@@ -200,7 +198,7 @@ Grenade:
 			Wood: 100
 			Light: 25
 			Heavy: 25
-			Concrete: 50
+			Concrete: 100
 			Steel: 25
             Medium: 25
 	Warhead@3Eff: CreateEffect
@@ -269,7 +267,7 @@ GrenadeLauncher:
 			Wood: 100
 			Light: 25
 			Heavy: 25
-			Concrete: 50
+			Concrete: 100
             Steel: 25
             Medium: 25
 	Warhead@2Smu: LeaveSmudge
