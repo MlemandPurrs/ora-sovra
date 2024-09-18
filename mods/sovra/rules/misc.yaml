@@ -119,7 +119,7 @@ CRATE:
 		Sequence: invuln
 		Sound: ironcur9.aud
 		Condition: invulnerability
-		Duration: 600
+		Duration: 400
 	GiveUnitCrateAction@lst:
 		SelectionShares: 6
 		Units: lst
@@ -155,6 +155,9 @@ CRATE:
 		Units: msub
 		ValidFactions: soviet, russia, ukraine, belarus
 		Prerequisites: techlevel.high, stek
+	ExplodeCrateAction@nuke:
+		Weapon: CrateNuke
+		SelectionShares: 1
 
 MONEYCRATE:
 	Inherits: ^Crate
