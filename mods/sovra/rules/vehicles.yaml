@@ -769,13 +769,17 @@ MNLY:
 TRUK:
 	Inherits: ^Vehicle
 	Inherits@selection: ^SelectableSupportUnit
-    -ProductionCostMultiplier@Russia:
     -DamageMultiplier@England:
     -ReloadDelayMultiplier@France:
     -FirepowerMultiplier@Germany:
     -ProductionCostMultiplier@Russia:
     -SpeedMultiplier@Ukraine:
     -ProductionTimeMultiplier@Belarus:
+    -GrantConditionOnPrerequisite@England:
+    -GrantConditionOnPrerequisite@France:
+    -GrantConditionOnPrerequisite@Germany:
+    -GrantConditionOnPrerequisite@Ukraine:
+    -GrantConditionOnPrerequisite@Tech:
 	Buildable:
         BuildDuration: 500
         BuildDurationModifier: 100

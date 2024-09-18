@@ -432,7 +432,7 @@ E7:
 		BuildPaletteOrder: 120
 		Prerequisites: ~tent, atek, ~techlevel.high
 		BuildLimit: 1
-		Description: Maximum 1 can be trained.\n\nElite commando infantry. Armed with\ndual pistols and C4.\n\n  Strong vs Infantry, Buildings\n  Weak vs Vehicles, Aircraft\n\n  Special Ability: Destroy Building with C4
+		Description: Maximum 1 can be trained.\n\nElite commando infantry. Armed with\ndual pistols and C4 explosives.\n\n  Strong vs Infantry, Buildings\n  Weak vs Vehicles, Aircraft\n\n  Special Ability: Destroy Building with C4
 	Valued:
 		Cost: 1200
 	Tooltip:
@@ -531,11 +531,6 @@ MEDI:
 	AutoTarget:
 	AutoTargetPriority@DEFAULT:
 		ValidTargets: Infantry
-	GrantConditionOnPrerequisite@HOSPITAL:
-		Condition: hospital
-        Prerequisites: ~techlevel.infonly
-    -ExternalCondition@BARRACKS:
-    -GrantCondition@BARRACKS:
 
 MECH:
 	Inherits: ^Soldier
