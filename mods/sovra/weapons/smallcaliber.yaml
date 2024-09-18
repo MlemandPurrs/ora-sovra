@@ -253,7 +253,7 @@ ChainGun.Yak:
 	BurstDelays: 3
 	Range: 5c0
 	MinRange: 3c0
-	FirstBurstTargetOffset: -768,0,0
+	FirstBurstTargetOffset: -512,0,0
 	FollowingBurstTargetOffset: 512,0,0
 	Projectile: InstantHit
 		Blockable: false

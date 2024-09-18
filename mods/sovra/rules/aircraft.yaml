@@ -194,6 +194,8 @@ YAK:
 		PersistentTargeting: false
 		OpportunityFire: False
         ForceFireIgnoresActors: True
+        AttackType: Strafe
+        StrafeRunLength: 1c0
 	Aircraft:
 		CruiseAltitude: 2560
 		TurnSpeed: 16
