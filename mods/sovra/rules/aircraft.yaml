@@ -302,7 +302,7 @@ TRAN:
 	HitShape:
 		Type: Circle
 			Radius: 512
-	ChangesHealth:
+	ChangesHealth@MECH:
 		RequiresCondition: selfrepair && !airborne
 		Step: 2000
 		Delay: 80

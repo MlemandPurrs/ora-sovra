@@ -302,21 +302,28 @@ LST:
 		LoadingCondition: notmobile
 		PassengerConditions:
 			mech: selfrepair
+            mgg: powerusage
 	-Chronoshiftable:
 	Selectable:
 		DecorationBounds: 1536, 1536
 	HitShape:
 		Type: Circle
 			Radius: 576
-	ChangesHealth:
+	ChangesHealth@MECH:
 		RequiresCondition: selfrepair && !ismoving
 		Step: 2000
 		Delay: 80
 		StartIfBelow: 100
 		DamageCooldown: 150
-    GrantConditionOnMovement:
+    GrantConditionOnMovement@MECH:
         Condition: ismoving
         ValidMovementTypes: Horizontal, Vertical
+	Power@MGG:
+		Amount: -10
+        RequiresCondition: powerusage == 1
+	PowerMultiplier@MGG:
+		Modifier: 200
+        RequiresCondition: powerusage == 2
 
 PT:
 	Inherits: ^Ship

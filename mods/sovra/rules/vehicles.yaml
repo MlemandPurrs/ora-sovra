@@ -620,13 +620,13 @@ JEEP:
 		DetectionTypes: Cloak
 		Range: 1c512
         RequiresCondition: loaded
-	ChangesHealth:
+	ChangesHealth@MECH:
 		RequiresCondition: selfrepair && !ismoving
 		Step: 2000
 		Delay: 80
 		StartIfBelow: 100
 		DamageCooldown: 150
-    GrantConditionOnMovement:
+    GrantConditionOnMovement@MECH:
         Condition: ismoving
         ValidMovementTypes: Horizontal, Vertical
 
@@ -685,13 +685,13 @@ APC:
 	Passenger:
 		CargoType: Vehicle
         Weight: 4
-	ChangesHealth:
+	ChangesHealth@MECH:
 		RequiresCondition: selfrepair && !ismoving
 		Step: 2000
 		Delay: 80
 		StartIfBelow: 100
 		DamageCooldown: 150
-    GrantConditionOnMovement:
+    GrantConditionOnMovement@MECH:
         Condition: ismoving
         ValidMovementTypes: Horizontal, Vertical
 
@@ -1059,6 +1059,9 @@ DTRK:
 		RequiresCondition: invulnerability || triggered
 	Chronoshiftable:
 		ExplodeInstead: true
+	Passenger:
+		CargoType: Vehicle
+        Weight: 3
 
 CTNK:
 	Inherits: ^Vehicle
@@ -1257,13 +1260,13 @@ STNK:
 	Passenger:
 		CargoType: Vehicle
         Weight: 4
-	ChangesHealth:
+	ChangesHealth@MECH:
 		RequiresCondition: selfrepair && !ismoving
 		Step: 2000
 		Delay: 80
 		StartIfBelow: 100
 		DamageCooldown: 150
-    GrantConditionOnMovement:
+    GrantConditionOnMovement@MECH:
         Condition: ismoving
         ValidMovementTypes: Horizontal, Vertical
 
