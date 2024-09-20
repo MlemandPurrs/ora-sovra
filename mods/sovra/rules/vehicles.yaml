@@ -1000,6 +1000,9 @@ TTNK:
 		Sequence: idle2
 		RequiresCondition: floating
 	RenderRangeCircle:
+	Passenger:
+		CargoType: Vehicle
+        Weight: 3
 
 FTRK:
 	Inherits: ^Vehicle
