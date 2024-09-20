@@ -230,6 +230,7 @@ CA:
 	Turreted@PRIMARY:
 		Turret: primary
 		Offset: -896,0,128
+        InitialFacing: 512
 		TurnSpeed: 12
 	Turreted@SECONDARY:
 		Turret: secondary
@@ -362,7 +363,7 @@ PT:
 	RevealsShroud@GAPGEN:
 		Range: 6c0
 	Turreted:
-		TurnSpeed: 28
+		TurnSpeed: 24
 		Offset: 512,0,0
 	Armament@PRIMARY:
 		Weapon: 2Inch
