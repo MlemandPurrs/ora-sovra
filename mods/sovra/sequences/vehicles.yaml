@@ -270,6 +270,10 @@ mrj:
 	idle:
 		Facings: 32
 		UseClassicFacings: True
+	idle2:
+		Filename: mrj-float.shp
+		Facings: 32
+		UseClassicFacings: True
 	spinner:
 		Start: 34
 		Length: 30
@@ -312,12 +316,26 @@ ttnk:
 	Defaults:
 		Filename: ttnk.shp
 	idle:
+        Frames: 0, 16, 32, 48, 64, 80, 96, 112, 128, 144, 160, 176, 192, 208, 224, 240, 256, 272, 288, 304, 320, 336, 352, 368, 384, 400, 416, 432, 448, 464, 480, 496
 		Facings: 32
 		UseClassicFacings: True
-	spinner:
-		Start: 32
-		Length: 18
-        ZOffset: -511
+	idle2:
+		Filename: ttnk-float.shp
+        Frames: 0, 16, 32, 48, 64, 80, 96, 112, 128, 144, 160, 176, 192, 208, 224, 240, 256, 272, 288, 304, 320, 336, 352, 368, 384, 400, 416, 432, 448, 464, 480, 496
+		Facings: 32
+		UseClassicFacings: True
+	charge:
+        Filename: ttnk.shp
+		Length: 16
+        Facings: 32
+        Tick: 75
+		UseClassicFacings: True
+	charge2:
+		Filename: ttnk-float.shp
+		Length: 16
+        Facings: 32
+        Tick: 75
+		UseClassicFacings: True
 	icon:
 		Filename: ttnkicon.shp
 

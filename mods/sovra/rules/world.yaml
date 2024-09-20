@@ -112,6 +112,19 @@
 			Beach: 88
             WaterFord: 88
             Water: 50
+	Locomotor@AMPHIBIANWHEELED:
+		Name: amphibianwheeled
+		Crushes: mine, crate
+		TerrainSpeeds:
+			Clear: 100
+			Rough: 50
+			Road: 125
+			Bridge: 125
+			Ore: 88
+			Gems: 88
+			Beach: 50
+            WaterFord: 50
+            Water: 50
 	Locomotor@IMMOBILE:
 		Name: immobile
 		TerrainSpeeds:

@@ -748,7 +748,7 @@ MNLY:
 		Condition: floating
 	Targetable:
 		TargetTypes: GroundActor, Vehicle, Mine
-		RequiresCondition: !floating
+		RequiresCondition: !floating && !parachute
 	Targetable@SEA:
 		TargetTypes: GroundActor, WaterActor, Ship, Mine
 		RequiresCondition: floating
@@ -871,12 +871,13 @@ MRJ:
 		Queue: Vehicle
 		BuildPaletteOrder: 320
 		Prerequisites: dome, ~vehicles.england, ~techlevel.medium
-		Description: Jams nearby enemy radar domes\nand deflects incoming missiles.\n\n  Unarmed
+		Description: Amphibian support vehicle.\nJams nearby enemy radar domes\nand deflects incoming missiles.\n\n  Unarmed
 	Health:
 		HP: 22000
 	Armor:
 		Type: Heavy
 	Mobile:
+        Locomotor: amphibianwheeled
 		Speed: 68
 	RevealsShroud:
 		Range: 7c0
@@ -906,6 +907,21 @@ MRJ:
 		Condition: mrj-jammed
 	ExternalCondition@NOMISSILEJAM:
 		Condition: mrj-jammed
+	GrantConditionOnTerrain@SEA:
+		TerrainTypes: Water
+		Condition: floating
+	Targetable:
+		RequiresCondition: !floating && !parachute
+		TargetTypes: GroundActor, Vehicle
+	Targetable@SEA:
+		TargetTypes: GroundActor, WaterActor, Ship
+		RequiresCondition: floating
+    WithFacingSpriteBody:
+		RequiresCondition: !floating
+	WithFacingSpriteBody@SEA:
+		Name: floating
+		Sequence: idle2
+		RequiresCondition: floating
 
 TTNK:
 	Inherits: ^TrackedVehicle
@@ -917,7 +933,7 @@ TTNK:
 		Queue: Vehicle
 		BuildPaletteOrder: 330
 		Prerequisites: stek, ~vehicles.russia, ~techlevel.high
-		Description: Tank with mounted Tesla coil.\n\n  Strong vs Infantry, Vehicles, Buildings\n  Weak vs Aircraft
+		Description: Amphibian tank with mounted Tesla coil.\n\n  Strong vs Infantry, Vehicles, Ships\n  Weak vs Aircraft
 	Valued:
 		Cost: 1350
 	Tooltip:
@@ -930,6 +946,8 @@ TTNK:
 	Armor:
 		Type: Light
 	Mobile:
+        PauseOnCondition: being-captured || dont-move
+        Locomotor: amphibiantracked
 		Speed: 92
 	RevealsShroud:
 		MinRange: 6c0
@@ -940,18 +958,25 @@ TTNK:
     Armament:
         Weapon: TTankZap
         LocalOffset: 0,0,213
-    AttackCharges:
-        ChargeLevel: 24
-        ChargeRate: 1
-        DischargeRate: 1
-        FacingTolerance: 512
-		ChargingCondition: charging
-    WithChargeOverlay:
-        Sequence: spinner
-	AmbientSound:
-		RequiresCondition: charging
-		SoundFiles: tslachg2.aud
-		Interval: 24
+	AttackTesla:
+		ChargeAudio: tslachg2.aud
+		MaxCharges: 1
+		ReloadDelay: 120
+        TargetFrozenActors: true
+    WithTeslaChargeAnimation@1:
+        Body: body
+        ChargeSequence: charge
+    WithTeslaChargeAnimation@2:
+        Body: floating
+        ChargeSequence: charge2
+	GrantConditionOnAttack:
+		Condition: dont-move
+		RevokeDelay: 16
+		RevokeOnNewTarget: False
+		RevokeAll: True
+    SpeedMultiplier@DONTTURN:
+        Modifier: 0
+        RequiresCondition: dont-move
 	ProducibleWithLevel:
 		Prerequisites: vehicles.upgraded
 	Selectable:
@@ -959,6 +984,21 @@ TTNK:
 	WithProductionIconOverlay:
 		Types: Veterancy
 		Prerequisites: vehicles.upgraded
+	GrantConditionOnTerrain@SEA:
+		TerrainTypes: Water
+		Condition: floating
+	Targetable:
+		RequiresCondition: !floating && !parachute
+		TargetTypes: GroundActor, Vehicle
+	Targetable@SEA:
+		TargetTypes: GroundActor, WaterActor, Ship
+		RequiresCondition: floating
+    WithFacingSpriteBody:
+		RequiresCondition: !floating
+	WithFacingSpriteBody@SEA:
+		Name: floating
+		Sequence: idle2
+		RequiresCondition: floating
 	RenderRangeCircle:
 
 FTRK:
