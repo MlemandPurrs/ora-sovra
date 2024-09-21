@@ -139,7 +139,7 @@ MIG:
 	ProducibleWithLevel:
 		Prerequisites: aircraft.upgraded
 	Rearmable:
-		RearmActors: afld, afld.ukraine
+		RearmActors: afld, afld.ukraine, afld.belarus
 	WithAmmoPipsDecoration:
 		Position: BottomLeft
 		Margin: 4, 3
@@ -228,7 +228,7 @@ YAK:
 	Selectable:
 		DecorationBounds: 1280, 1194, 0, 85
 	Rearmable:
-		RearmActors: afld, afld.ukraine
+		RearmActors: afld, afld.ukraine, afld.belarus
 	WithAmmoPipsDecoration:
 		Position: BottomLeft
 		Margin: 4, 3
@@ -382,7 +382,7 @@ HELI:
 	Selectable:
 		DecorationBounds: 1536, 1194
 	Rearmable:
-		RearmActors: hpad, afld
+		RearmActors: hpad, afld, afld.ukraine, afld.belarus
 	WithAmmoPipsDecoration:
 		Position: BottomLeft
 		Margin: 4, 3
@@ -474,7 +474,7 @@ HIND:
 	Selectable:
 		DecorationBounds: 1621, 1365
 	Rearmable:
-		RearmActors: hpad, afld
+		RearmActors: hpad, afld, afld.ukraine, afld.belarus
 	WithAmmoPipsDecoration:
 		Position: BottomLeft
 		Margin: 4, 3
@@ -601,7 +601,7 @@ MH60:
 	Selectable:
 		DecorationBounds: 1621, 1365
 	Rearmable:
-		RearmActors: hpad, afld
+		RearmActors: hpad, afld, afld.ukraine, afld.belarus
 	WithAmmoPipsDecoration:
 		Position: BottomLeft
 		Margin: 4, 3
