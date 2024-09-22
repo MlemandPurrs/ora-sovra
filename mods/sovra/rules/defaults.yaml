@@ -521,6 +521,7 @@
 	UpdatesPlayerStatistics:
 	Mobile:
 		Locomotor: naval
+		PauseOnCondition: being-captured
 	Selectable:
 		Bounds: 1024, 1024
 	Targetable:
@@ -559,6 +560,16 @@
 		VoiceSet: VehicleVoice
 	WithFacingSpriteBody:
 	HitShape:
+	CaptureManager:
+		BeingCapturedCondition: being-captured
+	Capturable:
+		Types: naval
+		CancelActivity: True
+	CaptureNotification:
+		Notification: UnitStolen
+		TextNotification: Unit stolen.
+		LoseNotification: UnitLost
+		LoseTextNotification: Unit lost.
 
 ^Submarine:
 	Inherits: ^Ship
@@ -595,6 +606,10 @@
     TimedConditionBar@SONARPING:
         Condition: pinged
         Color: ADFF2F
+	Capturable:
+		Types: naval
+		CancelActivity: True
+        RequiresCondition: !underwater
 
 ^NeutralPlane:
 	Inherits@1: ^ExistsInWorld

@@ -99,8 +99,8 @@
 			Water: 100
 			Beach: 70
             WaterFord: 70
-	Locomotor@AMPHIBIANTRACKED:
-		Name: amphibiantracked
+	Locomotor@TRACKED-AMPHIBIOUS:
+		Name: tracked-amphibious
 		Crushes: wall, infantry, mine, crate
 		TerrainSpeeds:
 			Clear: 100
@@ -112,8 +112,8 @@
 			Beach: 88
             WaterFord: 88
             Water: 50
-	Locomotor@AMPHIBIANWHEELED:
-		Name: amphibianwheeled
+	Locomotor@WHEELED-AMPHIBIOUS:
+		Name: wheeled-amphibious
 		Crushes: mine, crate
 		TerrainSpeeds:
 			Clear: 100
@@ -125,6 +125,20 @@
 			Beach: 50
             WaterFord: 50
             Water: 50
+	Locomotor@FOOT-AMPHIBIOUS:
+		Name: foot-amphibious
+		Crushes: mine, crate
+		SharesCell: true
+		TerrainSpeeds:
+			Clear: 100
+			Rough: 89
+			Road: 111
+			Bridge: 111
+			Ore: 89
+			Gems: 89
+			Beach: 89
+            WaterFord: 89
+            Water: 80
 	Locomotor@IMMOBILE:
 		Name: immobile
 		TerrainSpeeds:

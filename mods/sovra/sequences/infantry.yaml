@@ -121,6 +121,30 @@ e1:
 				Filename: minigun.shp
 				Length: 12
 				Frames: 42,43,44,45,46,47,42,43,44,45,46,47
+    swim-idle1:
+		Frames: 135, 3, 256, 257, 258, 259, 260, 261, 262, 263, 264, 265, 266, 267, 268, 269, 3, 135
+		Length: *
+		Tick: 120
+    swim-idle2:
+		Frames: 135, 3, 271, 272, 273, 274, 275, 276, 277, 278, 279, 280, 281, 282, 283, 284, 285, 286, 287, 3, 135
+		Length: *
+		Tick: 120
+    swim-stand:
+        Frames: 129, 131, 133, 135, 137, 139, 141, 143
+		Length: 1
+        Facings: 8
+    swim-stand2:
+        Frames: 129, 131, 133, 135, 137, 139, 141, 143
+		Length: 1
+        Facings: 8
+    swim-move:
+        Frames: 176, 178, 180, 182, 184, 186, 188, 190
+		Length: 1
+        Facings: 8
+	swim-shoot:
+		Start: 192
+		Length: 8
+		Facings: 8
 	icon:
 		Filename: e1icon.shp
 
@@ -210,6 +234,30 @@ e3:
 		Start: 176
 		Length: 2
 		Facings: 8
+    swim-idle1:
+		Frames: 135, 3, 271, 272, 273, 274, 275, 276, 277, 278, 279, 280, 281, 282, 283, 284, 285, 286, 287, 3, 135
+		Length: *
+		Tick: 120
+    swim-idle2:
+		Frames: 139, 5, 287, 288, 289, 290, 291, 292, 293, 294, 295, 296, 297, 298, 299, 300, 301, 302, 5, 139
+		Length: *
+		Tick: 120
+    swim-stand:
+        Frames: 129, 131, 133, 135, 137, 139, 141, 143
+		Length: 1
+        Facings: 8
+    swim-stand2:
+        Frames: 129, 131, 133, 135, 137, 139, 141, 143
+		Length: 1
+        Facings: 8
+    swim-move:
+        Frames: 176, 178, 180, 182, 184, 186, 188, 190
+		Length: 1
+        Facings: 8
+	swim-shoot:
+		Start: 192
+		Length: 10
+		Facings: 8
 	icon:
 		Filename: e3icon.shp
 
@@ -291,6 +339,26 @@ e6:
 		Start: 114
 		Length: 2
 		Facings: 8
+    swim-idle1:
+		Frames: 135, 73, 121, 122, 123, 124, 125, 126, 127, 128, 129, 73, 135
+		Length: *
+		Tick: 120
+    swim-idle2:
+		Frames: 135, 73, 130, 131, 132, 133, 134, 135, 136, 137, 138, 139, 140, 141, 142, 143, 144, 73, 135
+		Length: *
+		Tick: 120
+    swim-stand:
+        Frames: 67, 69, 71, 73, 75, 77, 79, 81
+		Length: 1
+        Facings: 8
+    swim-stand2:
+        Frames: 67, 69, 71, 73, 75, 77, 79, 81
+		Length: 1
+        Facings: 8
+    swim-move:
+        Frames: 114, 116, 118, 120, 122, 124, 126, 128
+		Length: 1
+        Facings: 8
 	icon:
 		Filename: e6icon.shp
 
@@ -363,6 +431,22 @@ medi:
 		Start: 114
 		Length: 2
 		Facings: 8
+    swim-idle:
+		Frames: 125, 5, 178, 179, 180, 181, 182, 183, 184, 185, 186, 187, 188, 189, 190, 191, 192, 5, 125
+		Length: *
+		Tick: 120
+    swim-stand:
+        Frames: 115, 117, 119, 121, 123, 125, 127, 129
+		Length: 1
+        Facings: 8
+    swim-move:
+        Frames: 162, 164, 166, 168, 170, 172, 174, 176
+		Length: 1
+        Facings: 8
+    swim-shoot:
+		Start: 56
+		Length: 58
+		Tick: 120
 	icon:
 		Filename: mediicon.shp
 
@@ -435,6 +519,22 @@ mech:
 		Start: 114
 		Length: 2
 		Facings: 8
+    swim-idle:
+		Frames: 125, 5, 178, 179, 180, 181, 182, 183, 184, 185, 186, 187, 188, 189, 190, 191, 192, 5, 125
+		Length: *
+		Tick: 120
+    swim-stand:
+        Frames: 115, 117, 119, 121, 123, 125, 127, 129
+		Length: 1
+        Facings: 8
+    swim-move:
+        Frames: 162, 164, 166, 168, 170, 172, 174, 176
+		Length: 1
+        Facings: 8
+    swim-shoot:
+		Start: 56
+		Length: 58
+		Tick: 120
 	icon:
 		Filename: mechicon.shp
 
@@ -523,6 +623,30 @@ e2:
 	standup:
 		Start: 272
 		Length: 2
+		Facings: 8
+    swim-idle1:
+		Frames: 135, 5, 384, 385, 386, 387, 388, 389, 390, 391, 392, 393, 394, 395, 396, 397, 398, 5, 135
+		Length: *
+		Tick: 120
+    swim-idle2:
+		Frames: 135, 5, 399, 400, 401, 402, 403, 405, 406, 407, 408, 409, 410, 411, 412, 413, 414, 415, 5, 135
+		Length: *
+		Tick: 120
+    swim-stand:
+        Frames: 225, 227, 229, 231, 233, 235, 237, 239
+		Length: 1
+        Facings: 8
+    swim-stand2:
+        Frames: 225, 227, 229, 231, 233, 235, 237, 239
+		Length: 1
+        Facings: 8
+    swim-move:
+        Frames: 272, 274, 276, 278, 280, 282, 284, 286
+		Length: 1
+        Facings: 8
+	swim-shoot:
+		Start: 288
+		Length: 12
 		Facings: 8
 	icon:
 		Filename: e2icon.shp
@@ -677,6 +801,36 @@ spy:
 		Start: 176
 		Length: 2
 		Facings: 8
+	boat:
+		Filename: boat.shp
+        Facings: 16
+		ZOffset: -511
+    swim-idle1:
+		Frames: 139, 5, 256, 257, 258, 259, 260, 261, 262, 263, 264, 265, 266, 267, 268, 269, 5, 139
+		Length: *
+		Tick: 120
+    swim-idle2:
+		Frames: 139, 5, 271, 272, 273, 274, 275, 276, 277, 278, 279, 280, 281, 282, 283, 284, 285, 286, 287, 5, 139
+		Length: *
+		Tick: 120
+    swim-stand:
+        Frames: 129, 131, 133, 135, 137, 139, 141, 143
+		Length: 1
+        Facings: 8
+    swim-stand2:
+        Frames: 129, 131, 133, 135, 137, 139, 141, 143
+		Length: 1
+        Facings: 8
+    swim-move:
+        Frames: 176, 178, 180, 182, 184, 186, 188, 190
+		Length: 1
+        Facings: 8
+	swim-shoot:
+		Start: 192
+		Length: 8
+		Facings: 8
+	quantizer:
+		Facings: 8
 	icon:
 		Filename: spyicon.shp
 
@@ -744,6 +898,24 @@ thf:
 	standup:
 		Start: 104
 		Length: 2
+		Facings: 8
+	boat:
+		Filename: boat.shp
+        Facings: 16
+		ZOffset: -511
+    swim-idle:
+		Frames: 63, 62, 120, 121, 122, 123, 124, 125, 126, 127, 128, 129, 130, 131, 132, 133, 134, 135, 136, 137, 138, 62, 63
+		Length: *
+		Tick: 120
+    swim-stand:
+        Frames: 57, 59, 61, 63, 65, 67, 69, 71
+		Length: 1
+        Facings: 8
+    swim-move:
+        Frames: 104, 106, 108, 110, 112, 114, 116, 118
+		Length: 1
+        Facings: 8
+	quantizer:
 		Facings: 8
 	icon:
 		Filename: thficon.shp
@@ -886,6 +1058,30 @@ e7:
 		Length: 3
 		Stride: 6
 		Facings: 8
+    swim-idle1:
+		Frames: 123, 5, 233, 234, 235, 236, 237, 238, 239, 240, 241, 242, 243, 244, 245, 246, 247, 5, 123
+		Length: *
+		Tick: 120
+    swim-idle2:
+		Frames: 123, 5, 248, 249, 250, 251, 252, 253, 254, 256, 257, 258, 259, 260, 261, 262, 5, 123
+		Length: *
+		Tick: 120
+    swim-stand:
+        Frames: 113, 115, 117, 119, 121, 123, 125, 127
+		Length: 1
+        Facings: 8
+    swim-stand2:
+        Frames: 113, 115, 117, 119, 121, 123, 125, 127
+		Length: 1
+        Facings: 8
+    swim-move:
+        Frames: 160, 162, 164, 166, 168, 170, 172, 174
+		Length: 1
+        Facings: 8
+	swim-shoot:
+		Start: 176
+		Length: 7
+		Facings: 8
 	icon:
 		Filename: e7icon.shp
 
@@ -974,6 +1170,30 @@ e4:
 	standup:
 		Start: 240
 		Length: 2
+		Facings: 8
+    swim-idle1:
+		Frames: 135, 5, 384, 385, 386, 387, 388, 389, 390, 391, 392, 393, 394, 395, 396, 397, 398, 5, 135
+		Length: *
+		Tick: 120
+    swim-idle2:
+		Frames: 135, 5, 399, 400, 401, 402, 403, 405, 406, 407, 408, 409, 410, 411, 412, 413, 414, 415, 5, 135
+		Length: *
+		Tick: 120
+    swim-stand:
+        Frames: 193, 195, 197, 199, 201, 203, 205, 207
+		Length: 1
+        Facings: 8
+    swim-stand2:
+        Frames: 193, 195, 197, 199, 201, 203, 205, 207
+		Length: 1
+        Facings: 8
+    swim-move:
+        Frames: 242, 244, 246, 248, 250, 252, 254, 255
+		Length: 1
+        Facings: 8
+	swim-shoot:
+		Start: 256
+		Length: 16
 		Facings: 8
 	icon:
 		Filename: e4icon.shp
@@ -1088,6 +1308,22 @@ gnrl:
 				Filename: minigun.shp
 				Length: 12
 				Frames: 42,43,44,45,46,47,42,43,44,45,46,47
+    swim-idle1:
+		Frames: 99, 5, 184, 185, 186, 187, 188, 189, 190, 191, 192, 193, 194, 196, 197, 198, 199, 200, 201, 202, 203, 204, 205, 206, 207, 208, 209, 210, 5, 99
+		Length: *
+		Tick: 120
+    swim-stand:
+        Frames: 89, 91, 93, 95, 97, 99, 101, 103
+		Length: 1
+        Facings: 8
+    swim-move:
+        Frames: 136, 138, 140, 142, 144, 146, 148, 150
+		Length: 1
+        Facings: 8
+    swim-shoot:
+		Start: 152
+		Length: 4
+		Facings: 8
 	icon:
 		Filename: volkicon.shp
 
@@ -1177,6 +1413,30 @@ shok:
 		Length: 6
 		Tick: 1600
 		ZOffset: -511
+    swim-idle1:
+		Frames: 135, 5, 384, 385, 386, 387, 388, 389, 390, 391, 392, 393, 394, 395, 396, 397, 398, 5, 135
+		Length: *
+		Tick: 120
+    swim-idle2:
+		Frames: 135, 5, 399, 400, 401, 402, 403, 405, 406, 407, 408, 409, 410, 411, 412, 413, 414, 415, 5, 135
+		Length: *
+		Tick: 120
+    swim-stand:
+        Frames: 193, 195, 197, 199, 201, 203, 205, 207
+		Length: 1
+        Facings: 8
+    swim-stand2:
+        Frames: 193, 195, 197, 199, 201, 203, 205, 207
+		Length: 1
+        Facings: 8
+    swim-move:
+        Frames: 242, 244, 246, 248, 250, 252, 254, 255
+		Length: 1
+        Facings: 8
+	swim-shoot:
+		Start: 256
+		Length: 16
+		Facings: 8
 	icon:
 		Filename: shokicon.shp
 
@@ -1323,6 +1583,18 @@ c1:
 		Length: 6
 		Facings: 8
 		Tick: 80
+    swim-stand:
+        Frames: 12, 18, 24, 30, 36, 42, 48, 54
+		Length: 1
+        Facings: 8
+    swim-move:
+        Frames: 58, 66, 74, 82, 90, 98, 106, 114
+        Length: 1
+        Facings: 8
+	swim-shoot:
+		Start: 120
+		Length: 4
+		Facings: 8
 
 c2:
 	Defaults:
@@ -1378,6 +1650,18 @@ c2:
 		Length: 6
 		Facings: 8
 		Tick: 80
+    swim-stand:
+        Frames: 12, 18, 24, 30, 36, 42, 48, 54
+		Length: 1
+        Facings: 8
+    swim-move:
+        Frames: 58, 66, 74, 82, 90, 98, 106, 114
+        Length: 1
+        Facings: 8
+	swim-shoot:
+		Start: 120
+		Length: 4
+		Facings: 8
 
 c11:
 	Defaults:
@@ -1433,6 +1717,18 @@ c11:
 		Length: 6
 		Facings: 8
 		Tick: 80
+    swim-stand:
+        Frames: 12, 18, 24, 30, 36, 42, 48, 54
+		Length: 1
+        Facings: 8
+    swim-move:
+        Frames: 58, 66, 74, 82, 90, 98, 106, 114
+        Length: 1
+        Facings: 8
+	swim-shoot:
+		Start: 120
+		Length: 4
+		Facings: 8
 
 einstein:
 	Defaults:
@@ -1484,6 +1780,14 @@ einstein:
 		Length: 6
 		Tick: 1600
 		ZOffset: -511
+    swim-stand:
+        Frames: 12, 18, 24, 30, 36, 42, 48, 54
+		Length: 1
+        Facings: 8
+    swim-move:
+        Frames: 58, 66, 74, 82, 90, 98, 106, 114
+        Length: 1
+        Facings: 8
 
 delphi:
 	Defaults:
@@ -1535,6 +1839,22 @@ delphi:
 		Length: 6
 		Tick: 1600
 		ZOffset: -511
+    swim-stand:
+        Frames: 12, 18, 24, 30, 36, 42, 48, 54
+		Length: 1
+        Facings: 8
+    swim-move:
+        Frames: 58, 66, 74, 82, 90, 98, 106, 114
+        Length: 1
+        Facings: 8
+    swim-stand:
+        Frames: 12, 18, 24, 30, 36, 42, 48, 54
+		Length: 1
+        Facings: 8
+    swim-move:
+        Frames: 58, 66, 74, 82, 90, 98, 106, 114
+        Length: 1
+        Facings: 8
 
 chan:
 	Defaults:
@@ -1586,6 +1906,14 @@ chan:
 		Length: 6
 		Tick: 1600
 		ZOffset: -511
+    swim-stand:
+        Frames: 12, 18, 24, 30, 36, 42, 48, 54
+		Length: 1
+        Facings: 8
+    swim-move:
+        Frames: 58, 66, 74, 82, 90, 98, 106, 114
+        Length: 1
+        Facings: 8
 
 zombie:
 	Defaults:
@@ -1827,3 +2155,23 @@ snip:
 	icon:
 		Filename: snipicon.shp
 		TilesetFilenames:
+    swim-idle1:
+		Frames: 135, 3, 256, 257, 258, 259, 260, 261, 262, 263, 264, 265, 266, 267, 268, 269, 270, 271, 272, 3, 135
+		Length: *
+		Tick: 120
+    swim-idle2:
+		Frames: 139, 6, 272, 273, 274, 275, 276, 277, 278, 279, 280, 281, 282, 283, 284, 285, 286, 287, 288, 6, 139
+		Length: *
+		Tick: 120
+    swim-stand:
+        Frames: 129, 131, 133, 135, 137, 139, 141, 143
+		Length: 1
+        Facings: 8
+    swim-move:
+        Frames: 176, 178, 180, 182, 184, 186, 188, 190
+		Length: 1
+        Facings: 8
+    swim-shoot:
+		Start: 192
+		Length: 8
+		Facings: 8

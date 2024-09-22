@@ -167,6 +167,7 @@ PROF:
 
 SYRF:
 	Inherits: ^FakeBuilding
+	Inherits@infiltrate: ^InfiltratableFake
 	Selectable:
 		Bounds: 3072, 2048
 	Buildable:
@@ -181,7 +182,7 @@ SYRF:
 		GenericVisibility: Enemy
 		GenericStancePrefix: False
 	Targetable:
-		TargetTypes: WaterActor, Structure
+		TargetTypes: WaterActor, Structure, WaterStructure, SpyInfiltrate
 	Building:
 		Footprint: XXX xxx XXX
 		Dimensions: 3,3
@@ -211,10 +212,11 @@ SYRF:
 
 SPEF:
 	Inherits: ^FakeBuilding
+	Inherits@infiltrate: ^InfiltratableFake
 	Selectable:
 		Bounds: 3072, 2048
 	Targetable:
-		TargetTypes: WaterActor, Structure
+		TargetTypes: WaterActor, Structure, WaterStructure, SpyInfiltrate
 	Buildable:
 		BuildPaletteOrder: 1020
 		Queue: Defense

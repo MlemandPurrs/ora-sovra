@@ -672,6 +672,8 @@ icon:
         Filename: weaprankicon.shp
     airvet:
         Filename: hpadrankicon.shp
+    navvet:
+        Filename: syrdrankicon.shp
 
 quee:
 	Defaults:
@@ -923,3 +925,9 @@ twinkle:
 empty:
 	idle:
 		Filename: empty.shp
+
+boat:
+	idle:
+		Filename: boat.shp
+        Facings: 16
+		ZOffset: -511

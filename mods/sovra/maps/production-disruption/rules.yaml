@@ -44,3 +44,4 @@ MSUB:
 		-RequiresCondition:
     -GrantConditionOnTerrain@CROSSINGFORD:
     -ExternalCondition@SONARPING:
+    -Capturable:

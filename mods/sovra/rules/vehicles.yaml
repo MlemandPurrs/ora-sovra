@@ -716,7 +716,7 @@ MNLY:
 	Armor:
 		Type: Heavy
 	Mobile:
-        Locomotor: amphibiantracked
+        Locomotor: tracked-amphibious
 		Speed: 113
 	RevealsShroud:
 		MinRange: 4c0
@@ -877,7 +877,7 @@ MRJ:
 	Armor:
 		Type: Heavy
 	Mobile:
-        Locomotor: amphibianwheeled
+        Locomotor: wheeled-amphibious
 		Speed: 68
 	RevealsShroud:
 		Range: 7c0
@@ -947,7 +947,7 @@ TTNK:
 		Type: Light
 	Mobile:
         PauseOnCondition: being-captured || dont-move
-        Locomotor: amphibiantracked
+        Locomotor: tracked-amphibious
 		Speed: 92
 	RevealsShroud:
 		MinRange: 6c0

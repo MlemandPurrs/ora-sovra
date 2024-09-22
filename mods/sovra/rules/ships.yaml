@@ -66,6 +66,11 @@ SS:
 		EmptyWeapon: UnitExplodeSubmarine
 	Selectable:
 		DecorationBounds: 1621, 1621
+	ProducibleWithLevel:
+		Prerequisites: ships.upgraded
+	WithProductionIconOverlay:
+		Types: Veterancy
+		Prerequisites: ships.upgraded
 
 MSUB:
 	Inherits: ^Submarine
@@ -126,6 +131,11 @@ MSUB:
 	Selectable:
 		DecorationBounds: 1877, 1877
 	RenderRangeCircle:
+	ProducibleWithLevel:
+		Prerequisites: ships.upgraded
+	WithProductionIconOverlay:
+		Types: Veterancy
+		Prerequisites: ships.upgraded
 
 DD:
 	Inherits: ^Ship
@@ -190,6 +200,11 @@ DD:
 	RenderDetectionCircle:
 	Selectable:
 		DecorationBounds: 1621, 1621
+	ProducibleWithLevel:
+		Prerequisites: ships.upgraded
+	WithProductionIconOverlay:
+		Types: Veterancy
+		Prerequisites: ships.upgraded
 
 CA:
 	Inherits: ^Ship
@@ -263,6 +278,11 @@ CA:
 	Selectable:
 		DecorationBounds: 1877, 1877
 	RenderRangeCircle:
+	ProducibleWithLevel:
+		Prerequisites: ships.upgraded
+	WithProductionIconOverlay:
+		Types: Veterancy
+		Prerequisites: ships.upgraded
 
 LST:
 	Inherits: ^Ship
@@ -287,7 +307,7 @@ LST:
 	Mobile:
 		Locomotor: lcraft
 		Speed: 128
-		PauseOnCondition: notmobile
+		PauseOnCondition: notmobile || being-captured
 	RevealsShroud:
 		MinRange: 5c0
 		Range: 6c0
@@ -382,6 +402,11 @@ PT:
 	RenderDetectionCircle:
 	Selectable:
 		DecorationBounds: 1536, 1536
+	ProducibleWithLevel:
+		Prerequisites: ships.upgraded
+	WithProductionIconOverlay:
+		Types: Veterancy
+		Prerequisites: ships.upgraded
 
 SEAS:
 	Inherits: ^Ship
@@ -432,6 +457,11 @@ SEAS:
 	WithMuzzleOverlay:
 	Selectable:
 		DecorationBounds: 1036,1036
+	ProducibleWithLevel:
+		Prerequisites: ships.upgraded
+	WithProductionIconOverlay:
+		Types: Veterancy
+		Prerequisites: ships.upgraded
 
 ENGB:
 	Inherits: ^Ship

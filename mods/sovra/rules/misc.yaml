@@ -453,6 +453,10 @@ aircraft.upgraded:
 	AlwaysVisible:
 	ProvidesPrerequisite:
 
+ships.upgraded:
+	AlwaysVisible:
+	ProvidesPrerequisite:
+
 mpspawn:
 	Interactable:
 	EditorOnlyTooltip:
@@ -732,6 +736,79 @@ aircraft.upgraded2:
 	GrantConditionOnPrerequisite@veterancyactivation3:
 		Prerequisites: aircraft.upgraded
 		Condition: airveterancyactivated
+
+navveterancyactivator:
+	Interactable:
+	EditorOnlyTooltip:
+		Name: (Timed Navy Veterancy Activator)
+	AlwaysVisible:
+	Aircraft:
+		Repulsable: False
+	BodyOrientation:
+		QuantizedFacings: 1
+	WithSpriteBody:
+	RenderSpritesEditorOnly:
+		Image: camera
+	MapEditorData:
+		Categories: System
+	Health:
+		HP: 1
+	HitShape:
+	ChangesHealth:
+		Step: -1
+		StartIfBelow: 101
+		Delay: 1
+	SpawnActorOnDeath:
+		Actor: ships.upgraded2
+		SpawnAfterDefeat: False
+        RequiresCondition: !navveterancyenabled
+	GrantConditionOnPrerequisite@veterancyenabling4:
+		Prerequisites: ships.upgraded
+		Condition: navveterancyenabled
+	KillsSelf:
+	Buildable:
+		Queue: Ship
+		Prerequisites: ~disabled
+	Tooltip:
+		Name: "Dummy Actor to activate Timed Navy Veterancy"
+
+ships.upgraded2:
+	Interactable:
+	EditorOnlyTooltip:
+		Name: (Timed Navy Veterancy)
+	AlwaysVisible:
+	Aircraft:
+		Repulsable: False
+	BodyOrientation:
+		QuantizedFacings: 1
+	WithSpriteBody:
+	RenderSpritesEditorOnly:
+		Image: camera
+	MapEditorData:
+		Categories: System
+	ProvidesPrerequisite:
+		Prerequisite: ships.upgraded
+	Health:
+		HP: 4500
+	HitShape:
+	ChangesHealth:
+		Step: -1
+		StartIfBelow: 101
+		Delay: 1
+	ProduceActorPower@veterancyactivesign4:
+        OrderName: NavyVeterancy
+		Name: Navy Veterancy  
+		Description: Displays the amount of time the\nNavy Veterancy is still active.
+		Icon: navvet
+		Actors: lst
+		Type: Ship
+		ChargeInterval: 4501
+		SupportPowerPaletteOrder: 340
+		DisplayTimerRelationships: Ally, Neutral, Enemy
+		RequiresCondition: navveterancyactivated
+	GrantConditionOnPrerequisite@veterancyactivation4:
+		Prerequisites: ships.upgraded
+		Condition: navveterancyactivated
 
 tech.stolen:
 	AlwaysVisible:

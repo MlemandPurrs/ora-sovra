@@ -350,6 +350,8 @@ E6:
 SPY:
 	Inherits: ^Soldier
 	Inherits@AUTOTARGET: ^AutoTargetGroundAssaultMove
+	QuantizeFacingsFromSequence:
+		Sequence: quantizer
 	Buildable:
         BuildDuration: 600
         BuildDurationModifier: 100
@@ -368,6 +370,7 @@ SPY:
 		AddToArmyValue: true
 	-Guard:
 	Mobile:
+        Locomotor: foot-amphibious
 		Voice: Move
 	RevealsShroud:
 		Range: 5c0
@@ -389,9 +392,9 @@ SPY:
 		DefaultAttackSequence: shoot
 		IdleSequences: idle1,idle2
 		StandSequences: stand,stand2
-		RequiresCondition: !parachute
+		RequiresCondition: !parachute && !swimming
 	WithDisguisingInfantryBody@PARACHUTE:
-		RequiresCondition: parachute
+		RequiresCondition: parachute && !swimming
 		Palette: player-noshadow
 		IsPlayerPalette: true
 	WithDecoration@disguise:
@@ -420,6 +423,26 @@ SPY:
     GrantConditionOnPrerequisite@england:
         Condition: owner.england
         Prerequisites: infantry.england
+	GrantConditionOnTerrain:
+		TerrainTypes: Water
+		Condition: swimming
+	Targetable:
+		RequiresCondition: !parachute && !swimming
+	Targetable@SEA:
+		TargetTypes: WaterActor, Infantry
+		RequiresCondition: !parachute && swimming
+	WithDeathAnimation:
+		RequiresCondition: !swimming
+	WithDisguisingInfantryBody@SEA:
+		RequiresCondition: swimming
+		DefaultAttackSequence: swim-shoot
+		MoveSequence: swim-move
+		IdleSequences: swim-idle1,swim-idle2
+		StandSequences: swim-stand,swim-stand2
+    WithFacingSpriteBody@SEA:
+        Name: boat
+        Sequence: boat
+        RequiresCondition: swimming
 
 E7:
 	Inherits: ^Soldier
@@ -656,6 +679,8 @@ GNRL:
 THF:
 	Inherits: ^Soldier
 	Inherits@selection: ^SelectableSupportUnit
+	QuantizeFacingsFromSequence:
+		Sequence: quantizer
 	Buildable:
         BuildDuration: 450
         BuildDurationModifier: 100
@@ -663,7 +688,7 @@ THF:
 		BuildAtProductionType: Soldier
 		BuildPaletteOrder: 70
 		Prerequisites: ~barr, fix, ~techlevel.medium
-		Description: Steals enemy credits.\nHijacks enemy vehicles.\n\n  Unarmed\n\n  Special ability: Cloaks when stationary
+		Description: Steals enemy credits.\nHijacks enemy vehicles and ships.\n\n  Unarmed\n\n  Special ability: Cloaks when stationary
 	Valued:
 		Cost: 450
 	Tooltip:
@@ -678,7 +703,7 @@ THF:
 		CustomPipType: blue
 	CaptureManager:
 	Captures:
-		CaptureTypes: vehicle, aircraft
+		CaptureTypes: vehicle, aircraft, naval
 		PlayerExperience: 10
 	Infiltrates:
 		Types: ThiefInfiltrate
@@ -690,7 +715,7 @@ THF:
 	WithInfantryBody:
 		IdleSequences: idle
 		StandSequences: stand
-		RequiresCondition: !parachute
+		RequiresCondition: !parachute && !swimming
 	WithInfantryBody@PARACHUTE:
 		RequiresCondition: parachute
 		Palette: player-noshadow
@@ -708,9 +733,29 @@ THF:
 		Condition: cloak-force-disabled
 		ValidDamageStates: Critical
 	Mobile:
+        Locomotor: foot-amphibious
 		Voice: Move
 		Speed: 68
 	-AttackFrontal:
+	GrantConditionOnTerrain:
+		TerrainTypes: Water
+		Condition: swimming
+	Targetable:
+		RequiresCondition: !parachute && !swimming
+	Targetable@SEA:
+		TargetTypes: WaterActor, Infantry
+		RequiresCondition: !parachute && swimming
+	WithDeathAnimation:
+		RequiresCondition: !swimming
+	WithInfantryBody@SEA:
+		RequiresCondition: swimming
+		MoveSequence: swim-move
+		IdleSequences: swim-idle
+		StandSequences: swim-stand
+    WithFacingSpriteBody@SEA:
+        Name: boat
+        Sequence: boat
+        RequiresCondition: swimming
 
 SHOK:
 	Inherits: ^Soldier
