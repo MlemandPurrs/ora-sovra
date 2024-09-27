@@ -643,7 +643,7 @@ APC:
         BuildDurationModifier: 100
 		Queue: Vehicle
 		BuildPaletteOrder: 130
-		Prerequisites: barracks, ~techlevel.low
+		Prerequisites: barracks, ~vehicles.soviet, ~techlevel.low
 		Description: Tough infantry transport.\n\n  Strong vs Infantry, Light armor\n  Weak vs Tanks, Aircraft
 	Valued:
 		Cost: 800
