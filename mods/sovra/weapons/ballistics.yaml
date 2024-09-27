@@ -259,6 +259,9 @@ GrenadeLauncher:
 		Inaccuracy: 554
 		Image: BOMB
         Shadow: true
+		ContrailStartWidth: 40
+        ContrailEndWidth: 20
+		ContrailLength: 30
 	Warhead@1Dam: SpreadDamage
 		Spread: 341
 		Damage: 5000
