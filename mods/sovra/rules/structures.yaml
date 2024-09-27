@@ -523,7 +523,7 @@ IRON:
 		ChargeInterval: 3750
 		Name: Invulnerability
 		Description: Makes a group of units or structures\ninvulnerable for 20 seconds.
-		Duration: 400
+		Duration: 500
 		SelectTargetSpeechNotification: SelectTarget
 		InsufficientPowerSpeechNotification: InsufficientPower
 		BeginChargeSpeechNotification: IronCurtainCharging

@@ -119,7 +119,7 @@ CRATE:
 		Sequence: invuln
 		Sound: ironcur9.aud
 		Condition: invulnerability
-		Duration: 400
+		Duration: 500
 	GiveUnitCrateAction@lst:
 		SelectionShares: 6
 		Units: lst
