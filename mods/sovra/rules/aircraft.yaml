@@ -402,7 +402,7 @@ HIND:
 	Inherits: ^Helicopter
 	Inherits@AUTOTARGET: ^AutoTargetGroundAssaultMove
 	Buildable:
-        BuildDuration: 1400
+        BuildDuration: 1550
         BuildDurationModifier: 100
 		Queue: Aircraft
 		BuildAtProductionType: Helicopter
@@ -416,7 +416,7 @@ HIND:
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Health:
-		HP: 10000
+		HP: 12000
 	RevealsShroud:
 		MinRange: 8c0
 		Range: 10c0
