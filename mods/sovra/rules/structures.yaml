@@ -610,7 +610,7 @@ PDOX:
 		InsufficientPowerTextNotification: Insufficient power.
 		BeginChargeTextNotification: Chronosphere charging.
 		EndChargeTextNotification: Chronosphere ready.
-		Duration: 400
+		Duration: 500
 		KillCargo: true
 		DisplayRadarPing: True
 		SupportPowerPaletteOrder: 20
@@ -632,7 +632,7 @@ PDOX:
 		InsufficientPowerTextNotification: Insufficient power.
 		BeginChargeTextNotification: Chronosphere charging.
 		EndChargeTextNotification: Chronosphere ready.
-		Duration: 400
+		Duration: 500
 		KillCargo: true
 		DisplayRadarPing: True
 		SupportPowerPaletteOrder: 30
